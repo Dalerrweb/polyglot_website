@@ -13,7 +13,7 @@
    box-sizing: border-box;
    font-size: 20px;
    font-family: sans;
-   font-weight: 400;
+   font-weight: 383;
 }
 
 ul,
@@ -23,9 +23,13 @@ li {
 }
 
 .custom-container {
-   @apply container m-auto px-[105px];
+   @apply container m-auto px-[107px] max-2xl:px-[80px] max-xl:px-[50px] max-lg:px-6;
 }
 
 .flex-center {
    @apply flex items-center justify-center;
+}
+
+h1 {
+   @apply text-[100px] max-3xl:text-[72px] max-2xl:text-[60px] max-xl:text-[55px] max-lg:text-[32px] max-md:text-[55px] max-sm:text-[32px] font-semibold leading-[95px] max-3xl:leading-[80px] max-2xl:leading-[70px] max-xl:leading-[55px] max-lg:leading-[40px] max-md:leading-[55px] max-sm:leading-[40px];
 }
