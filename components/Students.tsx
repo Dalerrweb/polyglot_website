@@ -67,6 +67,7 @@ const Students: React.FC<StudentsProps> = () => {
                </button>
             </div>
          </div>
+         
          <Swiper
             spaceBetween={20}
             slidesPerView={1}

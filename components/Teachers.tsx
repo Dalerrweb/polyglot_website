@@ -1,36 +1,37 @@
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeacherProps {}
 
 const Teacher: React.FC<TeacherProps> = () => {
    return (
       <div className="custom-container">
-         <div className="flex justify-between items-start mt-24">
+         <div className="flex max-md:flex-col justify-between items-start mt-24">
             <div className="max-w-[745px] w-full">
-               <h2 className="text-[64px] font-semibold leading-[68px] text-blue">
+               <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] text-blue">
                   Какие профессионалы работают у нас, и кто проложит вам путь к
                   успеху
                </h2>
             </div>
             <div className="max-w-[650px] w-full">
-               <h2 className="text-[64px] font-semibold leading-[68px] mb-2 text-orange">
+               <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] mb-4 max-md:my-4 text-orange">
                   Самое время познакомиться!
                </h2>
-               <p className="text-[36px] leading-[45px] text-orange">
+               <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[22px] max-sm:text-[18px] leading-[45px] max-xl:leading-[30px] max-md:leading-[23.015px] text-orange">
                   Наши специалисты не просто любят своё дело, но также вместе с
                   вами совершенствуются с каждым днём
                </p>
             </div>
          </div>
 
-         <div className="mt-20 flex items-center justify-between">
+         <div className="mt-14 mb-7 flex items-center justify-between">
             <div className="">
-               <h2 className="text-[96px] font-semibold text-blue">
+               <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[28px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
                   Преподаватели
                </h2>
             </div>
-            <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 flex items-center justify-center bg-blue rounded-full">
+            <div className="flex gap-3 max-sm:gap-1 items-center">
+               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -56,7 +57,7 @@ const Teacher: React.FC<TeacherProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 flex items-center justify-center bg-blue rounded-full">
+               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -85,51 +86,70 @@ const Teacher: React.FC<TeacherProps> = () => {
             </div>
          </div>
 
-         <div className="grid grid-cols-4 gap-10">
-            {[0, 1, 2, 3].map((item: number) => {
+         <Swiper
+            className="max-md:min-h-[350px]"
+            spaceBetween={20}
+            slidesPerView={2}
+            breakpoints={{
+               1536: {
+                  slidesPerView: 4,
+               },
+               1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+               },
+            }}
+         >
+            {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
-                  <div key={item} className="relative rounded-[43px] bg-orange">
-                     <div className="">
-                        <Image
-                           src={"/images/daler-teacher.png"}
-                           width={1000}
-                           height={1000}
-                           alt="teacher"
-                        />
-                     </div>
-                     <div className="w-full absolute -bottom-7 left-0 py-6 px-9 rounded-[20px] bg-blue">
+                  <SwiperSlide className="" key={item}>
+                     <div className="max-md:min-h-[350px] relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] bg-orange">
                         <div className="">
-                           <p className="text-[40px] leading-[40.5px] font-bold text-white">
-                              Шарифкулов Далер
-                           </p>
-                           <p className="leading-[20.5px] mt-3 text-white">
-                              Преподаватель по Английскому Языку
-                           </p>
+                           <Image
+                              src={"/images/daler-teacher.png"}
+                              width={1000}
+                              height={1000}
+                              alt="teacher"
+                           />
                         </div>
-                        <div className="flex items-center justify-between mt-5 text-white">
-                           <p className="text-[36px] leading-[22px] font-bold">IELTS 7.5</p>
 
-                           <button className="flex">
-                              Подробнее
-                              <svg
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 width="26"
-                                 height="25"
-                                 viewBox="0 0 26 25"
-                                 fill="none"
-                              >
-                                 <path
-                                    d="M25.3857 3.10726C25.3913 2.69591 25.2303 2.29976 24.9394 2.00886C24.6485 1.71796 24.2524 1.55702 23.841 1.56262C22.9879 1.56262 22.2964 2.25418 22.2964 3.10726V19.7276L3.08101 0.491667C2.69594 0.0784169 2.11601 -0.0916915 1.56873 0.0480753C1.02144 0.187842 0.594092 0.615192 0.454325 1.16248C0.314559 1.70976 0.484667 2.28969 0.897917 2.67476L20.1339 21.9107H3.51351C2.66043 21.9107 1.96887 22.6023 1.96887 23.4554C1.96887 24.3084 2.66043 25 3.51351 25H23.8616C24.7147 25 25.4062 24.3084 25.4062 23.4554L25.3857 3.10726Z"
-                                    fill="white"
-                                 />
-                              </svg>
-                           </button>
+                        <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                           <div className="">
+                              <p className="text-[40px] max-3xl:text-[36px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]    max-sm:leading-[18.431px] font-bold text-white">
+                                 Шарифкулов Далер
+                              </p>
+                              <p className="max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-3 max-3xl:mt-2 max-sm:mt-1 text-white">
+                                 Преподаватель по Английскому Языку
+                              </p>
+                           </div>
+                           <div className="flex items-center justify-between mt-5 max-3xl:mt-3 max-sm:mt-1 text-white">
+                              <p className="text-[36px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
+                                 IELTS 7.5
+                              </p>
+
+                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px]">
+                                 Подробнее
+                                 <svg
+                                    className="max-md:w-4 "
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="26"
+                                    height="25"
+                                    viewBox="0 0 26 25"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M25.3857 3.10726C25.3913 2.69591 25.2303 2.29976 24.9394 2.00886C24.6485 1.71796 24.2524 1.55702 23.841 1.56262C22.9879 1.56262 22.2964 2.25418 22.2964 3.10726V19.7276L3.08101 0.491667C2.69594 0.0784169 2.11601 -0.0916915 1.56873 0.0480753C1.02144 0.187842 0.594092 0.615192 0.454325 1.16248C0.314559 1.70976 0.484667 2.28969 0.897917 2.67476L20.1339 21.9107H3.51351C2.66043 21.9107 1.96887 22.6023 1.96887 23.4554C1.96887 24.3084 2.66043 25 3.51351 25H23.8616C24.7147 25 25.4062 24.3084 25.4062 23.4554L25.3857 3.10726Z"
+                                       fill="white"
+                                    />
+                                 </svg>
+                              </button>
+                           </div>
                         </div>
                      </div>
-                  </div>
+                  </SwiperSlide>
                );
             })}
-         </div>
+         </Swiper>
       </div>
    );
 };
