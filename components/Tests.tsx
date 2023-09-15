@@ -109,7 +109,20 @@ const Tests: React.FC<TestsProps> = () => {
                         <div className="mt-11 max-3xl:mt-8 max-lg:mt-5">
                            <h3 className="text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-center">
                               YOUR
-                              <span className="text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-black">
+                              <span className="relative z-10 mx-2 text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-black">
+                                 <svg
+                                 className="max-3xl:w-[143px] max-3xl:h-[43px] max-lg:w-[125px] max-lg:h-[38px] absolute -top-[3px] -left-2 z-[-1]"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="177"
+                                    height="47"
+                                    viewBox="0 0 177 47"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M3.68207 10.8459C4.18352 6.34777 7.94737 2.92177 12.4727 2.84433L167.327 0.194341C172.753 0.101481 177.026 4.79645 176.425 10.1902L173.613 35.4135C173.112 39.9116 169.348 43.3375 164.823 43.415L9.96876 46.065C4.54243 46.1579 0.268891 41.4629 0.870181 36.0692L3.68207 10.8459Z"
+                                       fill="#EEEEEE"
+                                    />
+                                 </svg>
                                  ENGLISH
                               </span>
                               LEVEL

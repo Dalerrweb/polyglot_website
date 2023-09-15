@@ -8,6 +8,7 @@ import Support from "@/components/Support";
 import Teacher from "@/components/Teachers";
 import Image from "next/image";
 import Info from "@/components/Info";
+import Map from "@/components/Map";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -83,14 +84,14 @@ export default function Home() {
 
             <div className="bg-blue">
                <div className="grid grid-cols-4 gap-4">
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
-                  <div className="h-[400px] bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
                </div>
             </div>
          </section>
@@ -99,6 +100,9 @@ export default function Home() {
          </section>
          <section>
             <Teacher />
+         </section>
+         <section>
+            <Map />
          </section>
       </>
    );

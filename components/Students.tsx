@@ -67,7 +67,7 @@ const Students: React.FC<StudentsProps> = () => {
                </button>
             </div>
          </div>
-         
+
          <Swiper
             spaceBetween={20}
             slidesPerView={1}
@@ -90,10 +90,10 @@ const Students: React.FC<StudentsProps> = () => {
                return (
                   <SwiperSlide key={item}>
                      <div className="px-[30px] max-2xl:px-[25px] max-lg:px-[20px] py-[46px] max-2xl:py-[40px] max-lg:py-8 rounded-[20px] bg-orange">
-                        <div className="flex items-center mb-[43px] max-3xl:mb-5"> 
+                        <div className="flex items-center mb-[43px] max-3xl:mb-5">
                            <div className="w-[200px] mr-[25px] max-2xl:mr-[15px] rounded-full bg-white">
                               <Image
-                              className=""
+                                 className=""
                                  src={"/images/daler.png"}
                                  width={1000}
                                  height={1000}
@@ -101,7 +101,20 @@ const Students: React.FC<StudentsProps> = () => {
                               />
                            </div>
                            <div className="">
-                              <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
+                              <p className="relative z-10 text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
+                                 <svg
+                                    className="max-3xl:w-[150px] max-2xl:w-[145px] max-md:w-[130px] absolute -top-2 -left-[15px] max-md:-top-2 max-md:-left-[9px] z-[-1]"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="183.77px"
+                                    height="44.253px"
+                                    viewBox="0 0 131 31"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M1.43775 7.81404C1.70167 4.59663 4.36358 2.10439 7.59139 2.05264L124.163 0.183864C127.871 0.124427 130.821 3.27565 130.518 6.97131L129.176 23.3331C128.912 26.5505 126.25 29.0428 123.022 29.0945L6.45042 30.9633C2.74282 31.0227 -0.207538 27.8715 0.0956121 24.1758L1.43775 7.81404Z"
+                                       fill="#21209C"
+                                    />
+                                 </svg>
                                  IELTS 7.5
                               </p>
                               <p className="text-[40px] max-3xl:text-[32px] max-2xl:text-[28px] font-bold leading-[40.5px] max-2xl:leading-[28.239px] mt-2">
@@ -116,7 +129,7 @@ const Students: React.FC<StudentsProps> = () => {
                         <div className="">
                            <div className="">
                               <svg
-                              className="max-2xl:w-[50px]"
+                                 className="max-2xl:w-[50px]"
                                  xmlns="http://www.w3.org/2000/svg"
                                  width="61"
                                  height="23"

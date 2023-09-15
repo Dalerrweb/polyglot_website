@@ -123,7 +123,20 @@ const Teacher: React.FC<TeacherProps> = () => {
                               </p>
                            </div>
                            <div className="flex items-center justify-between mt-5 max-3xl:mt-3 max-sm:mt-1 text-white">
-                              <p className="text-[36px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
+                              <p className="relative z-10 text-[36px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
+                                 <svg
+                                    className="max-3xl:w-[140px] max-xl:w-[105px] max-md:w-[78px] max-md:h-[45px] absolute -top-2 max-md:-top-[17px] -left-2 max-md:-left-1 z-[-1]"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="175"
+                                    height="44"
+                                    viewBox="0 0 182 44"
+                                    fill="none"
+                                 >
+                                    <path
+                                       d="M2.22941 11.3498C2.60792 6.73537 6.42567 3.16097 11.055 3.08675L171.87 0.508695C177.188 0.42345 181.419 4.94297 180.985 10.2433L179.177 32.2824C178.798 36.8968 174.981 40.4712 170.351 40.5454L9.5357 43.1235C4.21822 43.2087 -0.0132092 38.6892 0.421572 33.3889L2.22941 11.3498Z"
+                                       fill="#EC8D18"
+                                    />
+                                 </svg>
                                  IELTS 7.5
                               </p>
 
