@@ -7,14 +7,14 @@ interface CoursesProps {}
 const Courses: React.FC<CoursesProps> = () => {
    return (
       <div className="custom-container">
-         <div className="mt-14 mb-7 flex items-center justify-between">
+         <div className="mb-9 mt-20 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
                   Программа курсов
                </h2>
             </div>
             <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -40,7 +40,7 @@ const Courses: React.FC<CoursesProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -74,7 +74,7 @@ const Courses: React.FC<CoursesProps> = () => {
             slidesPerView={1}
             breakpoints={{
                1536: {
-                  spaceBetween: 35,
+                  spaceBetween: 30,
                },
                1920: {
                   slidesPerView: 3,
@@ -90,7 +90,7 @@ const Courses: React.FC<CoursesProps> = () => {
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <div className="px-11 max-3xl:px-8 max-2xl:px-[30px] py-10 max-3xl:py-7 max-lg:py-[24px] rounded-[30px] bg-blue text-white">
+                     <div className="px-8 max-3xl:px-8 max-2xl:px-[30px] pb-[35px] pt-[46px] max-3xl:py-7 max-lg:py-[24px] rounded-[30px] bg-blue text-white">
                         <div className="mb-12 max-3xl:mb-[31px]">
                            <h3 className="text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold leading-[22px] text-center">
                               BASED
@@ -113,7 +113,7 @@ const Courses: React.FC<CoursesProps> = () => {
                            </h3>
                         </div>
 
-                        <div className="pb-8 max-3xl:pb-4 border-b border-white">
+                        <div className="pb-6 max-3xl:pb-4 border-b border-white">
                            <p className="text-[24px] max-3xl:text-[20px] max-2xl:text-[16px] leading-[32px] max-2xl:leading-[22.312px]">
                               Освойте базовый уровень Английского языка до
                               уровня B1, все занятия проводятся по особой
@@ -122,7 +122,7 @@ const Courses: React.FC<CoursesProps> = () => {
                            </p>
                         </div>
 
-                        <div className="mt-6 max-3xl:mt-4">
+                        <div className="mt-5 max-3xl:mt-4">
                            <ul>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -187,7 +187,7 @@ const Courses: React.FC<CoursesProps> = () => {
                            </ul>
                         </div>
 
-                        <div className="flex items-start justify-between mt-8 max-3xl:mt-[20px] max-2xl:mt-[16px]">
+                        <div className="flex items-start justify-between mt-6 max-3xl:mt-[20px] max-2xl:mt-[16px]">
                            <div className="">
                               <div className="">
                                  <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
@@ -218,7 +218,7 @@ const Courses: React.FC<CoursesProps> = () => {
                            </div>
                         </div>
 
-                        <div className="flex items-center justify-between mt-6 max-3xl:mt-[18px]">
+                        <div className="flex items-center justify-between mt-5 max-3xl:mt-[18px]">
                            <button className="w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
                               Оставить заявку
                            </button>

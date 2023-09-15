@@ -111,7 +111,7 @@ const Tests: React.FC<TestsProps> = () => {
                               YOUR
                               <span className="relative z-10 mx-2 text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-black">
                                  <svg
-                                 className="max-3xl:w-[143px] max-3xl:h-[43px] max-lg:w-[125px] max-lg:h-[38px] absolute -top-[3px] -left-2 z-[-1]"
+                                    className="max-3xl:w-[143px] max-3xl:h-[43px] max-lg:w-[125px] max-lg:h-[38px] absolute -top-[3px] -left-2 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="177"
                                     height="47"
