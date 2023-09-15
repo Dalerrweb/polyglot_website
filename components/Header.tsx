@@ -7,7 +7,7 @@ interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
    return (
       <header className="border-b-4 border-blue">
-         <div className="custom-container flex items-center justify-between py-7 max-lg:py-5">
+         <div className="custom-container flex items-center justify-between py-3 max-lg:py-5">
             <div className="w-[240px] max-2xl:w-[200px] max-xl:w-[180px] max-md:w-[130px]">
                <Image
                   src={"/images/logo.svg"}

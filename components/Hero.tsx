@@ -4,7 +4,7 @@ interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
    return (
-      <div className="custom-container min-h-[1000px] max-2xl:min-h-[850px] max-xl:min-h-[700px] max-lg:min-h-[600px] flex max-md:flex-col gap-7 max-md:gap-[20px]">
+      <div className="custom-container min-h-[800px] max-2xl:min-h-[650px] max-xl:min-h-[700px] max-lg:min-h-[600px] flex max-md:flex-col justify-between gap-7 max-md:gap-[20px]">
          <div className="w-1/2 max-lg:w-2/5 max-md:w-full flex flex-col justify-center max-md:mt-[30px]">
             <h3 className="max-lg:text-[16px] max-sm:text-[20px] text-blue">
                Ученье свет, а не ученье тьма!
@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = () => {
                </div>
             </div>
          </div>
-         <div className="w-1/2 max-lg:w-3/5 max-md:w-full max-md:min-h-[500px] max-sm:min-h-[450px] grid grid-cols-4 gap-y-[32px] gap-x-[37px] max-xl:gap-5 max-sm:gap-4">
+         <div className="w-[42%] max-2xl:w-[45%] max-lg:w-3/5 max-md:w-full max-md:min-h-[500px] max-sm:min-h-[450px] grid grid-cols-4 gap-y-[32px] gap-x-[37px] max-2xl:gap-5 max-sm:gap-4">
             <div className="col-span-2 row-span-3 rounded-[15px] bg-orange"></div>
             <div className="col-span-2 row-span-2 rounded-[15px] bg-orange"></div>
             <div className="col-span-2 row-span-3 rounded-[15px] bg-orange"></div>

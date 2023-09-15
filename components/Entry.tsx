@@ -3,7 +3,7 @@ interface EntryProps {}
 const Entry: React.FC<EntryProps> = () => {
    return (
       <div className="shadow-[0px_3px_15px_#21209c33] max-md:rounded-[20px] bg-white">
-         <div className="custom-container py-20 max-lg:py-10 max-sm:py-[20px] flex max-lg:flex-col max-2xl:items-center max-lg:items-start">
+         <div className="custom-container py-16 max-lg:py-10 max-sm:py-[20px] flex max-lg:flex-col max-2xl:items-center max-lg:items-start">
             <div className="max-w-[550px] 3xl:mr-[35px] max-xl:mr-[10px] max-lg:mr-0 max-lg:mb-[25px]">
                <h2 className="text-[64px] max-3xl:text-[50px] max-sm:text-[32px] font-semibold leading-[64px] max-sm:leading-[37px] text-blue">
                   Запишитесь на бесплатный урок

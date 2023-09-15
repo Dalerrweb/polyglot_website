@@ -94,7 +94,7 @@ const Teacher: React.FC<TeacherProps> = () => {
                1536: {
                   slidesPerView: 4,
                },
-               1024: {
+               1280: {
                   slidesPerView: 3,
                   spaceBetween: 40,
                },
@@ -104,8 +104,9 @@ const Teacher: React.FC<TeacherProps> = () => {
                return (
                   <SwiperSlide className="" key={item}>
                      <div className="max-md:min-h-[350px] relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] bg-orange">
-                        <div className="">
+                        <div className="max-2xl:h-[680px]">
                            <Image
+                              className="bg-cover"
                               src={"/images/daler-teacher.png"}
                               width={1000}
                               height={1000}
@@ -115,7 +116,7 @@ const Teacher: React.FC<TeacherProps> = () => {
 
                         <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                            <div className="">
-                              <p className="text-[40px] max-3xl:text-[36px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]    max-sm:leading-[18.431px] font-bold text-white">
+                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]    max-sm:leading-[18.431px] font-bold text-white">
                                  Шарифкулов Далер
                               </p>
                               <p className="max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-3 max-3xl:mt-2 max-sm:mt-1 text-white">
