@@ -69,7 +69,7 @@ const TestingPage = ({ data }: any) => {
                            Вопрос {test.id} из {data.test.length}
                         </p>
                         <div className="p-1 h-4 max-lg:h-3 rounded-full bg-white">
-                           <div style={{width:`${Math.floor((100 / data.test.length) * (test.id -1))}%`, borderRadius:"10px"}} className={`h-full bg-orange rounded-full]`}></div>
+                           <div style={{width:`${Math.floor((100 / data.test.length) * (test.id -1))}%`, borderRadius:"10px", transition:"1s"}} className={`h-full bg-orange rounded-full]`}></div>
                         </div>
                      </div>
 
@@ -162,10 +162,11 @@ const TestingPage = ({ data }: any) => {
                   </>
                ) : (
                   <div className="flex flex-col gap-5 items-center justify-center">
-                     <h1 className="text-white text-center text-2xl font-medium">
-                        The end
-                     </h1>
-                     <div>
+                     <h2 className="text-white text-center text-2xl font-medium">
+                     🎉 Поздравляем! 🎉
+                     </h2>
+                     <h2 className="text-white text-center text-2xl font-medium">Мы скоро свяжемся с вами!</h2>
+                     {/* <div>
                         {Ansvers_list.map((item: any) => (
                            <div
                               key={item.number}
@@ -175,7 +176,7 @@ const TestingPage = ({ data }: any) => {
                               <p>{item.ansver ? "+" : "-"}</p>
                            </div>
                         ))}
-                     </div>
+                     </div> */}
                      <Link href={"/"}>
                         <button
                            title="result"
