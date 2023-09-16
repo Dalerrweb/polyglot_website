@@ -6,10 +6,11 @@ interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
    return (
-      <header className="border-b-4 border-blue">
-         <div className="custom-container flex items-center justify-between py-3 max-lg:py-5">
-            <div className="w-[240px] max-2xl:w-[200px] max-xl:w-[180px] max-md:w-[130px]">
+      <header className="w-full fixed top-0 left-0 z-50 border-b-4 border-blue bg-white">
+         <div className="custom-container flex items-center justify-between py-3 ">
+            <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[180px] max-md:w-[130px]">
                <Image
+               className="w-auto h-auto"
                   src={"/images/logo.svg"}
                   width={1000}
                   height={1000}
@@ -33,7 +34,7 @@ const Header: React.FC<HeaderProps> = () => {
                </select>
             </div>
             <div className="max-lg:hidden">
-               <button className="max-xl:text-sm px-10 max-2xl:px-6 max-xl:px-3 py-3 rounded-md bg-blue text-white">
+               <button className="max-2xl:text-[18px] px-10 max-2xl:px-5 max-xl:px-3 py-3 max-2xl:py-2 rounded-md bg-blue text-white">
                   Оставить заявку
                </button>
             </div>

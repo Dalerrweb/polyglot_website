@@ -90,7 +90,7 @@ const Courses: React.FC<CoursesProps> = () => {
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <div className="px-8 max-3xl:px-8 max-2xl:px-[30px] pb-[35px] pt-[46px] max-3xl:py-7 max-lg:py-[24px] rounded-[30px] bg-blue text-white">
+                     <div className="course px-8 max-3xl:px-8 max-2xl:px-[30px] pb-[35px] pt-[46px] max-3xl:py-7 max-lg:py-[24px] rounded-[30px] bg-blue text-white">
                         <div className="mb-12 max-3xl:mb-[31px]">
                            <h3 className="text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold leading-[22px] text-center">
                               BASED
@@ -219,10 +219,10 @@ const Courses: React.FC<CoursesProps> = () => {
                         </div>
 
                         <div className="flex items-center justify-between mt-5 max-3xl:mt-[18px]">
-                           <button className="w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
+                           <button className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
                               Оставить заявку
                            </button>
-                           <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] bg-blue">
+                           <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] ">
                               Подробнее
                               <svg
                                  className="max-3xl:w-[20px] max-3xl:h-[25px] max-xl:w-[17px] max-xl:h-[17px]"
