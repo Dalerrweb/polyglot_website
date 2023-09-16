@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TestsProps {}
@@ -102,7 +103,7 @@ const Tests: React.FC<TestsProps> = () => {
                },
             }}
          >
-            {[0, 1, 2, 3, 4, 5].map((item: number) => {
+            {[0, 1].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
                      <div className="rounded-[30px] max-lg:rounded-[20px] overflow-hidden bg-blue text-white">
@@ -155,6 +156,7 @@ const Tests: React.FC<TestsProps> = () => {
                                  </p>
                               </div>
                               <div className="">
+                                 <Link href={`/${item + 1}`}>
                                  <button>
                                     <svg
                                        className="max-3xl:w-[80px] max-lg:h-[80px]"
@@ -178,6 +180,7 @@ const Tests: React.FC<TestsProps> = () => {
                                        />
                                     </svg>
                                  </button>
+                                 </Link>
                               </div>
                            </div>
                         </div>
