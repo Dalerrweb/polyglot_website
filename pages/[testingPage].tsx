@@ -1,10 +1,8 @@
-import Timer from "../components/timer";
-import { dir } from "console";
+import Timer from "../components/Timer";
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { setInterval } from "timers";
+import { useState } from "react";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
@@ -22,12 +20,12 @@ let Ansvers_list: any = [];
 const TestingPage = ({ data }: any) => {
    const [testNumber, setTestNumber] = useState(0);
    const [test, setTest] = useState(data.test[testNumber]);
-   //   const [testId, setTestId] = useState<number>(0);
    const [testAnsver, setTestAnsver] = useState(false);
    const [inputСheck, setInputСheck] = useState<any>();
-   //   const [testTime, setTestTime] = useState<number>(data.test[testNumber].time);
 
+   
    const [endTest, setEndTest] = useState(false);
+   
 
    const handleSubmit = (e: any) => {
       e.preventDefault();
@@ -52,6 +50,7 @@ const TestingPage = ({ data }: any) => {
       setTest(data.test[0]);
    };
 
+
    return (
       <section className="section">
          <div className="orange_div">
@@ -70,11 +69,7 @@ const TestingPage = ({ data }: any) => {
                            Вопрос {test.id} из {data.test.length}
                         </p>
                         <div className="p-1 h-4 max-lg:h-3 rounded-full bg-white">
-                           <div
-                              className={`h-full w-[${Math.floor(
-                                 (100 / data.test.length) * test.id
-                              )}%] bg-orange rounded-full`}
-                           ></div>
+                           <div style={{width:`${Math.floor((100 / data.test.length) * (test.id -1))}%`, borderRadius:"10px"}} className={`h-full bg-orange rounded-full]`}></div>
                         </div>
                      </div>
 
@@ -84,11 +79,10 @@ const TestingPage = ({ data }: any) => {
                      <form onSubmit={handleSubmit} onReset={hendlReset}>
                         <div className="flex max-xl:flex-col items-start justify-between gap-5 max-xl:gap-4 max-md:gap-3 mt-7 max-3xl:mt-5 max-2xl:mt-4 max-lg:mt-3">
                            {test.answers.map((item: any) => (
+                              <label key={item.id} className="bg-white w-full h-auto p-4 max-3xl:p-3 max-md::p-2 rounded-xl flex items-center cursor-pointer">
                               <div
-                                 key={item.id}
-                                 className="bg-white w-full h-auto p-4 max-3xl:p-3 max-md::p-2 rounded-xl flex items-center"
+                                 className="small_text_size font-medium flex items-center justify-between"
                               >
-                                 <label className="small_text_size font-medium cursor-pointer flex items-center justify-between">
                                     <input
                                        onChange={(e) => {
                                           //   setTestId(item.id);
@@ -101,8 +95,8 @@ const TestingPage = ({ data }: any) => {
                                        className="w-14 h-5 cursor-pointer"
                                     />
                                     <p>{item.title}</p>
-                                 </label>
                               </div>
+                              </label>
                            ))}
                         </div>
 

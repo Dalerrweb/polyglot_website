@@ -5,6 +5,12 @@ const Timer:any = ({time , setEndTest}:any) => {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
+
+    useEffect(()=>{
+        if (hours === -1) {
+            setEndTest(true)
+        } 
+    }, [hours])  
     
     const getTime = () => {
         if(Math.floor((timer / 1000) % 60) - Math.floor((Date.now() / 1000) % 60) <= 0){
