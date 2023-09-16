@@ -12,9 +12,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
    return {
       props: {
-         data: data.testing[
-            query.testingPage !== undefined ? +query.testingPage - 1 : 0
-         ],
+         data: data.testing[query.testingPage !== undefined ? +query.testingPage - 1 : 0],
       },
    };
 };
@@ -112,6 +110,8 @@ const TestingPage = ({ data }: any) => {
                            <Image
                               className="w-7 h-7 max-md:h-6 max-md:w-6"
                               src="/icons/time.svg"
+                              width={10}
+                              height={10}
                               alt=""
                            />
                            <p className="text-white text-3xl max-3xl:text-2xl max-md:text-xl font-medium">
@@ -128,6 +128,8 @@ const TestingPage = ({ data }: any) => {
                               <Image
                                  className="w-7 h-7 max-md:h-5 max-md:w-5"
                                  src="/icons/Square-Down-left.svg"
+                                 width={10}
+                                 height={10}
                                  alt=""
                               />
                            </button>
@@ -137,6 +139,8 @@ const TestingPage = ({ data }: any) => {
                                  className="w-10 h-10"
                                  src="/icons/time.svg"
                                  alt=""
+                                 width={10}
+                                 height={10}
                               />
                               <p className="text-white text-4xl font-medium">
                                  <Timer
@@ -155,6 +159,8 @@ const TestingPage = ({ data }: any) => {
                                  className="w-7 h-7 max-md:h-5 max-md:w-5"
                                  src="/icons/Arrow-Right.svg"
                                  alt=""
+                                 width={10}
+                                 height={10}
                               />
                            </button>
                         </div>
