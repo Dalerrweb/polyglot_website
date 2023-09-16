@@ -170,7 +170,7 @@ const Tests: React.FC<TestsProps> = () => {
                                           r="62"
                                           fill="white"
                                           stroke="#C4C4C4"
-                                          stroke-width="10"
+                                          strokeWidth="10"
                                        />
                                        <path
                                           d="M86.0001 67L57.5001 83.4545L57.5001 50.5455L86.0001 67Z"

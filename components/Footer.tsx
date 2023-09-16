@@ -45,7 +45,7 @@ const Footer: React.FC<FooterProps> = () => {
                   </div>
                </div>
 
-               <div className="max-lg:hidden w-60 max-2xl:w-44 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
+               <div className="max-lg:hidden w-60 max-2xl:w-40 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
                   <Image
                      src={"/images/parrot.png"}
                      width={1000}
@@ -54,7 +54,7 @@ const Footer: React.FC<FooterProps> = () => {
                   />
                </div>
 
-               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[400px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] xl:absolute xl:top-1/2 xl:right-[3%] xl:-translate-x-[3%] xl:-translate-y-[64%] shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
+               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[400px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] xl:absolute xl:top-1/2 xl:right-[3%] xl:-translate-x-[3%] xl:-translate-y-[68%] shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
                   <div className="mb-1">
                      <h3 className="text-[32px] max-xl:text-[24px] max-sm:text-[20px] max-[420px]:text-sm max-md:mb-2 font-semibold text-blue">
                         Бесплатная консультация
@@ -141,17 +141,27 @@ const Footer: React.FC<FooterProps> = () => {
                      </h3>
                      <div className="w-fit flex gap-5">
                         <Link href={"#"} className="p-2 rounded-full bg-white">
-                           ww
+                           <Image
+                              src={"/images/icons/facebook.png"}
+                              width={29}
+                              height={29}
+                              alt="facebook"
+                           />
                         </Link>
                         <Link href={"#"} className="p-2 rounded-full bg-white">
-                           ww
+                           <Image
+                              src={"/images/icons/Instagram.png"}
+                              width={31}
+                              height={31}
+                              alt="facebook"
+                           />
                         </Link>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-         <div className="min-h-[555px] max-2xl:min-h-[400px] max-xl:min-h-[700px] max-sm:min-h-[1100px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-md:rounded-t-[50px] bg-blue"></div>
+         <div className="min-h-[555px] max-2xl:min-h-[400px] max-xl:min-h-[600px] max-sm:min-h-[1100px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-md:rounded-t-[50px] bg-blue"></div>
       </footer>
    );
 };

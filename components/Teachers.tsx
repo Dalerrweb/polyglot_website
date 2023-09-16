@@ -87,24 +87,25 @@ const Teacher: React.FC<TeacherProps> = () => {
          </div>
 
          <Swiper
-            className="max-md:min-h-[350px]"
+            className=""
             spaceBetween={20}
             slidesPerView={2}
             breakpoints={{
                1536: {
                   slidesPerView: 4,
+                  spaceBetween: 35,
                },
                1280: {
                   slidesPerView: 3,
-                  spaceBetween: 40,
+                  spaceBetween: 20,
                },
             }}
          >
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide className="" key={item}>
-                     <div className="max-md:min-h-[350px] relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] bg-orange">
-                        <div className="max-2xl:h-[680px]">
+                     <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] bg-orange">
+                        <div className="max-2xl:h-[600px] max-2xl:px-8 max-lg:p-0 max-lg:h-full">
                            <Image
                               className="bg-cover"
                               src={"/images/daler-teacher.png"}
@@ -116,20 +117,20 @@ const Teacher: React.FC<TeacherProps> = () => {
 
                         <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                            <div className="">
-                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]    max-sm:leading-[18.431px] font-bold text-white">
+                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
                                  Шарифкулов Далер
                               </p>
-                              <p className="max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-3 max-3xl:mt-2 max-sm:mt-1 text-white">
+                              <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
                                  Преподаватель по Английскому Языку
                               </p>
                            </div>
-                           <div className="flex items-center justify-between mt-5 max-3xl:mt-3 max-sm:mt-1 text-white">
-                              <p className="relative z-10 text-[36px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
+                           <div className="flex items-center justify-between mt-3 max-2xl:mt-2 text-white">
+                              <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
                                  <svg
-                                    className="max-3xl:w-[140px] max-xl:w-[105px] max-md:w-[78px] max-md:h-[45px] absolute -top-2 max-md:-top-[17px] -left-2 max-md:-left-1 z-[-1]"
+                                    className="w-full h-full absolute -top-0 -left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="175"
-                                    height="44"
+                                    // width="170"
+                                    // height="44"
                                     viewBox="0 0 182 44"
                                     fill="none"
                                  >
