@@ -68,7 +68,7 @@ const TestingPage = ({ data }: any) => {
                       <h2 className="w-1/3 max-3xl:w-1/2 max-md:w-full max-md:text-center">
                         Пройдите мини-тест на уровень владения языком
                       </h2>
-                      <h3>Английский</h3>
+                      <h3>{data.title}</h3>
                     </div>
         
                     <div className="mt-5 max-lg:mt-4 max-md:mt-3 max-sm:mt-2 flex flex-col gap-3 max-xl:gap-2 max-md:gap-1">

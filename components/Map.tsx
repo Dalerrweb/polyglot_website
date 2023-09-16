@@ -28,7 +28,7 @@ const Map: React.FC<MapProps> = () => {
                         viewBox="0 0 26 37"
                         fill="none"
                      >
-                        <g clip-path="url(#clip0_28_1251)">
+                        <g clipPath="url(#clip0_28_1251)">
                            <path
                               d="M16.9578 0.615268C15.7183 0.223734 14.3662 0 12.9859 0C9.0141 0 5.43663 1.78987 3.04227 4.61451L9.18311 9.73243L16.9578 0.615268Z"
                               fill="#1A73E8"

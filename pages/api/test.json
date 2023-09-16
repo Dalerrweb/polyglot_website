@@ -2,7 +2,7 @@
     "testing":[
         {
             "id":1,
-            "time":4000,
+            "time":3600000,
             "title":"A1 level",
             "test":[
                 {
