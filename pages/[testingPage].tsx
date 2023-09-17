@@ -2,7 +2,8 @@ import Timer from "../components/Timer";
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import ModalContext from "@/context/ModalContext";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
@@ -18,17 +19,25 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 let Ansvers_list: any = [];
 
 const TestingPage = ({ data }: any) => {
+   // window.onbeforeunload = e => e.returnValue;
+   // window.onpopstate = e=> confirm("?") 
    const [testNumber, setTestNumber] = useState(0);
    const [test, setTest] = useState(data.test[testNumber]);
    const [testAnsver, setTestAnsver] = useState(false);
    const [inputСheck, setInputСheck] = useState<any>();
 
+   const [nextButton, setNextButton] = useState<boolean>(false);
+
    
    const [endTest, setEndTest] = useState(false);
+
+   const {modalOpen, modalTestID, infoStudent} = useContext(ModalContext)
    
 
    const handleSubmit = (e: any) => {
       e.preventDefault();
+
+      setNextButton(false)
 
       if (testNumber + 1 === data.test.length) {
          setEndTest(true);
@@ -85,7 +94,7 @@ const TestingPage = ({ data }: any) => {
                               >
                                     <input
                                        onChange={(e) => {
-                                          //   setTestId(item.id);
+                                          setNextButton(true)
                                           setTestAnsver(item.examination);
                                           setInputСheck(e.target);
                                        }}
@@ -128,9 +137,9 @@ const TestingPage = ({ data }: any) => {
                               />
                            </button>
 
-                           <div className="flex items-center gap-5 max-lg:hidden">
+                           <div className="flex min-w-[250px] items-center gap-5 max-lg:hidden">
                               <Image
-                                 className="w-10 h-10"
+                                 className="w-10 h-10 animate-spin animate-infinite animate-duration-[2000ms] animate-ease-out animate-normal"
                                  src="/icons/time.svg"
                                  alt=""
                                  width={10}
@@ -144,19 +153,40 @@ const TestingPage = ({ data }: any) => {
                               </p>
                            </div>
 
-                           <button
-                              type="submit"
-                              className="flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
-                           >
-                              Дальше
-                              <Image
-                                 className="w-7 h-7 max-md:h-5 max-md:w-5"
-                                 src="/icons/Arrow-Right.svg"
-                                 alt=""
-                                 width={10}
-                                 height={10}
-                              />
-                           </button>
+                           {
+                              nextButton?(
+                                 <button
+                                    type="submit"
+                                    className=" flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                                 >
+                                    Дальше
+                                    <Image
+                                       className="w-7 h-7 max-md:h-5 max-md:w-5"
+                                       src="/icons/Arrow-Right.svg"
+                                       alt=""
+                                       width={10}
+                                       height={10}
+                                    />
+                                 </button>
+                              ):
+                              (
+                                 <button
+                                    title="Выберите вариант"
+                                    type="submit"
+                                    className="flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                                 >
+                                    Дальше
+                                    <Image
+                                       className="w-7 h-7 max-md:h-5 max-md:w-5"
+                                       src="/icons/Arrow-Right.svg"
+                                       alt=""
+                                       width={10}
+                                       height={10}
+                                    />
+                                 </button>
+                              )
+                           }
+                           
                         </div>
                      </form>
                   </>

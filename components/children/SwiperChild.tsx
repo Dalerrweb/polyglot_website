@@ -1,12 +1,12 @@
-import Link from "next/link";
-import { useState } from "react";
-import Modal from "../Modal";
+import ModalContext from "@/context/ModalContext";
+import { useContext} from "react";
 
 interface SwiperChild {
   item: number;
 }
 
 const SwiperChild: React.FC<SwiperChild> = ({ item }) => {
+	const {changeModal, setModalTestID} = useContext(ModalContext)
 
   return (
     <>
@@ -59,34 +59,33 @@ const SwiperChild: React.FC<SwiperChild> = ({ item }) => {
               </p>
             </div>
             <div className="">
-                <div>
-                    <svg
-                    className="max-3xl:w-[80px] max-lg:h-[80px]"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="134"
-                    height="134"
-                    viewBox="0 0 134 134"
-                    fill="none"
-                    >
-                    <circle
-                        cx="67"
-                        cy="67"
-                        r="62"
-                        fill="white"
-                        stroke="#C4C4C4"
-                        strokeWidth="10"
-                    />
-                    <path
-                        d="M86.0001 67L57.5001 83.4545L57.5001 50.5455L86.0001 67Z"
-                        fill="#21209C"
-                    />
-                    </svg>
-                </div>
+              <div onClick={() => {changeModal(true), setModalTestID(item +1)}} >
+                <svg
+                  className="max-3xl:w-[80px] max-lg:h-[80px]"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="134"
+                  height="134"
+                  viewBox="0 0 134 134"
+                  fill="none"
+                >
+                  <circle
+                    cx="67"
+                    cy="67"
+                    r="62"
+                    fill="white"
+                    stroke="#C4C4C4"
+                    strokeWidth="10"
+                  />
+                  <path
+                    d="M86.0001 67L57.5001 83.4545L57.5001 50.5455L86.0001 67Z"
+                    fill="#21209C"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
     </>
   );
 };
