@@ -36,28 +36,28 @@ const Header: React.FC<HeaderProps> = () => {
 		modalOpen ? (
 			<>
 			    <div className="fixed top-0 left-0 z-[55] w-screen h-screen backdrop-blur-sm bg-black/75"></div>
-                <div className="w-1/2 p-10 rounded-2xl fixed top-1/2 left-1/2 z-[60] -translate-x-1/2 -translate-y-1/2 bg-orange text-center">
-	    	    <IoClose onClick={()=> changeModal(false)} size={40} className="text-white absolute top-5 right-5 cursor-pointer"/>
-                  <p className="text_size font-bold text-blue mb-5 text-center w-1/2 m-auto">Заполните форму, чтобы начать тестирование</p>
-                  <form onSubmit={ModalSubmit} className="flex flex-col justify-center items-center gap-5">
-	    	    	<input
-                        type="text"
-	    	    		required
-						name="name"
-                        placeholder="Имя"
-                        className="text-[24px] focus:border-blue max-xl:text-[20px] px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
-                      />
-	    	    	<input
-                        type="number"
-						name="number"
-	    	    	    required
-                        placeholder="+998 90 123 45 67"
-                        className="text-[24px] focus:border-blue max-xl:text-[20px] px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
-                      />
-	    	    	<button type="submit" className="w-1/2 py-4 max-3xl:py-3 font-medium rounded-md bg-blue text-white">
-	    	    	    Начинать
-	    	    	</button>
-                  </form>
+                <div className="w-1/2 max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] p-10 max-md:p-5 rounded-2xl fixed top-1/2 left-1/2 z-[60] -translate-x-1/2 -translate-y-1/2 bg-orange text-center">
+	    	        <IoClose onClick={()=> changeModal(false)} size={40} className="text-white absolute top-5 right-5 max-md:top-2 max-md:right-2 cursor-pointer"/>
+                    <p className="text-2xl max-md:text-lg font-bold text-blue mb-5 text-center m-auto">Заполните форму!</p>
+                    <form onSubmit={ModalSubmit} className="flex flex-col justify-center items-center gap-5">
+	    	    	    <input
+                            type="text"
+	    	    	    	required
+					    	name="name"
+                            placeholder="Имя"
+                            className="small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                            />
+	    	    	    <input
+                            type="number"
+					    	name="number"
+	    	    	        required
+                            placeholder="+998 90 123 45 67"
+                            className="small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                            />
+	    	    	    <button type="submit" className="w-1/2 text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white">
+	    	    	        Начинать
+	    	    	    </button>
+                    </form>
                 </div>
 			</>
 		):null
