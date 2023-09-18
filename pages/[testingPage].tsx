@@ -6,7 +6,7 @@ import ModalContext from "@/context/ModalContext";
 import Timer from "@/components/Timer";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-   let res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/test`);
+   let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
    let data = await res.json();
 
    return {
