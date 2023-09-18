@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -5,8 +6,18 @@ import "swiper/css";
 interface CoursesProps {}
 
 const Courses: React.FC<CoursesProps> = () => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
+
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
+
    return (
-      <div className="custom-container">
+      <div className="custom-container" id="courses">
          <div className="mb-9 mt-20 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
@@ -14,7 +25,10 @@ const Courses: React.FC<CoursesProps> = () => {
                </h2>
             </div>
             <div className="flex gap-3 items-center">
-               <button className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={prevHandler}
+                  className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -40,7 +54,10 @@ const Courses: React.FC<CoursesProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -70,20 +87,22 @@ const Courses: React.FC<CoursesProps> = () => {
          </div>
 
          <Swiper
+            className="swiper-hidden"
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={3}
             breakpoints={{
                1536: {
                   spaceBetween: 30,
-               },
-               1920: {
-                  slidesPerView: 3,
                },
                1280: {
                   slidesPerView: 3,
                },
                768: {
                   slidesPerView: 2,
+               },
+               0: {
+                  slidesPerView: 1,
                },
             }}
          >

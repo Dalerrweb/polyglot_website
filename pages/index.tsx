@@ -22,20 +22,20 @@ export default function Home() {
          <section>
             <Entry />
          </section>
-         <section>
+         <section className="overflow-hidden">
             <Courses />
          </section>
-         <section>
+         <section className="overflow-hidden">
             <Tests />
          </section>
-         <section>
+         <section className="overflow-hidden">
             <Students />
          </section>
          <section>
             <Support />
          </section>
          <section>
-            <div className="bg-orange">
+            <div id="about" className="bg-orange">
                <div className="custom-container flex items-center justify-between py-[40px] max-2xl:py-[30px]">
                   <div className="">
                      <Image
@@ -83,23 +83,141 @@ export default function Home() {
                </div>
             </div>
 
-            <div className="bg-blue">
-               <div className="grid grid-cols-4 gap-4">
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
-                  <div className="h-[400px] rounded-2xl bg-[gray]"></div>
+            <div className="w-full flex flex-col py-20 max-2xl:py-10 gap-10 max-xl:gap-3 bg-blue">
+               <div className="marquee-infinite">
+                  <div className="">
+                     <span className="gap-10 max-xl:gap-3">
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                     </span>
+                     <span className="gap-5 max-xl:gap-3">
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                     </span>
+                  </div>
+               </div>
+               <div className="marquee-infinite -rotate-180">
+                  <div className="">
+                     <span className="rotate-180">
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                     </span>
+                     <span className="rotate-180">
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                        <Image
+                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
+                           src={""}
+                           width={1000}
+                           height={1000}
+                           alt="photo"
+                        />
+                     </span>
+                  </div>
                </div>
             </div>
          </section>
          <section>
             <Info />
          </section>
-         <section>
+         <section className="overflow-hidden">
             <Teacher />
          </section>
          <section>

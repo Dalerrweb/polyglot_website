@@ -1,9 +1,20 @@
+import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TeacherProps {}
 
 const Teacher: React.FC<TeacherProps> = () => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
+
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
+
    return (
       <div className="custom-container">
          <div className="flex max-md:flex-col justify-between items-start mt-24">
@@ -24,14 +35,20 @@ const Teacher: React.FC<TeacherProps> = () => {
             </div>
          </div>
 
-         <div className="mt-14 mb-7 flex items-center justify-between">
+         <div
+            id="teacher"
+            className="mt-14 mb-7 flex items-center justify-between"
+         >
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[28px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
                   Преподаватели
                </h2>
             </div>
             <div className="flex gap-3 max-sm:gap-1 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={prevHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -57,7 +74,10 @@ const Teacher: React.FC<TeacherProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -89,15 +109,19 @@ const Teacher: React.FC<TeacherProps> = () => {
          <Swiper
             className=""
             spaceBetween={20}
-            slidesPerView={2}
+            slidesPerView={4}
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             breakpoints={{
                1536: {
                   slidesPerView: 4,
                   spaceBetween: 35,
                },
-               1280: {
+               1024: {
                   slidesPerView: 3,
                   spaceBetween: 20,
+               },
+               0: {
+                  slidesPerView: 2, 
                },
             }}
          >
@@ -115,17 +139,17 @@ const Teacher: React.FC<TeacherProps> = () => {
                            />
                         </div>
 
-                        <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                        <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                            <div className="">
-                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px] max-sm:leading-[18.431px] font-bold text-white">
                                  Шарифкулов Далер
                               </p>
                               <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
                                  Преподаватель по Английскому Языку
                               </p>
                            </div>
-                           <div className="flex items-center justify-between mt-3 max-2xl:mt-2 text-white">
-                              <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[10.012px] font-bold">
+                           <div className="flex items-center justify-between mt-3 max-2xl:mt-2 max-sm:mt-0 text-white">
+                              <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[0px] font-bold">
                                  <svg
                                     className="w-full h-full absolute -top-0 -left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -142,10 +166,10 @@ const Teacher: React.FC<TeacherProps> = () => {
                                  IELTS 7.5
                               </p>
 
-                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px]">
+                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px] max-md:leading-[0px]">
                                  Подробнее
                                  <svg
-                                    className="max-md:w-4 "
+                                    className="max-md:w-4 max-sm:w-2 max-md:h-2"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="26"
                                     height="25"

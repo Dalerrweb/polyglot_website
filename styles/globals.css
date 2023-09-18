@@ -31,6 +31,7 @@
    font-size: 20px;
    font-family: sans;
    font-weight: 300;
+   scroll-behavior: smooth;
 }
 
 ul,
@@ -109,4 +110,69 @@ h1 {
 
 .course-btn:nth-child(1) {
    background-color: #21209c;
+}
+
+/* =========== marquee ============= */
+
+.marquee-infinite {
+   width: 100%;
+   overflow: hidden;
+   margin: auto;
+}
+
+.marquee-infinite div {
+   width: 200%;
+   overflow: hidden;
+   display: flex;
+   gap: 40px;
+   justify-content: space-around;
+   animation: marquee 15s linear infinite;
+}
+
+.marquee-infinite:nth-child(2) div {
+   animation: marquee-right 15s linear infinite;
+}
+
+.marquee-infinite span {
+   width: 100%;
+   display: flex;
+   gap: 40px;
+   justify-content: space-around;
+}
+
+.marquee-infinite:hover div {
+   animation-play-state: paused;
+}
+
+@keyframes marquee {
+   0% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes marquee-right {
+   0% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes marquee-top {
+   0% {
+      transform: translateY(0%);
+   }
+   100% {
+      transform: translateY(-50%);
+   }
+}
+
+/* =========================================== */
+
+.swiper-visible {
+   overflow: visible !important;
 }

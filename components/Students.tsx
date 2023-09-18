@@ -1,9 +1,23 @@
+import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
 
 interface StudentsProps {}
 
 const Students: React.FC<StudentsProps> = () => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
+
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
+
    return (
       <div className="custom-container">
          <div className="mt-14 mb-7 flex items-center justify-between">
@@ -12,8 +26,11 @@ const Students: React.FC<StudentsProps> = () => {
                   Наши студенты
                </h2>
             </div>
-            <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+            <div className="flex gap-3 items-center relative">
+               <button
+                  onClick={prevHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -39,7 +56,10 @@ const Students: React.FC<StudentsProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -69,8 +89,10 @@ const Students: React.FC<StudentsProps> = () => {
          </div>
 
          <Swiper
+            className="swiper-visible"
             spaceBetween={20}
             slidesPerView={1}
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             breakpoints={{
                1536: {
                   spaceBetween: 35,

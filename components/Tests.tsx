@@ -1,11 +1,22 @@
+import { useState } from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 interface TestsProps {}
 
 const Tests: React.FC<TestsProps> = () => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
+
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
+
    return (
-      <div className="custom-container">
+      <div className="custom-container ">
          <div className="flex max-lg:flex-col justify-between items-start max-xl:gap-5 mt-24 max-lg:mt-16 max-md:mt-11">
             <div className="max-w-[745px] max-xl:w-1/2 max-lg:w-full">
                <h2 className="text-[64px] max-3xl:text-[48px] max-2xl:text-[40px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-md:leading-[34.778px] text-blue">
@@ -23,14 +34,20 @@ const Tests: React.FC<TestsProps> = () => {
             </div>
          </div>
 
-         <div className="mt-14 mb-7 flex items-center justify-between">
+         <div
+            id="tests"
+            className="mt-14 mb-7 flex items-center justify-between"
+         >
             <div className="">
-               <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
+               <h2 className="text-[96px] max-2x   l:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
                   Тесты
                </h2>
             </div>
             <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={prevHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -56,7 +73,10 @@ const Tests: React.FC<TestsProps> = () => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -86,6 +106,8 @@ const Tests: React.FC<TestsProps> = () => {
          </div>
 
          <Swiper
+            className="swiper-visible"
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             spaceBetween={20}
             slidesPerView={1}
             breakpoints={{
@@ -157,29 +179,29 @@ const Tests: React.FC<TestsProps> = () => {
                               </div>
                               <div className="">
                                  <Link href={`/${item + 1}`}>
-                                 <button>
-                                    <svg
-                                       className="max-3xl:w-[80px] max-lg:h-[80px]"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       width="134"
-                                       height="134"
-                                       viewBox="0 0 134 134"
-                                       fill="none"
-                                    >
-                                       <circle
-                                          cx="67"
-                                          cy="67"
-                                          r="62"
-                                          fill="white"
-                                          stroke="#C4C4C4"
-                                          strokeWidth="10"
-                                       />
-                                       <path
-                                          d="M86.0001 67L57.5001 83.4545L57.5001 50.5455L86.0001 67Z"
-                                          fill="#21209C"
-                                       />
-                                    </svg>
-                                 </button>
+                                    <button>
+                                       <svg
+                                          className="max-3xl:w-[80px] max-lg:h-[80px]"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width="134"
+                                          height="134"
+                                          viewBox="0 0 134 134"
+                                          fill="none"
+                                       >
+                                          <circle
+                                             cx="67"
+                                             cy="67"
+                                             r="62"
+                                             fill="white"
+                                             stroke="#C4C4C4"
+                                             strokeWidth="10"
+                                          />
+                                          <path
+                                             d="M86.0001 67L57.5001 83.4545L57.5001 50.5455L86.0001 67Z"
+                                             fill="#21209C"
+                                          />
+                                       </svg>
+                                    </button>
                                  </Link>
                               </div>
                            </div>
