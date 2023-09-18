@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 
-const Timer:any = ({time , setEndTest}:any) => {
+const Timer = ({time , setEndTest}:any) => {
     const timer = Date.now() + time;
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
