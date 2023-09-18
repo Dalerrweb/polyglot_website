@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext, useState } from "react";
 import ModalContext from "@/context/ModalContext";
-import Timer from "@/components/Timer";
+import Timer from "@/components/CustomTimer";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
