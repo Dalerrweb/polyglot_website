@@ -10,10 +10,20 @@ import Image from "next/image";
 import Info from "@/components/Info";
 import Map from "@/components/Map";
 import Layout from "@/layout/Layout";
+import { useContext } from "react";
+import TranslateContext from "@/context/useTranslate";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
+
+
 export default function Home() {
+   
+   let translation = useContext(TranslateContext)
+   console.log(translation);
+
+
    return (
       <Layout>
          <section>

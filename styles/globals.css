@@ -69,7 +69,8 @@ li {
 }
 
 .blue_div {
-   @apply bg-blue
+   @apply 
+   bg-blue
    w-[80%]
    max-lg:w-[85%]
    max-sm:w-[90%]
@@ -88,6 +89,7 @@ li {
 
 .text_size {
    @apply text-3xl max-2xl:text-xl max-xl:text-lg max-lg:text-base max-md:text-sm;
+
 }
 
 .small_text_size {

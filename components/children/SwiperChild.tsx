@@ -59,7 +59,7 @@ const SwiperChild: React.FC<SwiperChild> = ({ item }) => {
               </p>
             </div>
             <div className="">
-              <div onClick={() => {changeModal(true), setModalTestID(item +1)}} >
+              <div className="cursor-pointer" onClick={() => {changeModal(true), setModalTestID(item +1)}} >
                 <svg
                   className="max-3xl:w-[80px] max-lg:h-[80px]"
                   xmlns="http://www.w3.org/2000/svg"
