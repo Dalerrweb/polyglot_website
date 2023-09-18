@@ -55,7 +55,7 @@ const Header: React.FC<HeaderProps> = () => {
                             className="small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                             />
 	    	    	    <button type="submit" className="w-1/2 text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white">
-	    	    	        Начинать
+	    	    	        Начать
 	    	    	    </button>
                     </form>
                 </div>

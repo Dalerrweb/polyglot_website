@@ -6,7 +6,7 @@ import ModalContext from "@/context/ModalContext";
 import Timer from "@/components/Timer";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
-   let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
+   let res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/test`);
    let data = await res.json();
 
    return {
@@ -109,18 +109,16 @@ const TestingPage = ({ data }: any) => {
                            ))}
                         </div>
 
-                        <div className="flex max-[380px]:flex-col max-[380px]:gap-2 max-lg:gap-6 items-center justify-between mt-10 max-2xl:mt-5 max-lg:mt-4 max-md:mt-3 max-sm:mt-2">
-                           
-
+                        <div className="flex max-sm:flex-col max-[380px]:gap-2 max-lg:gap-6 items-center justify-between max-sm:justify-center mt-10 max-2xl:mt-5 max-lg:mt-4 max-md:mt-3">
                            <div className="flex min-w-[250px] items-center gap-5">
                               <Image
-                                 className="w-10 h-10 animate-spin animate-infinite animate-duration-[2000ms] animate-ease-out animate-normal"
+                                 className="w-10 h-10 max-sm:h-7 max-sm:w-7 animate-spin animate-infinite animate-duration-[2000ms] animate-ease-out animate-normal"
                                  src="/icons/time.svg"
                                  alt=""
                                  width={10}
                                  height={10}
                               />
-                              <p className="text-white text-4xl font-medium">
+                              <p className="text-white text-4xl max-sm:text-3xl font-medium">
                                  <Timer
                                     time={data.time}
                                     setEndTest={setEndTest}
@@ -132,7 +130,7 @@ const TestingPage = ({ data }: any) => {
                               nextButton?(
                                  <button
                                     type="submit"
-                                    className=" flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                                    className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
                                  >
                                     Дальше
                                     <Image
@@ -148,7 +146,7 @@ const TestingPage = ({ data }: any) => {
                                  <button
                                     title="Выберите вариант"
                                     type="submit"
-                                    className="flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                                    className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
                                  >
                                     Дальше
                                     <Image
