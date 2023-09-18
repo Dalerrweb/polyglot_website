@@ -19,10 +19,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export default function Home() {
-   
-   let translation = useContext(TranslateContext)
-   console.log(translation);
 
+   let translation = useContext(TranslateContext)
 
    return (
       <Layout>
