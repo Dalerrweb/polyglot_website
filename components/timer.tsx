@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const Timer:any = ({time , setEndTest}:any) => {
     const timer = Date.now() + time;
