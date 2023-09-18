@@ -1,13 +1,18 @@
-import { useCallback, useEffect, useState } from "react";
+import { Dispatch, SetStateAction, useCallback, useEffect, useState } from "react";
 
-const Timer = ({time , setEndTest}:any) => {
+interface TimerProps {
+    time: number,
+    setEndTest: Dispatch<SetStateAction<boolean>>
+}
+
+const Timer:React.FC<TimerProps> = ({time , setEndTest}) => {
     const timer = Date.now() + time;
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
     useEffect(()=>{
-        if (hours === -1) {
+        if (hours == -1) {
             setEndTest(true)
         } 
     }, [hours])  
@@ -43,4 +48,4 @@ const Timer = ({time , setEndTest}:any) => {
 
 }
 
-export default Timer
+export default Timer;
