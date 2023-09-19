@@ -31,6 +31,7 @@
    font-size: 20px;
    font-family: sans;
    font-weight: 300;
+   scroll-behavior: smooth;
    outline: none;
 }
 
@@ -69,8 +70,7 @@ li {
 }
 
 .blue_div {
-   @apply 
-   bg-blue
+   @apply bg-blue
    w-[80%]
    max-lg:w-[85%]
    max-sm:w-[90%]
@@ -89,7 +89,6 @@ li {
 
 .text_size {
    @apply text-3xl max-2xl:text-xl max-xl:text-lg max-lg:text-base max-md:text-sm;
-
 }
 
 .small_text_size {
@@ -112,4 +111,75 @@ h1 {
 
 .course-btn:nth-child(1) {
    background-color: #21209c;
+}
+
+/* =========== marquee ============= */
+
+.marquee-infinite {
+   width: 100%;
+   overflow: hidden;
+   margin: auto;
+}
+
+.marquee-infinite div {
+   width: 200%;
+   overflow: hidden;
+   display: flex;
+   justify-content: space-around;
+   animation: marquee 15s linear infinite;
+}
+
+.marquee-infinite:nth-child(2) div {
+   animation: marquee-right 15s linear infinite;
+}
+
+.marquee-infinite span {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+
+.marquee-infinite:hover div {
+   animation-play-state: paused;
+}
+
+@keyframes marquee {
+   0% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes marquee-right {
+   0% {
+      transform: translateX(0%);
+   }
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
+@keyframes marquee-top {
+   0% {
+      transform: translateY(0%);
+   }
+   100% {
+      transform: translateY(-50%);
+   }
+}
+
+/* =========================================== */
+
+.swiper-wrapper {
+   padding: 15px 0 !important;
+}
+
+.swiper-visible {
+   overflow: visible !important;
+}
+
+.ant-select-selection-item {
+   align-self: stretch !important;
 }

@@ -4,14 +4,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperChild from "./children/SwiperChild";
 
 interface TestsProps {
-   translation:any
+   translation: any;
 }
 
+const Tests: React.FC<TestsProps> = ({ translation }) => {
+   // const Tests: React.FC<TestsProps> = () => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
 
-const Tests: React.FC<TestsProps> = ({translation}) => {
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
 
    return (
-      <div className="custom-container">
+      <div className="custom-container ">
          <div className="flex max-lg:flex-col justify-between items-start max-xl:gap-5 mt-24 max-lg:mt-16 max-md:mt-11">
             <div className="max-w-[745px] max-xl:w-1/2 max-lg:w-full">
                <h2 className="text-[64px] max-3xl:text-[48px] max-2xl:text-[40px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-md:leading-[34.778px] text-blue">
@@ -28,14 +37,20 @@ const Tests: React.FC<TestsProps> = ({translation}) => {
             </div>
          </div>
 
-         <div className="mt-14 mb-7 flex items-center justify-between">
+         <div
+            id="tests"
+            className="mt-14 mb-7 flex items-center justify-between"
+         >
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
                   {translation?.tests}
                </h2>
             </div>
             <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={prevHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -61,7 +76,10 @@ const Tests: React.FC<TestsProps> = ({translation}) => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -91,8 +109,10 @@ const Tests: React.FC<TestsProps> = ({translation}) => {
          </div>
 
          <Swiper
+            className="swiper-visible"
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={3}
             breakpoints={{
                1536: {
                   spaceBetween: 35,
@@ -106,12 +126,15 @@ const Tests: React.FC<TestsProps> = ({translation}) => {
                768: {
                   slidesPerView: 2,
                },
+               0: {
+                  slidesPerView: 1,
+               },
             }}
          >
             {[0, 1].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <SwiperChild translation={translation?.test}  item={item}/>
+                     <SwiperChild translation={translation?.test} item={item} />
                   </SwiperSlide>
                );
             })}

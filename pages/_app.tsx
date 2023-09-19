@@ -11,32 +11,27 @@ import { useState } from "react";
 
 
 export default function App({ Component, pageProps }: AppProps) {
-
-
     const [modalOpen, setModalOpen] = useState<boolean>(false)
     const [modalTestID, setModalTestID] = useState<number>(0)
 
     const [loading, setLoading] = useState(false);
 
-    
-
-    Router.events.on("routeChangeStart", () => {
+   Router.events.on("routeChangeStart", () => {
       setLoading(true);
     });
 
     Router.events.on("routeChangeComplete", () => {
       setLoading(false);
-    });
+   });
 
+   const changeModal = (state: boolean) => {
+      setModalOpen(state);
+   };
 
-    const changeModal = (state:boolean) => {
-        setModalOpen(state)
-    }
+   const router = useRouter();
+   const { locale } = router;
 
-    const router = useRouter();
-    const { locale } = router;
-
-    const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
+   const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
 
 
   return (
