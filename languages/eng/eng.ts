@@ -1,92 +1,131 @@
 const eng = {
     header: {
-        catalog: "Catalog",
-        drivers: "For Drivers",
-        company: "About company",
-        orderBtn: "Order",
-        consult: 'Consultation'
+        courses: "Courses",
+        teachers: "Teachers",
+        tests: "Mini Tests",
+        aboutSchool: "About School",
+        application: "Leave an application"
     },
-    banner: {
-        rentText: "Rent the best cars",
-        text: "Discover the world of Uzbekistan with us!",
-        text2: "Trips to all regions",
-        
-        text3: "Tours in the mountains",
-        text4: "Transfer to the airport or railway station",
-        text5: "Tourist tours and excursions to the ancient cities of Uzbekistan: Samarkand, Khiva, Bukhara and Shakhrisabz",
-        orderBtn: "Order",
-        infoBtn: "More",
-        mainText: "Discover the world of",
-        world: 'Uzbekistan',
-        us: 'with us'
+    hero: {
+        text1: "Learning is light, not darkness!",
+        text2: "Learn everything you couldn't learn before!",
+        text3: "Master foreign languages at a native level!"
     },
-    cars: {
-        carsText: 'Our cars',
-        carsText2: "Choose whatever you like, our wide range of cars will always be to your liking!"
+    entry: {
+        text1: "Sign up for a free lesson",
+        buttonText: "Consult",
+        text2: "By clicking the button, I accept the terms of the privacy policy and user agreement"
     },
-    statistics: {
-        num: 'We are in numbers',
-        cars: 'Available number of cars',
-        rentedCars: 'Tourism services provided',
-        count: 'Number of counterparties'
+    courses: {
+        title: "Course Program",
+        course: {
+            info: "Master the basic level of English language up to level B1, all classes are conducted using a special teaching methodology developed by our specialists.",
+            text1: "Online consultation 24/7",
+            text2: "English up to level B1",
+            text3: "Offline format",
+            text4: "Advanced grammar",
+            learnTime: "Learning duration:",
+            mounth: "months",
+            price: "Price",
+            cumMounth: "sum/month",
+            application: "Leave an application",
+            details: "Details"
+        }
     },
-    questions: {
-        questionText: 'Frequent \n questions',
-        title: 'What are our services?',
-        title2: 'How do we provide car rental?',
-        titleText: 'Everything is very simple! Fill out a short form and within 12 hours we will contact you to provide detailed information',
-        questions: 'Do you have any more questions?',
-        questions2: 'Leave a request, and we will contact you to help you choose what interests you!'
+    tests: {
+        title1: "Still unsure about your language proficiency level?",
+        title2: "Let's check it!",
+        title2Child: "Take a mini-test and find out your level of proficiency in foreign languages",
+        tests: "Tests",
+        test: {
+            info: "Are you already familiar with the English language? Let's check. You will be given 20 questions within a certain time, and then you will be able to determine your level of English proficiency from A1 to C2",
+            time: "Allotted time",
+            min: "min",
+            quantity: "Number of questions",
+            question: "ques"
+        }
     },
-    modal: {
-        application: 'Submit your application',
-        placeholder: 'Your name',
-        btn: 'Send',
-        text: 'By clicking the "Submit" button, I give my consent to the processing and dissemination of personal data.',
-        phoneNumber: 'Phone number'
+    students: {
+        ourStudents: "Our Students",
+        student: {
+            name: "Daler Sharifkulov",
+            yearofLear: "year of learning",
+            about: "I was thinking which language to learn, English or French, but ended up learning HTML, CSS, JavaScript. Well, it turned out to be more fun to talk to computers."
+        }
     },
-    footer: {
-        menu: 'Меню',
-        company: 'Kompaniya',
-        rules: 'User Rules',
-        terms: 'Terms of use',
-        media: 'Social media'
+    support: {
+        text1: "We don't forget our graduates!",
+        text2: "After completing the course, our specialists are ready to provide any assistance, whether it's admission to a university or employment.",
+        text01: "Admission assistance",
     },
-    catalogPage: {
-        mainText: 'Car catalog',
-        linkText: 'Main page / Catalog',
-        btn: 'Search',
-        typeOfCar: 'Сar type',
-        notFoundText: "We didn't find what you were looking for"
+    about: {
+        title: "One of the leading language schools in Samarkand",
+        text2: "2 branches in the city center, over 1000 graduates have already mastered English, French, etc."
     },
-    productPage: {
-        parametres: 'Parametrs',
-        driver: 'Driver',
-        yesText: 'Yes',
-        noText: 'No',
-        baggage: 'Baggage',
-        passenger: 'Passenger seats',
-        fuel: 'Fuel consumption',
-        price: 'Price',
-        characteristic: 'Characteristics',
-        mainText: 'Engine and transmission',
-        description: 'Description',
-        Engine: 'Engine',
-        count: 'Number, arrangement of cylinders',
-        text: 'Displacement (cc)',
-        text2: 'Maximum power (hp at rpm)',
-        text3: 'Maximum torque (Nm at rpm)',
-        text4: 'Transmission type',
-        successText: 'SUCCESS',
-        successText2: 'Expect our call within 24 hours'
+    info: {
+        title1: "Innovative teaching methodology",
+        text1: "Home / Catalog",
+        title2: "Creating all the conveniences",
+        text2: "Our classrooms are equipped with all the necessary equipment for comfortable learning",
+        title3: "Conversation practice",
+        text3: "In addition to the main lessons, we conduct separate practical classes to develop conversational skills"
     },
-    errors: {
-        NameMsg: 'Name must be filled!',
-        NumMsg: 'Phone number must be filled!',
+    teacher: {
+        title1: "What professionals work with us and who will pave the way to your success",
+        title2: "It's time to meet them!",
+        p: "Our specialists not only love their work, but also improve themselves every day along with you",
+        h1: "Teachers",
+        teacher: {
+            name: "Daler Sharifkulov",
+            info: "English Language Teacher",
+            details: "More details"
+        }
     },
     map: {
-        adress: 'Our adress - Uzbekistan street 41'
+        title: "Where to find us",
+        text1: "Branches",
+        text2: "Main School",
+        text3: "Dagbitskaya Branch",
+        telText: "Contact Phone"
+    },
+    footer: {
+        title: "Leave an application",
+        text1: "If you have any questions",
+        text2: "we will help",
+        consult: "Our consultants will help you choose a course and tell you everything about the training program",
+        form: {
+            title: "Free Consultation",
+            consult: "Consult",
+            info: "By clicking the button, I accept the terms of the privacy policy and user agreement"
+        },
+        school: {
+            title: "School",
+            aboutUs: "About Us",
+            academicSupport: "Academic Support",
+            miniTest: "Mini Tests"
+        },
+        course: {
+            title: "Courses",
+            basicEnglish: "Basic English",
+            advancedEnglish: "Advanced English"
+        },
+        contact: {
+            title: "Contact",
+            address: "Samarkand, Dagbitskaya 8 Hilton Garden Inn"
+        },
+        social: "Social Media",
+    },
+    modalTestStart: {
+        title: "Fill out the form!",
+        button: "Start"
+    },
+    textPage: {
+        title: "Take a mini-test to determine your language proficiency level",
+        question: "Question",
+        next: "Next"
     }
+
 }
+
 
 export default eng;

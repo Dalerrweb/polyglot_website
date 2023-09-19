@@ -10,42 +10,48 @@ import { Router, useRouter } from "next/router";
 import { useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-    const [modalOpen, setModalOpen] = useState<boolean>(false)
-    const [modalTestID, setModalTestID] = useState<number>(0)
-    const [infoStudent, setInfoStudent] = useState<any>()
+   const [modalOpen, setModalOpen] = useState<boolean>(false);
+   const [modalTestID, setModalTestID] = useState<number>(0);
+   const [infoStudent, setInfoStudent] = useState<any>();
 
-  const [loading, setLoading] = useState(false);
+   const [loading, setLoading] = useState(false);
 
-    Router.events.on("routeChangeStart", () => {
+   Router.events.on("routeChangeStart", () => {
       setLoading(true);
-    });
-    Router.events.on("routeChangeComplete", () => {
+   });
+   Router.events.on("routeChangeComplete", () => {
       setLoading(false);
-    });
+   });
 
+   const changeModal = (state: boolean) => {
+      setModalOpen(state);
+   };
 
-    const changeModal = (state:boolean) => {
-        setModalOpen(state)
-    }
+   const router = useRouter();
+   const { locale } = router;
 
-    const router = useRouter();
-    const { locale } = router;
+   const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
 
-    const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
-
-
-  return (
-    <>
-        {
-            loading ? (<Preloader/>) :
-            (
-                <TranslateContext.Provider value={translation}>
-	                <ModalContext.Provider value={{modalOpen, changeModal, modalTestID, setModalTestID, infoStudent, setInfoStudent}} >
-                        <Component {...pageProps} />
-	    	        </ModalContext.Provider>
-                </TranslateContext.Provider>
-            )
-        }
-    </>   
-	)
+   return (
+      <>
+         {loading ? (
+            <Preloader />
+         ) : (
+            <TranslateContext.Provider value={translation}>
+               <ModalContext.Provider
+                  value={{
+                     modalOpen,
+                     changeModal,
+                     modalTestID,
+                     setModalTestID,
+                     infoStudent,
+                     setInfoStudent,
+                  }}
+               >
+                  <Component {...pageProps} />
+               </ModalContext.Provider>
+            </TranslateContext.Provider>
+         )}
+      </>
+   );
 }

@@ -2,9 +2,11 @@ import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-interface TeacherProps {}
+interface TeacherProps {
+   translation: any;
+}
 
-const Teacher: React.FC<TeacherProps> = () => {
+const Teacher: React.FC<TeacherProps> = ({ translation }) => {
    const [swiperRef, setSwiperRef] = useState<any>(null);
 
    const prevHandler = () => {
@@ -20,17 +22,15 @@ const Teacher: React.FC<TeacherProps> = () => {
          <div className="flex max-md:flex-col justify-between items-start mt-24">
             <div className="max-w-[745px] w-full">
                <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] text-blue">
-                  Какие профессионалы работают у нас, и кто проложит вам путь к
-                  успеху
+                  {translation?.title1}
                </h2>
             </div>
             <div className="max-w-[650px] w-full">
                <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] mb-4 max-md:my-4 text-orange">
-                  Самое время познакомиться!
+                  {translation?.title2}
                </h2>
                <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[22px] max-sm:text-[18px] leading-[45px] max-xl:leading-[30px] max-md:leading-[23.015px] text-orange">
-                  Наши специалисты не просто любят своё дело, но также вместе с
-                  вами совершенствуются с каждым днём
+                  {translation?.p}
                </p>
             </div>
          </div>
@@ -41,7 +41,7 @@ const Teacher: React.FC<TeacherProps> = () => {
          >
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[28px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
-                  Преподаватели
+                  {translation?.h1}
                </h2>
             </div>
             <div className="flex gap-3 max-sm:gap-1 items-center">
@@ -121,14 +121,14 @@ const Teacher: React.FC<TeacherProps> = () => {
                   spaceBetween: 20,
                },
                0: {
-                  slidesPerView: 2, 
+                  slidesPerView: 2,
                },
             }}
          >
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide className="" key={item}>
-                     <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] bg-orange">
+                     <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
                         <div className="max-2xl:h-[600px] max-2xl:px-8 max-lg:p-0 max-lg:h-full">
                            <Image
                               className="bg-cover"
@@ -139,13 +139,13 @@ const Teacher: React.FC<TeacherProps> = () => {
                            />
                         </div>
 
-                        <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                        <div className="w-full absolute -bottom-3 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                            <div className="">
-                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px] max-sm:leading-[18.431px] font-bold text-white">
-                                 Шарифкулов Далер
+                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                                 {translation?.teacher?.name}
                               </p>
                               <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                 Преподаватель по Английскому Языку
+                                 {translation?.teacher?.info}
                               </p>
                            </div>
                            <div className="flex items-center justify-between mt-3 max-2xl:mt-2 max-sm:mt-0 text-white">
@@ -153,8 +153,6 @@ const Teacher: React.FC<TeacherProps> = () => {
                                  <svg
                                     className="w-full h-full absolute -top-0 -left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
-                                    // width="170"
-                                    // height="44"
                                     viewBox="0 0 182 44"
                                     fill="none"
                                  >
@@ -166,8 +164,8 @@ const Teacher: React.FC<TeacherProps> = () => {
                                  IELTS 7.5
                               </p>
 
-                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px] max-md:leading-[0px]">
-                                 Подробнее
+                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px]">
+                                 {translation?.teacher?.details}
                                  <svg
                                     className="max-md:w-4 max-sm:w-2 max-md:h-2"
                                     xmlns="http://www.w3.org/2000/svg"
