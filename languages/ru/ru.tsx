@@ -124,6 +124,11 @@ const ru = {
         question:"Вопрос",
         next:"Дальше"
     },
+    endTest:{
+        title:"Поздравляем",
+        text:"Мы скоро свяжемся с вами!",
+        goToBack:"Вернуться назад"
+    }
 }
 
 export default ru;

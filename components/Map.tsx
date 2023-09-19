@@ -69,7 +69,7 @@ const Map: React.FC<MapProps> = ({translation}) => {
                         size={40}
                         color="#FF4433"
                         className="max-2xl:h-[30px]"
-                     />{" "}
+                     />
                      Яндекс
                   </button>
                </div>
@@ -78,14 +78,14 @@ const Map: React.FC<MapProps> = ({translation}) => {
                <div className="max-w-[350px] max-xl:max-w-[250px] w-full flex flex-col justify-between">
                   <div className="">
                      <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] text-white">
-                        {translation?.title1}
+                        {translation?.text1}
                      </p>
                      <ul className="mt-4">
                         <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer mb-1 text-white">
-                           {translation?.title2}
+                           {translation?.text2}
                         </li>
                         <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">
-                           {translation?.title3}
+                           {translation?.text3}
                         </li>
                      </ul>
                   </div>

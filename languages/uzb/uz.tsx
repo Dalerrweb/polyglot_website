@@ -78,7 +78,7 @@ const uz = {
         teacher:{
             name:"Sharifqulov Daler",
             info:"Ingliz tili o'qituvchisi",
-            details:"Batafsil ma'lumot"
+            details:"Batafsil"
         }
     },
     map: {
@@ -123,6 +123,11 @@ const uz = {
         title:"Til bilan tanishishning darajasini aniqlang",
         question:"Savol",
         next:"Keyingi"
+    },
+    endTest:{
+        title:"Tabriklaymiz",
+        text:"Tez orada siz bilan bog'lanamiz!",
+        goToBack:"Ortga qaytmoq"
     }
 }
 

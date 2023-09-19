@@ -9,16 +9,21 @@ import type { AppProps } from "next/app";
 import { Router, useRouter } from "next/router";
 import { useState } from "react";
 
+
 export default function App({ Component, pageProps }: AppProps) {
+
+
     const [modalOpen, setModalOpen] = useState<boolean>(false)
     const [modalTestID, setModalTestID] = useState<number>(0)
-    const [infoStudent, setInfoStudent] = useState<any>()
 
-  const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+    
 
     Router.events.on("routeChangeStart", () => {
       setLoading(true);
     });
+
     Router.events.on("routeChangeComplete", () => {
       setLoading(false);
     });
@@ -40,7 +45,7 @@ export default function App({ Component, pageProps }: AppProps) {
             loading ? (<Preloader/>) :
             (
                 <TranslateContext.Provider value={translation}>
-	                <ModalContext.Provider value={{modalOpen, changeModal, modalTestID, setModalTestID, infoStudent, setInfoStudent}} >
+	                <ModalContext.Provider value={{modalOpen, changeModal, modalTestID, setModalTestID}} >
                         <Component {...pageProps} />
 	    	        </ModalContext.Provider>
                 </TranslateContext.Provider>

@@ -1,10 +1,13 @@
 import { GetServerSideProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { useContext, useState } from "react";
-import ModalContext from "@/context/ModalContext";
+import { useContext, useEffect, useState } from "react";
 import Timer from "@/components/CustomTimer";
 import TranslateContext from "@/context/useTranslate";
+import { getCookie } from 'cookies-next';
+import axios from "axios";
+import { useRouter } from "next/router";
+
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
@@ -20,23 +23,28 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 let Ansvers_list: any = [];
 
 const TestingPage = ({ data }: any) => {
-   // window.onbeforeunload = e => e.returnValue;
-   // window.onpopstate = e=> confirm("?") 
+
+   // window.onbeforeunload = e => ();
+   // window.onpopstate
    const [testNumber, setTestNumber] = useState(0);
    const [test, setTest] = useState(data.test[testNumber]);
    const [testAnsver, setTestAnsver] = useState(false);
    const [inputСheck, setInputСheck] = useState<any>();
+   const [infoStudent, setInfoStudent] = useState<any>();
 
    const [nextButton, setNextButton] = useState<boolean>(false);
 
-   
    const [endTest, setEndTest] = useState(false);
 
-   const {modalOpen, modalTestID, infoStudent} = useContext(ModalContext)
-
+   const router = useRouter();
    const translation:any = useContext(TranslateContext)
-   
 
+   useEffect(() => {
+      const getINfoStudent:any = getCookie("infoStudent")
+      setInfoStudent(JSON.parse(getINfoStudent))
+      
+   }, [])
+   
    const handleSubmit = (e: any) => {
       e.preventDefault();
 
@@ -56,12 +64,33 @@ const TestingPage = ({ data }: any) => {
       }
    };
 
-   // const hendlReset = (e: any) => {
-   //    Ansvers_list = [];
-   //    setTestNumber(0);
-   //    setTest(data.test[0]);
-   // };
+   const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
 
+   const sendData = () =>{
+      let msg = `🆕 Ответы тестирования! \n`;
+      msg += `Уровень: ${data?.title} \n`;
+      msg += `👨 Имя: ${infoStudent?.name} \n`;
+      msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
+      msg += `Количество тестов: ${data?.test?.length}  \n`;
+      msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
+      msg += `Резултаты тестирования  \n`;
+
+	  for(let i=0; i<Ansvers_list.length; i++){
+		msg += `${i+1} : ${Ansvers_list[i]?.ansver ? "+" :"-"}  \n`;
+	  }
+	  
+      axios.post(URL, {
+          chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
+          parse_mode: "html",
+          text: msg,
+        })
+		.then((res)=>{
+			if(res.status === 200 || res.status === 201){
+				router.push("/")
+			}
+		})
+        .catch((err) => console.log(err));
+   }
 
    return (
       <section className="section">
@@ -97,10 +126,10 @@ const TestingPage = ({ data }: any) => {
                               >
                                     <input
                                        onChange={(e) => {
-                                          setNextButton(true)
-                                          setTestAnsver(item.examination);
-                                          setInputСheck(e.target);
-                                       }}
+                                       setNextButton(true)
+                                       setTestAnsver(item.examination);
+                                       setInputСheck(e.target);
+                                    }}
                                        required
                                        type="radio"
                                        name="ansver"
@@ -151,7 +180,7 @@ const TestingPage = ({ data }: any) => {
                                     type="submit"
                                     className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
                                  >
-                                    Дальше
+                                    {translation?.textPage?.next} 
                                     <Image
                                        className="w-7 h-7 max-md:h-5 max-md:w-5"
                                        src="/icons/Arrow-Right.svg"
@@ -169,28 +198,16 @@ const TestingPage = ({ data }: any) => {
                ) : (
                   <div className="flex flex-col gap-5 items-center justify-center">
                      <h2 className="text-white text-center text-2xl font-medium">
-                     🎉 Поздравляем! 🎉
+                     🎉 {translation?.endTest?.title} {infoStudent?.name }! 🎉
                      </h2>
-                     <h2 className="text-white text-center text-2xl font-medium">Мы скоро свяжемся с вами!</h2>
-                     {/* <div>
-                        {Ansvers_list.map((item: any) => (
-                           <div
-                              key={item.number}
-                              className="flex items-center text-white"
-                           >
-                              <p>{item.number}</p>:
-                              <p>{item.ansver ? "+" : "-"}</p>
-                           </div>
-                        ))}
-                     </div> */}
-                     <Link href={"/"}>
-                        <button
-                           title="result"
-                           className="bg-white font-semibold cursor-pointer px-5 py-2 text-center rounded-xl"
-                        >
-                           Go to back
-                        </button>
-                     </Link>
+                     <h2 className="text-white text-center text-2xl font-medium">{translation?.endTest?.text}</h2>
+                     <button
+                        onClick={sendData}
+                        title="result"
+                        className="bg-white font-semibold cursor-pointer px-5 py-2 text-center rounded-xl"
+                     >
+                        {translation?.endTest?.goToBack}
+                     </button>
                   </div>
                )}
             </div>

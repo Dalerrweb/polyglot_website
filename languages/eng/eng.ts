@@ -123,6 +123,11 @@ const eng = {
         title: "Take a mini-test to determine your language proficiency level",
         question: "Question",
         next: "Next"
+    },
+    endTest:{
+        title:"Congratulations",
+        text:"We will contact you soon!",
+        goToBack:"Сome back"
     }
 
 }
