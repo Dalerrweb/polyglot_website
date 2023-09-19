@@ -20,27 +20,27 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 
-   let translation = useContext(TranslateContext)
+   let translation:any = useContext(TranslateContext)
 
    return (
       <Layout>
          <section>
-            <Hero />
+            <Hero translation={translation?.hero}/>
          </section>
          <section>
-            <Entry />
+            <Entry translation={translation?.entry}/>
          </section>
          <section>
-            <Courses />
+            <Courses translation={translation?.courses}/>
          </section>
          <section>
-            <Tests />
+            <Tests translation={translation?.tests}/>
          </section>
          <section>
-            <Students />
+            <Students translation={translation?.students}/>
          </section>
          <section>
-            <Support />
+            <Support translation={translation?.support}/>
          </section>
          <section>
             <div className="bg-orange">
@@ -80,12 +80,10 @@ export default function Home() {
                   </div>
                   <div className="max-w-[800px]">
                      <h3 className="text-[62px] max-2xl:text-[50px] max-xl:text-[45px] max-lg:text-[32px] leading-[68px] max-2xl:leading-[55px] max-lg:leading-[42.017px] font-medium text-white">
-                        Oдна из ведущих школ по изучению иностранного языка в
-                        Самарканде
+                        {translation?.about?.title}
                      </h3>
                      <p className="text-[36px] max-2xl:text-[32px] max-xl:text-[24px] max-lg:text-[24px] max-md:text-[20px] leading-[45px] max-xl:leading-[35px] max-md:leading-[30px] mt-40 max-2xl:mt-24 max-lg:mt-20 max-md:mt-10 max-sm:mt-5 text-white">
-                        2 Филиала в центре города, более 1000 выпущенных
-                        студентов, уже освоили: Английский, Французский и т.д
+                        {translation?.about?.text2}
                      </p>
                   </div>
                </div>
@@ -105,13 +103,13 @@ export default function Home() {
             </div>
          </section>
          <section>
-            <Info />
+            <Info translation={translation?.info}/>
          </section>
          <section>
-            <Teacher />
+            <Teacher translation={translation?.teacher}/>
          </section>
          <section>
-            <Map />
+            <Map translation={translation?.map}/>
          </section>
       </Layout>
    );

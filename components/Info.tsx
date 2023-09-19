@@ -1,6 +1,8 @@
-interface InfoProps {}
+interface InfoProps {
+   translation:any
+}
 
-const Info: React.FC<InfoProps> = () => {
+const Info: React.FC<InfoProps> = ({translation}) => {
    return (
       <div className="bg-blue">
          <div className="custom-container py-20 relative">
@@ -16,12 +18,10 @@ const Info: React.FC<InfoProps> = () => {
                <div className="max-sm:max-w-[400px] w-full flex max-md:flex-col justify-center items-center gap-1">
                   <div className="max-w-[700px] max-sm:max-w-[200px] w-full max-md:mb-5 max-sm:ml-10">
                      <h3 className="text-[64px] max-3xl:text-[45px] max-2xl:text-[36px] max-xl:text-[28px] max-lg:text-[24px] leading-[68px] max-2xl:leading-[40px] max-lg:leading-[26px] mb-7 max-2xl:mb-4 max-xl:mb-2 text-white">
-                        Инновационная методика обучения
+                        {translation?.title1}
                      </h3>
                      <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[24px] max-xl:text-[15px] leading-[45px] max-2xl:leading-[30px] max-xl:leading-[26px] max-lg:leading-[22px] max-md:leading-[16.069px] text-white ">
-                        Наши преподаватели разработали специальную программу
-                        обучения по которой вы сможете в короткие сроки освоить
-                        любой язык до уровня Intermidate
+                        {translation?.text1}
                      </p>
                   </div>
                   <div className="max-w-[548px] w-full h-full min-h-[200px] rounded-2xl bg-[gray]"></div>
@@ -38,11 +38,10 @@ const Info: React.FC<InfoProps> = () => {
                <div className="max-sm:max-w-[400px] w-full flex max-md:flex-col justify-center items-center gap-1">
                   <div className="max-w-[700px] max-sm:max-w-[200px] w-full max-md:mb-5 max-sm:ml-10">
                      <h3 className="text-[64px] max-3xl:text-[45px] max-2xl:text-[36px] max-xl:text-[28px] max-lg:text-[24px] leading-[68px] max-2xl:leading-[40px] max-lg:leading-[26px] mb-7 max-2xl:mb-4 max-xl:mb-2 text-white">
-                        Создаём все удобства
+                        {translation?.title2}
                      </h3>
                      <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[24px] max-xl:text-[15px] leading-[45px] max-2xl:leading-[30px] max-xl:leading-[26px] max-lg:leading-[22px] max-md:leading-[16.069px] text-white ">
-                        Наши кабинеты оснащены всем необходимым оборудованием
-                        для комфортного обучения
+                        {translation?.text2}
                      </p>
                   </div>
                   <div className="max-w-[548px] min-h-[200px] w-full h-full rounded-2xl bg-[gray]"></div>
@@ -59,11 +58,10 @@ const Info: React.FC<InfoProps> = () => {
                <div className="max-sm:max-w-[400px] w-full flex max-md:flex-col justify-center items-center gap-1">
                   <div className="max-w-[700px] max-sm:max-w-[200px] w-full max-md:mb-5 max-sm:ml-10">
                      <h3 className="text-[64px] max-3xl:text-[45px] max-2xl:text-[36px] max-xl:text-[28px] max-lg:text-[24px] leading-[68px] max-2xl:leading-[40px] max-lg:leading-[26px] mb-7 max-2xl:mb-4 max-xl:mb-2 text-white">
-                        Разговорная практика
+                        {translation?.title3}
                      </h3>
                      <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[24px] max-xl:text-[15px] leading-[45px] max-2xl:leading-[30px] max-xl:leading-[26px] max-lg:leading-[22px] max-md:leading-[16.069px] text-white ">
-                        Помимо основного обучения мы проводим отдельные
-                        практические занятия для развития разговорной речи
+                        {translation?.text3}
                      </p>
                   </div>
                   <div className="max-w-[548px] w-full h-full min-h-[200px] rounded-2xl bg-[gray]"></div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useContext, useState } from "react";
 import ModalContext from "@/context/ModalContext";
 import Timer from "@/components/CustomTimer";
+import TranslateContext from "@/context/useTranslate";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
@@ -32,6 +33,8 @@ const TestingPage = ({ data }: any) => {
    const [endTest, setEndTest] = useState(false);
 
    const {modalOpen, modalTestID, infoStudent} = useContext(ModalContext)
+
+   const translation:any = useContext(TranslateContext)
    
 
    const handleSubmit = (e: any) => {
@@ -68,14 +71,14 @@ const TestingPage = ({ data }: any) => {
                   <>
                      <div className="flex max-md:flex-col items-center max-md:items-center max-md:justify-center justify-between text-white text_size gap-3 font-semibold">
                         <h2 className="w-1/3 max-3xl:w-1/2 max-md:w-full max-md:text-center">
-                           Пройдите мини-тест на уровень владения языком
+                           {translation?.textPage?.title}
                         </h2>
                         <h3>{data.title}</h3>
                      </div>
 
                      <div className="mt-5 max-lg:mt-4 max-md:mt-3 max-sm:mt-2 flex flex-col gap-3 max-xl:gap-2 max-md:gap-1">
                         <p className="text-white small_text_size font-semibold">
-                           Вопрос {test.id} из {data.test.length}
+                           {translation?.textPage?.question} {test.id} из {data.test.length}
                         </p>
                         <div className="p-1 h-4 max-lg:h-3 rounded-full bg-white">
                            <div style={{width:`${Math.floor((100 / data.test.length) * (test.id -1))}%`, borderRadius:"10px", transition:"1s"}} className={`h-full bg-orange rounded-full]`}></div>
@@ -132,7 +135,7 @@ const TestingPage = ({ data }: any) => {
                                     type="submit"
                                     className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
                                  >
-                                    Дальше
+                                    {translation?.textPage?.next} 
                                     <Image
                                        className="w-7 h-7 max-md:h-5 max-md:w-5"
                                        src="/icons/Arrow-Right.svg"

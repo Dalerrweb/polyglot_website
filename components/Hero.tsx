@@ -1,16 +1,21 @@
 import Image from "next/image";
 
-interface HeroProps {}
+interface HeroProps {
+   translation:any 
+}
 
-const Hero: React.FC<HeroProps> = () => {
+
+
+const Hero: React.FC<HeroProps> = ({translation}) => {
+   
    return (
       <div className="custom-container h-[85vh] max-lg:h-[700px] max-md:min-h-[600px] pt-14 flex max-md:flex-col justify-between gap-7 max-md:gap-[20px]">
          <div className="w-1/2 max-lg:w-2/5 max-md:w-full flex flex-col justify-center max-md:mt-[30px]">
             <h3 className="max-lg:text-[16px] max-sm:text-[20px] text-blue">
-               Ученье свет, а не ученье тьма!
+               {translation?.text1}
             </h3>
             <h1 className=" text-blue">
-               Изучи всё что не смог изучить раньше!
+               {translation?.text2}
             </h1>
             <div className="max-w-[550px] w-full bg-[re] flex gap-5 max-lg:gap-2 mt-8 max-lg:mt-5 max-md:mt-2">
                <div className="w-[85px] max-lg:w-[50px]">
@@ -24,7 +29,7 @@ const Hero: React.FC<HeroProps> = () => {
                </div>
                <div className="">
                   <h3 className="text-[32px] max-xl:text-[24px] max-lg:text-[16px] leading-[38.5px] max-lg:leading-[25px] text-blue">
-                     Освойте иностранные языки на уровне носителя!
+                     {translation?.text3}
                   </h3>
                </div>
             </div>

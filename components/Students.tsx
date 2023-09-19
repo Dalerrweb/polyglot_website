@@ -1,15 +1,17 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-interface StudentsProps {}
+interface StudentsProps {
+   translation:any
+}
 
-const Students: React.FC<StudentsProps> = () => {
+const Students: React.FC<StudentsProps> = ({translation}) => {
    return (
       <div className="custom-container">
          <div className="mt-14 mb-7 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
-                  Наши студенты
+                  {translation?.ourStudents}
                </h2>
             </div>
             <div className="flex gap-3 items-center">
@@ -118,10 +120,10 @@ const Students: React.FC<StudentsProps> = () => {
                                  IELTS 7.5
                               </p>
                               <p className="text-[40px] max-3xl:text-[32px] max-2xl:text-[28px] font-bold leading-[40.5px] max-2xl:leading-[28.239px] mt-2">
-                                 Шарифкулов Далер
+                                 {translation?.student?.name}
                               </p>
                               <p className="text-[24px] max-2xl:text-[16px] leading-[40.5px]">
-                                 1 год обучения
+                                 1 {translation?.student?.yearofLear}
                               </p>
                            </div>
                         </div>
@@ -148,10 +150,7 @@ const Students: React.FC<StudentsProps> = () => {
                            </div>
                            <div className="">
                               <p className="text-[24px] max-2xl:text-[20px] max-sm:text-[16px] leading-[29px] max-2xl:leading-[25px] mt-4">
-                                 Я всё думал какой язык мне изучить Английский
-                                 или Французский, в итоге выучил HTML, CSS,
-                                 JavaScript. Ну и с компьютерами разговаривать
-                                 веселее оказалось.
+                                 {translation?.student?.about}
                               </p>
                            </div>
                         </div>

@@ -3,9 +3,10 @@ import { useContext} from "react";
 
 interface SwiperChild {
   item: number;
+  translation:any
 }
 
-const SwiperChild: React.FC<SwiperChild> = ({ item }) => {
+const SwiperChild: React.FC<SwiperChild> = ({ item, translation }) => {
 	const {changeModal, setModalTestID} = useContext(ModalContext)
 
   return (
@@ -35,27 +36,25 @@ const SwiperChild: React.FC<SwiperChild> = ({ item }) => {
         </div>
         <div className="px-11 mt-14 max-3xl:mt-3 mb-11 max-3xl:mb-6 max-lg:mb-4 max-3xl:px-7">
           <p className="text-[24px] max-3xl:text-[20px] max-2xl:text-[16px] leading-[32px] max-2xl:leading-[22.312px]">
-            Вы уже знакомы с Английским языком? Давайте проверим. Вам даются 20
-            вопросов за определённое время, после вы сможете определить ваш
-            уровень Английского Языка от A1 до С2
+            {translation?.info}
           </p>
         </div>
         <div className="px-8 max-2xl:px-7 pt-5 max-3xl:pt-0 max-sm:pt-4 pb-3 bg-orange">
           <div className="w-full flex items-center justify-between gap-">
             <div className="">
               <p className="max-3xl:text-[16px] max-md:text-[14px] leading-[25.5px]">
-                Отведённое время
+                {translation?.time}
               </p>
               <p className="text-[40px] max-3xl:text-[27px] font-bold leading-[40px]">
-                15 мин
+                15 {translation?.min}
               </p>
             </div>
             <div className="">
               <p className="max-3xl:text-[16px] max-md:text-[14px] leading-[25.5px]">
-                Количество вопросов
+                {translation?.quantity}
               </p>
               <p className="text-[40px] max-3xl:text-[27px] font-bold leading-[40px]">
-                20 воп.
+                20 {translation?.question}.
               </p>
             </div>
             <div className="">

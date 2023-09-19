@@ -6,6 +6,7 @@ import { IoClose } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useRouter } from "next/router";
 import { Select } from "antd";
+import TranslateContext from "@/context/useTranslate";
 
 interface HeaderProps {}
 
@@ -15,6 +16,8 @@ const Header: React.FC<HeaderProps> = () => {
 	const [localeValue, setLocaleValue] = useState<any>(locale);
 
   const { modalOpen, changeModal, setInfoStudent, modalTestID } =useContext(ModalContext);
+
+  const translation:any = useContext(TranslateContext)
 
   const ModalSubmit = (e: any) => {
     e.preventDefault();
@@ -52,7 +55,7 @@ const Header: React.FC<HeaderProps> = () => {
               className="text-white absolute top-5 right-5 max-md:top-2 max-md:right-2 cursor-pointer"
             />
             <p className="text-2xl max-md:text-lg font-bold text-blue mb-5 text-center m-auto">
-              Заполните форму!
+              {translation?.modalTestStart?.title}
             </p>
             <form
               onSubmit={ModalSubmit}
@@ -76,7 +79,7 @@ const Header: React.FC<HeaderProps> = () => {
                 type="submit"
                 className="w-1/2 text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
               >
-                Начать
+                {translation?.modalTestStart?.button}
               </button>
             </form>
           </div>
@@ -97,10 +100,10 @@ const Header: React.FC<HeaderProps> = () => {
           <div className="max-lg:hidden">
             <nav>
               <ul className="flex gap-11 max-2xl:gap-5">
-                <li className="max-xl:text-sm">Курсы</li>
-                <li className="max-xl:text-sm">Преподаватели</li>
-                <li className="max-xl:text-sm">Мини тесты</li>
-                <li className="max-xl:text-sm">О школе</li>
+                <li className="max-xl:text-sm">{translation?.header?.courses}</li>
+                <li className="max-xl:text-sm">{translation?.header?.teachers}</li>
+                <li className="max-xl:text-sm">{translation?.header?.tests}</li>
+                <li className="max-xl:text-sm">{translation?.header?.aboutSchool}</li>
               </ul>
             </nav>
           </div>
@@ -114,7 +117,7 @@ const Header: React.FC<HeaderProps> = () => {
                 {
                   value: "ru",
                   label: (
-                    <p className="flex items-center gap-1 justify-center">
+                    <p className="flex items-center gap-1">
                       <img
                         src="/images/russia.svg"
                         alt="russia"
@@ -132,7 +135,7 @@ const Header: React.FC<HeaderProps> = () => {
                         src="/images/uzb.png"
                         alt="uzb"
                         className="w-[20px]"
-                      />{" "}
+                      />
                       {"UZ"}
                     </span>
                   ),
@@ -145,7 +148,7 @@ const Header: React.FC<HeaderProps> = () => {
                         src="/images/usa.png"
                         alt="usa"
                         className="w-[20px]"
-                      />{" "}
+                      />
                       {"USA"}
                     </span>
                   ),
@@ -155,7 +158,7 @@ const Header: React.FC<HeaderProps> = () => {
           </div>
           <div className="max-lg:hidden">
             <button className="max-2xl:text-[18px] px-10 max-2xl:px-5 max-xl:px-3 py-3 max-2xl:py-2 rounded-md bg-blue text-white">
-              Оставить заявку
+              {translation?.header?.application}
             </button>
           </div>
           <div className="max-lg:block hidden">

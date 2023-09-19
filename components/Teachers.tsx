@@ -1,25 +1,25 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-interface TeacherProps {}
+interface TeacherProps {
+   translation:any
+}
 
-const Teacher: React.FC<TeacherProps> = () => {
+const Teacher: React.FC<TeacherProps> = ({translation}) => {
    return (
       <div className="custom-container">
          <div className="flex max-md:flex-col justify-between items-start mt-24">
             <div className="max-w-[745px] w-full">
                <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] text-blue">
-                  Какие профессионалы работают у нас, и кто проложит вам путь к
-                  успеху
+                  {translation?.title1}
                </h2>
             </div>
             <div className="max-w-[650px] w-full">
                <h2 className="text-[64px] max-2xl:text-[47px] max-xl:text-[36px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-xl:leading-[45px] max-md:leading-[34.778px] mb-4 max-md:my-4 text-orange">
-                  Самое время познакомиться!
+                  {translation?.title2}
                </h2>
                <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[22px] max-sm:text-[18px] leading-[45px] max-xl:leading-[30px] max-md:leading-[23.015px] text-orange">
-                  Наши специалисты не просто любят своё дело, но также вместе с
-                  вами совершенствуются с каждым днём
+                  {translation?.p}
                </p>
             </div>
          </div>
@@ -27,7 +27,7 @@ const Teacher: React.FC<TeacherProps> = () => {
          <div className="mt-14 mb-7 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[28px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
-                  Преподаватели
+                  {translation?.h1}
                </h2>
             </div>
             <div className="flex gap-3 max-sm:gap-1 items-center">
@@ -118,10 +118,10 @@ const Teacher: React.FC<TeacherProps> = () => {
                         <div className="w-full absolute bottom-0 max-sm:-bottom-0 left-0 py-6 max-2xl:py-3 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                            <div className="">
                               <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
-                                 Шарифкулов Далер
+                                 {translation?.teacher?.name}
                               </p>
                               <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                 Преподаватель по Английскому Языку
+                                 {translation?.teacher?.info}
                               </p>
                            </div>
                            <div className="flex items-center justify-between mt-3 max-2xl:mt-2 text-white">
@@ -143,7 +143,7 @@ const Teacher: React.FC<TeacherProps> = () => {
                               </p>
 
                               <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px]">
-                                 Подробнее
+                                 {translation?.teacher?.details}
                                  <svg
                                     className="max-md:w-4 "
                                     xmlns="http://www.w3.org/2000/svg"

@@ -2,15 +2,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
-interface CoursesProps {}
+interface CoursesProps {
+   translation:any
+}
 
-const Courses: React.FC<CoursesProps> = () => {
+const Courses: React.FC<CoursesProps> = ({translation}) => {
+   
    return (
       <div className="custom-container">
          <div className="mb-9 mt-20 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
-                  Программа курсов
+                  {translation?.title}
                </h2>
             </div>
             <div className="flex gap-3 items-center">
@@ -115,10 +118,7 @@ const Courses: React.FC<CoursesProps> = () => {
 
                         <div className="pb-6 max-3xl:pb-4 border-b border-white">
                            <p className="text-[24px] max-3xl:text-[20px] max-2xl:text-[16px] leading-[32px] max-2xl:leading-[22.312px]">
-                              Освойте базовый уровень Английского языка до
-                              уровня B1, все занятия проводятся по особой
-                              методике обучения, разработанного нашими
-                              специалистами.
+                              {translation?.course?.info}
                            </p>
                         </div>
 
@@ -137,7 +137,7 @@ const Courses: React.FC<CoursesProps> = () => {
                                        fill="white"
                                     />
                                  </svg>
-                                 Онлайн консультация 24/7
+                                 {translation?.course?.text1}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -152,7 +152,7 @@ const Courses: React.FC<CoursesProps> = () => {
                                        fill="white"
                                     />
                                  </svg>
-                                 Английский до уровня B1
+                                 {translation?.course?.text2}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -167,7 +167,7 @@ const Courses: React.FC<CoursesProps> = () => {
                                        fill="white"
                                     />
                                  </svg>
-                                 Оффлайн формат
+                                 {translation?.course?.text3}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -182,7 +182,7 @@ const Courses: React.FC<CoursesProps> = () => {
                                        fill="white"
                                     />
                                  </svg>
-                                 Продвинутая грамматика
+                                 {translation?.course?.text4}
                               </li>
                            </ul>
                         </div>
@@ -191,12 +191,12 @@ const Courses: React.FC<CoursesProps> = () => {
                            <div className="">
                               <div className="">
                                  <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
-                                    Срок обучения:
+                                    {translation?.course?.learnTime}
                                  </p>
                               </div>
                               <div className="">
                                  <p className="text-[45px] max-3xl:text-[32px] max-lg:text-[28px] font-bold leading-[40px] max-lg:leading-[27.89px]">
-                                    1-2 мес.
+                                    1-2 {translation?.course?.mounth}.
                                  </p>
                               </div>
                            </div>
@@ -204,7 +204,7 @@ const Courses: React.FC<CoursesProps> = () => {
                            <div className="">
                               <div className="">
                                  <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
-                                    Cтоимость:
+                                    {translation?.course?.price}
                                  </p>
                               </div>
                               <div className="">
@@ -212,7 +212,7 @@ const Courses: React.FC<CoursesProps> = () => {
                                     1 720 000
                                  </p>
                                  <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[25px] max-lg:text-[24px] leading-[40px] max-lg:leading-[27.89px]">
-                                    cум/месяц
+                                    {translation?.course?.cumMounth}
                                  </p>
                               </div>
                            </div>
@@ -220,10 +220,10 @@ const Courses: React.FC<CoursesProps> = () => {
 
                         <div className="flex items-center justify-between mt-5 max-3xl:mt-[18px]">
                            <button className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
-                              Оставить заявку
+                              {translation?.course?.application}
                            </button>
                            <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] ">
-                              Подробнее
+                              {translation?.course?.details}
                               <svg
                                  className="max-3xl:w-[20px] max-3xl:h-[25px] max-xl:w-[17px] max-xl:h-[17px]"
                                  xmlns="http://www.w3.org/2000/svg"

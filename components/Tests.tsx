@@ -3,26 +3,27 @@ import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperChild from "./children/SwiperChild";
 
-interface TestsProps {}
+interface TestsProps {
+   translation:any
+}
 
 
-const Tests: React.FC<TestsProps> = () => {
+const Tests: React.FC<TestsProps> = ({translation}) => {
 
    return (
       <div className="custom-container">
          <div className="flex max-lg:flex-col justify-between items-start max-xl:gap-5 mt-24 max-lg:mt-16 max-md:mt-11">
             <div className="max-w-[745px] max-xl:w-1/2 max-lg:w-full">
                <h2 className="text-[64px] max-3xl:text-[48px] max-2xl:text-[40px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-md:leading-[34.778px] text-blue">
-                  Всё ещё сомневаетесь в своём уровне знаний языка?
+                  {translation?.title1}
                </h2>
             </div>
             <div className="max-w-[650px] max-xl:w-1/2 max-lg:w-full">
                <h2 className="text-[64px] max-3xl:text-[48px] max-2xl:text-[40px] max-md:text-[32px] font-semibold leading-[68px] max-2xl:leading-[55px] max-md:leading-[46.285px] mb-2 max-md:mb-1 text-orange">
-                  Давайте, проверим!
+                  {translation?.title2}
                </h2>
                <p className="text-[36px] max-2xl:text-[30px] max-xl:text-[26px] max-md:text-[18px] leading-[45px] max-md:leading-[23.015px] text-orange">
-                  Пройдите мини-тест и узнайте свой уровень владения
-                  иностранными языком
+                  {translation?.title2Child}
                </p>
             </div>
          </div>
@@ -30,7 +31,7 @@ const Tests: React.FC<TestsProps> = () => {
          <div className="mt-14 mb-7 flex items-center justify-between">
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
-                  Тесты
+                  {translation?.tests}
                </h2>
             </div>
             <div className="flex gap-3 items-center">
@@ -110,7 +111,7 @@ const Tests: React.FC<TestsProps> = () => {
             {[0, 1].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <SwiperChild item={item}/>
+                     <SwiperChild translation={translation?.test}  item={item}/>
                   </SwiperSlide>
                );
             })}

@@ -2,9 +2,11 @@ import { useState } from "react";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-interface MapProps {}
+interface MapProps {
+   translation:any
+}
 
-const Map: React.FC<MapProps> = () => {
+const Map: React.FC<MapProps> = ({translation}) => {
    const [map, setMap] = useState<boolean>(true);
 
    return (
@@ -13,7 +15,7 @@ const Map: React.FC<MapProps> = () => {
             <div className="flex gap-2 max-sm:flex-col items-center max-sm:items-start justify-between">
                <div className="">
                   <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[32px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-white">
-                     Где нас найти
+                     {translation?.title}
                   </h2>
                </div>
                <div className="flex gap-3">
@@ -76,20 +78,20 @@ const Map: React.FC<MapProps> = () => {
                <div className="max-w-[350px] max-xl:max-w-[250px] w-full flex flex-col justify-between">
                   <div className="">
                      <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] text-white">
-                        Филиалы
+                        {translation?.title1}
                      </p>
                      <ul className="mt-4">
                         <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer mb-1 text-white">
-                           Основная школа
+                           {translation?.title2}
                         </li>
                         <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">
-                           Филиал Дагбитская
+                           {translation?.title3}
                         </li>
                      </ul>
                   </div>
                   <div className="max-lg:hidden">
                      <p className="text-[24px] max-2xl:text-[20px] leading-[40px] text-white">
-                        Телефон для свзяи
+                        {translation?.telText}
                      </p>
                      <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[24px] leading-[50px] font-medium text-white">
                         +998 90 503 30 30
@@ -114,7 +116,7 @@ const Map: React.FC<MapProps> = () => {
                </div>
                <div className="max-lg:block hidden">
                   <p className="text-[24px] max-xl:text-[20px] leading-[40px] text-white">
-                     Телефон для свзяи
+                     {translation?.telText}
                   </p>
                   <p className="text-[36px] max-xl:text-[28px] leading-[50px] font-medium text-white">
                      +998 90 503 30 30
