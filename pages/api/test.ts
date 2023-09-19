@@ -2,30 +2,24 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import tests from "./test.json";
 
-type Data = {
-   tests: {
-      a1_level: {
-         id: number;
-         question: string;
-         time: number;
-         answers: {
-            id: number;
-            title: string;
-            examination: boolean;
+type Data = { 
+   testing: 
+      { 
+         id: number; 
+         time: number; 
+         title: string; 
+         test:{ 
+               id: number; 
+               question: string; 
+               answers: 
+               { 
+                  id: number; 
+                  title: string; 
+                  examination: boolean; 
+               }[]; 
          }[];
-      }[];
-      a2_level: {
-         id: number;
-         question: string;
-         time: number;
-         answers: {
-            id: number;
-            title: string;
-            examination: boolean;
-         }[];
-      }[];
-   };
-};
+      }[]; 
+}
 
 export default function handler(
    req: NextApiRequest,
