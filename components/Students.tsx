@@ -1,11 +1,25 @@
+import { useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+import "swiper/css";
+import "swiper/css/navigation";
+
 interface StudentsProps {
-   translation:any
+   translation: any;
 }
 
-const Students: React.FC<StudentsProps> = ({translation}) => {
+const Students: React.FC<StudentsProps> = ({ translation }) => {
+   const [swiperRef, setSwiperRef] = useState<any>(null);
+
+   const prevHandler = () => {
+      swiperRef.slidePrev();
+   };
+
+   const nextHandler = () => {
+      swiperRef.slideNext();
+   };
+
    return (
       <div className="custom-container">
          <div className="mt-14 mb-7 flex items-center justify-between">
@@ -14,8 +28,11 @@ const Students: React.FC<StudentsProps> = ({translation}) => {
                   {translation?.ourStudents}
                </h2>
             </div>
-            <div className="flex gap-3 items-center">
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+            <div className="flex gap-3 items-center relative">
+               <button
+                  onClick={prevHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
@@ -41,7 +58,10 @@ const Students: React.FC<StudentsProps> = ({translation}) => {
                      />
                   </svg>
                </button>
-               <button className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full">
+               <button
+                  onClick={nextHandler}
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+               >
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
@@ -71,8 +91,10 @@ const Students: React.FC<StudentsProps> = ({translation}) => {
          </div>
 
          <Swiper
+            className="swiper-visible"
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={3}
+            onSwiper={(swiper) => setSwiperRef(swiper)}
             breakpoints={{
                1536: {
                   spaceBetween: 35,
@@ -86,12 +108,15 @@ const Students: React.FC<StudentsProps> = ({translation}) => {
                768: {
                   slidesPerView: 2,
                },
+               0: {
+                  slidesPerView: 1,
+               },
             }}
          >
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <div className="px-[30px] max-2xl:px-[25px] max-lg:px-[20px] py-[46px] max-2xl:py-[40px] max-lg:py-8 rounded-[20px] bg-orange">
+                     <div className="px-[30px] max-2xl:px-[25px] max-lg:px-[20px] py-[46px] max-2xl:py-[40px] max-lg:py-8 rounded-[20px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
                         <div className="flex items-center mb-[43px] max-3xl:mb-5">
                            <div className="w-[200px] mr-[25px] max-2xl:mr-[15px] rounded-full bg-white">
                               <Image

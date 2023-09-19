@@ -6,8 +6,7 @@ import { useContext } from "react";
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
-
-   const translation:any = useContext(TranslateContext)
+   const translation: any = useContext(TranslateContext);
 
    return (
       <footer className="relative mt-20">
@@ -18,7 +17,10 @@ const Footer: React.FC<FooterProps> = () => {
                </h2>
             </div>
 
-            <div className="relative max-xl:flex max-lg:flex-col max-xl:justify-between max-xl:items-center z-10 py-12 max-2xl:py-5 px-[70px] max-xl:px-8 max-lg:py-6 max-lg:px-10 max-sm:py-4 max-md:pt-[27px] max-md:px-4 rounded-[40px] max-md:rounded-[22px] bg-orange">
+            <div
+               id="form"
+               className="relative max-xl:flex max-lg:flex-col max-xl:justify-between max-xl:items-center z-10 py-12 max-2xl:py-5 px-[70px] max-xl:px-8 max-lg:py-6 max-lg:px-10 max-sm:py-4 max-md:pt-[27px] max-md:px-4 rounded-[40px] max-md:rounded-[22px] bg-orange"
+            >
                <div className="w-2/5 max-3xl:w-1/2 max-lg:w-full max-lg:mb-4">
                   <h2 className="max-md:block hidden text-[36px] max-[410px]:text-[32px] font-semibold mb-3 max-sm:mb-0 text-blue">
                      {translation?.footer?.title}
@@ -49,7 +51,7 @@ const Footer: React.FC<FooterProps> = () => {
                   </div>
                </div>
 
-               <div className="max-lg:hidden w-60 max-2xl:w-40 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
+               <div className="max-xl:hidden w-60 max-2xl:w-40 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
                   <Image
                      src={"/images/parrot.png"}
                      width={1000}
@@ -58,10 +60,10 @@ const Footer: React.FC<FooterProps> = () => {
                   />
                </div>
 
-               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[400px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] xl:absolute xl:top-1/2 xl:right-[3%] xl:-translate-x-[3%] xl:-translate-y-[68%] shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
+               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[360px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-xl:py-4 max-xl:px-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] lg:absolute lg:top-1/2 lg:right-[3%] lg:-translate-x-[3%] lg:-translate-y-[68%] shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
                   <div className="mb-1">
                      <h3 className="text-[32px] max-xl:text-[24px] max-sm:text-[20px] max-[420px]:text-sm max-md:mb-2 font-semibold text-blue">
-                         {translation?.footer?.form?.title}
+                        {translation?.footer?.form?.title}
                      </h3>
                   </div>
 
@@ -69,12 +71,12 @@ const Footer: React.FC<FooterProps> = () => {
                      <input
                         type="text"
                         placeholder="Имя"
-                        className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-2 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                        className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                      />
                      <input
                         type="text"
                         placeholder="+998 91 111 33 44"
-                        className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-2 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                        className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                      />
                      <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
                         {translation?.footer?.form?.consult}
@@ -103,15 +105,18 @@ const Footer: React.FC<FooterProps> = () => {
                <div className="w-full grid grid-cols-4 max-xl:grid-cols-2 max-sm:grid-cols-1 gap-5 text-white">
                   <div className="max-w-[255px] w-full">
                      <h3 className="text-[40px] max-2xl:text-[32px] font-semibold mb-2">
-                     {translation?.footer?.scholl?.title}
+                        {translation?.footer?.scholl?.title}
                      </h3>
                      <ul>
-                        <li className="max-2xl:text-[18px]">{translation?.footer?.scholl?.aboutUs}</li>
                         <li className="max-2xl:text-[18px]">
-                           {translation?.footer?.scholl?.academick}
+                           <Link href={"#about"}>
+                              {translation?.footer?.scholl?.aboutUs}
+                           </Link>
                         </li>
                         <li className="max-2xl:text-[18px]">
-                           {translation?.footer?.scholl?.miniTest}
+                           <Link href={"#tests"}>
+                              {translation?.footer?.scholl?.miniTest}
+                           </Link>
                         </li>
                      </ul>
                   </div>
@@ -120,9 +125,19 @@ const Footer: React.FC<FooterProps> = () => {
                         {translation?.footer?.course?.title}
                      </h3>
                      <ul>
-                        <li className="max-2xl:text-[18px]">{translation?.footer?.course?.baseEng}</li>
-                        <li className="max-2xl:text-[18px]">{translation?.footer?.course?.maxEng}</li>
-                        <li className="max-2xl:text-[18px]">IELTS</li>
+                        <li className="max-2xl:text-[18px]">
+                           <Link href={"#tests"}>
+                              {translation?.footer?.course?.baseEng}
+                           </Link>
+                        </li>
+                        <li className="max-2xl:text-[18px]">
+                           <Link href={"#tests"}>
+                              {translation?.footer?.course?.maxEng}
+                           </Link>
+                        </li>
+                        <li className="max-2xl:text-[18px]">
+                           <Link href={"#tests"}>IELTS</Link>
+                        </li>
                      </ul>
                   </div>
                   <div className="max-w-[255px] w-full">
@@ -134,7 +149,7 @@ const Footer: React.FC<FooterProps> = () => {
                            {translation?.footer?.contact?.adres}
                         </li>
                         <li className="max-2xl:text-[18px]">
-                           +998 90 503 30 30
+                           <a href="tel:+998 90 503 30 30">+998 90 503 30 30</a>
                         </li>
                      </ul>
                   </div>
@@ -164,7 +179,7 @@ const Footer: React.FC<FooterProps> = () => {
                </div>
             </div>
          </div>
-         <div className="min-h-[555px] max-2xl:min-h-[400px] max-xl:min-h-[600px] max-sm:min-h-[1100px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-md:rounded-t-[50px] bg-blue"></div>
+         <div className="min-h-[555px] max-2xl:min-h-[400px] max-xl:min-h-[500px] max-lg:min-h-[700px] max-sm:min-h-[1000px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-xl:rounded-t-[70px] max-md:rounded-t-[50px] bg-blue"></div>
       </footer>
    );
 };

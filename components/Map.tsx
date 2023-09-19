@@ -3,10 +3,10 @@ import { useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 interface MapProps {
-   translation:any
+   translation: any;
 }
 
-const Map: React.FC<MapProps> = ({translation}) => {
+const Map: React.FC<MapProps> = ({ translation }) => {
    const [map, setMap] = useState<boolean>(true);
 
    return (
