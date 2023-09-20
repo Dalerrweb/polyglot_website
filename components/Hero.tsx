@@ -6,8 +6,8 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ translation }) => {
    return (
-      <div className="custom-container h-[85vh] max-lg:h-[700px] max-md:min-h-[600px] pt-[90px] flex max-md:flex-col justify-between gap-7 max-md:gap-[20px]">
-         <div className="w-1/2 max-lg:w-2/5 max-md:w-full flex flex-col justify-center max-md:mt-[30px]">
+      <div className="custom-container h-[85vh] max-lg:h-[60vh] max-md:min-h-[650px] pt-[95px] max-lg:pt-[80px] flex max-md:flex-col justify-between gap-7 max-md:gap-[20px]">
+         <div className="w-1/2 max-lg:w-2/5 max-md:w-full flex flex-col justify-center">
             <h3 className="max-lg:text-[16px] max-sm:text-[20px] text-blue">
                {translation?.text1}
             </h3>

@@ -15,35 +15,34 @@ interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
    const [hide, setHide] = useState<boolean>(false);
-    const router = useRouter();
-	const { locale } = router;
-	const [localeValue, setLocaleValue] = useState<any>(locale);
-	
+   const router = useRouter();
+   const { locale } = router;
+   const [localeValue, setLocaleValue] = useState<any>(locale);
 
-    const { modalOpen} = useContext(ModalContext);
-  
-    const translation:any = useContext(TranslateContext);
-  
-     
+   const { modalOpen } = useContext(ModalContext);
 
-    const changeLang = (e: any) => {
-  	    const locale = e;
-  	    router.push({pathname: router.pathname, query: router.query}, router.asPath, {locale});
-  	    setLocaleValue(locale);
-    };  
+   const translation: any = useContext(TranslateContext);
 
-  return (
-    <>
-      {modalOpen ? (
-          <Modal/>
-      ) : null}
+   const changeLang = (e: any) => {
+      const locale = e;
+      router.push(
+         { pathname: router.pathname, query: router.query },
+         router.asPath,
+         { locale }
+      );
+      setLocaleValue(locale);
+   };
 
-      <header
-            className={`w-full fixed top-0 left-0 z-50 border-b-4 ${
-               hide ? "border-white" : "border-blue"
-            } bg-white`}
+   return (
+      <>
+         {modalOpen ? <Modal /> : null}
+
+         <header
+            className={`w-full fixed top-0 left-0 z-[55] backdrop-blur-[100px] border-blue bg-white/60 ${
+               hide ? "border-b-8" : "border-b-4"
+            }`}
          >
-            <div className="custom-container flex items-center justify-between py-3 ">
+            <div className="custom-container flex items-center justify-between py-3">
                <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[180px] max-md:w-[130px]">
                   <Link href={"/"}>
                      <Image
@@ -82,7 +81,7 @@ const Header: React.FC<HeaderProps> = () => {
                   </nav>
                </div>
                <div className="flex items-center gap-20">
-                  <div className="">
+                  <div className="flex gap-5 max-sm:gap-2">
                      <Select
                         defaultValue={localeValue}
                         style={{
@@ -141,6 +140,18 @@ const Header: React.FC<HeaderProps> = () => {
                            },
                         ]}
                      />
+                     <div className="max-lg:block hidden">
+                        <button onClick={() => setHide(!hide)}>
+                           {hide ? (
+                              <AiOutlineClose size={30} className="text-blue" />
+                           ) : (
+                              <GiHamburgerMenu
+                                 size={30}
+                                 className="text-blue"
+                              />
+                           )}
+                        </button>
+                     </div>
                   </div>
                   <div className="max-lg:hidden">
                      <Link
@@ -151,52 +162,87 @@ const Header: React.FC<HeaderProps> = () => {
                      </Link>
                   </div>
                </div>
-               <div className="max-lg:block hidden">
-                  <button onClick={() => setHide(!hide)}>
-                     {hide ? (
-                        <AiOutlineClose size={25} className="text-blue" />
-                     ) : (
-                        <GiHamburgerMenu size={25} className="text-blue" />
-                     )}
-                  </button>
-               </div>
             </div>
          </header>
 
          <div
             className={`${
                hide ? "block" : "hidden"
-            } w-full fixed z-50 top-12 left-0 py-5 flex flex-col items-center border-b-4 border-blue bg-white`}
+            } w-full fixed z-50 top-12 left-0  border-b-4  border-blue backdrop-blur-[100px] bg-white/60`}
          >
-            <nav>
-               <ul className="flex flex-col items-center gap-2">
-                  <li className="text-sm">
-                     <Link href={"#courses"}>
-                        {translation?.header?.courses}
-                     </Link>
-                  </li>
-                  <li className="text-sm">
-                     <Link href={"#teacher"}>
-                        {translation?.header?.teachers}
-                     </Link>
-                  </li>
-                  <li className="text-sm">
-                     <Link href={"#tests"}>{translation?.header?.tests}</Link>
-                  </li>
-                  <li className="text-sm">
-                     <Link href={"#about"}>
-                        {translation?.header?.aboutSchool}
-                     </Link>
-                  </li>
-               </ul>
-            </nav>
-            <div className="mt-7">
-               <Link
-                  href={"#form"}
-                  className="text-[18px] px-3 py-2 rounded-md bg-blue text-white"
-               >
-                  {translation?.header?.application}
-               </Link>
+            <div className="custom-container py-5 flex flex-col">
+               <nav className="w-full">
+                  <ul className="flex flex-col">
+                     <li className="mb-1">
+                        <span className="text-xs text-[gray]">Контакты</span>
+                     </li>
+                     <li className="font- mb-3">
+                        <Link href="tel:+998 90 503 30 30">
+                           +998 90 503 30 30
+                        </Link>
+                     </li>
+                     <li className="mb-1">
+                        <span className="text-xs text-[gray]">Навигация</span>
+                     </li>
+                     <li className="text-sm mb-3">
+                        <Link href={"#courses"}>
+                           {translation?.header?.courses}
+                        </Link>
+                     </li>
+                     <li className="text-sm mb-3">
+                        <Link href={"#teacher"}>
+                           {translation?.header?.teachers}
+                        </Link>
+                     </li>
+                     <li className="text-sm mb-3">
+                        <Link href={"#tests"}>
+                           {translation?.header?.tests}
+                        </Link>
+                     </li>
+                     <li className="text-sm mb-3">
+                        <Link href={"#about"}>
+                           {translation?.header?.aboutSchool}
+                        </Link>
+                     </li>
+                     <li className="mb-1">
+                        <span className="text-xs text-[gray]">Адрес</span>
+                     </li>
+                     <li className="mb-3">
+                        <p>г.Самарканд, Дагбиская 8 Hilton Garden Inn</p>
+                     </li>
+                     <li className="mb-1">
+                        <span className="text-xs text-[gray]">
+                           Социональные сеты
+                        </span>
+                     </li>
+                     <li className="flex gap-2">
+                        <Link href={"#"} className="p-2 rounded-full bg-white">
+                           <Image
+                              src={"/images/icons/facebook.png"}
+                              width={29}
+                              height={29}
+                              alt="facebook"
+                           />
+                        </Link>
+                        <Link href={"#"} className="p-2 rounded-full bg-white">
+                           <Image
+                              src={"/images/icons/Instagram.png"}
+                              width={31}
+                              height={31}
+                              alt="facebook"
+                           />
+                        </Link>
+                     </li>
+                  </ul>
+               </nav>
+               <div className="mt-7">
+                  <Link
+                     href={"#form"}
+                     className="text-[18px] px-3 py-2 rounded-md bg-blue text-white"
+                  >
+                     {translation?.header?.application}
+                  </Link>
+               </div>
             </div>
          </div>
       </>

@@ -182,4 +182,5 @@ h1 {
 
 .ant-select-selection-item {
    align-self: stretch !important;
+   background-color: transparent !important;
 }
