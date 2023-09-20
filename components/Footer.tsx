@@ -1,12 +1,52 @@
 import TranslateContext from "@/context/useTranslate";
+import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
-import { useContext } from "react";
+import { useRouter } from "next/router";
+import { useContext, useState } from "react";
+import InputMask from "react-input-mask";
 
 interface FooterProps {}
 
 const Footer: React.FC<FooterProps> = () => {
    const translation: any = useContext(TranslateContext);
+   const [phone, setPhone] = useState('');
+
+   const router = useRouter();
+
+   const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
+   
+   const SendMessage = (e:any) =>{
+      e.preventDefault()
+   
+      let info:any = {}
+   
+      const formData = new FormData(e.target)
+   
+      formData.forEach((value, key)=>{
+         info[key] = value
+      })
+   
+      let msg = `🆕 Бесплатная консультация! \n`;
+         msg += `👨 Имя: ${info?.name} \n`;
+         msg += `📞 Номер телефона: ${phone} \n`;
+   
+         axios.post(URL, {
+            chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
+            parse_mode: "html",
+            text: msg,
+          })
+        .then((res)=>{
+           if(res.status === 200 || res.status === 201){
+               e.target["name"].value = ""
+               setPhone("")
+           }
+        })
+          .catch((err) => console.log(err));
+      
+   }
+
+
 
    return (
       <footer className="relative mt-20">
@@ -67,17 +107,23 @@ const Footer: React.FC<FooterProps> = () => {
                      </h3>
                   </div>
 
-                  <form className="flex flex-col gap-[24px] max-2xl:gap-3">
+                  <form onSubmit={(e)=> SendMessage(e)} className="flex flex-col gap-[24px] max-2xl:gap-3">
                      <input
                         type="text"
                         placeholder="Имя"
+                        required
+                        name="name"
                         className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                      />
-                     <input
-                        type="text"
-                        placeholder="+998 91 111 33 44"
-                        className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
-                     />
+                     <div className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]">
+                        <InputMask 
+                          mask="+\9\98-(99)-999-99-99" 
+                          placeholder="Номер"
+                          required
+                          value={phone}
+                          onChange={(e:any)=>setPhone(e.target.value)}>
+                        </InputMask>
+                     </div>
                      <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
                         {translation?.footer?.form?.consult}
                      </button>

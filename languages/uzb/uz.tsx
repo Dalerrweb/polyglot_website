@@ -127,7 +127,7 @@ const uz = {
     endTest:{
         title:"Tabriklaymiz",
         text:"Tez orada siz bilan bog'lanamiz!",
-        goToBack:"Ortga qaytmoq"
+        goToBack:"Natijalarni yuborish va orqaga qaytish"
     }
 }
 

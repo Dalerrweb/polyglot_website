@@ -127,7 +127,7 @@ const eng = {
     endTest:{
         title:"Congratulations",
         text:"We will contact you soon!",
-        goToBack:"Сome back"
+        goToBack:"Submit results and go back"
     }
 
 }

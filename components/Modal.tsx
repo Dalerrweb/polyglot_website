@@ -4,7 +4,7 @@ import { setCookie,hasCookie, getCookie, deleteCookie } from 'cookies-next';
 import ModalContext from "@/context/ModalContext";
 import { useRouter } from "next/router";
 import TranslateContext from "@/context/useTranslate";
-
+import InputMask from "react-input-mask";
 
 
 function Modal() {
@@ -13,6 +13,7 @@ function Modal() {
 	
 	const [secondModal, setSecondModal] = useState<boolean>(hasCookie("infoStudent"));
 	const [infoStudent, setInfoStudent] = useState<any>();
+	const [phone, setPhone] = useState('');
 	
 	const router = useRouter();
 
@@ -26,7 +27,9 @@ function Modal() {
 	const ModalSubmit = (e: any) => {
 		e.preventDefault();
 	
-		let data: any = {};
+		let data: any = {
+			number:phone,
+		};
 	
 		const formData = new FormData(e.target);
 	
@@ -81,26 +84,27 @@ function Modal() {
               onSubmit={ModalSubmit}
               className="w-full flex flex-col justify-center items-center gap-5"
             >
-              <input
-                type="text"
-                required
-                name="name"
-                placeholder="Имя"
-                className="w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
-              />
-              <input
-                type="number"
-                name="number"
-                required
-                placeholder="+998 90 123 45 67"
-                className="w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
-              />
-              <button
-                type="submit"
-                className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
-              >
-                {translation?.modalTestStart?.button}
-              </button>
+                <input
+                  type="text"
+                  required
+                  name="name"
+                  placeholder="Имя"
+                  className="w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                /> 
+                   <InputMask
+				     className={"w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"}
+                     mask="+\9\98-(99)-999-99-99" 
+                     placeholder="Номер"
+                     required
+                     value={phone}
+                     onChange={(e:any)=>setPhone(e.target.value)}>
+                   </InputMask>
+                <button
+                  type="submit"
+                  className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
+                >
+                  {translation?.modalTestStart?.button}
+                </button>
             </form>
           </>
         )}

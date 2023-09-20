@@ -5,7 +5,6 @@ import { useContext, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
-import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Select } from "antd";
