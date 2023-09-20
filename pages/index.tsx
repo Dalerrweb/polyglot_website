@@ -88,7 +88,7 @@ export default function Home() {
             <div className="w-full flex flex-col py-20 max-2xl:py-10 gap-10 max-xl:gap-3 bg-blue">
                <div className="marquee-infinite">
                   <div className="gap-10 max-xl:gap-3">
-                     <span className="gap-10 max-xl:gap-3">
+                     <p className="gap-10 max-xl:gap-3">
                         <Image
                            className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
                            src={""}
@@ -117,8 +117,8 @@ export default function Home() {
                            height={1000}
                            alt="photo"
                         />
-                     </span>
-                     <span className="gap-10 max-xl:gap-3">
+                     </p>
+                     <p className="gap-10 max-xl:gap-3">
                         <Image
                            className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
                            src={""}
@@ -147,12 +147,12 @@ export default function Home() {
                            height={1000}
                            alt="photo"
                         />
-                     </span>
+                     </p>
                   </div>
                </div>
                <div className="marquee-infinite -rotate-180">
                   <div className="gap-10 max-xl:gap-3">
-                     <span className="rotate-180 gap-10 max-xl:gap-3">
+                     <p className="rotate-180 gap-10 max-xl:gap-3">
                         <Image
                            className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
                            src={""}
@@ -181,8 +181,8 @@ export default function Home() {
                            height={1000}
                            alt="photo"
                         />
-                     </span>
-                     <span className="rotate-180 gap-10 max-xl:gap-3">
+                     </p>
+                     <p className="rotate-180 gap-10 max-xl:gap-3">
                         <Image
                            className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
                            src={""}
@@ -211,7 +211,7 @@ export default function Home() {
                            height={1000}
                            alt="photo"
                         />
-                     </span>
+                     </p>
                   </div>
                </div>
             </div>

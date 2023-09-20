@@ -133,7 +133,7 @@ h1 {
    animation: marquee-right 15s linear infinite;
 }
 
-.marquee-infinite span {
+.marquee-infinite p {
    width: 100%;
    display: flex;
    justify-content: space-around;

@@ -168,6 +168,11 @@ const Header: React.FC<HeaderProps> = () => {
          <div
             className={`${
                hide ? "block" : "hidden"
+            } w-screen h-full fixed top-0 left-0 z-40 backdrop-blur-[100px] bg-white/30`}
+         ></div>
+         <div
+            className={`${
+               hide ? "block" : "hidden"
             } w-full fixed z-50 top-12 left-0  border-b-4  border-blue backdrop-blur-[100px] bg-white/60`}
          >
             <div className="custom-container py-5 flex flex-col">

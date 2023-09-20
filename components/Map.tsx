@@ -21,10 +21,10 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                <div className="flex gap-3">
                   <button
                      onClick={() => setMap(false)}
-                     className="flex gap-1 items-center text-[32px] max-2xl:text-[24px] font-medium leading-[30px] py-3 max-2xl:py-2 px-6 max-lg:px-3 rounded-md bg-white"
+                     className="flex gap-1 items-center text-[32px] max-2xl:text-[24px] max-md:text-[18px] font-medium leading-[30px] py-3 max-2xl:py-2 max-md:py-1 px-6 max-lg:px-3 rounded-md bg-white"
                   >
                      <svg
-                        className="max-2xl:w-[20px]"
+                        className="max-2xl:w-[20px] max-md:w-[15px]"
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
                         height="37"
@@ -63,12 +63,12 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                   </button>
                   <button
                      onClick={() => setMap(true)}
-                     className="flex gap-1 items-center text-[32px] max-2xl:text-[24px] font-medium leading-[30px] py-3 max-2xl:py-2 px-6 max-lg:px-3 rounded-md bg-white"
+                     className="flex gap-1 items-center text-[32px] max-2xl:text-[24px] max-md:text-[18px] font-medium leading-[30px] py-3 max-2xl:py-2 max-md:py-1 px-6 max-lg:px-3 rounded-md bg-white"
                   >
                      <FaMapMarkerAlt
                         size={40}
                         color="#FF4433"
-                        className="max-2xl:h-[30px]"
+                        className="max-2xl:h-[30px] max-md:h-[20px] max-md:w-[20px]"
                      />
                      Яндекс
                   </button>
@@ -77,11 +77,11 @@ const Map: React.FC<MapProps> = ({ translation }) => {
             <div className="flex max-lg:flex-col gap-28 max-2xl:gap-10 max-xl:gap-5 mt-12 max-lg:mt-5">
                <div className="max-w-[350px] max-xl:max-w-[250px] w-full flex flex-col justify-between">
                   <div className="">
-                     <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] text-white">
+                     <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] max-md:leading-[10px] max-md:mt-3 text-white">
                         {translation?.text1}
                      </p>
                      <ul className="mt-4">
-                        <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer mb-1 text-white">
+                        <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">
                            {translation?.text2}
                         </li>
                         <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">

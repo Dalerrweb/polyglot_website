@@ -37,7 +37,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
 
          <div
             id="teacher"
-            className="mt-14 mb-7 flex items-center justify-between"
+            className="mt-9 max-lg:mb-5 max-md:mb-1 mb-7 flex items-center justify-between"
          >
             <div className="">
                <h2 className="text-[96px] max-2xl:text-6xl max-xl:text-5xl max-lg:text-4xl max-md:text-[28px] font-semibold leading-[90.5px] max-lg:leading-[32px] text-blue">
