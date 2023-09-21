@@ -23,8 +23,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 let Ansvers_list: any = [];
 
 const TestingPage = ({ data }: any) => {
-
-   // window.onbeforeunload = e => ();
+   // window.onbeforeunload = e => confirm("are you shure");
    // window.onpopstate
    const [testNumber, setTestNumber] = useState(0);
    const [test, setTest] = useState(data.test[testNumber]);
@@ -42,9 +41,7 @@ const TestingPage = ({ data }: any) => {
    useEffect(() => {
       const getINfoStudent:any = getCookie("infoStudent")
       setInfoStudent(JSON.parse(getINfoStudent))
-      
    }, [])
-   
    const handleSubmit = (e: any) => {
       e.preventDefault();
 
