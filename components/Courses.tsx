@@ -118,9 +118,9 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                         <div className="mb-12 max-3xl:mb-[31px]">
                            <h3 className="text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold leading-[22px] text-center">
                               BASED
-                              <span className="ml-2 relative z-10 text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold leading-[22px] text-black">
+                              <span className="p-1 relative z-10 text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold leading-[22px] text-black">
                                  <svg
-                                    className="max-3xl:w-[150px] max-3xl:h-[40px] max-xl:w-[145px] max-xl:h-[36px] max-lg:w-[130px] max-lg:h-[33px] absolute top-0 -left-2 z-[-1]"
+                                    className="w-full h-full absolute top-0 -left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="177"
                                     height="47"
