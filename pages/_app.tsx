@@ -38,13 +38,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
         <HeadMeta
-            title={
-              locale == "ru"
-                ? "Polyglot - Главная"
-                : locale == "uz"
-                ? "Polyglot - Bosh sahifa"
-                : "Polyglot - Main"
-        }
+            title={"Polyglot"}
         />
         {
             loading ? (<Preloader/>) :
