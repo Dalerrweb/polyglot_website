@@ -1,10 +1,9 @@
 import { GetServerSideProps } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import Timer from "@/components/CustomTimer";
 import TranslateContext from "@/context/useTranslate";
-import { getCookie } from 'cookies-next';
+import { getCookie, hasCookie } from 'cookies-next';
 import axios from "axios";
 import { useRouter } from "next/router";
 
@@ -39,8 +38,12 @@ const TestingPage = ({ data }: any) => {
    const translation:any = useContext(TranslateContext)
 
    useEffect(() => {
-      const getINfoStudent:any = getCookie("infoStudent")
-      setInfoStudent(JSON.parse(getINfoStudent))
+      if(hasCookie("infoStudent")){
+         const getINfoStudent:any = getCookie("infoStudent")
+         setInfoStudent(JSON.parse(getINfoStudent))
+      }else{
+         router.push('/')
+      }
    }, [])
    const handleSubmit = (e: any) => {
       e.preventDefault();
@@ -89,7 +92,7 @@ const TestingPage = ({ data }: any) => {
         .catch((err) => console.log(err));
    }
 
-   return (
+   return ( 
       <section className="section">
          <div className="orange_div">
             <div className="blue_div">
