@@ -116,8 +116,8 @@ const Students: React.FC<StudentsProps> = ({ translation }) => {
             {[0, 1, 2, 3, 4, 5].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
-                     <div className="px-[30px] max-2xl:px-[25px] max-lg:px-[20px] py-[46px] max-2xl:py-[40px] max-lg:py-8 rounded-[20px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
-                        <div className="flex items-center mb-[43px] max-3xl:mb-5">
+                     <div className="px-[30px] max-2xl:px-[25px] max-lg:px-[20px] py-[46px] max-2xl:py-[40px] max-lg:py-8 max-md:py-5 rounded-[20px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
+                        <div className="flex items-center mb-[43px] max-3xl:mb-5 max-md:mb-2">
                            <div className="w-[200px] mr-[25px] max-2xl:mr-[15px] rounded-full bg-white">
                               <Image
                                  className=""
@@ -128,9 +128,9 @@ const Students: React.FC<StudentsProps> = ({ translation }) => {
                               />
                            </div>
                            <div className="">
-                              <p className="relative z-10 text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
+                              <p className="w-fit p-1 relative z-10 text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
                                  <svg
-                                    className="max-3xl:w-[150px] max-2xl:w-[145px] max-md:w-[130px] absolute -top-2 -left-[15px] max-md:-top-2 max-md:-left-[9px] z-[-1]"
+                                    className="w-full h-full absolute top-0 left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="183.77px"
                                     height="44.253px"
@@ -174,7 +174,7 @@ const Students: React.FC<StudentsProps> = ({ translation }) => {
                               </svg>
                            </div>
                            <div className="">
-                              <p className="text-[24px] max-2xl:text-[20px] max-sm:text-[16px] leading-[29px] max-2xl:leading-[25px] mt-4">
+                              <p className="text-[24px] max-2xl:text-[20px] max-sm:text-[16px] leading-[29px] max-2xl:leading-[25px] mt-4 max-md:mt-2">
                                  {translation?.student?.about}
                               </p>
                            </div>
