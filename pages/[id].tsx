@@ -73,11 +73,11 @@ const TestingPage = ({ data }: any) => {
       msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
       msg += `Количество тестов: ${data?.test?.length}  \n`;
       msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
-      msg += `Резултаты тестирования  \n`;
+      // msg += `Резултаты тестирования  \n`;
 
-	  for(let i=0; i<Ansvers_list.length; i++){
-		msg += `${i+1} : ${Ansvers_list[i]?.ansver ? "+" :"-"}  \n`;
-	  }
+	//   for(let i=0; i<Ansvers_list.length; i++){
+	// 	msg += `${i+1} : ${Ansvers_list[i]?.ansver ? "+" :"-"}  \n`;
+	//   }
 	  
       axios.post(URL, {
           chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
@@ -86,6 +86,7 @@ const TestingPage = ({ data }: any) => {
         })
 		.then((res)=>{
 			if(res.status === 200 || res.status === 201){
+            Ansvers_list = []
 				router.push("/")
 			}
 		})

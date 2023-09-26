@@ -2,142 +2,1389 @@
     "testing":[
         {
             "id":1,
-            "time":3600000,
-            "title":"A1 level",
+            "time":1800000,
+            "title":"Tests",
             "test":[
                 {
                     "id":1,
-                    "question":"Frist question ?",
+                    "question":"I ____ got a computer but I've got a tablet. ",
                     "answers":[
                         {
                             "id":1,
-                            "title":"First answer",
+                            "title":"don't",
                             "examination":false
                         },
                         {
                             "id":2,
-                            "title":"Second answer",
+                            "title":"'ve",
                             "examination":false
                         },
                         {
                             "id":3,
-                            "title":"Third answer",
+                            "title":"haven't",
                             "examination":true
                         }
                     ]
                 },
                 {
                     "id":2,
-                    "question":"Second question ?",
+                    "question":"Sue: I love Rita Ora! _____ her? Mike: No. I prefer Ed Sheeran.",
                     "answers":[
                         {
                             "id":1,
-                            "title":"First answer",
-                            "examination":false
-                        },
-                        {
-                            "id":2,
-                            "title":"Second answer",
+                            "title":"Do you like",
                             "examination":true
                         },
                         {
+                            "id":2,
+                            "title":"Are you like",
+                            "examination":false
+                        },
+                        {
                             "id":3,
-                            "title":"Third answer",
+                            "title":"Does you like",
                             "examination":false
                         }
                     ]
                 },
                 {
                     "id":3,
-                    "question":"Third question ?",
+                    "question":"Marie: _____ play a musical instrument, John?  John: Yes. I play the piano. ",
                     "answers":[
                         {
                             "id":1,
-                            "title":"First answer",
+                            "title":"Can you",
                             "examination":true
                         },
                         {
                             "id":2,
-                            "title":"Second answer",
+                            "title":"Do you can",
                             "examination":false
                         },
                         {
                             "id":3,
-                            "title":"Third answer",
-                            "examination":false
-                        }
-                    ]
-                }  
-            ]
-        },
-        {
-            "id":2,
-            "time":3600000,
-            "title":"A2 level",
-            "test":[
-                {
-                    "id":1,
-                    "question":"Frist question ?",
-                    "answers":[
-                        {
-                            "id":1,
-                            "title":"First answer",
-                            "examination":true
-                        },
-                        {
-                            "id":2,
-                            "title":"Second answer",
-                            "examination":false
-                        },
-                        {
-                            "id":3,
-                            "title":"Third answer",
+                            "title":"Are you",
                             "examination":false
                         }
                     ]
                 },
                 {
-                    "id":2,
-                    "question":"Second question ?",
+                    "id":4,
+                    "question":"That's Jana. She's ______ to her friend. ",
                     "answers":[
                         {
                             "id":1,
-                            "title":"First answer",
+                            "title":"talks",
                             "examination":false
                         },
                         {
                             "id":2,
-                            "title":"Second answer",
-                            "examination":true
+                            "title":"talk",
+                            "examination":false
                         },
                         {
                             "id":3,
-                            "title":"Third answer",
+                            "title":"talking",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "question":"Amy: Where ______ you yesterday?  Jill: I was at my grandmother's house.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"were",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"did",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"are",
                             "examination":false
                         }
                     ]
                 },
                 {
-                    "id":3,
-                    "question":"Third question ?",
+                    "id":6,
+                    "question":"Angel: Messi's the ______ footballer in the world.  Ricardo: No, he isn't. Ronaldo is!",
                     "answers":[
                         {
                             "id":1,
-                            "title":"First answer",
+                            "title":"most good",
                             "examination":false
                         },
                         {
                             "id":2,
-                            "title":"Second answer",
+                            "title":"best",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"better",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":7,
+                    "question":"I _____ to the radio every day.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"read",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"watch",
                             "examination":false
                         },
                         {
                             "id":3,
-                            "title":"Third answer",
+                            "title":"listen",
                             "examination":true
                         }
                     ]
-                }  
+                },
+                {
+                    "id":8,
+                    "question":"Dad: Where are you going?  Mum: To the _____ . I need to buy some boots.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"chemist's",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"newsagent's ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"shoe shop",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":9,
+                    "question":"Mary is very _____ . She always helps me when I have a problem. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"hard-working",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"kind",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"creative",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":10,
+                    "question":"You ____ tell anyone – it's a secret",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"don't have to",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"must",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"mustn't",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":11,
+                    "question":"When I was five I _____ swim but now I can.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"couldn't",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"can't ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"could ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":12,
+                    "question":"While we _____ to school, it started snowing. It was beautiful!",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"was walking",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"were walking",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"walked ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":13,
+                    "question":"Harry: What are you doing tonight? Ben: I _____ basketball with Michael. Do you want to come?",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"'m playing",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"will play",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"play",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":14,
+                    "question":"I haven't finished cleaning my bike _____ .",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"already",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"just",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"yet",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":15,
+                    "question":"If _____ to the concert later, ____ with you.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"you'll go / I come",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"you go / I'll come",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"you go / I come",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":16,
+                    "question":"He's a ____. He writes articles for the newspaper.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"dentist ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"journalist ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"secretary",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":17,
+                    "question":" Customer: I'd like a ____ of pizza, please.  Server: Of course. Here you are.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"packet",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"slice ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"carton ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":18,
+                    "question":"George: These trousers are a bit big.  Dad: Yes, I think you need to buy a ____ .",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"cap ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"scarf ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"belt ",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":19,
+                    "question":"That is the man ____ name I can't pronounce.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"whose ",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"who ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"which ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":20,
+                    "question":"My best friend isn't ____ my sister.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"as old than",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"as old as",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"so old than",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":21,
+                    "question":"Can you turn the music down, it's _____ .",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"not enough loud",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"not loud enough ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"too loud",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":22,
+                    "question":" James: What ____ if you ____ €100 in the street?  Lisa: I'd give it to the police. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"will you do / found ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"would you do / would find",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"would you do / found",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":23,
+                    "question":"My brother and sister ____ play football together when they were younger.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"did use to",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"use to",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"used to",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":24,
+                    "question":"I enjoyed ____ my homework last night.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"do ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"to do",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"doing ",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":25,
+                    "question":"Mum: What's the matter? Natalie: I sang too much at the concert and now my throat is ____ . ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"injured ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"sore ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"ache ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":26,
+                    "question":"I am very ____ in learning Chinese next year.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"interesting ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"interest ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"interested ",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":27,
+                    "question":"If I don't know a word I always ____ using an online dictionary.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"look it for ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":" look up it ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"look it up ",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":28,
+                    "question":" I've lived in London ____ 20 years but I've never visited London Zoo. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"for ",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"since ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"from ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":29,
+                    "question":"By this time next week, we ____ our exams and we'll be on holiday!",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"ll be finishing",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"'re going to finish",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"'ll have finished",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":30,
+                    "question":"This film, ___ won three Oscars, stars Johnny Depp and is directed by Tim Burton. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"which ",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"where ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"that ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":31,
+                    "question":"It ____ John who used the computer because he doesn't know the password.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"mustn't be",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"can't have been",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"might have been ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":32,
+                    "question":"If you ____ football for five hours you ____ so tired.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"wouldn't have played / wouldn't have felt",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"hadn't played / won't feel",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"hadn't played / wouldn't have felt ",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":33,
+                    "question":"I wish I ____ as well as her. She's got such a lovely voice.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"sing ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"can sing ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"could sing",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":34,
+                    "question":"When we entered the church it was ____ inside.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"absolutely packed",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"very enormous",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"absolutely old",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":35,
+                    "question":"My teacher is very good ____ grammar.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"for explain",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"in explaining",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"at explaining",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":36,
+                    "question":"Sally, could you ____ me some money, please? ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"owe ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"lend ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"borrow ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":37,
+                    "question":"Tom: Where are you? ____ here for an hour.  Emma: Sorry. I missed the bus.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":" I wait ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"I'm waiting ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"I've been waiting",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":" I'd been waiting",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":38,
+                    "question":"It was ____ hot that we decided to stay at home.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"so ",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"very ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"too ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"such a",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":39,
+                    "question":"The ____ I concentrate the ____ I finish my work.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"more hard / fastest",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"hardly / faster ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"harder / fastest",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"harder / faster",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":40,
+                    "question":"You ____ brought food. We have got plenty here.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"had better",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"needn't have",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"didn't need ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"should have",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":41,
+                    "question":"We'll play a game tonight ……………. you have done your   homework.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"unless ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"provided ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"supposed ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"if only ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":42,
+                    "question":" You won a prize for your paintings, ____ ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":" isn't it? ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"haven't you? ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"didn't you? ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"don't you? ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":43,
+                    "question":" The ____ from the airport into London was expensive but quick. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"travel ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"trip ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"journey ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"voyage ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":44,
+                    "question":"When I ____ money, I usually take out €40 from the cash machine.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"pick up",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"withdraw ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"set aside",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"deposit",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":45,
+                    "question":"Max always ____ his important computer documents on an external drive. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"prints out",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"saves up ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"backs up ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"sets off",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":46,
+                    "question":"If the computer doesn't work try ____ it off and on again.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"to switch",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"switching ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"switch ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"having switched",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":47,
+                    "question":"The suspect ____ being near the bank at the time of the crime.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"claimed ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"accused ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"denied ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"refused",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":48,
+                    "question":"The man is believed ____ over a thousand marathons since he started.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"to run",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"to be running",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"he has run ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"to have run",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":49,
+                    "question":"Paul didn't like decorating so he got a professional decorator ____ his flat for him. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"designing ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"design",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"she designed",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"to design",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":50,
+                    "question":"____ all her emails, she switched off her computer. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"Sending ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"She sent ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"Having sent ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"Sent ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":51,
+                    "question":"If you're angry, just tell him. You should get it off your ____ .",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"head ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"chest ",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"back ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"foot ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":52,
+                    "question":"You should take a few days off work. It won't ____ you any harm. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"do",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"give ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"make ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"pay",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":53,
+                    "question":"Slow down, Barry. I can't ____ you.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"keep up with",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"come up to",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"come up with",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"reach up with",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":54,
+                    "question":"Budapest is a wonderful city full of culture and ____ in history.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"sprawling ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"renowned ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"steeped ",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"bustling ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":55,
+                    "question":"I liked my new English teacher, ____ was fortunate, as she also was teaching us history. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"who",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"what",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"which",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"that",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":56,
+                    "question":"Mum: Laura, have you done the dishes yet?  Laura: Well, I ____ doing them, but then I had to answer my phone. ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"started to",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"did start",
+                            "examination":true
+                        },
+                        {
+                            "id":3,
+                            "title":"was starting",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"have just was",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":57,
+                    "question":"____ the film started when the phone rang.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"No sooner had ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"Seldom had",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"Barely had",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"Not until",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":58,
+                    "question":"Do you remember ____ your bed when you were a child? ",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"to do",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"doing",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"to make",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"making",
+                            "examination":true
+                        }
+                    ]
+                },
+                {
+                    "id":59,
+                    "question":"My aunt Jane bears a(n) ____ resemblance to a famous rock star.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"uncanny ",
+                            "examination":true
+                        },
+                        {
+                            "id":2,
+                            "title":"sceptical",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"intentional ",
+                            "examination":false
+                        },
+                        {
+                            "id":4,
+                            "title":"irrational ",
+                            "examination":false
+                        }
+                    ]
+                },
+                {
+                    "id":60,
+                    "question":"My sister and my father like to win. There is a competitive ____ running through our family.",
+                    "answers":[
+                        {
+                            "id":1,
+                            "title":"line ",
+                            "examination":false
+                        },
+                        {
+                            "id":2,
+                            "title":"consciousness ",
+                            "examination":false
+                        },
+                        {
+                            "id":3,
+                            "title":"streak",
+                            "examination":true
+                        },
+                        {
+                            "id":4,
+                            "title":"shift",
+                            "examination":false
+                        }
+                    ]
+                }
             ]
         }
     ]
