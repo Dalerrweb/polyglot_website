@@ -131,7 +131,7 @@ const Tests: React.FC<TestsProps> = ({ translation }) => {
                },
             }}
          >
-            {[0, 1].map((item: number) => {
+            {[0].map((item: number) => {
                return (
                   <SwiperSlide key={item}>
                      <SwiperChild translation={translation?.test} item={item} />

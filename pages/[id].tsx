@@ -19,6 +19,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    };
 };
 
+
 let Ansvers_list: any = [];
 
 const TestingPage = ({ data }: any) => {
@@ -67,17 +68,22 @@ const TestingPage = ({ data }: any) => {
    const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
 
    const sendData = () =>{
+      let k = 0
       let msg = `🆕 Ответы тестирования! \n`;
       msg += `Уровень: ${data?.title} \n`;
       msg += `👨 Имя: ${infoStudent?.name} \n`;
       msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
       msg += `Количество тестов: ${data?.test?.length}  \n`;
       msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
-      // msg += `Резултаты тестирования  \n`;
 
-	//   for(let i=0; i<Ansvers_list.length; i++){
-	// 	msg += `${i+1} : ${Ansvers_list[i]?.ansver ? "+" :"-"}  \n`;
-	//   }
+	  for(let i=0; i<Ansvers_list.length; i++){
+		   if(Ansvers_list[i].ansver === true){
+            k++
+         }
+	  }
+
+     msg += `Резултаты тестирования  \n`;
+     msg += `${k} из ${data?.test?.length}  \n`;
 	  
       axios.post(URL, {
           chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
