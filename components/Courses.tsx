@@ -250,26 +250,6 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                            <button className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
                               {item?.application}
                            </button>
-<<<<<<< HEAD
-                           <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] ">
-                              {item?.details}
-                              <svg
-                                 className="max-3xl:w-[20px] max-3xl:h-[25px] max-xl:w-[17px] max-xl:h-[17px]"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 width="25"
-                                 height="25"
-                                 viewBox="0 0 25 25"
-                                 fill="none"
-                              >
-                                 <path
-                                    d="M24.9794 3.10726C24.985 2.69591 24.8241 2.29976 24.5332 2.00886C24.2423 1.71796 23.8461 1.55702 23.4348 1.56262C22.5817 1.56262 21.8901 2.25418 21.8901 3.10726V19.7276L2.67476 0.491667C2.28969 0.0784169 1.70976 -0.0916915 1.16248 0.0480753C0.615192 0.187842 0.187842 0.615192 0.0480753 1.16248C-0.0916915 1.70976 0.0784169 2.28969 0.491667 2.67476L19.7276 21.9107H3.10726C2.25418 21.9107 1.56262 22.6023 1.56262 23.4554C1.56262 24.3084 2.25418 25 3.10726 25H23.4554C24.3084 25 25 24.3084 25 23.4554L24.9794 3.10726Z"
-                                    fill="white"
-                                 />
-                              </svg>
-                           </button>
-=======
-                          
->>>>>>> 4fe36c07e51f34b7c28d3cf8e5ff1ebe9b148580
                         </div>
                      </div>
                   </SwiperSlide>
