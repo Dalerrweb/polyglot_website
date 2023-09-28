@@ -250,6 +250,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                            <button className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
                               {item?.application}
                            </button>
+<<<<<<< HEAD
                            <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] ">
                               {item?.details}
                               <svg
@@ -266,6 +267,9 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                  />
                               </svg>
                            </button>
+=======
+                          
+>>>>>>> 4fe36c07e51f34b7c28d3cf8e5ff1ebe9b148580
                         </div>
                      </div>
                   </SwiperSlide>

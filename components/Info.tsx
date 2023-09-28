@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface InfoProps {
    translation: any;
 }
@@ -26,7 +28,14 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                         {translation?.text1}
                      </p>
                   </div>
-                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl bg-[gray]"></div>
+                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
+                     <Image
+                        src={"/images/offices/photo-22.webp"}
+                        width={1000}
+                        height={1000}
+                        alt="photo"
+                     />
+                  </div>
                </div>
             </div>
 
@@ -48,7 +57,14 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                         {translation?.text2}
                      </p>
                   </div>
-                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl bg-[gray]"></div>
+                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
+                     <Image
+                        src={"/images/offices/photo-23.webp"}
+                        width={1000}
+                        height={1000}
+                        alt="photo"
+                     />
+                  </div>
                </div>
             </div>
 
@@ -70,7 +86,14 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                         {translation?.text3}
                      </p>
                   </div>
-                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl bg-[gray]"></div>
+                  <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
+                     <Image
+                        src={"/images/offices/photo-24.webp"}
+                        width={1000}
+                        height={1000}
+                        alt="photo"
+                     />
+                  </div>
                </div>
             </div>
          </div>

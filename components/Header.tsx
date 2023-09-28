@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = () => {
             }`}
          >
             <div className="custom-container flex items-center justify-between py-3">
-               <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[180px] max-md:w-[130px]">
+               <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[150px] max-md:w-[130px]">
                   <Link href={"/"}>
                      <Image
                         className="w-auto h-auto"
