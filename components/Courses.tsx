@@ -111,7 +111,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                },
             }}
          >
-            {[0, 1, 2, 3, 4, 5].map((item: number) => {
+            {translation?.courses?.map((item: any) => {
                return (
                   <SwiperSlide key={item}>
                      <div className="course px-8 max-3xl:px-8 max-2xl:px-[30px] pb-[35px] pt-[46px] max-3xl:py-7 max-lg:py-[24px] rounded-[30px] hover:-translate-y-1    hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-blue text-white">
@@ -139,7 +139,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
 
                         <div className="pb-6 max-3xl:pb-4 border-b border-white">
                            <p className="text-[24px] max-3xl:text-[20px] max-2xl:text-[16px] leading-[32px] max-2xl:leading-[22.312px]">
-                              {translation?.course?.info}
+                              {item?.info}
                            </p>
                         </div>
 
@@ -158,7 +158,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                        fill="white"
                                     />
                                  </svg>
-                                 {translation?.course?.text1}
+                                 {item?.text1}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -173,7 +173,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                        fill="white"
                                     />
                                  </svg>
-                                 {translation?.course?.text2}
+                                 {item?.text2}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -188,7 +188,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                        fill="white"
                                     />
                                  </svg>
-                                 {translation?.course?.text3}
+                                 {item?.text3}
                               </li>
                               <li className="flex items-center gap-4 max-2xl:gap-2 text-[24px] max-3xl:text-[20px] max-2xl:text-[18px] max-xl:text-[16px] leading-[40px] max-2xl:leading-[35px] max-xl:leading-[27.89px]">
                                  <svg
@@ -203,37 +203,44 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                        fill="white"
                                     />
                                  </svg>
-                                 {translation?.course?.text4}
+                                 {item?.text4}
                               </li>
                            </ul>
                         </div>
 
                         <div className="flex items-start justify-between mt-6 max-3xl:mt-[20px] max-2xl:mt-[16px]">
-                           <div className="">
-                              <div className="">
-                                 <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
-                                    {translation?.course?.learnTime}
-                                 </p>
-                              </div>
-                              <div className="">
-                                 <p className="text-[45px] max-3xl:text-[32px] max-lg:text-[28px] font-bold leading-[40px] max-lg:leading-[27.89px]">
-                                    1-2 {translation?.course?.mounth}.
-                                 </p>
-                              </div>
-                           </div>
+                           {
+                              item?.learnTime2?.length > 0 ? 
+                              (
+                                 <div className="">
+                                    <div className="">
+                                       <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
+                                          {item?.learnTime}
+                                       </p>
+                                    </div>
+                                    <div className="">
+                                       <p className="text-[45px] max-3xl:text-[32px] max-lg:text-[28px] font-bold leading-[40px] max-lg:leading-[27.89px]">
+                                          {item?.learnTime2} {item?.mounth}.
+                                       </p>
+                                    </div>
+                                 </div>)
+                              :
+                              null
+                           }
+                           
 
                            <div className="">
                               <div className="">
                                  <p className="text-[24px] max-3xl:text-[18px] max-lg:text-[16px] leading-[40px]">
-                                    {translation?.course?.price}
+                                    {item?.price}
                                  </p>
                               </div>
                               <div className="">
                                  <p className="text-[45px] max-3xl:text-[32px] max-lg:text-[28px] font-bold leading-[40px] max-lg:leading-[27.89px]">
-                                    1 720 000
+                                    {item?.price2}
                                  </p>
                                  <p className="text-[36px] max-3xl:text-[28px] max-2xl:text-[25px] max-lg:text-[24px] leading-[40px] max-lg:leading-[27.89px]">
-                                    {translation?.course?.cumMounth}
+                                    {item?.cumMounth}
                                  </p>
                               </div>
                            </div>
@@ -241,10 +248,10 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
 
                         <div className="flex items-center justify-between mt-5 max-3xl:mt-[18px]">
                            <button className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange">
-                              {translation?.course?.application}
+                              {item?.application}
                            </button>
                            <button className="max-3xl:text-[16px] max-2xl:text-[14px]  flex items-center gap-3 max-md:gap-2 leading-[40px] ">
-                              {translation?.course?.details}
+                              {item?.details}
                               <svg
                                  className="max-3xl:w-[20px] max-3xl:h-[25px] max-xl:w-[17px] max-xl:h-[17px]"
                                  xmlns="http://www.w3.org/2000/svg"

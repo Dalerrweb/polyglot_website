@@ -46,7 +46,7 @@ const SwiperChild: React.FC<SwiperChild> = ({ item, translation }) => {
                         {translation?.time}
                      </p>
                      <p className="text-[40px] max-3xl:text-[27px] font-bold leading-[40px]">
-                        15 {translation?.min}
+                        30 {translation?.min}
                      </p>
                   </div>
                   <div className="">
@@ -54,7 +54,7 @@ const SwiperChild: React.FC<SwiperChild> = ({ item, translation }) => {
                         {translation?.quantity}
                      </p>
                      <p className="text-[40px] max-3xl:text-[27px] font-bold leading-[40px]">
-                        20 {translation?.question}.
+                        60 {translation?.question}.
                      </p>
                   </div>
                   <div className="">
