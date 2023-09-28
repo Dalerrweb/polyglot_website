@@ -7,6 +7,80 @@ interface TeacherProps {
 }
 
 const Teacher: React.FC<TeacherProps> = ({ translation }) => {
+   const teachers = [
+      {
+         id: 0,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-1",
+      },
+      {
+         id: 1,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-2",
+      },
+      {
+         id: 3,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-3",
+      },
+      {
+         id: 4,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-4",
+      },
+      {
+         id: 5,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-5",
+      },
+      {
+         id: 6,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-6",
+      },
+      {
+         id: 7,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-7",
+      },
+      {
+         id: 8,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-8",
+      },
+      {
+         id: 9,
+         name: "Daler Sharifkulov",
+         title: "Преподаватель по Английскому Языку",
+         ielts: 7.5,
+         dcr: "",
+         img: "teacher-9",
+      },
+   ];
    const [swiperRef, setSwiperRef] = useState<any>(null);
 
    const prevHandler = () => {
@@ -125,67 +199,59 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                },
             }}
          >
-            {[0, 1, 2, 3, 4, 5].map((item: number) => {
-               return (
-                  <SwiperSlide className="" key={item}>
-                     <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
-                        <div className="max-2xl:h-[600px] max-2xl:px-8 max-lg:p-0 max-lg:h-full">
-                           <Image
-                              className="bg-cover"
-                              src={"/images/daler-teacher.png"}
-                              width={1000}
-                              height={1000}
-                              alt="teacher"
-                           />
-                        </div>
-
-                        <div className="w-full absolute -bottom-3 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
-                           <div className="">
-                              <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
-                                 {translation?.teacher?.name}
-                              </p>
-                              <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                 {translation?.teacher?.info}
-                              </p>
+            {teachers.map(
+               (item: {
+                  id: number;
+                  name: string;
+                  title: string;
+                  ielts: number;
+                  dcr: string;
+                  img: string;
+               }) => {
+                  return (
+                     <SwiperSlide className="" key={item.id}>
+                        <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
+                           <div className="max-2xl:h-[600px] max-lg:h-full">
+                              <Image
+                                 className="bg-cover"
+                                 src={`/images/teachers/${item.img}.webp`}
+                                 width={1000}
+                                 height={1000}
+                                 alt="teacher"
+                              />
                            </div>
-                           <div className="flex items-center justify-between mt-3 max-2xl:mt-2 max-sm:mt-0 text-white">
-                              <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[0px] font-bold">
-                                 <svg
-                                    className="w-full h-full absolute -top-0 -left-0 z-[-1]"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 182 44"
-                                    fill="none"
-                                 >
-                                    <path
-                                       d="M2.22941 11.3498C2.60792 6.73537 6.42567 3.16097 11.055 3.08675L171.87 0.508695C177.188 0.42345 181.419 4.94297 180.985 10.2433L179.177 32.2824C178.798 36.8968 174.981 40.4712 170.351 40.5454L9.5357 43.1235C4.21822 43.2087 -0.0132092 38.6892 0.421572 33.3889L2.22941 11.3498Z"
-                                       fill="#EC8D18"
-                                    />
-                                 </svg>
-                                 IELTS 7.5
-                              </p>
 
-                              <button className="flex items-center gap-1 max-3xl:text-[16px] max-sm:text-[10px] max-md:text-[10px]">
-                                 {translation?.teacher?.details}
-                                 <svg
-                                    className="max-md:w-4 max-sm:w-2 max-md:h-2"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="26"
-                                    height="25"
-                                    viewBox="0 0 26 25"
-                                    fill="none"
-                                 >
-                                    <path
-                                       d="M25.3857 3.10726C25.3913 2.69591 25.2303 2.29976 24.9394 2.00886C24.6485 1.71796 24.2524 1.55702 23.841 1.56262C22.9879 1.56262 22.2964 2.25418 22.2964 3.10726V19.7276L3.08101 0.491667C2.69594 0.0784169 2.11601 -0.0916915 1.56873 0.0480753C1.02144 0.187842 0.594092 0.615192 0.454325 1.16248C0.314559 1.70976 0.484667 2.28969 0.897917 2.67476L20.1339 21.9107H3.51351C2.66043 21.9107 1.96887 22.6023 1.96887 23.4554C1.96887 24.3084 2.66043 25 3.51351 25H23.8616C24.7147 25 25.4062 24.3084 25.4062 23.4554L25.3857 3.10726Z"
-                                       fill="white"
-                                    />
-                                 </svg>
-                              </button>
+                           <div className="w-full absolute -bottom-3 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                              <div className="">
+                                 <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                                    {translation?.teacher?.name}
+                                 </p>
+                                 <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                                    {translation?.teacher?.info}
+                                 </p>
+                              </div>
+                              <div className="flex items-center justify-between mt-3 max-2xl:mt-2 max-sm:mt-0 text-white">
+                                 <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[0px] font-bold">
+                                    <svg
+                                       className="w-full h-full absolute -top-0 -left-0 z-[-1]"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                       viewBox="0 0 182 44"
+                                       fill="none"
+                                    >
+                                       <path
+                                          d="M2.22941 11.3498C2.60792 6.73537 6.42567 3.16097 11.055 3.08675L171.87 0.508695C177.188 0.42345 181.419 4.94297 180.985 10.2433L179.177 32.2824C178.798 36.8968 174.981 40.4712 170.351 40.5454L9.5357 43.1235C4.21822 43.2087 -0.0132092 38.6892 0.421572 33.3889L2.22941 11.3498Z"
+                                          fill="#EC8D18"
+                                       />
+                                    </svg>
+                                    IELTS {item.ielts}
+                                 </p>
+                              </div>
                            </div>
                         </div>
-                     </div>
-                  </SwiperSlide>
-               );
-            })}
+                     </SwiperSlide>
+                  );
+               }
+            )}
          </Swiper>
       </div>
    );
