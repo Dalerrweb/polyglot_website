@@ -87,62 +87,62 @@ export default function Home() {
 
             <div className="w-full flex flex-col py-20 max-2xl:py-10 gap-10 max-xl:gap-3 bg-blue">
                <div className="marquee-infinite">
-                  <div className="gap-10 max-xl:gap-3">
-                     <p className="gap-10 max-xl:gap-3">
+                  <div className="gap-10 max-2xl:gap-3">
+                     <p className="gap-10 max-2xl:gap-3">
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-2.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-3.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-4.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-md:hidden w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-5.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                      </p>
-                     <p className="gap-10 max-xl:gap-3">
+                     <p className="gap-10 max-2xl:gap-3">
                         <Image
-                           className="max-md:hidden w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-7.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-8.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-9.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-10.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
@@ -151,62 +151,62 @@ export default function Home() {
                   </div>
                </div>
                <div className="marquee-infinite -rotate-180">
-                  <div className="gap-10 max-xl:gap-3">
-                     <p className="rotate-180 gap-10 max-xl:gap-3">
+                  <div className="gap-10 max-2xl:gap-3">
+                     <p className="rotate-180 gap-10 max-2xl:gap-3">
                         <Image
-                           className="max-md:hidden w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-12.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-13.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-14.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-15.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                      </p>
-                     <p className="rotate-180 gap-10 max-xl:gap-3">
+                     <p className="rotate-180 gap-10 max-2xl:gap-3">
                         <Image
-                           className="max-md:hidden w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-17.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-18.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-19.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] py-5 px-5 rounded-2xl bg-[#D9D9D9]"
-                           src={""}
+                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           src={"/images/offices/photo-20.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"

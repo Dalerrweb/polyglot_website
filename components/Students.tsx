@@ -128,7 +128,7 @@ const Students: React.FC<StudentsProps> = ({ translation }) => {
                               />
                            </div>
                            <div className="">
-                              <p className="w-fit p-1 relative z-10 text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
+                              <p className="w-fit p-1 py-2 relative z-10 text-[36px] max-3xl:text-[28px] max-2xl:text-[26px] font-bold leading-[22px] text-white">
                                  <svg
                                     className="w-full h-full absolute top-0 left-0 z-[-1]"
                                     xmlns="http://www.w3.org/2000/svg"
