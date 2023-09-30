@@ -121,9 +121,10 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
             <div className="flex gap-3 max-sm:gap-1 items-center">
                <button
                   onClick={prevHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
+                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
                      height="25"
@@ -150,9 +151,10 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                </button>
                <button
                   onClick={nextHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
+                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
                      height="25"
@@ -211,9 +213,9 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                   return (
                      <SwiperSlide className="" key={item.id}>
                         <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
-                           <div className="max-2xl:h-[600px] max-lg:h-full">
+                           <div className="h-[700px] max-3xl:h-[600px] max-xl:h-full -translate-y-14 max-xl:-translate-y-10 max-sm:-translate-y-8">
                               <Image
-                                 className="bg-cover"
+                                 className="bg-cover "
                                  src={`/images/teachers/${item.img}.webp`}
                                  width={1000}
                                  height={1000}

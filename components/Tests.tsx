@@ -46,12 +46,13 @@ const Tests: React.FC<TestsProps> = ({ translation }) => {
                   {translation?.tests}
                </h2>
             </div>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 max-md:gap-1 items-center relative">
                <button
                   onClick={prevHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
+                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
                      height="25"
@@ -78,9 +79,10 @@ const Tests: React.FC<TestsProps> = ({ translation }) => {
                </button>
                <button
                   onClick={nextHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
+                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
+                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
                      height="25"
