@@ -57,30 +57,30 @@ const Header: React.FC<HeaderProps> = () => {
                <div className="max-lg:hidden">
                   <nav>
                      <ul className="flex gap-11 max-2xl:gap-5">
-                        <li className="max-xl:text-sm">
-                           <Link href={"#courses"}>
+                        <li>
+                           <Link href={"#courses"} className="max-xl:text-xs">
                               {translation?.header?.courses}
                            </Link>
                         </li>
-                        <li className="max-xl:text-sm">
-                           <Link href={"#teacher"}>
+                        <li>
+                           <Link href={"#teacher"} className="max-xl:text-xs">
                               {translation?.header?.teachers}
                            </Link>
                         </li>
-                        <li className="max-xl:text-sm">
-                           <Link href={"#tests"}>
+                        <li>
+                           <Link href={"#tests"} className="max-xl:text-xs">
                               {translation?.header?.tests}
                            </Link>
                         </li>
-                        <li className="max-xl:text-sm">
-                           <Link href={"#about"}>
+                        <li>
+                           <Link href={"#about"} className="max-xl:text-xs">
                               {translation?.header?.aboutSchool}
                            </Link>
                         </li>
                      </ul>
                   </nav>
                </div>
-               <div className="flex items-center gap-20">
+               <div className="flex items-center gap-20 max-2xl:gap-10 max-xl:gap-5">
                   <div className="flex gap-5 max-sm:gap-2">
                      <Select
                         defaultValue={localeValue}
@@ -189,22 +189,34 @@ const Header: React.FC<HeaderProps> = () => {
                      <li className="mb-1">
                         <span className="text-xs text-[gray]">Навигация</span>
                      </li>
-                     <li className="text-sm mb-3">
+                     <li
+                        onClick={() => setHide(false)}
+                        className="text-sm mb-3"
+                     >
                         <Link href={"#courses"}>
                            {translation?.header?.courses}
                         </Link>
                      </li>
-                     <li className="text-sm mb-3">
+                     <li
+                        onClick={() => setHide(false)}
+                        className="text-sm mb-3"
+                     >
                         <Link href={"#teacher"}>
                            {translation?.header?.teachers}
                         </Link>
                      </li>
-                     <li className="text-sm mb-3">
+                     <li
+                        onClick={() => setHide(false)}
+                        className="text-sm mb-3"
+                     >
                         <Link href={"#tests"}>
                            {translation?.header?.tests}
                         </Link>
                      </li>
-                     <li className="text-sm mb-3">
+                     <li
+                        onClick={() => setHide(false)}
+                        className="text-sm mb-3"
+                     >
                         <Link href={"#about"}>
                            {translation?.header?.aboutSchool}
                         </Link>

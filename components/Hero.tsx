@@ -50,6 +50,7 @@ const Hero: React.FC<HeroProps> = ({ translation }) => {
             </div>
             <div className="col-span-2 row-span-3 rounded-[15px] overflow-hidden bg-orange">
                <Image
+                  priority
                   className="w-full h-full object-cover"
                   src={"/images/offices/photo-27.webp"}
                   width={1000}

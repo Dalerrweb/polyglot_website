@@ -30,6 +30,7 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                   </div>
                   <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
                      <Image
+                        className="w-full h-full object-cover"
                         src={"/images/offices/photo-22.webp"}
                         width={1000}
                         height={1000}
@@ -59,6 +60,7 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                   </div>
                   <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
                      <Image
+                        className="w-full h-full object-cover"
                         src={"/images/offices/photo-23.webp"}
                         width={1000}
                         height={1000}
@@ -88,6 +90,7 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
                   </div>
                   <div className="max-w-[548px] w-full min-h-[350px] max-2xl:min-h-[250px] max-xl:min-h-[200px] h-full rounded-2xl overflow-hidden bg-[gray]">
                      <Image
+                        className="w-full h-full object-cover"
                         src={"/images/offices/photo-24.webp"}
                         width={1000}
                         height={1000}

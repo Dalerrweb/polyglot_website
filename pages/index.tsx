@@ -90,28 +90,28 @@ export default function Home() {
                   <div className="gap-10 max-2xl:gap-3">
                      <p className="gap-10 max-2xl:gap-3">
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-lg:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-2.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-3.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-sm:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-4.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-2xl:block hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-5.webp"}
                            width={1000}
                            height={1000}
@@ -120,28 +120,28 @@ export default function Home() {
                      </p>
                      <p className="gap-10 max-2xl:gap-3">
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-lg:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-7.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-8.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-sm:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-9.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-2xl:block hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-10.webp"}
                            width={1000}
                            height={1000}
@@ -154,28 +154,28 @@ export default function Home() {
                   <div className="gap-10 max-2xl:gap-3">
                      <p className="rotate-180 gap-10 max-2xl:gap-3">
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-lg:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-12.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-13.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-sm:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-14.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-2xl:block hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-15.webp"}
                            width={1000}
                            height={1000}
@@ -184,28 +184,28 @@ export default function Home() {
                      </p>
                      <p className="rotate-180 gap-10 max-2xl:gap-3">
                         <Image
-                           className="max-sm:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-lg:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-17.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="max-lg:hidden w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-18.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-sm:hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-19.webp"}
                            width={1000}
                            height={1000}
                            alt="photo"
                         />
                         <Image
-                           className="w-full h-[400px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
+                           className="max-2xl:block hidden w-full object-cover h-[400px] max-3xl:h-[300px] max-2xl:h-[200px] max-xl:h-[170px] max-lg:h-[150px] max-md:h-[120px] rounded-2xl max-lg:rounded-xl max-md:rounded-lg bg-[#D9D9D9]"
                            src={"/images/offices/photo-20.webp"}
                            width={1000}
                            height={1000}
