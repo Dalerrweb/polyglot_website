@@ -58,6 +58,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                      />
                   </svg>
                </button>
+
                <button
                   onClick={nextHandler}
                   className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
