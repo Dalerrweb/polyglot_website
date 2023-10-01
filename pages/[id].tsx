@@ -3,10 +3,9 @@ import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import Timer from "@/components/CustomTimer";
 import TranslateContext from "@/context/useTranslate";
-import { getCookie, hasCookie } from 'cookies-next';
+import { getCookie, hasCookie } from "cookies-next";
 import axios from "axios";
 import { useRouter } from "next/router";
-
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
    let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
@@ -14,11 +13,12 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
    return {
       props: {
-         data: data.testing[query.testingPage !== undefined ? +query.testingPage - 1 : 0],
+         data: data.testing[
+            query.testingPage !== undefined ? +query.testingPage - 1 : 0
+         ],
       },
    };
 };
-
 
 let Ansvers_list: any = [];
 
@@ -36,20 +36,20 @@ const TestingPage = ({ data }: any) => {
    const [endTest, setEndTest] = useState(false);
 
    const router = useRouter();
-   const translation:any = useContext(TranslateContext)
+   const translation: any = useContext(TranslateContext);
 
    useEffect(() => {
-      if(hasCookie("infoStudent")){
-         const getINfoStudent:any = getCookie("infoStudent")
-         setInfoStudent(JSON.parse(getINfoStudent))
-      }else{
-         router.push('/')
+      if (hasCookie("infoStudent")) {
+         const getINfoStudent: any = getCookie("infoStudent");
+         setInfoStudent(JSON.parse(getINfoStudent));
+      } else {
+         router.push("/");
       }
-   }, [])
+   }, []);
    const handleSubmit = (e: any) => {
       e.preventDefault();
 
-      setNextButton(false)
+      setNextButton(false);
 
       if (testNumber + 1 === data.test.length) {
          setEndTest(true);
@@ -67,8 +67,8 @@ const TestingPage = ({ data }: any) => {
 
    const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
 
-   const sendData = () =>{
-      let k = 0
+   const sendData = () => {
+      let k = 0;
       let msg = `🆕 Ответы тестирования! \n`;
       msg += `Уровень: ${data?.title} \n`;
       msg += `👨 Имя: ${infoStudent?.name} \n`;
@@ -76,30 +76,31 @@ const TestingPage = ({ data }: any) => {
       msg += `Количество тестов: ${data?.test?.length}  \n`;
       msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
 
-	  for(let i=0; i<Ansvers_list.length; i++){
-		   if(Ansvers_list[i].ansver === true){
-            k++
+      for (let i = 0; i < Ansvers_list.length; i++) {
+         if (Ansvers_list[i].ansver === true) {
+            k++;
          }
-	  }
+      }
 
-     msg += `Резултаты тестирования  \n`;
-     msg += `${k} из ${data?.test?.length}  \n`;
-	  
-      axios.post(URL, {
-          chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
-          parse_mode: "html",
-          text: msg,
-        })
-		.then((res)=>{
-			if(res.status === 200 || res.status === 201){
-            Ansvers_list = []
-				router.push("/")
-			}
-		})
-        .catch((err) => console.log(err));
-   }
+      msg += `Резултаты тестирования  \n`;
+      msg += `${k} из ${data?.test?.length}  \n`;
 
-   return ( 
+      axios
+         .post(URL, {
+            chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
+            parse_mode: "html",
+            text: msg,
+         })
+         .then((res) => {
+            if (res.status === 200 || res.status === 201) {
+               Ansvers_list = [];
+               router.push("/");
+            }
+         })
+         .catch((err) => console.log(err));
+   };
+
+   return (
       <section className="section">
          <div className="orange_div">
             <div className="blue_div">
@@ -114,10 +115,20 @@ const TestingPage = ({ data }: any) => {
 
                      <div className="mt-5 max-lg:mt-4 max-md:mt-3 max-sm:mt-2 flex flex-col gap-3 max-xl:gap-2 max-md:gap-1">
                         <p className="text-white small_text_size font-semibold">
-                           {translation?.textPage?.question} {test.id} из {data.test.length}
+                           {translation?.textPage?.question} {test.id} из{" "}
+                           {data.test.length}
                         </p>
                         <div className="p-1 h-4 max-lg:h-3 rounded-full bg-white">
-                           <div style={{width:`${Math.floor((100 / data.test.length) * (test.id -1))}%`, borderRadius:"10px", transition:"1s"}} className={`h-full bg-orange rounded-full]`}></div>
+                           <div
+                              style={{
+                                 width: `${Math.floor(
+                                    (100 / data.test.length) * (test.id - 1)
+                                 )}%`,
+                                 borderRadius: "10px",
+                                 transition: "1s",
+                              }}
+                              className={`h-full bg-orange rounded-full]`}
+                           ></div>
                         </div>
                      </div>
 
@@ -127,23 +138,24 @@ const TestingPage = ({ data }: any) => {
                      <form onSubmit={handleSubmit}>
                         <div className="flex max-xl:flex-col items-start justify-between gap-5 max-xl:gap-4 max-md:gap-3 mt-7 max-3xl:mt-5 max-2xl:mt-4 max-lg:mt-3">
                            {test.answers.map((item: any) => (
-                              <label key={item.id} className="bg-white w-full h-auto p-4 max-3xl:p-3 max-md::p-2 rounded-xl flex items-center cursor-pointer">
-                              <div
-                                 className="small_text_size font-medium flex items-center justify-between"
+                              <label
+                                 key={item.id}
+                                 className="bg-white w-full h-auto p-4 max-3xl:p-3 max-md::p-2 rounded-xl flex items-center cursor-pointer"
                               >
+                                 <div className="small_text_size font-medium flex items-center justify-between">
                                     <input
                                        onChange={(e) => {
-                                       setNextButton(true)
-                                       setTestAnsver(item.examination);
-                                       setInputСheck(e.target);
-                                    }}
+                                          setNextButton(true);
+                                          setTestAnsver(item.examination);
+                                          setInputСheck(e.target);
+                                       }}
                                        required
                                        type="radio"
                                        name="ansver"
                                        className="w-14 h-5 cursor-pointer"
                                     />
                                     <p>{item.title}</p>
-                              </div>
+                                 </div>
                               </label>
                            ))}
                         </div>
@@ -165,49 +177,47 @@ const TestingPage = ({ data }: any) => {
                               </p>
                            </div>
 
-                           {
-                              nextButton?(
-                                 <button
-                                    type="submit"
-                                    className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
-                                 >
-                                    {translation?.textPage?.next} 
-                                    <Image
-                                       className="w-7 h-7 max-md:h-5 max-md:w-5"
-                                       src="/icons/Arrow-Right.svg"
-                                       alt=""
-                                       width={10}
-                                       height={10}
-                                    />
-                                 </button>
-                              ):
-                              (
-                                 <button
-                                    title="Выберите вариант"
-                                    type="submit"
-                                    className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
-                                 >
-                                    {translation?.textPage?.next} 
-                                    <Image
-                                       className="w-7 h-7 max-md:h-5 max-md:w-5"
-                                       src="/icons/Arrow-Right.svg"
-                                       alt=""
-                                       width={10}
-                                       height={10}
-                                    />
-                                 </button>
-                              )
-                           }
-                           
+                           {nextButton ? (
+                              <button
+                                 type="submit"
+                                 className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                              >
+                                 {translation?.textPage?.next}
+                                 <Image
+                                    className="w-7 h-7 max-md:h-5 max-md:w-5"
+                                    src="/icons/Arrow-Right.svg"
+                                    alt=""
+                                    width={10}
+                                    height={10}
+                                 />
+                              </button>
+                           ) : (
+                              <button
+                                 title="Выберите вариант"
+                                 type="submit"
+                                 className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 cursor-not-allowed small_text_size bg-[#989898] py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
+                              >
+                                 {translation?.textPage?.next}
+                                 <Image
+                                    className="w-7 h-7 max-md:h-5 max-md:w-5"
+                                    src="/icons/Arrow-Right.svg"
+                                    alt=""
+                                    width={10}
+                                    height={10}
+                                 />
+                              </button>
+                           )}
                         </div>
                      </form>
                   </>
                ) : (
                   <div className="flex flex-col gap-5 items-center justify-center">
                      <h2 className="text-white text-center text-2xl font-medium">
-                     🎉 {translation?.endTest?.title} {infoStudent?.name }! 🎉
+                        🎉 {translation?.endTest?.title} {infoStudent?.name}! 🎉
                      </h2>
-                     <h2 className="text-white text-center text-2xl font-medium">{translation?.endTest?.text}</h2>
+                     <h2 className="text-white text-center text-2xl font-medium">
+                        {translation?.endTest?.text}
+                     </h2>
                      <button
                         onClick={sendData}
                         title="result"
