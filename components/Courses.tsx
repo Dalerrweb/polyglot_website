@@ -95,21 +95,21 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                 slidesPerView={3}
                 breakpoints={{
                     1536: {
-                        spaceBetween: 20,
+                       spaceBetween: 35,
                     },
                     1920: {
-                        slidesPerView: 3,
+                       slidesPerView: 3,
                     },
                     1280: {
-                        slidesPerView: 3,
+                       slidesPerView: 3,
                     },
                     768: {
-                        slidesPerView: 3,
+                       slidesPerView: 2,
                     },
-                    0: {
-                        slidesPerView: 3,
-                    },
-                }}
+                    0:{
+                        slidesPerView: 1, 
+                    }
+                 }}
             >
                 {translation?.courses?.map((item: any) => {
                     return (
