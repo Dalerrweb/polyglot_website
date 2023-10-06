@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Rodal from "rodal";
+
+import Course from "./children/Course";
 
 import "swiper/css";
-import Course from "./children/Course";
 
 interface CoursesProps {
    translation: any;
