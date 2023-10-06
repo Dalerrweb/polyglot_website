@@ -4,7 +4,7 @@ const uz = {
         teachers: "O'qituvchilar",
         tests: "Mini testlar",
         aboutSchool: "Maktab haqida",
-        application: 'Arizangizni yuboring'
+        application: 'Ariza yuborish'
     },
     hero: {
         text1: "O'rganish yorug'lik, jaholat esa zulmat!",
@@ -14,7 +14,8 @@ const uz = {
     entry: {
         text1: 'Bepul darsga yoziling',
         buttonText: "Maslahatlash",
-        text2: "Tugmani bosish orqali men siyosat va foydalanuvchi shartnomasi shartlarini qabul qilaman"
+        text2: "Tugmani bosish orqali men siyosat va foydalanuvchi shartnomasi shartlarini qabul qilaman",
+        input:"Ism"
     },
     courses: {
         title: 'Kurs dasturi',
@@ -150,14 +151,14 @@ const uz = {
         text01: 'Qabul qilishda yordam bering',
     },
     about:{
-        title:"OSamarqanddagi yetakchi chet tili maktablaridan",
+        title:"Samarqanddagi yetakchi chet tili maktablaridan",
         text2:"Shahar markazida 2 ta filial, 1000 dan ortiq talabalar bitirgan, allaqachon o'zlashtirilgan: ingliz, fransuz va h.k."
     },
     info: {
-        title1: 'Innovatsion oqitish usullari',
-        text1: 'Bosh sahifa / Katalog',
+        title1: "Innovatsion oqitish usullari",
+        text1: "Bizning o'qituvchilarimiz maxsus o'quv dasturini ishlab chiqdilar, unda siz Intermidate darajasiga qadar istalgan tilni tezda o'zlashtirishingiz mumkin",
         title2: 'Biz barcha qulayliklarni yaratamiz',
-        text2: 'Наши кабинеты оснащены всем необходимым оборудованием для комфортного обучения"Bizning sinflarimiz qulay oqish uchun barcha zarur jihozlar bilan jihozlangan',
+        text2: 'Bizning sinflarimiz qulay oqish uchun barcha zarur jihozlar bilan jihozlangan',
         title3: 'Nutq amaliyoti',
         text3: 'Asosiy mashgulotlardan tashqari, biz nutq konikmalarini rivojlantirish uchun alohida amaliy mashgulotlar ostkazamiz',
     },
@@ -208,7 +209,11 @@ const uz = {
     social:"Ijtimoiy tarmoqlar",
     modalTestStart:{
         title:"Formani to'ldiring!",
-        button:"Boshlash"
+        button:"Boshlash",
+        inputName:"Ism",
+        inputNumber:"Nomer",
+        сontinueAs:"Men",
+        changeData:"Malumotni o'zgartirish"
     },
     textPage:{
         title:"Til bilan tanishishning darajasini aniqlang",

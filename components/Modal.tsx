@@ -72,7 +72,7 @@ function Modal() {
               type="submit"
               className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
             >
-              Изменить данные
+              {translation?.modalTestStart?.changeData}
             </button>
           </>
         ) : (
@@ -88,13 +88,13 @@ function Modal() {
                   type="text"
                   required
                   name="name"
-                  placeholder="Имя"
+                  placeholder={translation?.modalTestStart?.inputName}
                   className="w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                 /> 
                    <InputMask
 				     className={"w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"}
                      mask="+\9\98-(99)-999-99-99" 
-                     placeholder="Номер"
+                     placeholder={translation?.modalTestStart?.inputNumber}
                      required
                      value={phone}
                      onChange={(e:any)=>setPhone(e.target.value)}>

@@ -60,7 +60,7 @@ const Entry: React.FC<EntryProps> = ({ translation }) => {
                      type="text"
                      name="name"
                      required
-                     placeholder="Имя"
+                     placeholder={`${translation?.input}`}
                      className="text-[24px] max-xl:text-[20px] px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                   />
                   <div className="text-[24px] max-xl:text-[20px] px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]">

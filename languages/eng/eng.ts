@@ -14,7 +14,8 @@ const eng = {
     entry: {
         text1: "Sign up for a free lesson",
         buttonText: "Consult",
-        text2: "By clicking the button, I accept the terms of the privacy policy and user agreement"
+        text2: "By clicking the button, I accept the terms of the privacy policy and user agreement",
+        input:"Name"
     },
     courses: {
         title: "Course Program",
@@ -154,7 +155,7 @@ const eng = {
     },
     info: {
         title1: "Innovative teaching methodology",
-        text1: "Home / Catalog",
+        text1: "Our teachers have developed a special training program in which you can quickly master any language up to the Intermidate level",
         title2: "Creating all the conveniences",
         text2: "Our classrooms are equipped with all the necessary equipment for comfortable learning",
         title3: "Conversation practice",
@@ -207,7 +208,11 @@ const eng = {
     },
     modalTestStart: {
         title: "Fill out the form!",
-        button: "Start"
+        button: "Start",
+        inputName:"Name",
+        inputNumber:"Number",
+        сontinueAs:"Contiunue as",
+        changeData:"To change the data"
     },
     textPage: {
         title: "Take a mini-test to determine your language proficiency level",
