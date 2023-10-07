@@ -217,12 +217,13 @@ const eng = {
     textPage: {
         title: "Take a mini-test to determine your language proficiency level",
         question: "Question",
-        next: "Next"
+        next: "Next",
+        submit: "Submit"
     },
     endTest: {
         title: "Congratulations",
         text: "We will contact you soon!",
-        goToBack: "Submit results and go back"
+        goToBack: "Home page"
     }
 
 }

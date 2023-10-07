@@ -218,12 +218,13 @@ const uz = {
     textPage:{
         title:"Til bilan tanishishning darajasini aniqlang",
         question:"Savol",
-        next:"Keyingi"
+        next:"Keyingi",
+        submit: "Yuborish"
     },
     endTest:{
         title:"Tabriklaymiz",
         text:"Tez orada siz bilan bog'lanamiz!",
-        goToBack:"Natijalarni yuborish va orqaga qaytish"
+        goToBack:"Bosh sahifa"
     }
 }
 
