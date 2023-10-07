@@ -57,30 +57,30 @@ const uz = {
             {
                 name1: "IELTS",
                 name2: "Rocket",
-                info:"Darslar kunlik 1,5 soat davomida o'tkaziladi. Biz sifatli ta'limni ta'minlaymiz. Sizning rivojlanganligingizni kuzatib borish uchun biz haftada uchta bepul mock test tashkil etamiz. Barcha materiallar va ko'rsatmalarni bepul taqdim etamiz. Har hafta sizning rivojlanganligingizni kuzatib boring. Kursdan so'ng mening izlagich profilim: 2 haftalik IELTS o'qitish strukturasi (5.5 - 6.0), 2 haftalik tahlil va ichki bilimlar (6.5), haqiqiy o'zgarishlarni tahlil qilish uchun 1 oy. Imtihon ro'yxati bizning markaz tomonidan amalga oshiriladi. Qo'shimcha ravishda, Polyglot til markazimizda IELTS imtihonini olish imkoniyatingiz mavjud, chunki biz IDP bilan rasmiy sherikmiz. ",
+                info:"Darslar har kuni 1,5 soatdan o'tkaziladi. Sifatli o'qitish kafolati. Rivojlanish nazorati 3 ta sinov imtihonlari - sinov testlari bilan tekshiriladi. Kursdan keyingi kuzatuvchi profili: 2 haftalik IELTS (5.5-6.0) ta'lim tizimi. Ikki haftalik tahlil va ichki bilim (6.5) 1 oylik haqiqiy o'zgarishlarni tahlil qilish. IDP bilan hamkorlikni hisobga olgan holda, Polyglot markazida ro'yxatdan o'tish va IELTS imtihonini topshirish imkoniyati mavjud.",
                 text1: "Onlayn maslahat 24/7",
-                text2: "B1 darajasiga qadar ingliz tili",
+                text2: "IELTS 8.0-8.5 darajasiga qadar ingliz tili",
                 text3: "Oflayn format",
                 text4: "Iloji boricha grammatika",
                 learnTime: "O'qish muddati:",
-                learnTime2: "2",
+                learnTime2: "",
                 mounth: "oy",
                 price: "Narxi",
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "1 000 000",
+                price2: "",
             },
             {
                 name1:"Intensive",
                 name2:"",
-                info:"Darslar kunlik 1,5 soat davomida o'tkaziladi. Biz sifatli ta'limni ta'minlaymiz. Sizning rivojlanganligingizni kuzatib borish uchun biz haftada uchta bepul mock test tashkil etamiz. Barcha materiallar va ko'rsatmalarni bepul taqdim etamiz. Har hafta sizning rivojlanganligingizni kuzatib boring. Kursdan so'ng mening izlagich profilim: 2 haftalik IELTS o'qitish strukturasi (5.5 - 6.0), 2 haftalik tahlil va ichki bilimlar (6.5), haqiqiy o'zgarishlarni tahlil qilish uchun 1 oy. Imtihon ro'yxati bizning markaz tomonidan amalga oshiriladi. Qo'shimcha ravishda, Polyglot til markazimizda IELTS imtihonini olish imkoniyatingiz mavjud, chunki biz IDP bilan rasmiy sherikmiz.",
+                info:"Tezlashtirilgan kursning afzalligi shundaki, trening A1 dan B1 gacha 6 oy emas, balki 3 oy davom etadi. Har bir talaba quyidagilar bilan ta'minlanadi: 1) asosiy o'qituvchi; 2) Akademik yordam - darsdan tashqari; 3) o'quv materiallari; 4) birgalikda ishlash maydoni; 5) Yakshanba kuni tadbir;",
                 text1: "Onlayn maslahat 24/7",
-                text2: "B1 darajasiga qadar ingliz tili",
+                text2: "С2 darajasiga qadar ingliz tili",
                 text3: "Oflayn format",
                 text4: "Iloji boricha grammatika",
                 learnTime: "O'qish muddati:",
-                learnTime2: "2",
+                learnTime2: "3",
                 mounth: "oy",
                 price: "Narxi",
                 cumMounth: "so'm/oy",
@@ -91,7 +91,7 @@ const uz = {
             {
                 name1: "Rus",
                 name2: "Tili",
-                info:"Rus tili kurslari tajribali o'qituvchi tomonidan haftasiga 3 marta 2 soatdan o'tiladi, rus tili kurslarida siz nutq va grammatika bo'yicha testlarga tayyorlanishingiz mumkin. Rus tili kursi davomida barcha o‘quv materiallari markaz tomonidan bepul taqdim etiladi. Rus tili kurslari faqat Gagarina ko‘chasi, 86-uydagi asosiy filialda mavjud.",
+                info:"Rus tili kurslari tajribali o'qituvchi tomonidan haftasiga 3 marta 2 soatdan o'tiladi, rus tili kurslarida siz nutq va grammatika bo'yicha testlarga tayyorlanishingiz mumkin. Rus tili kursi davomida barcha o'quv materiallari markaz tomonidan bepul taqdim etiladi. Rus tili kurslari faqat Gagarina ko'chasi, 86-uydagi asosiy filialda mavjud.",
                 text1: "Onlayn maslahat 24/7",
                 text2: "B1 darajasiga qadar ingliz tili",
                 text3: "Oflayn format",
@@ -108,7 +108,7 @@ const uz = {
             {
                 name1: "Nemis",
                 name2: "Tili",
-                info:"Poliglot tili maktabida darslar faqat professional o'qituvchilar tomonidan olib boriladi, o'qituvchilarning minimal darajasi C1 ni tashkil qiladi va ular maxsus pedagogik kurslarni tugatgandan so'ng Poliglot til maktabida dars berishadi. Qolaversa, o'qituvchilarimizning 80 foizi xorijda yashagan yoki o‘qib qaytgan. Poliglot tili maktabining o'qituvchilari maxsus pedagogik tayyorgarlikdan o'tgan va kamida 3 yillik tajribaga ega.",
+                info:"Nemis tili kurslari haftasiga 3 marta 2 soatdan nemis, o‘zbek va rus tillarida oliy ma’lumotli va C1 darajadagi sertifikatga ega o‘qituvchi tomonidan olib boriladi. Ushbu kurs davomida siz Gyote sertifikatiga (A1-C1) tayyorlanishingiz mumkin (agar siz talaba bo'lsangiz dsd1 imtihoniga).",
                 text1: "Onlayn maslahat 24/7",
                 text2: "B1 darajasiga qadar ingliz tili",
                 text3: "Oflayn format",
@@ -120,7 +120,7 @@ const uz = {
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "",
+                price2: "500 000",
             },
         ]
     },
@@ -130,7 +130,7 @@ const uz = {
         title2Child: 'Mini-test topshiring va chet tilini bilish darajangizni bilib oling',
         tests: 'Testlar',
         test:{
-            info:"Siz allaqachon ingliz tilini bilasizmi? Keling, tekshiramiz. Sizga ma'lum vaqt uchun 60 ta savol beriladi, shundan so'ng siz A1 dan C2 gacha ingliz tilini bilish darajangizni aniqlashingiz mumkin",
+            info:"Ingliz tilini qanchalik yaxshi bilasiz? Keling, tekshiramiz. Muayyan vaqt ichida savollarga javob berish orqali siz ingliz tilini bilish darajangizni bilib olasiz.",
             time: "Ajratilgan vaqt",
             min: "min",
             quantity:"Savollar soni",
@@ -138,7 +138,7 @@ const uz = {
         }
     },
     students: {
-        ourStudents: 'Bizning talabalarimiz',
+        ourStudents: 'Bitiruvchilarimizning muvaffaqiyatli natijalari',
         student:{
             name:"Sharifqulov Daler",
             yearofLear: "o'qish yili",
@@ -147,7 +147,7 @@ const uz = {
     },
     support: {
         text1: 'Bitiruvchilarni unutmaylik!',
-        text2: 'Kursni tugatgandan song, bizning mutaxassislarimiz universitetga kirishda yoki ish topishda har qanday yordamga tayyor.',
+        text2: "Kurslarni tugatgandan so'ng, bizning mutaxassislarimiz qabul qilish va ishga joylashish uchun universitet tanlashda yordam berishga va maslahat berishga tayyor.",
         text01: 'Qabul qilishda yordam bering',
     },
     about:{
