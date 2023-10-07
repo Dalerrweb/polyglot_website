@@ -7,7 +7,7 @@ const eng = {
         application: "Leave an application"
     },
     hero: {
-        text1: "Learning is light, not darkness!",
+        text1: "When you think it's too late, the truth is, it's still early!",
         text2: "Learn everything you couldn't learn before!",
         text3: "Master foreign languages at a native level!"
     },
@@ -23,9 +23,9 @@ const eng = {
             {
                 name1: "English",
                 name2: "Kids",
-                info: "Thanks to the methods and games developed by Oxford, this is one of the best courses to awaken children's interest in the English language. Classes are held 3 times a week for 2 hours, and during the course a workbook, textbook and handouts (printouts) are provided free of charge. The age limit for English children is from 5 to 10 years. The English course for children was taught by 2 teachers, the first teacher is the main teacher and teaches 2-hour lessons 3 times a week, the 2nd teacher is 'Academic support', if the student does not understand the lesson during the lesson, 'academic' support will explain individually and if he/she does not attend classes for certain reasons, he/she will also explain",
+                info: "Thanks to the methodology developed by Oxford, this is the best course for awakening children to learn English. Classes are held 3 times a week for 2 hours. Notebooks and books are also provided free of charge. The age in children's groups is from 6 to 10 years. There are 2 teachers assigned to the group, the 1st is the main one - 3 times a week for 2 hours, and the 2nd is additional - extracurricular.",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level С2- IELTS",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
@@ -41,14 +41,14 @@ const eng = {
             {
                 name1: "GENERAL",
                 name2: "ENGLISH",
-                info: "“GENERAL ENGLISH” courses are taught using methods developed by leading UK universities that meet international standards. You will have General English lessons with a local teacher 3 times a week for 90 minutes and Conversation and IELTS lessons with a foreign teacher once a week. In addition, the 3rd teacher with “ACADEMIC SUPPORT” will individually explain if the student does not understand the lesson during the lesson or does not attend the lesson for certain reasons. If you are taking a General English course, the workbook, textbook and any handouts will be provided free of charge. In addition, every Sunday you will receive a Sunday Event, Movie Club and karaoke in English as a bonus.",
+                info: '"General English" courses are conducted according to a methodology developed by leading universities in the UK that meets international standards. Students are provided with 4 lessons per week for 90 minutes - General English and IELTS lessons taught by local and foreign teachers. There is also a 3rd teacher - Academic Support, who will individually explain complex or missed topics. The training kit includes textbooks, notebooks and handouts for free. Additionally, bonus Sunday lessons are provided - Sunday Event: Movie-Speaking Club and karaoke in English',
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level С2- IELTS",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
                 learnTime2: "",
-                mounth: "mon",
+                mounth: "mon.",
                 price: "Price",
                 cumMounth: "sum/mon",
                 application: "Submit application",
