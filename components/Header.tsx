@@ -130,11 +130,11 @@ const Header: React.FC<HeaderProps> = () => {
                                     <Image
                                        width={100}
                                        height={100}
-                                       src="/images/usa.png"
-                                       alt="usa"
-                                       className="w-[20px]"
+                                       src="/images/eng_flag.webp"
+                                       alt="eng"
+                                       className="w-[20px] h-[20px] rounded-full"
                                     />
-                                    {"USA"}
+                                    {"EN"}
                                  </span>
                               ),
                            },

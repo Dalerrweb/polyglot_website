@@ -12,7 +12,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 0,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-1",
       },
@@ -20,7 +19,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 1,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-2",
       },
@@ -28,7 +26,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 3,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-3",
       },
@@ -36,7 +33,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 4,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-4",
       },
@@ -44,7 +40,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 5,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-5",
       },
@@ -52,7 +47,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 6,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-6",
       },
@@ -60,7 +54,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 7,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-7",
       },
@@ -68,7 +61,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 8,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-8",
       },
@@ -76,7 +68,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          id: 9,
          name: "Daler Sharifkulov",
          title: "Преподаватель по Английскому Языку",
-         ielts: 7.5,
          dcr: "",
          img: "teacher-9",
       },
@@ -206,14 +197,13 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                   id: number;
                   name: string;
                   title: string;
-                  ielts: number;
                   dcr: string;
                   img: string;
                }) => {
                   return (
                      <SwiperSlide className="" key={item.id}>
                         <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange">
-                           <div className="h-[700px] max-3xl:h-[600px] max-xl:h-full -translate-y-14 max-xl:-translate-y-10 max-sm:-translate-y-8">
+                           <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-14 max-xl:-translate-y-10 max-sm:-translate-y-8">
                               <Image
                                  className="bg-cover "
                                  src={`/images/teachers/${item.img}.webp`}
@@ -230,22 +220,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                  </p>
                                  <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
                                     {translation?.teacher?.info}
-                                 </p>
-                              </div>
-                              <div className="flex items-center justify-between mt-3 max-2xl:mt-2 max-sm:mt-0 text-white">
-                                 <p className="px-1 py-2 relative z-10 text-[34px] max-3xl:text-[28px] max-xl:text-[20px] max-md:text-[16px] max-sm:text-[12px] leading-[22px] max-md:leading-[0px] font-bold">
-                                    <svg
-                                       className="w-full h-full absolute -top-0 -left-0 z-[-1]"
-                                       xmlns="http://www.w3.org/2000/svg"
-                                       viewBox="0 0 182 44"
-                                       fill="none"
-                                    >
-                                       <path
-                                          d="M2.22941 11.3498C2.60792 6.73537 6.42567 3.16097 11.055 3.08675L171.87 0.508695C177.188 0.42345 181.419 4.94297 180.985 10.2433L179.177 32.2824C178.798 36.8968 174.981 40.4712 170.351 40.5454L9.5357 43.1235C4.21822 43.2087 -0.0132092 38.6892 0.421572 33.3889L2.22941 11.3498Z"
-                                          fill="#EC8D18"
-                                       />
-                                    </svg>
-                                    IELTS {item.ielts}
                                  </p>
                               </div>
                            </div>

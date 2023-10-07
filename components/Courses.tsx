@@ -4,6 +4,9 @@ import Rodal from "rodal";
 
 import Course from "./children/Course";
 
+import InputMask from "react-input-mask";
+
+import "rodal/lib/rodal.css";
 import "swiper/css";
 
 interface CoursesProps {
@@ -11,7 +14,16 @@ interface CoursesProps {
 }
 
 const Courses: React.FC<CoursesProps> = ({ translation }) => {
-   const [swiperRef, setSwiperRef] = useState<any>(null);
+   const [constructor, setConstructor] = useState(false);
+   const [swiperRef, setSwiperRef] = useState<any>(false);
+
+   const show = () => {
+      setConstructor(true);
+   };
+
+   const hide = () => {
+      setConstructor(false);
+   };
 
    const prevHandler = () => {
       swiperRef.slidePrev();
@@ -29,13 +41,12 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                   {translation?.title}
                </h2>
             </div>
-            <div className="flex gap-3 max-md:gap-1 items-center relative">
+            <div className="flex gap-3 items-center">
                <button
                   onClick={prevHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
+                  className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
-                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="25"
                      height="25"
@@ -60,13 +71,11 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                      />
                   </svg>
                </button>
-
                <button
                   onClick={nextHandler}
-                  className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
+                  className="w-12 h-12 max-xl:w-12 max-xl:h-12 max-md:w-10 max-md:h-10 flex items-center justify-center bg-blue rounded-full"
                >
                   <svg
-                     className="w-5 max-sm:w-4"
                      xmlns="http://www.w3.org/2000/svg"
                      width="24"
                      height="25"
@@ -93,7 +102,55 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                </button>
             </div>
          </div>
-
+         <Rodal
+            animation={"slideUp"}
+            visible={constructor}
+            onClose={hide}
+            width={600}
+            height={500}
+            className="modal backdrop-blur-sm"
+         >
+            <div className="mb-6">
+               <h3 className="text-[36px] max-xl:text-[28px] max-lg:text-[25px] max-3xl:text-[30px] font-semibold text-center">
+                  English
+               </h3>
+            </div>
+            <div className="mb-4">
+               <p className="text-[24px] max-3xl:text-[20px] max-2xl:text-[16px] leading-[32px] max-2xl:leading-[22.312px] text-center">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+                  asperiores ipsam labore numquam doloremque nisi odit
+                  reprehenderit. Rerum deleniti autem fugiat iusto molestias
+                  optio temporibus necessitatibus laudantium nisi sed molestiae
+                  cum eligendi esse dolore, tenetur voluptatem quos, harum earum
+                  repellendus dolor laborum commodi quam et illo! Explicabo
+                  magnam sed vel.
+               </p>
+            </div>
+            <div className="">
+               <form className="flex flex-col gap-2">
+                  <input
+                     type="text"
+                     placeholder="Имя"
+                     required
+                     name="name"
+                     className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-6 max-2xl:px-4 py-[16px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                  />
+                  <div className="overflow-hidden text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]">
+                     <InputMask
+                        className="w-full py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3"
+                        mask="+\9\98-(99)-999-99-99"
+                        placeholder="Номер"
+                        required
+                        // value={phone}
+                        // onChange={(e: any) => setPhone(e.target.value)}
+                     ></InputMask>
+                  </div>
+                  <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
+                     Проконсультироваться
+                  </button>
+               </form>
+            </div>
+         </Rodal>
          <Swiper
             className="swiper-hidden"
             onSwiper={(swiper) => setSwiperRef(swiper)}
@@ -101,7 +158,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
             slidesPerView={3}
             breakpoints={{
                1536: {
-                  spaceBetween: 30,
+                  spaceBetween: 35,
                },
                1920: {
                   slidesPerView: 3,
@@ -117,10 +174,10 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                },
             }}
          >
-            {[0, 1, 2, 3, 4, 5].map((item: number) => {
+            {translation?.courses?.map((item: any) => {
                return (
                   <SwiperSlide key={item}>
-                     <Course item={item} />
+                     <Course item={item} show={show} />
                   </SwiperSlide>
                );
             })}

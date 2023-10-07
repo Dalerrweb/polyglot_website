@@ -188,3 +188,21 @@ h1 {
    align-self: stretch !important;
    background-color: transparent !important;
 }
+
+/* =================================== */
+
+.rodal-dialog {
+   max-width: 700px !important;
+   width: 100% !important;
+   min-height: 650px !important;
+   padding: 30px 30px !important;
+   border-radius: 20px !important;
+   background: white !important;
+   overflow-y: auto;
+}
+
+.rodal-close {
+   width: 30px !important;
+   right: 30px !important;
+   top: 30px !important;
+}
