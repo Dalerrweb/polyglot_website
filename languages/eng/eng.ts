@@ -7,7 +7,7 @@ const eng = {
         application: "Leave an application"
     },
     hero: {
-        text1: "Learning is light, not darkness!",
+        text1: "When you think it's too late, the truth is, it's still early!",
         text2: "Learn everything you couldn't learn before!",
         text3: "Master foreign languages at a native level!"
     },
@@ -23,9 +23,9 @@ const eng = {
             {
                 name1: "English",
                 name2: "Kids",
-                info: "Thanks to the methods and games developed by Oxford, this is one of the best courses to awaken children's interest in the English language. Classes are held 3 times a week for 2 hours, and during the course a workbook, textbook and handouts (printouts) are provided free of charge. The age limit for English children is from 5 to 10 years. The English course for children was taught by 2 teachers, the first teacher is the main teacher and teaches 2-hour lessons 3 times a week, the 2nd teacher is 'Academic support', if the student does not understand the lesson during the lesson, 'academic' support will explain individually and if he/she does not attend classes for certain reasons, he/she will also explain",
+                info: "Thanks to the methodology developed by Oxford, this is the best course for awakening children to learn English. Classes are held 3 times a week for 2 hours. Notebooks and books are also provided free of charge. The age in children's groups is from 6 to 10 years. There are 2 teachers assigned to the group, the 1st is the main one - 3 times a week for 2 hours, and the 2nd is additional - extracurricular.",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level С2- IELTS",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
@@ -41,14 +41,14 @@ const eng = {
             {
                 name1: "GENERAL",
                 name2: "ENGLISH",
-                info: "“GENERAL ENGLISH” courses are taught using methods developed by leading UK universities that meet international standards. You will have General English lessons with a local teacher 3 times a week for 90 minutes and Conversation and IELTS lessons with a foreign teacher once a week. In addition, the 3rd teacher with “ACADEMIC SUPPORT” will individually explain if the student does not understand the lesson during the lesson or does not attend the lesson for certain reasons. If you are taking a General English course, the workbook, textbook and any handouts will be provided free of charge. In addition, every Sunday you will receive a Sunday Event, Movie Club and karaoke in English as a bonus.",
+                info: '"General English" courses are conducted according to a methodology developed by leading universities in the UK that meets international standards. Students are provided with 4 lessons per week for 90 minutes - General English and IELTS lessons taught by local and foreign teachers. There is also a 3rd teacher - Academic Support, who will individually explain complex or missed topics. The training kit includes textbooks, notebooks and handouts for free. Additionally, bonus Sunday lessons are provided - Sunday Event: Movie-Speaking Club and karaoke in English',
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level С2- IELTS",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
                 learnTime2: "",
-                mounth: "mon",
+                mounth: "mon.",
                 price: "Price",
                 cumMounth: "sum/mon",
                 application: "Submit application",
@@ -58,29 +58,29 @@ const eng = {
             {
                 name1: "IELTS",
                 name2: "Rocket",
-                info: "Lessons are held daily for 1.5 hours. Guarantee of quality training. To monitor progress, 3 free MOC (trial) tests are organized per week. All materials and printouts are provided free of charge. Monitor your progress every week. My Post Course Follower Profile: 2 Week IELTS Study Structure (5.5 – 6.0) 2 Week Analysis and Insider Knowledge (6.5) 1 Month Real Change Analysis . Registration for the exam is carried out by our center. And also, you have the opportunity to take Ielts in our Polyglot training center. Since we are an official partner with IDP.",
+                info: "Lessons are held daily for 1.5 hours. Guarantee of quality training. Progress control is checked by 3 Mock exam - trial tests. Post-Course Follower Profile: 2-week IELTS (5.5-6.0) training structure. Two-week analysis and internal knowledge (6.5) 1 month of analysis of real changes. Given the cooperation with IDP, there is the possibility of registering and passing the IELTS exam at the Polyglot center.",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level IELTS 8.0-8.5",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
-                learnTime2: "2",
+                learnTime2: "",
                 mounth: "mon",
                 price: "Price",
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "1 000 000",
+                price2: "",
             },
             {
                 name1: "Intensive",
-                info: "Lessons are held daily for 1.5 hours. The student is provided with the following: 1. 2 teachers (1 accompanying person during the lesson, 3 Academic Support outside the lesson). 2. Educational materials. 3. Completion of each level in 1 month (usually a minimum of 2 months). 4. A teacher with higher education and foreign experience. 5. Co-working zone. 6.Sunday event",
+                info: "The advantage of the accelerated course is that the training takes 3 months, instead of 6 months from A1 to B1. Each student is provided with: 1) main teacher; 2) Academic Support - outside of class; 3) educational materials; 4) co-working space; 5) Sunday Event;",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level C2",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
-                learnTime2: "2",
+                learnTime2: "3",
                 mounth: "mon",
                 price: "Price",
                 cumMounth: "sum/mon",
@@ -93,7 +93,7 @@ const eng = {
                 name2: "",
                 info: "Russian language courses are taught by an experienced teacher 3 times a week for 2 hours; in Russian language courses you can prepare for tests in speaking and grammar. All educational materials during the Russian language course are provided by the center free of charge. Russian language courses are available only at the main branch on Gagarina Street, 86.",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level C1",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
@@ -107,9 +107,9 @@ const eng = {
             },
             {
                 name1: "German",
-                info: "Classes at the Polyglot language school are taught only by professional teachers, the minimum level of teachers is C1, and they teach at the Polyglot language school after completing special pedagogical courses. In addition, 80% of our teachers have lived or returned from studying abroad. Teachers at the Polyglot language school have undergone special pedagogical training and have at least 3 years of experience.",
+                info: "German language courses are conducted 3 times a week for 2 hours in German, Uzbek and Russian by a teacher with higher education and a C1 level certificate. During this course you can prepare (for the dsd1 exam if you are a student) for the Goethe certificate (A1-C1).",
                 text1: "Online consultation 24/7",
-                text2: "English up to level B1",
+                text2: "English up to level C1",
                 text3: "Offline format",
                 text4: "Advanced grammar",
                 learnTime: "Learning period:",
@@ -119,17 +119,17 @@ const eng = {
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "",
+                price2: "500 000",
             },
         ]
     },
     tests: {
-        title1: "Still unsure about your language proficiency level?",
+        title1: "Still doubt your level of language skills?",
         title2: "Let's check it!",
-        title2Child: "Take a mini-test and find out your level of proficiency in foreign languages",
+        title2Child: "Take a mini-test and find out your level of foreign language proficiency",
         tests: "Tests",
         test: {
-            info: "Are you already familiar with the English language? Let's check. You will be given 60 questions within a certain time, and then you will be able to determine your level of English proficiency from A1 to C2",
+            info: "How well do you know English? Let's check. In a certain amount of time, by answering the questions you will find out your level of English.",
             time: "Allotted time",
             min: "min",
             quantity: "Number of questions",
@@ -137,7 +137,7 @@ const eng = {
         }
     },
     students: {
-        ourStudents: "Our Students",
+        ourStudents: "Successful results of our graduates",
         student: {
             name: "Daler Sharifkulov",
             yearofLear: "year of learning",
@@ -146,7 +146,7 @@ const eng = {
     },
     support: {
         text1: "We don't forget our graduates!",
-        text2: "After completing the course, our specialists are ready to provide any assistance, whether it's admission to a university or employment.",
+        text2: "Upon completion of the courses, our specialists are ready to help and advise in choosing a university for admission and finding employment.",
         text01: "Admission assistance",
     },
     about: {
@@ -217,12 +217,13 @@ const eng = {
     textPage: {
         title: "Take a mini-test to determine your language proficiency level",
         question: "Question",
-        next: "Next"
+        next: "Next",
+        submit: "Submit"
     },
     endTest: {
         title: "Congratulations",
         text: "We will contact you soon!",
-        goToBack: "Submit results and go back"
+        goToBack: "Home page"
     }
 
 }

@@ -13,8 +13,8 @@ const SwiperChild: React.FC<SwiperChild> = ({ item, translation }) => {
       <>
          <div className="rounded-[30px] max-lg:rounded-[20px] overflow-hidden hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-blue text-white">
             <div className="mt-11 max-3xl:mt-8 max-lg:mt-5">
-               <h3 className="text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-center">
-                  YOUR
+               <h3 className="text-[36px] uppercase max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-center">
+                  CHECK
                   <span className="p-1 relative z-10 text-[36px] max-3xl:text-[28px] max-lg:text-[24px] font-semibold text-black">
                      <svg
                         className="w-full h-full absolute top-0 left-0 z-[-1]"
@@ -29,9 +29,9 @@ const SwiperChild: React.FC<SwiperChild> = ({ item, translation }) => {
                            fill="#EEEEEE"
                         />
                      </svg>
-                     ENGLISH
+                     your
                   </span>
-                  LEVEL
+                  knowledge
                </h3>
             </div>
             <div className="px-11 mt-14 max-3xl:mt-3 mb-11 max-3xl:mb-6 max-lg:mb-4 max-3xl:px-7">
