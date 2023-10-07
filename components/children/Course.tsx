@@ -1,5 +1,3 @@
-import Rodal from "rodal";
-
 interface CourseProps {
    item: any;
    show: any;
