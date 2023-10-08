@@ -8,6 +8,16 @@ interface MapProps {
 
 const Map: React.FC<MapProps> = ({ translation }) => {
    const [map, setMap] = useState<boolean>(true);
+   const [branches, setBranches] = useState(true);
+
+   const mainY =
+      "66.937838%2C39.658017&mode=whatshere&whatshere%5Bpoint%5D=66.935633%2C39.658443&whatshere%5Bzoom%5D=17&z=17.41";
+   const mainG =
+      "!1m18!1m12!1m3!1d1651.8491916987225!2d66.93566171604618!3d39.6583262917879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d196653494931%3A0x136a5e0b5f7e6f63!2sPolyglot%20Language%20School!5e0!3m2!1sru!2s!4v1696681776786!5m2!1sru!2s";
+   const branchY =
+      "66.968848%2C39.673724&mode=whatshere&whatshere%5Bpoint%5D=66.967539%2C39.673701&whatshere%5Bzoom%5D=17&z=17.41";
+   const branchG =
+      "!1m18!1m12!1m3!1d1535.4674916179638!2d66.96791011097562!3d39.67367708412156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d1934f4f9863b%3A0x1be470c4712f613c!2sPolyglot%20Language%20School%2002!5e0!3m2!1sru!2s!4v1696683031544!5m2!1sru!2s";
 
    return (
       <div className="bg-blue mt-14">
@@ -81,10 +91,16 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                         {translation?.text1}
                      </p>
                      <ul className="mt-4">
-                        <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">
+                        <li
+                           onClick={() => setBranches(true)}
+                           className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white"
+                        >
                            {translation?.text2}
                         </li>
-                        <li className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white">
+                        <li
+                           onClick={() => setBranches(false)}
+                           className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white"
+                        >
                            {translation?.text3}
                         </li>
                      </ul>
@@ -98,22 +114,27 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                      </p>
                   </div>
                </div>
+
                <div className="w-full min-h-[750px] max-2xl:min-h-[70vh] max-lg:min-h-[400px] max-sm:min-h-[300px] rounded-3xl overflow-hidden">
-                  <iframe
-                     className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px] ${
-                        map ? "block" : "hidden"
-                     }`}
-                     src="https://yandex.uz/map-widget/v1/?ll=66.975827%2C39.654406&z=7"
-                     loading="lazy"
-                  ></iframe>
-                  <iframe
-                     className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px] ${
-                        !map ? "block" : "hidden"
-                     }`}
-                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6131044.446641034!2d64.60857505!3d41.381166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1694742733361!5m2!1sru!2s"
-                     loading="lazy"
-                  ></iframe>
+                  {map ? (
+                     <iframe
+                        className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px]`}
+                        src={`https://yandex.uz/map-widget/v1/?ll=${
+                           branches ? mainY : branchY
+                        }`}
+                        loading="lazy"
+                     ></iframe>
+                  ) : (
+                     <iframe
+                        className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px]`}
+                        src={`https://www.google.com/maps/embed?pb=${
+                           !branches ? branchG : mainG
+                        }`}
+                        loading="lazy"
+                     ></iframe>
+                  )}
                </div>
+
                <div className="max-lg:block hidden">
                   <p className="text-[24px] max-xl:text-[20px] leading-[40px] text-white">
                      {translation?.telText}
