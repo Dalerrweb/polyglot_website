@@ -81,6 +81,9 @@ export default function Home() {
                             <p className="text-[36px] max-2xl:text-[32px] max-xl:text-[24px] max-lg:text-[24px] max-md:text-[20px] leading-[45px] max-xl:leading-[35px] max-md:leading-[30px] mt-40 max-2xl:mt-24 max-lg:mt-20 max-md:mt-10 max-sm:mt-5 text-white">
                                 {translation?.about?.text2}
                             </p>
+                            <p className="text-[36px] max-2xl:text-[32px] max-xl:text-[24px] max-lg:text-[24px] max-md:text-[20px] leading-[45px] max-xl:leading-[35px] max-md:leading-[30px] mt-20 max-2xl:mt-14 max-lg:mt-10 max-md:mt-7 max-sm:mt-5 text-white">
+                                {translation?.about?.text3}
+                            </p>
                         </div>
                     </div>
                 </div>

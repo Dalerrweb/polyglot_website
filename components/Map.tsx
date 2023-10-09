@@ -107,10 +107,13 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                   </div>
                   <div className="max-lg:hidden">
                      <p className="text-[24px] max-2xl:text-[20px] leading-[40px] text-white">
-                        {translation?.telText}
+                        {translation?.telText}:
                      </p>
                      <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[24px] leading-[50px] font-medium text-white">
-                        +998 90 503 30 30
+                        +998 90 503 30 30 ({translation?.gagarina})
+                     </p>
+                     <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[24px] leading-[50px] font-medium text-white">
+                        +998 90 503 30 30 ({translation?.ibnsino})
                      </p>
                   </div>
                </div>

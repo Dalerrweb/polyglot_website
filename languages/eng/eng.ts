@@ -89,23 +89,6 @@ const eng = {
                 price2: "1 000 000",
             },
             {
-                name1: "Russian",
-                name2: "",
-                info: "Russian language courses are taught by an experienced teacher 3 times a week for 2 hours; in Russian language courses you can prepare for tests in speaking and grammar. All educational materials during the Russian language course are provided by the center free of charge. Russian language courses are available only at the main branch on Gagarina Street, 86.",
-                text1: "Online consultation 24/7",
-                text2: "English up to level C1",
-                text3: "Offline format",
-                text4: "Advanced grammar",
-                learnTime: "Learning period:",
-                learnTime2: "",
-                mounth: "mon",
-                price: "Price",
-                cumMounth: "sum/mon",
-                application: "Submit application",
-                details: "Details",
-                price2: "400 000",
-            },
-            {
                 name1: "German",
                 info: "German language courses are conducted 3 times a week for 2 hours in German, Uzbek and Russian by a teacher with higher education and a C1 level certificate. During this course you can prepare (for the dsd1 exam if you are a student) for the Goethe certificate (A1-C1).",
                 text1: "Online consultation 24/7",
@@ -150,7 +133,7 @@ const eng = {
         text01: "Admission assistance",
     },
     about: {
-        title: "One of the leading language schools in Samarkand",
+        title: "One of the leading schools for studying foreign languages ​​in Samarkand",
         text2: "2 branches in the city center, over 1000 graduates have already mastered English, French, etc."
     },
     info: {
@@ -162,47 +145,107 @@ const eng = {
         text3: "In addition to the main lessons, we conduct separate practical classes to develop conversational skills"
     },
     teacher: {
-        title1: "What professionals work with us and who will pave the way to your success",
+        title1: "",
         title2: "It's time to meet them!",
         p: "Our specialists not only love their work, but also improve themselves every day along with you",
         h1: "Teachers",
-        teacher: {
-            name: "Daler Sharifkulov",
-            info: "English Language Teacher",
-            details: "More details"
-        }
+        teacher: [
+            {
+                id:1,
+                img:"teacher-1",
+                name:"Ms. Mekhruza",
+                job_title:"English Language Teacher",
+                local:"Local"
+            },
+            {
+                id:2,
+                img:"teacher-2",
+                name:"Mr.",
+                job_title:"English Language Teacher",
+                local:"Foreign"
+            },
+            {
+                id:3,
+                img:"teacher-3",
+                name:"Ms. Anna",
+                job_title:"English Language Teacher",
+                local:"Foreign"
+            },
+            {
+                id:4,
+                img:"teacher-4",
+                name:"Ms. Maftuna",
+                job_title:"",
+                local:"Local"
+            },
+            {
+                id:5,
+                img:"teacher-5",
+                name:"Mr. Siyavush",
+                job_title:"English Language Teacher",
+                local:"Foreign"
+            },
+            {
+                id:7,
+                img:"teacher-7",
+                name:"Ms. Mohinur",
+                job_title:"English Language Teacher",
+                local:"Local"
+            },
+            {
+                id:8,
+                img:"teacher-8",
+                name:"Ms. Nodirabegim",
+                job_title:"English Language Teacher",
+                local:"Local"
+            },
+            {
+                id:9,
+                img:"teacher-9",
+                name:"Ms. Parvina",
+                job_title:"English Language Teacher",
+                local:"Local"
+            }
+        ]
     },
     map: {
-        title: "Where to find us",
-        text1: "Branches",
-        text2: "Main School",
-        text3: "Dagbitskaya Branch",
-        telText: "Contact Phone"
+        title: "Our locations",
+        text1: "Polyglot Language school",
+        text2: "Main Center",
+        text3: "Branch",
+        telText: "Phone number for inquiries",
+        gagarina:"Gagarina 86",
+        ibnsino:"Ibn Sino 8"
     },
     footer: {
-        title: "Leave an application",
-        text1: "If you have any questions",
-        text2: "we will help",
-        consult: "Our consultants will help you choose a course and tell you everything about the training program",
+        title: "Submit an application",
+        text1: "If you have any additional questions, our administrators are always happy",
+        text2: "to help you",
         form: {
             title: "Free Consultation",
             consult: "Consult",
-            info: "By clicking the button, I accept the terms of the privacy policy and user agreement"
+            info: "By clicking the button, I accept the terms of the privacy policy and user agreement",
+            nameSurname:"Surname Name",
+            tel:"Contact phone number",
         },
         school: {
             title: "School",
             aboutUs: "About Us",
             academicSupport: "Academic Support",
-            miniTest: "Mini Tests"
+            miniTest: "Mini-test"
         },
         course: {
             title: "Courses",
-            basicEnglish: "Basic English",
-            advancedEnglish: "Advanced English"
+            general: "General English",
+            rocket: "IELTS Rocket",
+            intensive: "IELTS Intensive",
+            kids: "English Kids",
+            german:"German"
         },
         contact: {
             title: "Contact",
-            address: "Samarkand, Dagbitskaya 8 Hilton Garden Inn"
+            adres: "Main center: 86 Gagarina Street, +998905033030",
+            adres2: "Branch: 8 Dagbitskaya St. (Hilton Garden Inn landmark), +998904782020",
         },
         social: "Social Media",
     },

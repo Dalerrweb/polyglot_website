@@ -7,71 +7,6 @@ interface TeacherProps {
 }
 
 const Teacher: React.FC<TeacherProps> = ({ translation }) => {
-   const teachers = [
-      {
-         id: 0,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-1",
-      },
-      {
-         id: 1,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-2",
-      },
-      {
-         id: 3,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-3",
-      },
-      {
-         id: 4,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-4",
-      },
-      {
-         id: 5,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-5",
-      },
-      {
-         id: 6,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-6",
-      },
-      {
-         id: 7,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-7",
-      },
-      {
-         id: 8,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-8",
-      },
-      {
-         id: 9,
-         name: "Daler Sharifkulov",
-         title: "Преподаватель по Английскому Языку",
-         dcr: "",
-         img: "teacher-9",
-      },
-   ];
    const [swiperRef, setSwiperRef] = useState<any>(null);
 
    const prevHandler = () => {
@@ -81,6 +16,9 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
    const nextHandler = () => {
       swiperRef.slideNext();
    };
+
+   console.log(translation);
+   
 
    return (
       <div className="custom-container">
@@ -192,13 +130,13 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                },
             }}
          >
-            {teachers.map(
+            {translation?.teacher?.map(
                (item: {
                   id: number;
+                  img:string;
                   name: string;
-                  title: string;
-                  dcr: string;
-                  img: string;
+                  job_title: string;
+                  local: string;
                }) => {
                   return (
                      <SwiperSlide className="" key={item.id}>
@@ -215,13 +153,16 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
 
                            <div className="w-full absolute -bottom-3 left-0 py-6 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
                               <div className="">
-                                 <p className="text-[40px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
-                                    {translation?.teacher?.name}
+                                 <p className="text-[36px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                                    {item?.name}
                                  </p>
-                                 <p className="max-w-[200px] text-[18px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                    {translation?.teacher?.info}
+                                 <p className="max-w-[200px] text-[23px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                                    {item?.job_title}
                                  </p>
                               </div>
+                              <p className="max-w-[200px] text-[22px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                                 {item?.local}
+                              </p>
                            </div>
                         </div>
                      </SwiperSlide>

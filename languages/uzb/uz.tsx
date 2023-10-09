@@ -40,7 +40,7 @@ const uz = {
             {
                 name1: "GENERAL",
                 name2: "ENGLISH",
-                info:"'Umumiy ingliz tili' kurslari Buyuk Britaniyaning yetakchi universitetlari tomonidan ishlab chiqilgan va xalqaro standartlarga javob beradigan metodika asosida olib boriladi. Talabalarga haftasiga 4 ta 90 daqiqalik darslar – umumiy ingliz tili va IELTS saboqlari mahalliy va xorijlik o'qituvchilar tomonidan beriladi. Shuningdek, 3-o'qituvchi - Akademik yordam mavjud bo'lib, u murakkab yoki o'tkazib yuborilgan mavzularni alohida tushuntiradi. O'quv to'plamiga bepul darsliklar, daftar va tarqatma materiallar kiradi. Bundan tashqari, bonusli yakshanba darslari taqdim etiladi - Yakshanba kuni tadbir: Kino-speaking klubi va ingliz tilida karaoke",
+                info:"'Umumiy ingliz tili' kurslari Buyuk Britaniyaning yetakchi universitetlari tomonidan ishlab chiqilgan va xalqaro standartlarga javob beradigan metodika asosida olib boriladi. Talabalarga haftasiga 4 ta 90 daqiqalik darslar – umumiy ingliz tili va IELTS saboqlari Mahalliy va xorijlik o'qituvchilar tomonidan beriladi. Shuningdek, 3-o'qituvchi - Akademik yordam mavjud bo'lib, u murakkab yoki o'tkazib yuborilgan mavzularni alohida tushuntiradi. O'quv to'plamiga bepul darsliklar, daftar va tarqatma materiallar kiradi. Bundan tashqari, bonusli yakshanba darslari taqdim etiladi - Yakshanba kuni tadbir: Kino-speaking klubi va ingliz tilida karaoke",
                 text1: "Onlayn maslahat 24/7",
                 text2: "С2- IELTS darajasiga qadar ingliz tili",
                 text3: "Iloji boricha grammatika",
@@ -89,23 +89,6 @@ const uz = {
                 price2: "1 000 000",
             },
             {
-                name1: "Rus",
-                name2: "Tili",
-                info:"Rus tili kurslari tajribali o'qituvchi tomonidan haftasiga 3 marta 2 soatdan o'tiladi, rus tili kurslarida siz nutq va grammatika bo'yicha testlarga tayyorlanishingiz mumkin. Rus tili kursi davomida barcha o'quv materiallari markaz tomonidan bepul taqdim etiladi. Rus tili kurslari faqat Gagarina ko'chasi, 86-uydagi asosiy filialda mavjud.",
-                text1: "Onlayn maslahat 24/7",
-                text2: "B1 darajasiga qadar ingliz tili",
-                text3: "Oflayn format",
-                text4: "Iloji boricha grammatika",
-                learnTime: "O'qish muddati:",
-                learnTime2: "",
-                mounth: "oy",
-                price: "Narxi",
-                cumMounth: "so'm/oy",
-                application: "Arizani qoldirish",
-                details: "Batafsil",
-                price2: "400 000",
-            },
-            {
                 name1: "Nemis",
                 name2: "Tili",
                 info:"Nemis tili kurslari haftasiga 3 marta 2 soatdan nemis, o‘zbek va rus tillarida oliy ma’lumotli va C1 darajadagi sertifikatga ega o‘qituvchi tomonidan olib boriladi. Ushbu kurs davomida siz Gyote sertifikatiga (A1-C1) tayyorlanishingiz mumkin (agar siz talaba bo'lsangiz dsd1 imtihoniga).",
@@ -151,7 +134,7 @@ const uz = {
         text01: 'Qabul qilishda yordam bering',
     },
     about:{
-        title:"Samarqanddagi yetakchi chet tili maktablaridan",
+        title:"Samarqanddagi xorijiy tillarni o'rganish bo'yicha yetakchi maktablardan biri",
         text2:"Shahar markazida 2 ta filial, 1000 dan ortiq talabalar bitirgan, allaqachon o'zlashtirilgan: ingliz, fransuz va h.k."
     },
     info: {
@@ -163,32 +146,88 @@ const uz = {
         text3: 'Asosiy mashgulotlardan tashqari, biz nutq konikmalarini rivojlantirish uchun alohida amaliy mashgulotlar ostkazamiz',
     },
     teacher: {
-        title1:"Bizda qaysi mutaxassislar ishlaydilar va sizga muvaffaqiyat yo'lida yordam beradilar",
+        title1:"",
         title2:"Tanishish uchun eng yaxshi vaqt!",
         p:"Bizning mutaxassislarimiz faqat ishlarini sevishgan emas, balki har kuni siz bilan birga o'zlarini yanada rivojlantiradilar",
         h1:"O'qituvchilar",
-        teacher:{
-            name:"Sharifqulov Daler",
-            info:"Ingliz tili o'qituvchisi",
-            details:"Batafsil"
-        }
+        teacher: [
+            {
+                id:1,
+                img:"teacher-1",
+                name:"Ms. Mekhruza",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Mahalliy"
+            },
+            {
+                id:2,
+                img:"teacher-2",
+                name:"Mr.",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Xorijiy"
+            },
+            {
+                id:3,
+                img:"teacher-3",
+                name:"Ms. Anna",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Xorijiy"
+            },
+            {
+                id:4,
+                img:"teacher-4",
+                name:"Ms. Maftuna",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Mahalliy"
+            },
+            {
+                id:5,
+                img:"teacher-5",
+                name:"Mr. Siyavush",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Xorijiy"
+            },
+            {
+                id:7,
+                img:"teacher-7",
+                name:"Ms. Mohinur",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Mahalliy"
+            },
+            {
+                id:8,
+                img:"teacher-8",
+                name:"Ms. Nodirabegim",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Mahalliy"
+            },
+            {
+                id:9,
+                img:"teacher-9",
+                name:"Ms. Parvina",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"Mahalliy"
+            }
+        ]
     },
     map: {
-        title: 'Bizni qayerda topishingiz mumkin',
-        text1: 'Filiallar',
-        text2:"Asosiy maktab",
-        text3:"Dagbitskaya filiali",
-        telText:"Bog'lanish uchun telefon"
+        title: 'Bizning joylarimiz',
+        text1: 'Polyglot Language school',
+        text2:"Asosiy markaz",
+        text3:"Filial",
+        telText: "Yordam uchun telefon",
+        gagarina:"Gagarina 86",
+        ibnsino:"Ibn Sino 8"
     },
     footer:{
-        title:"So'rov qoldiring",
-        text1:"Agar savollaringiz qolsa",
-        text2:"biz yordam beramiz",
-        consult:"Bizning maslahatchilar kursni tanlashga yordam beradilar, ta'lim dasturining barchasini aytib beradilar",
+        title:"Ariza berish",
+        text1:"Agar sizda qo'shimcha savollar bo'lsa, bizning ma'murlarimiz har doim sizga yordam berishdan ",
+        text2:"mamnun",
         form:{
             title:"Bepul maslahat olish",
             consult:"Maslahat olish",
-            info:"Tugmasini bosish orqali men siyosat va foydalanuvchi shartnomasini qabul qilaman"
+            info:"Tugmasini bosish orqali men siyosat va foydalanuvchi shartnomasini qabul qilaman",
+            nameSurname:"Familiya Ism",
+            tel:"Aloqa telefoni",
         },
         scholl:{
             title:"Maktab",
@@ -198,12 +237,16 @@ const uz = {
         },
         course:{
             title:"Kurslar",
-            baseEng:"Asosiy ingliz tili",
-            maxEng:"Maksimal ingliz tili",
+            general: "General English",
+            rocket: "IELTS Rocket",
+            intensive: "IELTS Intensive",
+            kids: "English Kids",
+            german:"Немецкий язык"
         },
         contact:{
             title:"Bog'lanish uchun",
-            adres:"Samarqand shahri, Dagbitskaya 8 Hilton Garden Inn",
+            adres: "Asosiy markaz: Gagarin ko'chasi 86, +998905033030",
+            adres2: "Filial: st. Dagbitskaya 8 (orentir Xilton Garden), +998904782020",
         }
     },
     social:"Ijtimoiy tarmoqlar",
