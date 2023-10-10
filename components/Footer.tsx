@@ -205,12 +205,14 @@ const Footer: React.FC<FooterProps> = () => {
                             <ul>
                                 <li className="max-2xl:text-[18px]">
                                     {translation?.footer?.contact?.adres}
+                                    <a href="tel:+998905033030">+998905033030</a>
                                 </li>
                                 <li>
                                     <hr className="my-3"/>
                                 </li>
                                 <li className="max-2xl:text-[18px]">
                                     {translation?.footer?.contact?.adres2}
+                                    <a href="tel:+998904782020">+998904782020</a>
                                 </li>
                             </ul>
                         </div>

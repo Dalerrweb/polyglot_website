@@ -194,7 +194,7 @@ h1 {
 .rodal-dialog {
    max-width: 700px !important;
    width: 100% !important;
-   min-height: 650px !important;
+   height: fit-content !important;
    padding: 30px 30px !important;
    border-radius: 20px !important;
    background: white !important;
@@ -205,4 +205,14 @@ h1 {
    width: 30px !important;
    right: 30px !important;
    top: 30px !important;
+}
+
+/* ***************************************************** */
+
+.elipsis{
+   text-overflow: ellipsis;
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 5 !important;
+   -webkit-box-orient: vertical;
 }

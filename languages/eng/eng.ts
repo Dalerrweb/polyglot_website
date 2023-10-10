@@ -56,23 +56,6 @@ const eng = {
                 price2: "599 000",
             },
             {
-                name1: "IELTS",
-                name2: "Rocket",
-                info: "Lessons are held daily for 1.5 hours. Guarantee of quality training. Progress control is checked by 3 Mock exam - trial tests. Post-Course Follower Profile: 2-week IELTS (5.5-6.0) training structure. Two-week analysis and internal knowledge (6.5) 1 month of analysis of real changes. Given the cooperation with IDP, there is the possibility of registering and passing the IELTS exam at the Polyglot center.",
-                text1: "Online consultation 24/7",
-                text2: "English up to level IELTS 8.0-8.5",
-                text3: "Offline format",
-                text4: "Advanced grammar",
-                learnTime: "Learning period:",
-                learnTime2: "",
-                mounth: "mon",
-                price: "Price",
-                cumMounth: "sum/mon",
-                application: "Submit application",
-                details: "Details",
-                price2: "",
-            },
-            {
                 name1: "Intensive",
                 info: "The advantage of the accelerated course is that the training takes 3 months, instead of 6 months from A1 to B1. Each student is provided with: 1) main teacher; 2) Academic Support - outside of class; 3) educational materials; 4) co-working space; 5) Sunday Event;",
                 text1: "Online consultation 24/7",
@@ -104,6 +87,23 @@ const eng = {
                 details: "Details",
                 price2: "500 000",
             },
+            {
+                name1: "IELTS",
+                name2: "Rocket",
+                info: "Lessons are held daily for 1.5 hours. Guarantee of quality training. Progress control is checked by 3 Mock exam - trial tests. Post-Course Follower Profile: 2-week IELTS (5.5-6.0) training structure. Two-week analysis and internal knowledge (6.5) 1 month of analysis of real changes. Given the cooperation with IDP, there is the possibility of registering and passing the IELTS exam at the Polyglot center.",
+                text1: "Online consultation 24/7",
+                text2: "English up to level IELTS 8.0-8.5",
+                text3: "Offline format",
+                text4: "Advanced grammar",
+                learnTime: "Learning period:",
+                learnTime2: "",
+                mounth: "mon",
+                price: "Price",
+                cumMounth: "sum/mon",
+                application: "Submit application",
+                details: "Details",
+                price2: "",
+            },
         ]
     },
     tests: {
@@ -130,7 +130,13 @@ const eng = {
     support: {
         text1: "We don't forget our graduates!",
         text2: "Upon completion of the courses, our specialists are ready to help and advise in choosing a university for admission and finding employment.",
-        text01: "Admission assistance",
+        texts: [
+            { id: 1, text01: "Free individual lessons" },
+            { id: 2, text01: "Free Students books" },
+            { id: 3, text01: "MOCK exams" },
+            { id: 4, text01: "Admission assistance" },
+            { id: 5, text01: "Co-working"},
+        ],
     },
     about: {
         title: "One of the leading schools for studying foreign languages ​​in Samarkand",
@@ -175,7 +181,7 @@ const eng = {
                 id:4,
                 img:"teacher-4",
                 name:"Ms. Maftuna",
-                job_title:"",
+                job_title:"English Language Teacher",
                 local:"Local"
             },
             {
@@ -244,8 +250,8 @@ const eng = {
         },
         contact: {
             title: "Contact",
-            adres: "Main center: 86 Gagarina Street, +998905033030",
-            adres2: "Branch: 8 Dagbitskaya St. (Hilton Garden Inn landmark), +998904782020",
+            adres: "Main center: 86 Gagarina Street,",
+            adres2: "Branch: 8 Dagbitskaya St. (Hilton Garden Inn landmark),",
         },
         social: "Social Media",
     },

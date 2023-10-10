@@ -87,7 +87,7 @@ const Map: React.FC<MapProps> = ({ translation }) => {
             <div className="flex max-lg:flex-col gap-28 max-2xl:gap-10 max-xl:gap-5 mt-12 max-lg:mt-5">
                <div className="max-w-[350px] max-xl:max-w-[250px] w-full flex flex-col justify-between">
                   <div className="">
-                     <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] max-md:leading-[10px] max-md:mt-3 text-white">
+                     <p className="text-[40px] max-2xl:text-[32px] font-bold leading-[40px] max-md:leading-[30px] max-md:mt-3 text-white">
                         {translation?.text1}
                      </p>
                      <ul className="mt-4">

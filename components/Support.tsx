@@ -22,20 +22,20 @@ const Support: React.FC<SupportProps> = ({translation}) => {
                </div>
                <div className="mt-16 max-xl:mt-[40px]">
                   <ul className="grid grid-cols-2 max-md:grid-cols-1 gap-[35px] gap-y-[16px] max-md:gap-2">
-                     {[0, 1, 2, 3, 4].map((item: number) => {
+                     {translation?.texts.map((item:any) => {
                         return (
                            <li
-                              key={item}
+                              key={item?.id}
                               className="flex gap-9 pb-7 max-2xl:pb-5 border-b-[10px] max-2xl:border-b-8 border-orange text-blue"
                            >
                               <div className="">
                                  <p className="text-[40px] max-2xl:text-[30px] max-lg:text-[27.89px] font-medium leading-[48px] max-2xl:leading-[30px]">
-                                    0{item + 1}
+                                    {item?.id}
                                  </p>
                               </div>
                               <div className="max-w-[225px]">
                                  <p className="text-[36px] max-2xl:text-[28px] max-lg:text-[25.101px] font-medium leading-[36px] max-2xl:leading-[30px]">
-                                    {translation?.text01}
+                                    {item?.text01}
                                  </p>
                               </div>
                            </li>
