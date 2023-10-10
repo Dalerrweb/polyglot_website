@@ -1,9 +1,10 @@
 interface CourseProps {
    item: any;
    show: any;
+   setModalInfo:any;
 }
 
-const Course: React.FC<CourseProps> = ({ item, show }) => {
+const Course: React.FC<CourseProps> = ({ item, show,setModalInfo }) => {
    return (
       <div className="course px-8 max-3xl:px-8 max-2xl:px-[30px] pb-[35px] pt-[46px] max-3xl:py-7 max-lg:py-[24px] rounded-[30px] bg-blue text-white">
          <div className="mb-12 max-3xl:mb-[31px]">
@@ -138,7 +139,7 @@ const Course: React.FC<CourseProps> = ({ item, show }) => {
 
          <div className="flex items-center justify-between mt-5 max-3xl:mt-[18px]">
             <button
-               onClick={show}
+               onClick={()=>{show(), setModalInfo(item)}}
                className="course-btn w-[240px] max-3xl:w-[180px] max-2xl:w-[150px] py-[15px] max-lg:py-[10px] max-3xl:text-[16px] max-2xl:text-[14px] font-semibold text-center rounded-md btn-course bg-orange"
             >
                {item?.application}

@@ -161,8 +161,8 @@ const uz = {
             {
                 id:2,
                 img:"teacher-2",
-                name:"Mr.",
-                job_title:"Ingliz tili o'qituvchisi",
+                name:"IELTS instruktori",
+                job_title:"IELTS instruktori",
                 local:"Xorijiy"
             },
             {

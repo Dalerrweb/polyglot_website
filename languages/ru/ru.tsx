@@ -160,8 +160,8 @@ const ru = {
             {
                 id:2,
                 img:"teacher-2",
-                name:"Mr.",
-                job_title:"Учитель английского языка",
+                name:"IELTS инструктор",
+                job_title:"IELTS инструктор",
                 local:"Иностранный"
             },
             {
