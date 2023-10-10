@@ -206,6 +206,9 @@ const Footer: React.FC<FooterProps> = () => {
                                 <li className="max-2xl:text-[18px]">
                                     {translation?.footer?.contact?.adres}
                                 </li>
+                                <li>
+                                    <hr className="my-3"/>
+                                </li>
                                 <li className="max-2xl:text-[18px]">
                                     {translation?.footer?.contact?.adres2}
                                 </li>

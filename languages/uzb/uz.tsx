@@ -162,7 +162,7 @@ const uz = {
                 id:2,
                 img:"teacher-2",
                 name:"IELTS instruktori",
-                job_title:"IELTS instruktori",
+                job_title:"Ingliz tili instruktori",
                 local:"Xorijiy"
             },
             {

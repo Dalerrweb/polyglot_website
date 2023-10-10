@@ -112,7 +112,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
          </div>
 
          <Swiper
-            className=""
+            className="cursor-grab"
             spaceBetween={20}
             slidesPerView={4}
             onSwiper={(swiper) => setSwiperRef(swiper)}

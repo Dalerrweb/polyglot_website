@@ -161,7 +161,7 @@ const eng = {
                 id:2,
                 img:"teacher-2",
                 name:"IELTS instructor",
-                job_title:"IELTS instructor",
+                job_title:"English Language Instructor",
                 local:"Foreign"
             },
             {
