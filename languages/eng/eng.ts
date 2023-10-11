@@ -144,7 +144,7 @@ const eng = {
     },
     info: {
         title1: "Innovative teaching methodology",
-        text1: "Our teachers have developed a special training program in which you can quickly master any language up to the Intermidate level",
+        text1: "The methodology has been developed by foreign universities and complies with international education standards, according to which you will be able to master any language up to the intermediate level in a short time",
         title2: "Creating all the conveniences",
         text2: "Our classrooms are equipped with all the necessary equipment for comfortable learning",
         title3: "Conversation practice",

@@ -145,7 +145,7 @@ const uz = {
     },
     info: {
         title1: "Innovatsion oqitish usullari",
-        text1: "Bizning o'qituvchilarimiz maxsus o'quv dasturini ishlab chiqdilar, unda siz Intermidate darajasiga qadar istalgan tilni tezda o'zlashtirishingiz mumkin",
+        text1: "Metodologiya xorijiy universitetlar tomonidan ishlab chiqilgan va xalqaro ta'lim standartlariga javob beradi, unga ko'ra siz qisqa vaqt ichida har qanday tilni o'rta darajaga qadar o'zlashtira olasiz",
         title2: 'Biz barcha qulayliklarni yaratamiz',
         text2: 'Bizning sinflarimiz qulay oqish uchun barcha zarur jihozlar bilan jihozlangan',
         title3: 'Nutq amaliyoti',
