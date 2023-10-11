@@ -41,7 +41,7 @@ const eng = {
             {
                 name1: "GENERAL",
                 name2: "ENGLISH",
-                info: '"General English" courses are conducted according to a methodology developed by leading universities in the UK that meets international standards. Students are provided with 4 lessons per week for 90 minutes - General English and IELTS lessons taught by local and foreign teachers. There is also a 3rd teacher - Academic Support, who will individually explain complex or missed topics. The training kit includes textbooks, notebooks and handouts for free. Additionally, bonus Sunday lessons are provided - Sunday Event: Movie-Speaking Club and karaoke in English',
+                info: 'General English courses are conducted according to the methodology developed by leading universities in the UK, corresponding to international standards. Students are provided with 4 one-time lessons per week for 90 minutes - General English and IELTS lessons conducted by local and Foreign teachers. Also, the 3rd teacher is Academic Support, who will individually explain difficult or missed topics. The training kit includes textbooks, notebooks and handouts for free. Additionally, bonus Sunday lessons are provided - Sunday Event: Movie-Speaking Club and karaoke in English',
                 text1: "Online consultation 24/7",
                 text2: "English up to level С2- IELTS",
                 text3: "Offline format",

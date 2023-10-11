@@ -40,7 +40,7 @@ const uz = {
             {
                 name1: "GENERAL",
                 name2: "ENGLISH",
-                info:"'Umumiy ingliz tili' kurslari Buyuk Britaniyaning yetakchi universitetlari tomonidan ishlab chiqilgan va xalqaro standartlarga javob beradigan metodika asosida olib boriladi. Talabalarga haftasiga 4 ta 90 daqiqalik darslar – umumiy ingliz tili va IELTS saboqlari Mahalliy va xorijlik o'qituvchilar tomonidan beriladi. Shuningdek, 3-o'qituvchi - Akademik yordam mavjud bo'lib, u murakkab yoki o'tkazib yuborilgan mavzularni alohida tushuntiradi. O'quv to'plamiga bepul darsliklar, daftar va tarqatma materiallar kiradi. Bundan tashqari, bonusli yakshanba darslari taqdim etiladi - Yakshanba kuni tadbir: Kino-speaking klubi va ingliz tilida karaoke",
+                info:"'General English' kurslari buyuk Britaniyaning yetakchi universitetlari tomonidan ishlab chiqilgan va jahon standartlariga javob beradigan metodika bo'yicha o'tkaziladi. Talabalarga haftasiga 4 marta 90 daqiqalik darslar beriladi-general English va mahalliy va xorijiy o'qituvchilar tomonidan o'tkaziladigan IELTS darslari. Shuningdek, 3-o'qituvchi - akademik qo'llab-quvvatlash, u murakkab yoki o'tkazib yuborilgan mavzularni individual ravishda tushuntiradi. O'quv to'plamiga darsliklar, daftarlar va tarqatma materiallar bepul kiradi. Bundan tashqari, bonusli yakshanba darslari taqdim etiladi-Sunday Event: Movie-Speaking Club va ingliz tilidagi karaoke",
                 text1: "Onlayn maslahat 24/7",
                 text2: "С2- IELTS darajasiga qadar ingliz tili",
                 text3: "Iloji boricha grammatika",
@@ -72,8 +72,8 @@ const uz = {
                 price2: "1 000 000",
             },
             {
-                name1: "Nemis",
-                name2: "Tili",
+                name1: "Nemischa",
+                name2: "",
                 info:"Nemis tili kurslari haftasiga 3 marta 2 soatdan nemis, o‘zbek va rus tillarida oliy ma’lumotli va C1 darajadagi sertifikatga ega o‘qituvchi tomonidan olib boriladi. Ushbu kurs davomida siz Gyote sertifikatiga (A1-C1) tayyorlanishingiz mumkin (agar siz talaba bo'lsangiz dsd1 imtihoniga).",
                 text1: "Onlayn maslahat 24/7",
                 text2: "B1 darajasiga qadar ingliz tili",
