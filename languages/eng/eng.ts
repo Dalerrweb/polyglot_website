@@ -131,11 +131,13 @@ const eng = {
         text1: "We don't forget our graduates!",
         text2: "Upon completion of the courses, our specialists are ready to help and advise in choosing a university for admission and finding employment.",
         texts: [
-            { id: 1, text01: "Free individual lessons" },
-            { id: 2, text01: "Free Students books" },
-            { id: 3, text01: "MOCK exams" },
+            { id: 1, text01: "Free private lessons" },
+            { id: 2, text01: "Free study materials: Work and Student bookss" },
+            { id: 3, text01: "MOCK Trial Exams" },
             { id: 4, text01: "Admission assistance" },
-            { id: 5, text01: "Co-working"},
+            { id: 5, text01: "Сo-working spaces"},
+            { id: 6, text01: "Official admission of the IELTS exam" },
+            { id: 7, text01: "Free consultation with a consulting company on admission to Foreign Universities" },
         ],
     },
     about: {
@@ -158,69 +160,71 @@ const eng = {
         title7: "Motivation during lessons",
         text7: "Also, students who actively participate in classes are given polyglot dollars, and they can exchange this money for valuable gifts at an auction held on the last Sunday of each month.",
         title8: "Parental control",
-        text8: "Parents are also informed about the progress of their children through regular calls and SMS. ki.",
+        text8: "Parents are also informed about the progress of their children through regular calls and SMS.",
     },
     teacher: {
         title1: "",
         title2: "It's time to meet them!",
         p: "Our specialists not only love their work, but also improve themselves every day along with you",
         h1: "Teachers",
+        name: "Ms. Zuxra",
+        job_title: "English Language Teacher",
         teacher: [
             {
                 id:1,
                 img:"teacher-1",
                 name:"Ms. Mekhruza",
                 job_title:"English Language Teacher",
-                local:"Local"
+                local:""
             },
             {
                 id:2,
                 img:"teacher-2",
                 name:"IELTS instructor",
                 job_title:"English Language Instructor",
-                local:"Foreign"
+                local:""
             },
             {
                 id:3,
                 img:"teacher-3",
                 name:"Ms. Anna",
                 job_title:"English Language Teacher",
-                local:"Foreign"
+                local:""
             },
             {
                 id:4,
                 img:"teacher-4",
                 name:"Ms. Maftuna",
                 job_title:"English Language Teacher",
-                local:"Local"
+                local:""
             },
             {
                 id:5,
                 img:"teacher-5",
                 name:"Mr. Siyavush",
                 job_title:"English Language Teacher",
-                local:"Foreign"
+                local:""
             },
             {
                 id:7,
                 img:"teacher-7",
                 name:"Ms. Mohinur",
                 job_title:"English Language Teacher",
-                local:"Local"
+                local:""
             },
             {
                 id:8,
                 img:"teacher-8",
                 name:"Ms. Nodirabegim",
                 job_title:"English Language Teacher",
-                local:"Local"
+                local:""
             },
             {
                 id:9,
                 img:"teacher-9",
                 name:"Ms. Parvina",
                 job_title:"English Language Teacher",
-                local:"Local"
+                local:""
             }
         ]
     },

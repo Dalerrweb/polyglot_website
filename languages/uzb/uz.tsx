@@ -133,10 +133,12 @@ const uz = {
         text2: "Kurslarni tugatgandan so'ng, bizning mutaxassislarimiz qabul qilish va ishga joylashish uchun universitet tanlashda yordam berishga va maslahat berishga tayyor.",
         texts: [
             { id: 1, text01: "Bepul individual darslar" },
-            { id: 2, text01: "Bepul talabalar kitoblari" },
-            { id: 3, text01: "Sinovdan o'tish MOCK imtihonlari" },
-            { id: 4, text01: "Qabulga yordam" },
-            { id: 5, text01: "Сo-working" },
+            { id: 2, text01: "Bepul o'quv materiallari: Work va Student books" },
+            { id: 3, text01: "Sinov MOCK imtihonlari" },
+            { id: 4, text01: "Qabul qilishda yordam" },
+            { id: 5, text01: "Сo-working spaces" },
+            { id: 6, text01: "IELTS imtihonini rasmiy qabul qilish" },
+            { id: 7, text01: "Xorijiy universitetlarga kirish bo'yicha konsalting kompaniyasi bilan bepul maslahat" },
         ],
     },
     about:{
@@ -153,75 +155,77 @@ const uz = {
         title4: "Sinflarning chastotasi",
         text4: "Ingliz tili darslari haftasiga 4 marta o'tkaziladi. Darslarning davomiyligi 90 daqiqa. A1 darajasidan boshlab talabalar IELTS-ga tashuvchini tayyorlashni boshlaydilar . Shuningdek ,akademik qo'llab-quvvatlash bilan qo'shimcha shug'ullanish uchun har kuni markazga tashrif buyurish imkoniyati mavjud.",
         title5: "Kafolatlangan muvaffaqiyat",
-        text5: "Endi bizning talabalarimiz dunyoning eng yaxshi universitetlarida ,AQSh, Angliya, Germaniya va boshqa rivojlangan universitetlarda tahsil olishmoqda . Bundan tashqari, talabalarimizning 90 foizi IELTS imtihonidan muvaffaqiyatli o'tdi va kerakli ballarni oldi.",
+        text5: "Endi bizning talabalarimiz dunyoning eng yaxshi universitetlarida ,AQSh, Angliya, Germaniya va boshqa rivojlangan mamlakatlarda tahsil olishmoqda. Bundan tashqari, talabalarimizning 90 foizi IELTS imtihonidan muvaffaqiyatli o'tdi va kerakli ballarni oldi.",
         title6: "Ko'p qirrali trening",
         text6: "Polyglot nafaqat sifatli o'rganishga, balki o'quvchilarni qiziqarli va foydali vaqt o'tkazishga intiladi. Shunday qilib, har yakshanba kuni bizning mini-kinoteatrlarimizda ingliz tilidagi qiziqarli filmlar namoyish etiladi, munozaralar bo'lib o'tadi va qo'shiqlar kuylanadi. Bundan tashqari, xorijiy va mahalliy ma'ruzachilar bilan seminarlar va treninglar o'tkaziladi.",
         title7: "Dars paytida motivatsiya",
         text7: "Shuningdek, mashg'ulotlarda faol ishtirok etayotgan talabalarga poliglot dollarlari beriladi va ular bu pulni har oyning oxirgi yakshanbasida bo'lib o'tadigan kim oshdi savdosida qimmatbaho sovg'alarga almashtirishlari mumkin.",
         title8: "Ota-ona nazorati",
-        text8: "Shuningdek, ota-onalar farzandlarining faoliyati to'g'risida muntazam qo'ng'iroqlar va SMS orqali xabardor qilinadi. Q.",
+        text8: "Shuningdek, ota-onalar farzandlarining faoliyati to'g'risida muntazam qo'ng'iroqlar va SMS orqali xabardor qilinadi.",
     },
     teacher: {
         title1:"",
         title2:"Tanishish uchun eng yaxshi vaqt!",
         p:"Bizning mutaxassislarimiz faqat ishlarini sevishgan emas, balki har kuni siz bilan birga o'zlarini yanada rivojlantiradilar",
         h1:"O'qituvchilar",
+        name: "Ms. Zuxra",
+        job_title: "Ingliz tili o'qituvchisi",
         teacher: [
             {
                 id:1,
                 img:"teacher-1",
                 name:"Ms. Mekhruza",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Mahalliy"
+                local:""
             },
             {
                 id:2,
                 img:"teacher-2",
                 name:"IELTS instruktori",
                 job_title:"Ingliz tili instruktori",
-                local:"Xorijiy"
+                local:""
             },
             {
                 id:3,
                 img:"teacher-3",
                 name:"Ms. Anna",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Xorijiy"
+                local:""
             },
             {
                 id:4,
                 img:"teacher-4",
                 name:"Ms. Maftuna",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Mahalliy"
+                local:""
             },
             {
                 id:5,
                 img:"teacher-5",
                 name:"Mr. Siyavush",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Xorijiy"
+                local:""
             },
             {
                 id:7,
                 img:"teacher-7",
                 name:"Ms. Mohinur",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Mahalliy"
+                local:""
             },
             {
                 id:8,
                 img:"teacher-8",
                 name:"Ms. Nodirabegim",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Mahalliy"
+                local:""
             },
             {
                 id:9,
                 img:"teacher-9",
                 name:"Ms. Parvina",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:"Mahalliy"
+                local:""
             }
         ]
     },
