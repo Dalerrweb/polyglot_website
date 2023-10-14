@@ -168,7 +168,65 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         );
                     }
                 )}
+                <SwiperSlide className="">
+                    <div className="relative w-full rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
+                        <div className="w-full h-[707px] max-3xl:h-[550px] max-xl:h-[460px]  max-lg:h-[515px] max-md:h-[420px] max-sm:h-auto translate-y-10 max-xl:translate-y-5 max-sm:translate-y-8">
+                            <Image
+                                className="bg-cover w-full"
+                                src={`/images/teachers/teacher-10.webp`}
+                                width={1000}
+                                height={1000}
+                                alt="teacher"
+                            />
+                        </div>
+
+                        <div className="w-full absolute -bottom-3 left-0 py-7 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                            <div className="">
+                                <p className="text-[36px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                                    {translation?.name}
+                                </p>
+                                <p className="max-w-[200px] text-[23px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                                    {translation?.job_title}
+                                </p>
+                            </div>
+                            <p className="max-w-[200px] text-[22px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                            </p>
+                        </div>
+                    </div>
+                </SwiperSlide>
             </Swiper>
+            {/* <div className="fixed top-0 left-0 bg-[#0000008e] backdrop-blur-sm w-full h-full z-[60] flex items-center justify-center">
+                <div className="bg-[#EC8D18] flex gap-5 h-[80vh] w-[80vw] rounded-[20px] max-md:rounded-[9.102px]">
+                    <div className="flex flex-col items-center justify-between min-h-[300px] max-sm:min-h-[220px] -translate-y-[118px]">
+                        <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full">
+                            <Image
+                                src={`/images/teachers/teacher-1.webp`}
+                                width={500}
+                                height={500}
+                                alt="teacher"
+                            />
+                        </div>
+
+                        <div className="w-full py-7 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
+                            <div className="">
+                                <p className="text-[36px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
+                                    {translation?.name}
+                                </p>
+                                <p className="max-w-[200px] text-[23px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
+                                    {translation?.job_title}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="">
+                        <ul>
+                            <li>Стаж: 10 лет</li>
+                            <li>Достижения: победитель ICCR</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> */}
         </div>
     );
 };
