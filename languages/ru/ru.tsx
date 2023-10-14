@@ -223,8 +223,8 @@ const ru = {
             {
                 id: 9,
                 img: "teacher-9",
-                name: "Ms. Parvina",
-                job_title: "Преподаватель английского языка",
+                name: "Ms. Hilola",
+                job_title: "Преподаватель немецкого языка",
                 local: "",
             },
         ],

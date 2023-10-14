@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = () => {
             }`}
          >
             <div className="custom-container flex items-center justify-between py-3">
-               <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[150px] max-md:w-[130px]">
+               <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[150px] max-md:w-[130px] max-sm:w-[110px]">
                   <Link href={"/"}>
                      <Image
                         className="w-auto h-auto"
@@ -80,7 +80,7 @@ const Header: React.FC<HeaderProps> = () => {
                      </ul>
                   </nav>
                </div>
-               <div className="flex items-center gap-20 max-2xl:gap-10 max-xl:gap-5">
+               <div className="flex items-center gap-20 max-2xl:gap-10 max-xl:gap-5 max-sm:gap-2">
                   <div className="flex gap-5 max-sm:gap-2">
                      <Select
                         defaultValue={localeValue}

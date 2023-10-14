@@ -222,8 +222,8 @@ const eng = {
             {
                 id:9,
                 img:"teacher-9",
-                name:"Ms. Parvina",
-                job_title:"English Language Teacher",
+                name:"Ms. Hilola",
+                job_title:"German language teacher",
                 local:""
             }
         ]

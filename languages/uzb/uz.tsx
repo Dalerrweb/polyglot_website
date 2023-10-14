@@ -223,8 +223,8 @@ const uz = {
             {
                 id:9,
                 img:"teacher-9",
-                name:"Ms. Parvina",
-                job_title:"Ingliz tili o'qituvchisi",
+                name:"Ms. Hilola",
+                job_title:"Nemis tili o'qituvchisi",
                 local:""
             }
         ]

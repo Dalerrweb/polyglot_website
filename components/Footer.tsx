@@ -198,20 +198,20 @@ const Footer: React.FC<FooterProps> = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="max-w-[255px] w-full">
+                        <div className="max-w-[275px] w-full">
                             <h3 className="text-[40px] max-2xl:text-[32px] font-semibold mb-2">
                                 {translation?.footer?.contact?.title}
                             </h3>
                             <ul>
                                 <li className="max-2xl:text-[18px]">
-                                    {translation?.footer?.contact?.adres}
+                                    {translation?.footer?.contact?.adres}<br/>
                                     <a href="tel:+998905033030">+998905033030</a>
                                 </li>
                                 <li>
                                     <hr className="my-3"/>
                                 </li>
                                 <li className="max-2xl:text-[18px]">
-                                    {translation?.footer?.contact?.adres2}
+                                    {translation?.footer?.contact?.adres2}<br/>
                                     <a href="tel:+998904782020">+998904782020</a>
                                 </li>
                             </ul>
