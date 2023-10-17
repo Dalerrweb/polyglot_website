@@ -165,7 +165,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                     >
                         <input
                             type="text"
-                            placeholder="Имя"
+                            placeholder={translation?.input}
                             required
                             name="name"
                             className="text-[24px] max-2xl:text-[20px] max-xl:text-[16px] max-sm:text-[14px] px-4 max-2xl:px-4 py-[10px] max-2xl:py-1 max-xl:py-[8px] max-xl:px-3 rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
@@ -175,7 +175,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                                 className="w-full py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3"
                                 mask="+\9\98-(99)-999-99-99"
 								name="phone"
-                                placeholder="Номер"
+                                placeholder={translation?.inputNumber}
                                 required
                                 value={phone}
                                 onChange={(e: any) =>

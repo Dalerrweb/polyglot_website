@@ -8,17 +8,20 @@ const ru = {
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",
-        text2: "Изучи всё что не смог изучить раньше!",
+        text2: "Изучите всё, что не смогли изучить раньше!",
         text3: "Освойте иностранные языки на уровне носителя!",
     },
     entry: {
         text1: "Запишитесь на бесплатный урок",
         buttonText: "Проконсультироваться",
         text2: "Нажимая кнопку я принимаю условия политики и пользовательского соглашения",
-        input: "Имя",
+        input: "Фамилия Имя",
+        inputNumber: "Контактный телефон",
     },
     courses: {
         title: "Программа курсов",
+        input: "Фамилия Имя",
+        inputNumber: "Контактный телефон",
         courses: [
             {
                 name1: "English",
@@ -273,8 +276,8 @@ const ru = {
     modalTestStart: {
         title: "Заполните форму!",
         button: "Начать",
-        inputName: "Имя",
-        inputNumber: "Номер",
+        inputName: "Фамилия Имя",
+        inputNumber: "Контактный телефон",
         сontinueAs: "Продолжить как",
         changeData: "Изменить данные",
     },

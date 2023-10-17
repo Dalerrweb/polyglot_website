@@ -15,10 +15,13 @@ const uz = {
         text1: 'Bepul darsga yoziling',
         buttonText: "Maslahatlash",
         text2: "Tugmani bosish orqali men siyosat va foydalanuvchi shartnomasi shartlarini qabul qilaman",
-        input:"Ism"
+        input: "Familiya Ism",
+        inputNumber: "Aloqa telefon raqami",
     },
     courses: {
         title: 'Kurs dasturi',
+        input: "Familiya Ism",
+        inputNumber: "Aloqa telefon raqami",
         courses:[
             {
                 name1: "English",
@@ -273,8 +276,8 @@ const uz = {
     modalTestStart:{
         title:"Formani to'ldiring!",
         button:"Boshlash",
-        inputName:"Ism",
-        inputNumber:"Nomer",
+        inputName:"Familiya Ism",
+        inputNumber:"Aloqa telefon raqami",
         сontinueAs:"Men",
         changeData:"Malumotni o'zgartirish"
     },

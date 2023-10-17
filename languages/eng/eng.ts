@@ -15,10 +15,13 @@ const eng = {
         text1: "Sign up for a free lesson",
         buttonText: "Consult",
         text2: "By clicking the button, I accept the terms of the privacy policy and user agreement",
-        input:"Name"
+        input: "Last and First name",
+        inputNumber: "Contact number",
     },
     courses: {
         title: "Course Program",
+        input: "Last and First name",
+        inputNumber: "Contact number",
         courses: [
             {
                 name1: "English",
@@ -272,8 +275,8 @@ const eng = {
     modalTestStart: {
         title: "Fill out the form!",
         button: "Start",
-        inputName:"Name",
-        inputNumber:"Number",
+        inputName:"Last and First name",
+        inputNumber:"Contact number",
         сontinueAs:"Contiunue as",
         changeData:"To change the data"
     },

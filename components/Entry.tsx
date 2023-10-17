@@ -66,7 +66,7 @@ const Entry: React.FC<EntryProps> = ({ translation }) => {
                   <div className="text-[24px] max-xl:text-[20px] px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]">
                      <InputMask
                         mask="+\9\98-(99)-999-99-99"
-                        placeholder="+998-(__)-___-__-__"
+                        placeholder={translation?.inputNumber}
                         required
                         value={phone}
                         onChange={(e: any) => setPhone(e.target.value)}
