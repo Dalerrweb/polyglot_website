@@ -138,7 +138,7 @@ const eng = {
             { id: 2, text01: "Free study materials: Work and Student bookss" },
             { id: 3, text01: "MOCK Trial Exams" },
             { id: 4, text01: "Admission assistance" },
-            { id: 5, text01: "Сo-working spaces"},
+            { id: 5, text01: "Сo-working spaces" },
             { id: 6, text01: "Official admission of the IELTS exam" },
             { id: 7, text01: "Free consultation with a consulting company on admission to Foreign Universities" },
         ],
@@ -174,60 +174,119 @@ const eng = {
         job_title: "English Language Teacher",
         teacher: [
             {
-                id:1,
-                img:"teacher-1",
-                name:"Ms. Mekhruza",
-                job_title:"English Language Teacher",
-                local:""
+                id: 1,
+                img: "teacher-1",
+                name: "Ms. Mekhruza",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Vafokulova Mekhruza",
+                    text2: "",
+                    text3: "You can call me Ms.Mekhruza",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2:"FACTS ABOUT ME",
+                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
+                }
             },
             {
-                id:2,
-                img:"teacher-2",
-                name:"IELTS instructor",
-                job_title:"English Language Instructor",
-                local:""
+                id: 2,
+                img: "teacher-2",
+                name: "IELTS instructor",
+                job_title: "English Language Instructor",
+                local: ""
             },
             {
-                id:3,
-                img:"teacher-3",
-                name:"Ms. Anna",
-                job_title:"English Language Teacher",
-                local:""
+                id: 3,
+                img: "teacher-3",
+                name: "Ms. Anna",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My name is Anna",
+                    text2: "",
+                    text3: "You can call me  Ms. Ann",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2:"MY HOBBIES AND INTERESTS",
+                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
+                }
             },
             {
-                id:4,
-                img:"teacher-4",
-                name:"Ms. Maftuna",
-                job_title:"English Language Teacher",
-                local:""
+                id: 4,
+                img: "teacher-4",
+                name: "Ms. Maftuna",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Boboyorova Maftuna",
+                    text2: "My friends call me Maftuna ",
+                    text3: "You can call me Ms. Maftuna",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
+                    info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
+                    title2:"MY HOBBIES AND INTERESTS",
+                    info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
+                }
             },
             {
-                id:5,
-                img:"teacher-5",
-                name:"Mr. Siyavush",
-                job_title:"English Language Teacher",
-                local:""
+                id: 5,
+                img: "teacher-5",
+                name: "Mr. Siyavush",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Siyavush Yildizoglu",
+                    text2: "My friends call me Siyavush",
+                    text3: "You can call me Mr. Siyavush",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
+                    info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
+                    title2:"MY HOBBIES AND INTERESTS ",
+                    info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
+                }
             },
             {
-                id:7,
-                img:"teacher-7",
-                name:"Ms. Mohinur",
-                job_title:"English Language Teacher",
-                local:""
+                id: 7,
+                img: "teacher-7",
+                name: "Ms. Mohinur",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Pulatova Mohinur ",
+                    text2: "",
+                    text3: "You can call me Ms. Mohinur ",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2:"INTERSTING FACTS ABOUT ME",
+                    info2:"My favorite genre of books to read is mystery and thriller books"
+                }
             },
             {
-                id:8,
-                img:"teacher-8",
-                name:"Ms. Nodirabegim",
-                job_title:"English Language Teacher",
-                local:""
+                id: 8,
+                img: "teacher-8",
+                name: "Ms. Nodirabegim",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Nodirabegim ",
+                    text2: "",
+                    text3: "You can call me Ms. Nodirabegim",
+                    title:"Bachelor's degree",
+                    info:"Samarkand state institution of foreign languages ",
+                    info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
+                    title2:"Hobbies and interests",
+                    info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
+                }
             },
             {
-                id:9,
-                img:"teacher-9",
-                name:"Ms. Hilola",
-                job_title:"German language teacher",
-                local:""
+                id: 9,
+                img: "teacher-9",
+                name: "Ms. Hilola",
+                job_title: "German language teacher",
+                local: ""
             }
         ]
     },
@@ -237,8 +296,8 @@ const eng = {
         text2: "Main Center",
         text3: "Branch",
         telText: "Phone number for inquiries",
-        gagarina:"Gagarina 86",
-        ibnsino:"Ibn Sino 8"
+        gagarina: "Gagarina 86",
+        ibnsino: "Ibn Sino 8"
     },
     footer: {
         title: "Submit an application",
@@ -248,8 +307,8 @@ const eng = {
             title: "Free Consultation",
             consult: "Consult",
             info: "By clicking the button, I accept the terms of the privacy policy and user agreement",
-            nameSurname:"Surname Name",
-            tel:"Contact phone number",
+            nameSurname: "Surname Name",
+            tel: "Contact phone number",
         },
         school: {
             title: "School",
@@ -263,7 +322,7 @@ const eng = {
             rocket: "IELTS Rocket",
             intensive: "IELTS Intensive",
             kids: "English Kids",
-            german:"German"
+            german: "German"
         },
         contact: {
             title: "Contact",
@@ -275,10 +334,10 @@ const eng = {
     modalTestStart: {
         title: "Fill out the form!",
         button: "Start",
-        inputName:"Last and First name",
-        inputNumber:"Contact number",
-        сontinueAs:"Contiunue as",
-        changeData:"To change the data"
+        inputName: "Last and First name",
+        inputNumber: "Contact number",
+        сontinueAs: "Contiunue as",
+        changeData: "To change the data"
     },
     textPage: {
         title: "Take a mini-test to determine your language proficiency level",

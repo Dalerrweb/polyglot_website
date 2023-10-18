@@ -179,7 +179,16 @@ const uz = {
                 img:"teacher-1",
                 name:"Ms. Mekhruza",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Vafoqulova Mehruza",
+                    text2: "",
+                    text3: "Meni Mehruza xonim deb atashingiz mumkin",
+                    title:"MENING AKADEMIK FONIM",
+                    info:"SRIUT PHD-WESTMINSTER XALQARO UNIVERSITETI o‘qituvchisi. TOSHKENT.O‘ZBEKISTON MAGİTRATSIYA SEJONG UNIVERSITETI, SEUL, JANUBIY KOREYA",
+                    title2:"MEN HAQIMDAGI FAKTLAR",
+                    info2:"MGF HAYOTDA FALSAFA- HAYOT ISHOROQ UCHUN JUDA QISQA nafrat kechikish sevgi shokoladlar uylangan, ikki o'g'il hobbi-kitoblar yig'ish, SAYAHAT PORA TOJIKISTON ROSSIYA TURKIYA"
+                }
             },
             {
                 id:2,
@@ -193,35 +202,85 @@ const uz = {
                 img:"teacher-3",
                 name:"Ms. Anna",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "Mening ismim Anna",
+                    text2: "",
+                    text3: "Siz meni Ann xonim deb chaqirishingiz mumkin",
+                    title:"MENING AKADEMIK FONIM",
+                    info:"Chet tillariga ixtisoslashgan maktabni tamomladim. Men Moskva xalqaro universitetini tamomlaganman, IELTS ni topshirdim",
+                    info1:"Birinchi marta 18 yoshda: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2:"MENING XOBBI VA QIZIQISHLARIM",
+                    info2:"Men raqsga tushishni va qo'shiq aytishni yaxshi ko'raman; Shuningdek, men kitob o'qish va musiqa tinglashni yaxshi ko'raman; Men haqiqatan ham ochiqko'ngil va do'stona odamman;"
+                }
             },
             {
                 id:4,
                 img:"teacher-4",
                 name:"Ms. Maftuna",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Boboyorova Maftuna",
+                    text2: "Do'stlarim meni Maftuna deyishadi",
+                    text3: "Meni Maftuna xonim deb atashingiz mumkin",
+                    title:"MENING AKADEMIK FONIM",
+                    info:"Ingliz filologiyasi bo'yicha bakalavr, ingliz tili va adabiyoti bo'yicha san'at magistri, ko'p darajali C1 darajasi egasi",
+                    info1:"Ilmiy nashr uchun IELTS 7.5 sohibi sertifikatlari Teaching Excellence Fellowship dasturida qatnashish sertifikati",
+                    title2:"MENING XOBBI VA QIZIQISHLARIM",
+                    info2:"Qo'shiq aytish va raqsga tushish. Yangi odamlar bilan tanishish. O'qish va yolg'iz yurish"
+                }
             },
             {
                 id:5,
                 img:"teacher-5",
                 name:"Mr. Siyavush",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Siyavush Yildizo'g'li",
+                    text2: "Do‘stlarim meni Siyovush deyishadi",
+                    text3: "Siz meni janob Siyovush deb atashingiz mumkin",
+                    title:"MENING AKADEMIK FONIM",
+                    info:"Mehmonxona biznesi kollejida 2 yillik Yevropa ta'limi ERASMUS va ERASMUS+ dasturlari g'olibi London Savdo maktabi, Buyuk Britaniyadagi almashinuv kursi talabasi",
+                    info1:"Samarqand davlat chet tillar instituti: 1,5 yillik akademik ta'lim Akademik bo'shliq",
+                    title2:"MENING XOBBI VA QIZIQISHLARIM",
+                    info2:"Qo'shiq aytish va raqsga tushish, yangi odamlar bilan tanishish, yolg'iz o'qish va yurish"
+                }
             },
             {
                 id:7,
                 img:"teacher-7",
                 name:"Ms. Mohinur",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Po'latova Mohinur",
+                    text2: "",
+                    text3: "Meni Mohinur xonim deb atashingiz mumkin",
+                    title:"MENING AKADEMIK FONIM",
+                    info:"BAKALAVR - SAMARQAND DAVLAT CHET TILLAR INSTITUTI",
+                    info1:"SERTIFIKATLAR: O'qitish kursi - Kattalar uchun ta'lim markazi, Cambridge CELTA onlayn kursi",
+                    title2:"MEN HAQIMDA QIZIQARLI FAKTLAR",
+                    info2:"Mening sevimli kitoblarim sirli va triller kitoblaridir"
+                }
             },
             {
                 id:8,
                 img:"teacher-8",
                 name:"Ms. Nodirabegim",
                 job_title:"Ingliz tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Nodirabegim",
+                    text2: "",
+                    text3: "Meni Miss Nodirabegim deb atashingiz mumkin",
+                    title:"Bakalavr diplomi",
+                    info:"Samarqand davlat chet tillar muassasasi",
+                    info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
+                    title2:"Xobbi va qiziqishlari",
+                    info2:"KITOB O'QISH, RASMLARGA TUSH VA YOPIQ O'YINLAR O'YNASH"
+                }
             },
             {
                 id:9,

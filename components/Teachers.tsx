@@ -21,7 +21,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
         swiperRef.slideNext();
     };
 
-    console.log(translation);
+    console.log(modalInfo);
 
     return (
         <div className="custom-container">
@@ -142,13 +142,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         local: string;
                     }) => {
                         return (
-                            <SwiperSlide
-                                onClick={() => {
-                                    setModalInfo(item), setModalHendel(true);
-                                }}
-                                className=""
-                                key={item.id}
-                            >
+                            <SwiperSlide className="" key={item.id}>
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
                                     <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-12 max-xl:-translate-y-10 max-sm:-translate-y-8">
                                         <Image
@@ -169,9 +163,29 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                                 {item?.job_title}
                                             </p>
                                         </div>
-                                        <p className="max-w-[200px] text-[22px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                            {item?.local}
-                                        </p>
+                                        <div className="flex items-center justify-between mt-3 max-sm:mt-2">
+                                            <div></div>
+                                            <div
+                                                onClick={() => {
+                                                    setModalInfo(item),
+                                                        setModalHendel(true);
+                                                }}
+                                                className="flex items-center gap-2"
+                                            >
+                                                <p className="text-white max-sm:text-[11px]">
+                                                    {translation?.moreInfo}
+                                                </p>
+                                                <Image
+                                                    src={
+                                                        "/icons/moreinfoIcon.svg"
+                                                    }
+                                                    width={17}
+                                                    height={17}
+                                                    alt=""
+                                                    className="max-sm:w-[10px] max-sm:h-[10px]"
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </SwiperSlide>
@@ -205,7 +219,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                 </SwiperSlide>
             </Swiper>
 
-            {/* {modaHendel ? (
+            {modaHendel ? (
                 <div className="fixed top-0 left-0 bg-[#0000008e] backdrop-blur-sm w-full h-full z-[60] flex items-center justify-center">
                     <div className="relative bg-[#EC8D18] max-sm:mt-7 max-sm:w-[90%] flex max-lg:flex-col gap-5 max-sm:gap-2 h-[80vh] max-xl:h-[70vh] max-lg:h-[90vh] max-lg:w-[650px] max-md:w-[70%] w-[90vw] rounded-[20px] max-md:rounded-[9.102px] overflow-auto pr-20 max-xl:pr-12 max-lg:pr-0">
                         <div className="relative w-[1100px] max-lg:w-full h-full max-sm:h-fit">
@@ -230,71 +244,45 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                             <p className="text-white text-5xl max-3xl:text-4xl max-2xl:text-3xl max-xl:text-xl max-sm:text-base mb-4 max-3xl:mb-2 font-semibold">
                                 {modalInfo?.name}
                             </p>
-                            <p className="text-white text-xl  max-2xl:text-lg max-xl:text-sm max-sm:text-xs w-[300px] max-3xl:w-[350px] max-xl:w-[250px] mb-5 max-3xl:mb-3">
-                                {modalInfo?.job_title}
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-1">
+                                {modalInfo?.modal?.text}
                             </p>
-                            <ul className="w-[85%] max-2xl:w-full text-white text-xl max-2xl:text-base max-xl:text-sm  max-sm:text-[10px]">
-                                <li>
-                                    &bull;{" "}
-                                    <span className="max-sm:text-[14px]">
-                                        {" "}
-                                        Стаж: 10 лет
-                                    </span>
-                                </li>
-                                <li>
-                                    &bull;{" "}
-                                    <span className="max-sm:text-[14px]">
-                                        {" "}
-                                        Достижения: победитель ICCR
-                                    </span>
-                                </li>
-                                <li>
-                                    &bull;{" "}
-                                    <span className="max-sm:text-[14px]">
-                                        Образование: степень бакалавра
-                                        экономических наук Университета Пуны,
-                                        Индия. Степень магистра в области
-                                        маркетинга от MDIS
-                                    </span>
-                                </li>
-                                <li>
-                                    &bull;{" "}
-                                    <span className="max-sm:text-[14px]">
-                                        Целеустремлённый, активный,
-                                        трудолюбивый, ответственный, с
-                                        искрометным чувством юмора- Количество
-                                        студентов: 5000+
-                                    </span>
-                                </li>
-                            </ul>
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-1">
+                                {modalInfo?.modal?.text2}
+                            </p>
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-5 max-3xl:mb-3">
+                                {modalInfo?.modal?.text3}
+                            </p>
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[300px] max-3xl:w-[350px] max-xl:w-[250px] mb-5 max-3xl:mb-3">
+                                {modalInfo?.modal?.title}
+                            </p>
+                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[350px] mb-5 max-3xl:mb-3">
+                                {modalInfo?.modal?.info}
+                            </p>
+                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[350px]">
+                                {modalInfo?.modal?.info1}
+                            </p>
                         </div>
                         <div className="relative w-full py-5 max-lg:bg-blue max-lg:p-5 max-lg:mb-5 max-sm:mb-2 max-lg:rounded-[20px] max-md:rounded-[9.102px]">
                             <p className="text-[white] text-4xl  max-3xl:text-3xl max-2xl:text-2xl max-xl:text-xl max-sm:text-lg mb-4 max-xl:mb-2 font-semibold">
-                                О преподавателе
+                                {modalInfo?.modal?.title2}
                             </p>
                             <p className="text-xl max-3xl:text-lg max-2xl:text-base max-xl:text-sm max-sm:text-xs text-white mb-7 max-2xl:mb-4">
-                                С детства Далер стремился путешествовать по
-                                всему миру и часто старался выучить языки, но
-                                судьба злая тётка. Далер выучил языки
-                                программирования и теперь каждый день сидит и
-                                пишет программы в уютном офисе
+                                {modalInfo?.modal?.info2}
                             </p>
                             <p className="text-xl  max-3xl:text-lg max-2xl:text-base max-xl:text-sm max-sm:text-xs text-white">
-                                Всё же придёт время когда Далер, решится
-                                отдохнуть где-нибудь в Дубае и обязательно
-                                сможет на Английском объяснить как написать сайт
-                                на CSS или HTML.
+                                {modalInfo?.modal?.info3}
                             </p>
                         </div>
                         <GrClose
                             size={40}
                             color="white"
-                            onClick={()=> setModalHendel(false)}
+                            onClick={() => setModalHendel(false)}
                             className="cursor-pointer absolute max-lg:fixed top-5 right-5 max-xl:top-3 max-xl:right-3 invert-[100] max-xl:w-[27px] max-lg:w-[30px]"
                         />
                     </div>
                 </div>
-            ) : null} */}
+            ) : null}
         </div>
     );
 };
