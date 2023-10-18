@@ -8,7 +8,7 @@ const Info: React.FC<InfoProps> = ({ translation }) => {
     return (
         <div className="bg-blue">
             <div className="custom-container py-20 relative">
-                <div className="w-2 max-xl:w-2 max-md:w-1 absolute top-32 max-lg:top-24 left-8 max-2xl:left-[5px] max-xl:left-[22px] max-lg:left-2 max-md:left-[13px] max-sm:left-[27px] min-h-[4200px] max-3xl:min-h-[4300px] max-2xl:min-h-[2900px] max-xl:min-h-[2000px] max-lg:min-h-[1900px] max-md:min-h-[3200px] max-sm:min-h-[4000px] bg-white"></div>
+                <div className="w-2 max-xl:w-2 max-md:w-1 absolute top-32 max-lg:top-24 left-8 max-2xl:left-[5px] max-xl:left-[22px] max-lg:left-2 max-md:left-[13px] max-sm:left-[16px] min-h-[4200px] max-3xl:min-h-[4300px] max-2xl:min-h-[2900px] max-xl:min-h-[2000px] max-lg:min-h-[1900px] max-md:min-h-[3200px] max-sm:min-h-[4000px] bg-white"></div>
 
                 <div className="flex justify-between">
                     <div className="max-xl:pl-5 relative max-w-[380px] max-2xl:max-w-[300px] max-lg:max-w-[200px] max-sm:max-w-[50px] w-full">
