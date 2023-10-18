@@ -203,7 +203,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                     }
                 )}
                 <SwiperSlide className="">
-                    <div className="relative w-full rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
+                    <div className="relative w-full rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[250px]">
                         <div className="w-full h-[707px] max-3xl:h-[550px] max-xl:h-[460px]  max-lg:h-[515px] max-md:h-[420px] max-sm:h-auto translate-y-10 max-xl:translate-y-5 max-sm:translate-y-8">
                             <Image
                                 className="bg-cover w-full"
