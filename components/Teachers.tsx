@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { GrClose } from "react-icons/gr";
@@ -21,7 +21,17 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
         swiperRef.slideNext();
     };
 
-    console.log(modalInfo);
+    useEffect(() => {
+        const body:any = document.querySelector("body")
+        
+        if(modaHendel){
+            body.style.overflow = "hidden"
+        }else{
+            body.style.overflow = "scroll"
+        }
+        
+    }, [modaHendel])
+    
 
     return (
         <div className="custom-container">
