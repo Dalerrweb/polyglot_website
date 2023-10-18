@@ -244,22 +244,22 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                             <p className="text-white text-5xl max-3xl:text-4xl max-2xl:text-3xl max-xl:text-xl max-sm:text-base mb-4 max-3xl:mb-2 font-semibold">
                                 {modalInfo?.name}
                             </p>
-                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-1">
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[250px] mb-1">
                                 {modalInfo?.modal?.text}
                             </p>
-                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-1">
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[250px] max-sm:w-full  mb-1">
                                 {modalInfo?.modal?.text2}
                             </p>
-                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[400px] mb-5 max-3xl:mb-3">
+                            <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[250px] mb-5 max-3xl:mb-3">
                                 {modalInfo?.modal?.text3}
                             </p>
                             <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[300px] max-3xl:w-[350px] max-xl:w-[250px] mb-5 max-3xl:mb-3">
                                 {modalInfo?.modal?.title}
                             </p>
-                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[350px] mb-5 max-3xl:mb-3">
+                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[300px] mb-5 max-3xl:mb-3">
                                 {modalInfo?.modal?.info}
                             </p>
-                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[350px]">
+                            <p className="text-white text-xl  max-xl:text-lg max-sm:text-base max-w-[500px] max-3xl:w-[450px] max-xl:w-[300px]">
                                 {modalInfo?.modal?.info1}
                             </p>
                         </div>
