@@ -192,7 +192,7 @@ const eng = {
             {
                 id: 2,
                 img: "teacher-2",
-                name: "IELTS instructor",
+                name: "Mr. Shahrukh",
                 job_title: "English Language Instructor",
                 local: ""
             },
@@ -234,7 +234,7 @@ const eng = {
                 id: 5,
                 img: "teacher-5",
                 name: "Mr. Siyavush",
-                job_title: "English Language Teacher",
+                job_title: "English Language Teacher/ IELTS instructor",
                 local: "",
                 modal: {
                     text: "My full name is Siyavush Yildizoglu",

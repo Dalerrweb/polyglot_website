@@ -150,7 +150,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         name: string;
                         job_title: string;
                         local: string;
-                    }) => {
+                    }, idx: number) => {
                         return (
                             <SwiperSlide className="" key={item.id}>
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
@@ -202,7 +202,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         );
                     }
                 )}
-                <SwiperSlide className="">
+                {/* <SwiperSlide className="">
                     <div className="relative w-full rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[250px]">
                         <div className="w-full h-[707px] max-3xl:h-[550px] max-xl:h-[460px]  max-lg:h-[515px] max-md:h-[420px] max-sm:h-auto translate-y-10 max-xl:translate-y-5 max-sm:translate-y-8">
                             <Image
@@ -226,7 +226,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                             <p className="max-w-[200px] text-[22px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white"></p>
                         </div>
                     </div>
-                </SwiperSlide>
+                </SwiperSlide> */}
             </Swiper>
 
             {modaHendel ? (

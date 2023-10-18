@@ -184,16 +184,16 @@ const uz = {
                     text: "To'liq ismim Vafoqulova Mehruza",
                     text2: "",
                     text3: "Meni Mehruza xonim deb atashingiz mumkin",
-                    title:"MENING AKADEMIK FONIM",
-                    info:"SRIUT PHD-WESTMINSTER XALQARO UNIVERSITETI o‘qituvchisi. TOSHKENT.O‘ZBEKISTON MAGİTRATSIYA SEJONG UNIVERSITETI, SEUL, JANUBIY KOREYA",
-                    title2:"MEN HAQIMDAGI FAKTLAR",
-                    info2:"MGF HAYOTDA FALSAFA- HAYOT ISHOROQ UCHUN JUDA QISQA nafrat kechikish sevgi shokoladlar uylangan, ikki o'g'il hobbi-kitoblar yig'ish, SAYAHAT PORA TOJIKISTON ROSSIYA TURKIYA"
+                    title:"Mening akademik ma'lumotim",
+                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2:"FACTS ABOUT ME",
+                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
                 }
             },
             {
                 id:2,
                 img:"teacher-2",
-                name:"IELTS instruktori",
+                name:"Mr. Shahrukh",
                 job_title:"Ingliz tili instruktori",
                 local:""
             },
@@ -204,14 +204,14 @@ const uz = {
                 job_title:"Ingliz tili o'qituvchisi",
                 local:"",
                 modal: {
-                    text: "Mening ismim Anna",
+                    text: "My name is Anna",
                     text2: "",
-                    text3: "Siz meni Ann xonim deb chaqirishingiz mumkin",
-                    title:"MENING AKADEMIK FONIM",
-                    info:"Chet tillariga ixtisoslashgan maktabni tamomladim. Men Moskva xalqaro universitetini tamomlaganman, IELTS ni topshirdim",
-                    info1:"Birinchi marta 18 yoshda: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"MENING XOBBI VA QIZIQISHLARIM",
-                    info2:"Men raqsga tushishni va qo'shiq aytishni yaxshi ko'raman; Shuningdek, men kitob o'qish va musiqa tinglashni yaxshi ko'raman; Men haqiqatan ham ochiqko'ngil va do'stona odamman;"
+                    text3: "You can call me  Ms. Ann",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2:"MY HOBBIES AND INTERESTS",
+                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
                 }
             },
             {
@@ -224,28 +224,28 @@ const uz = {
                     text: "To'liq ismim Boboyorova Maftuna",
                     text2: "Do'stlarim meni Maftuna deyishadi",
                     text3: "Meni Maftuna xonim deb atashingiz mumkin",
-                    title:"MENING AKADEMIK FONIM",
-                    info:"Ingliz filologiyasi bo'yicha bakalavr, ingliz tili va adabiyoti bo'yicha san'at magistri, ko'p darajali C1 darajasi egasi",
-                    info1:"Ilmiy nashr uchun IELTS 7.5 sohibi sertifikatlari Teaching Excellence Fellowship dasturida qatnashish sertifikati",
-                    title2:"MENING XOBBI VA QIZIQISHLARIM",
-                    info2:"Qo'shiq aytish va raqsga tushish. Yangi odamlar bilan tanishish. O'qish va yolg'iz yurish"
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
+                    info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
+                    title2:"MY HOBBIES AND INTERESTS",
+                    info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
                 }
             },
             {
                 id:5,
                 img:"teacher-5",
                 name:"Mr. Siyavush",
-                job_title:"Ingliz tili o'qituvchisi",
+                job_title:"Ingliz tili o'qituvchisi / IELTS instructori",
                 local:"",
                 modal: {
                     text: "To'liq ismim Siyavush Yildizo'g'li",
                     text2: "Do‘stlarim meni Siyovush deyishadi",
                     text3: "Siz meni janob Siyovush deb atashingiz mumkin",
-                    title:"MENING AKADEMIK FONIM",
-                    info:"Mehmonxona biznesi kollejida 2 yillik Yevropa ta'limi ERASMUS va ERASMUS+ dasturlari g'olibi London Savdo maktabi, Buyuk Britaniyadagi almashinuv kursi talabasi",
-                    info1:"Samarqand davlat chet tillar instituti: 1,5 yillik akademik ta'lim Akademik bo'shliq",
-                    title2:"MENING XOBBI VA QIZIQISHLARIM",
-                    info2:"Qo'shiq aytish va raqsga tushish, yangi odamlar bilan tanishish, yolg'iz o'qish va yurish"
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
+                    info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
+                    title2:"MY HOBBIES AND INTERESTS ",
+                    info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
                 }
             },
             {
@@ -258,11 +258,11 @@ const uz = {
                     text: "To'liq ismim Po'latova Mohinur",
                     text2: "",
                     text3: "Meni Mohinur xonim deb atashingiz mumkin",
-                    title:"MENING AKADEMIK FONIM",
-                    info:"BAKALAVR - SAMARQAND DAVLAT CHET TILLAR INSTITUTI",
-                    info1:"SERTIFIKATLAR: O'qitish kursi - Kattalar uchun ta'lim markazi, Cambridge CELTA onlayn kursi",
-                    title2:"MEN HAQIMDA QIZIQARLI FAKTLAR",
-                    info2:"Mening sevimli kitoblarim sirli va triller kitoblaridir"
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2:"INTERSTING FACTS ABOUT ME",
+                    info2:"My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
@@ -275,11 +275,11 @@ const uz = {
                     text: "To'liq ismim Nodirabegim",
                     text2: "",
                     text3: "Meni Miss Nodirabegim deb atashingiz mumkin",
-                    title:"Bakalavr diplomi",
-                    info:"Samarqand davlat chet tillar muassasasi",
+                    title:"Bachelor's degree",
+                    info:"Samarkand state institution of foreign languages ",
                     info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
-                    title2:"Xobbi va qiziqishlari",
-                    info2:"KITOB O'QISH, RASMLARGA TUSH VA YOPIQ O'YINLAR O'YNASH"
+                    title2:"Hobbies and interests",
+                    info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
                 }
             },
             {
@@ -287,7 +287,17 @@ const uz = {
                 img:"teacher-9",
                 name:"Ms. Hilola",
                 job_title:"Nemis tili o'qituvchisi",
-                local:""
+                local:"",
+                modal: {
+                    text: "To'liq ismim Hilola Rasulova",
+                    text2: "",
+                    text3: "Menga Miss Hilola deb murojat etishiz mumkin",
+                    title:"Bachelor's degree",
+                    info:"Zulfiya nomidagi Davlat mukofoti sohibasi (Ta'lim yo'nalishi); 2018-yilda Germaniya Federativ respublikasi Frayburg shahrida Gyote instituti tomonidan o'tkazilgan Nemis tili olimpiadasi g'olibi(IDO2018)",
+                    info1:"Erasmus+ stipendiyasi g'olibi  va 2021-2022 o'quv yilining 2 semestrini Germaniyaning Myunxen Xalqaro Til va tarjima universitetida tahsil olgan.",
+                    title2:"",
+                    info2:"Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
+                }
             }
         ]
     },

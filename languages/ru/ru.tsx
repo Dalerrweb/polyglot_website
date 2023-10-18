@@ -182,13 +182,13 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Мое полное имя Вафокулова Мехруза.",
+                    text: "Меня зовут Вафокулова Мехруза.",
                     text2: "",
-                    text3: "Можешь звать меня Мисс Мехруза.",
-                    title:"МОЕ АКАДЕМИЧЕСКОЕ ОПИСАНИЕ",
-                    info:"Преподаватель в SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. ТАШКЕНТ.УЗБЕКИСТАН МАСТЕР-УНИВЕРСИТЕТ СЕЧЖОНГ, СЕУЛ, ЮЖНАЯ КОРЕЯ",
-                    title2:"ФАКТЫ ОБО МНЕ",
-                    info2:"ФИЛОСОФИЯ MGF В ЖИЗНИ – ЖИЗНЬ слишком коротка, чтобы тратить ее впустую ненависть прокрастинация любовь шоколад женаты два сына хобби коллекционирование книг ПУТЕШЕСТВИЯ Скажем НЕТ ВЗЯТЛЕНИЮ ТАДЖИКИСТАН, РОССИЯ, ТУРЦИЯ"
+                    text3: "Можете обращаться- Мисс Мехруза.",
+                    title:"Образование, степень учености",
+                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2:"FACTS ABOUT ME",
+                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
                 }
             },
             {
@@ -205,14 +205,14 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Меня зовут Анна",
+                    text: "My name is Anna",
                     text2: "",
-                    text3: "Вы можете называть Мисс Анна",
-                    title:"МОЕ АКАДЕМИЧЕСКОЕ ОПИСАНИЕ",
-                    info:"Я закончила школу, специализирующуюся на иностранных языках. Я закончил Московский Международный Университет, сдал IELTS.",
-                    info1:"Впервые в 18 лет: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"МОИ ХОББИ И ИНТЕРЕСЫ",
-                    info2:"Я обожаю танцевать и петь; Также я люблю читать книги и слушать музыку; Я очень общительный и дружелюбный человек;"
+                    text3: "You can call me  Ms. Ann",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2:"MY HOBBIES AND INTERESTS",
+                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
                 }
             },
             {
@@ -222,31 +222,31 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Мое полное имя Бобоерова Мафтуна.",
+                    text: "Меня зовут Бобоёрова Мафтуна.",
                     text2: "Мои друзья зовут меня Мафтуна",
-                    text3: "Можешь звать меня Мисс Мафтуна.",
-                    title:"МОЕ АКАДЕМИЧЕСКОЕ ОПИСАНИЕ",
-                    info:"Бакалавр гуманитарных наук в области английской филологии, магистр гуманитарных наук в области английского языка и литературы, обладатель многоуровневого уровня C1.",
-                    info1:"Сертификаты обладателя IELTS 7.5 на научную публикацию. Сертификат об участии в программе Teaching Excellence Fellowship.",
-                    title2:"МОИ ХОББИ И ИНТЕРЕСЫ",
-                    info2:"Пение и танцы. Встречи с новыми людьми. Читаю и гуляю один"
+                    text3: "Можете обращаться -Мисс Мафтуна.",
+                    title:"Образование, степень учености",
+                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2:"INTERSTING FACTS ABOUT ME",
+                    info2:"My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
                 id: 5,
                 img: "teacher-5",
                 name: "Mr. Siyavush",
-                job_title: "Преподаватель английского языка",
+                job_title: "Преподаватель английского языка/ IELTS инструктор",
                 local: "",
                 modal: {
-                    text: "Мое полное имя Сиявуш Йылдызоглу.",
+                    text: "Меня зовут Siyavush Yildizoglu.",
                     text2: "Мои друзья зовут меня Сиявуш.",
-                    text3: "Вы можете называть меня Мистер Сиявуш.",
-                    title:"МОЕ АКАДЕМИЧЕСКОЕ ОПИСАНИЕ",
-                    info:"2 года европейского образования в Колледже гостиничного бизнеса. Победитель программ ERASMUS и ERASMUS+. Студент по обмену в Лондонской школе коммерции, Великобритания.",
-                    info1:"Самаркандский государственный институт иностранных языков: 1,5 года академического обучения Академический разрыв да",
-                    title2:"МОИ ХОББИ И ИНТЕРЕСЫ",
-                    info2:"Пение и танцы, Знакомства с новыми людьми, Чтение и прогулки в одиночестве."
+                    text3: "Можете обращаться - Мистер Сиявуш.",
+                    title:"Образование, степень учености",
+                    info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
+                    info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
+                    title2:"MY HOBBIES AND INTERESTS ",
+                    info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
                 }
             },
             {
@@ -256,14 +256,14 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Мое полное имя Пулатова Мохинур.",
+                    text: "Меня зовут Пулатова Мохинур.",
                     text2: "",
-                    text3: "Вы можете звать меня мисс Мохинур.",
-                    title:"МОЕ АКАДЕМИЧЕСКОЕ ОПИСАНИЕ",
-                    info:"БАКАЛАВРИАТ- САМАРКАНДСКИЙ ГОСУДАРСТВЕННЫЙ ИНСТИТУТ ИНОСТРАННЫХ ЯЗЫКОВ",
-                    info1:"СЕРТИФИКАЦИИ: Курс преподавания – Центр образования взрослых, Кембридж, Онлайн-курс CELTA",
-                    title2:"ИНТЕРЕСНЫЕ ФАКТЫ ОБО МНЕ",
-                    info2:"Мой любимый жанр книг для чтения — детективы и триллеры."
+                    text3: "Можете обращаться -Мисс Мохинур.",
+                    title:"Образование, степень учености",
+                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2:"INTERSTING FACTS ABOUT ME",
+                    info2:"My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
@@ -273,19 +273,26 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Мое полное имя Нодирабегим.",
+                    text: "Меня зовут Нодирабегим.",
                     text2: "",
-                    text3: "Вы можете звать меня г-жа Нодирабегим.",
-                    title:"Степень бакалавра",
-                    info:"Самаркандский государственный институт иностранных языков",
+                    text3: "Можете обращаться -Мисс Нодирабегим.",
+                    title:"Образование, степень учености",
+                    info:"Samarkand state institution of foreign languages ",
                     info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
-                    title2:"Хобби и интересы",
-                    info2:"ЧИТАЙТЕ КНИГИ, ФОТОГРАФИРУЙТЕ и ИГРАЙТЕ В ИГРЫ В ДОМЕ"
+                    title2:"Hobbies and interests",
+                    info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
                 }
             },
             {
                 id: 9,
                 img: "teacher-9",
+                name: "Ms. Hilola",
+                job_title: "Преподаватель немецкого языка",
+                local: "",
+            },
+            {
+                id: 10,
+                img: "teacher-10",
                 name: "Ms. Hilola",
                 job_title: "Преподаватель немецкого языка",
                 local: "",
