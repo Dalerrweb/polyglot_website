@@ -256,7 +256,7 @@ const ru = {
                 job_title: "Преподаватель английского языка",
                 local: "",
                 modal: {
-                    text: "Меня зовут Пулатова Мохинур.",
+                    text: "Меня зовут Пулатова Мохинур",
                     text2: "",
                     text3: "Можете обращаться -Мисс Мохинур.",
                     title:"Образование, степень учености",
@@ -289,13 +289,6 @@ const ru = {
                 name: "Ms. Hilola",
                 job_title: "Преподаватель немецкого языка",
                 local: "",
-            },
-            {
-                id: 10,
-                img: "teacher-10",
-                name: "Ms. Hilola",
-                job_title: "Преподаватель немецкого языка",
-                local: "",
                 modal: {
                     text: "To'liq ismim Hilola Rasulova",
                     text2: "",
@@ -307,6 +300,40 @@ const ru = {
                     info2:"Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
                 }
             },
+            {
+                id: 10,
+                img: "teacher-10",
+                name: "Ms. Zuhra",
+                job_title: "Преподаватель английского языка",
+                local: "",
+                modal: {
+                    text: "Меня зовут Нуритдинова Зухра",
+                    text2: "",
+                    text3: "Можете обращаться Мисс Зухра",
+                    title:"Образование, степень учености",
+                    info:"Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
+                    info1:"My hobbies: Walking, swimming, reading and watching YouTube",
+                    title2:"Honors and Achievements",
+                    info2:"Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
+                }
+            },
+            {
+                id: 11,
+                img: "teacher-11",
+                name: "Ms. Muhabbat",
+                job_title: "Преподаватель английского языка",
+                local: "",
+                modal: {
+                    text: "Меня зовут Султонова Мухаббат",
+                    text2: "",
+                    text3: "Можете обращаться Мисс Мухаббат",
+                    title:"Образование, степень учености",
+                    info:"Bachelor of English language faculty,2023 Group leader for 4 years in English faculty II Owner the medal of nomination `For educational` service Member of guide interpretaters in SamSIFL SamSU's 1-Academic Lyceum High School Diploma, Class of 2015-2018 Group leader for 3 years in English Languages class Samarkand Middle Educational School number 33 and 22 Training in Arm wrestling for 2 years in school gym Gained several nominations Certificate for excellent study at School CEFR B1 2018-B2 2019 MULTILEVEL SCORE B2 2023",
+                    info1:"",
+                    title2:"Work experience",
+                    info2:"Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
+                }
+            }
         ],
     },
     map: {

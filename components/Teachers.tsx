@@ -62,6 +62,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                 </div>
                 <div className="flex gap-3 max-sm:gap-1 items-center">
                     <button
+                        title="prev"
                         onClick={prevHandler}
                         className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                     >
@@ -92,6 +93,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         </svg>
                     </button>
                     <button
+                        title="next"
                         onClick={nextHandler}
                         className="w-14 h-14 max-xl:w-12 max-xl:h-12 max-md:w-7 max-md:h-7 flex items-center justify-center bg-blue rounded-full"
                     >
@@ -156,7 +158,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
                                     <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-12 max-xl:-translate-y-10 max-sm:-translate-y-8">
                                         <Image
-                                            className="bg-cover"
+                                            className={`bg-cover ${item.id == 10 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
                                             src={`/images/teachers/${item.img}.webp`}
                                             width={1000}
                                             height={1000}
@@ -202,45 +204,20 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                         );
                     }
                 )}
-                {/* <SwiperSlide className="">
-                    <div className="relative w-full rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[250px]">
-                        <div className="w-full h-[707px] max-3xl:h-[550px] max-xl:h-[460px]  max-lg:h-[515px] max-md:h-[420px] max-sm:h-auto translate-y-10 max-xl:translate-y-5 max-sm:translate-y-8">
-                            <Image
-                                className="bg-cover w-full"
-                                src={`/images/teachers/teacher-10.webp`}
-                                width={1000}
-                                height={1000}
-                                alt="teacher"
-                            />
-                        </div>
-
-                        <div className="w-full absolute -bottom-3 left-0 py-7 max-2xl:py-3 max-md:py-2 px-9 max-3xl:px-5 max-md:px-4 max-sm:px-2 rounded-[20px] max-md:rounded-[9.102px] bg-blue">
-                            <div className="">
-                                <p className="text-[36px] max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[16px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
-                                    {translation?.name}
-                                </p>
-                                <p className="max-w-[200px] text-[23px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white">
-                                    {translation?.job_title}
-                                </p>
-                            </div>
-                            <p className="max-w-[200px] text-[22px] max-md:text-[14px] max-sm:text-[10px] leading-[20.5px] max-md:leading-[9.329px] mt-2 max-2xl:mt-0 text-white"></p>
-                        </div>
-                    </div>
-                </SwiperSlide> */}
             </Swiper>
 
             {modaHendel ? (
                 <div className="fixed top-0 left-0 bg-[#0000008e] backdrop-blur-sm w-full h-full z-[60] flex items-center justify-center">
-                    <div className="relative bg-[#EC8D18] max-sm:mt-7 max-sm:w-[90%] flex max-lg:flex-col gap-5 max-sm:gap-0 h-[80vh] max-xl:h-[70vh] max-lg:h-[90vh] max-lg:w-[650px] max-md:w-[70%] w-[90vw] rounded-[20px] max-md:rounded-[9.102px] overflow-auto pr-20 max-xl:pr-12 max-lg:pr-0">
+                    <div className="relative bg-[#EC8D18] max-sm:mt-7 max-sm:w-[90%] flex max-lg:flex-col gap-5 max-lg:gap-0 h-[80vh] max-xl:h-[70vh] max-lg:h-[90vh] max-lg:w-[650px] max-md:w-[70%] w-[90vw] rounded-[20px] max-md:rounded-[9.102px] overflow-auto pr-20 max-xl:pr-12 max-lg:pr-0">
                         <div className="relative w-[1100px] max-lg:w-full h-full max-sm:h-fit">
                             <Image
                                 src={`/images/teachers/${modalInfo?.img}.webp`}
                                 alt=""
                                 width={600}
                                 height={600}
-                                className="w-full max-lg:w-[400px] translate-y-10 max-3xl:-translate-y-10 max-2xl:translate-y-2 max-[1350px]:translate-y-6 max-xl:-translate-y-5 max-lg:-translate-y-24 max-md:-translate-y-14 max-sm:-translate-y-16 max-lg:m-auto"
+                                className={`w-full max-lg:w-[400px] max-lg:m-auto ${modalInfo?.id == 10 ? 'max-[1470px]:translate-y-10 max-xl:translate-y-0' :'translate-y-10 max-3xl:-translate-y-10 max-2xl:translate-y-2 max-[1350px]:translate-y-6 max-xl:-translate-y-5 max-lg:-translate-y-24 max-md:-translate-y-14 max-sm:-translate-y-16'}`}
                             />
-                            <div className="w-full absolute bottom-0 left-0 p-5  rounded-[20px] max-md:rounded-[9.102px]  max-sm:rounded-b-none bg-blue">
+                            <div className="w-full absolute bottom-0 left-0 p-5  rounded-[20px] max-lg:rounded-b-none bg-blue">
                                 <p className="text-[36px] max-lg:mb-5 max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[24px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
                                     {modalInfo?.name}
                                 </p>
@@ -250,7 +227,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                             </div>
                         </div>
 
-                        <div className="relative w-full p-5 pl-10  max-3xl:pl-5 max-lg:bg-blue max-lg:rounded-[20px] max-md:rounded-[9.102px] max-sm:rounded-none">
+                        <div className="relative w-full p-5 pl-10  max-3xl:pl-5 max-lg:bg-blue max-lg:rounded-none">
                             <p className="text-white text-5xl max-3xl:text-4xl max-2xl:text-3xl max-xl:text-xl max-sm:text-base mb-4 max-3xl:mb-2 font-semibold">
                                 {modalInfo?.name}
                             </p>
@@ -273,7 +250,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 {modalInfo?.modal?.info1}
                             </p>
                         </div>
-                        <div className="relative w-full py-5 max-lg:bg-blue max-lg:p-5 max-lg:mb-5 max-sm:mb-0 max-lg:rounded-[20px] max-md:rounded-[9.102px]  max-sm:rounded-none">
+                        <div className="relative w-full py-5 max-lg:bg-blue max-lg:p-5 max-lg:rounded-none">
                             <p className="text-[white] text-4xl  max-3xl:text-3xl max-2xl:text-2xl max-xl:text-xl max-sm:text-lg mb-4 max-xl:mb-2 font-semibold">
                                 {modalInfo?.modal?.title2}
                             </p>
