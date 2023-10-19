@@ -286,7 +286,17 @@ const eng = {
                 img: "teacher-9",
                 name: "Ms. Hilola",
                 job_title: "German language teacher",
-                local: ""
+                local: "",
+                modal: {
+                    text: "To'liq ismim Hilola Rasulova",
+                    text2: "",
+                    text3: "Menga Miss Hilola deb murojat etishiz mumkin",
+                    title:"Bachelor's degree",
+                    info:"Zulfiya nomidagi Davlat mukofoti sohibasi (Ta'lim yo'nalishi); 2018-yilda Germaniya Federativ respublikasi Frayburg shahrida Gyote instituti tomonidan o'tkazilgan Nemis tili olimpiadasi g'olibi(IDO2018)",
+                    info1:"Erasmus+ stipendiyasi g'olibi  va 2021-2022 o'quv yilining 2 semestrini Germaniyaning Myunxen Xalqaro Til va tarjima universitetida tahsil olgan.",
+                    title2:"",
+                    info2:"Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
+                }
             }
         ]
     },

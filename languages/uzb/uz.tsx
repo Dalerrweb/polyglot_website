@@ -239,7 +239,7 @@ const uz = {
                 local:"",
                 modal: {
                     text: "To'liq ismim Siyavush Yildizo'g'li",
-                    text2: "Do‘stlarim meni Siyovush deyishadi",
+                    text2: "Do'stlarim meni Siyovush deyishadi",
                     text3: "Siz meni janob Siyovush deb atashingiz mumkin",
                     title:"MY ACADEMIC BACKGROUND",
                     info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
