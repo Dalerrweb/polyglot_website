@@ -158,7 +158,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
                                     <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-12 max-xl:-translate-y-10 max-sm:-translate-y-8">
                                         <Image
-                                            className={`bg-cover ${item.id == 10 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
+                                            className={`bg-cover ${item.id == 10 || item.id == 12 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
                                             src={`/images/teachers/${item.img}.webp`}
                                             width={1000}
                                             height={1000}
