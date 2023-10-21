@@ -288,14 +288,14 @@ const eng = {
                 job_title: "German language teacher",
                 local: "",
                 modal: {
-                    text: "To'liq ismim Hilola Rasulova",
+                    text: "My full name is Hilola Rasulova",
                     text2: "",
-                    text3: "Menga Miss Hilola deb murojat etishiz mumkin",
+                    text3: "You can call me Miss Hilola",
                     title:"Bachelor's degree",
-                    info:"Zulfiya nomidagi Davlat mukofoti sohibasi (Ta'lim yo'nalishi); 2018-yilda Germaniya Federativ respublikasi Frayburg shahrida Gyote instituti tomonidan o'tkazilgan Nemis tili olimpiadasi g'olibi(IDO2018)",
-                    info1:"Erasmus+ stipendiyasi g'olibi  va 2021-2022 o'quv yilining 2 semestrini Germaniyaning Myunxen Xalqaro Til va tarjima universitetida tahsil olgan.",
+                    info:"Staatspreisträgerin namens Zulfiya (2019) Gewinnerin der Deutschen Spracholympiade (2018), veranstaltet vom Goethe-Institut in Freiburg, Bundesrepublik Deutschland. Gewinnerin des Erasmus+-Stipendiums und hat  2 Semester lang an der Hochschule für Internationale Sprachen und Dolmetschen in München(SDI München) Deutschland, 2021-2022 Sie nahm aktiv an Wettbewerben und internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts teil.",
+                    info1:"",
                     title2:"",
-                    info2:"Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
+                    info2:"Er war aktiv an Wettbewerben, internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts beteiligt."
                 }
             },
             {

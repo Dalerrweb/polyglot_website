@@ -294,10 +294,10 @@ const ru = {
                     text2: "",
                     text3: "Menga Miss Hilola deb murojat etishiz mumkin",
                     title:"Bachelor's degree",
-                    info:"Zulfiya nomidagi Davlat mukofoti sohibasi (Ta'lim yo'nalishi); 2018-yilda Germaniya Federativ respublikasi Frayburg shahrida Gyote instituti tomonidan o'tkazilgan Nemis tili olimpiadasi g'olibi(IDO2018)",
-                    info1:"Erasmus+ stipendiyasi g'olibi  va 2021-2022 o'quv yilining 2 semestrini Germaniyaning Myunxen Xalqaro Til va tarjima universitetida tahsil olgan.",
+                    info:"Государственная премия имени «Зульфия»(2019) Победитель олимпиады по немецкому языку(2018), проводимой Гёте Институтом во Фрайбурге, Федеративная республика Германия  Обладатель стипендии «Erasmus+» и обучалась 2 семестра в университете Международных языков и перевода в Мюнхене, Германия,2021-2022 Активно участвовала в конкурсах и международных конференциях, проводимых Посольством Германии в Узбекистане и Гёте- институтом.",
+                    info1:"",
                     title2:"",
-                    info2:"Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
+                    info2:"Принимала активное участие в конкурсах, международных конференциях, проводимых посольством Германии в Узбекистане и Институтом Гете.Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
                 }
             },
             {
