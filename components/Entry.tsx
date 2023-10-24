@@ -40,7 +40,7 @@ const Entry: React.FC<EntryProps> = ({ translation }) => {
                e.target["name"].value = "";
             }
          })
-         .catch((err) => console.log(err));
+         .catch((err) => console.log('error_bot'));
    };
 
    return (
