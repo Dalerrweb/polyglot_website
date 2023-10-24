@@ -16,8 +16,10 @@ const MyComponent = () => {
 
 				if (response.data.success) {
 					// Действия, выполняемые при успешной проверке reCAPTCHA
+                    alert('успешно')
 				} else {
 					// Действия, выполняемые при неудачной проверке reCAPTCHA
+                    alert('пройди капчу заново')
 				}
 			} catch (error) {
 				console.error("Ошибка при проверке reCAPTCHA:", error);
