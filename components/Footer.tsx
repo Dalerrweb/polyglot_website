@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 import InputMask from "react-input-mask";
+import MyComponent from "./MyReCAPTCHA";
 
 interface FooterProps {}
 
@@ -124,6 +125,7 @@ const Footer: React.FC<FooterProps> = () => {
                                     }
                                 ></InputMask>
                             </div>
+                            <MyComponent/>
                             <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
                                 {translation?.footer?.form?.consult}
                             </button>
