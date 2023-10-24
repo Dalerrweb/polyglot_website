@@ -67,7 +67,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                     setPhone("");
                 }
             })
-            .catch((err) => console.log(err));
+            .catch((err) => console.log('error_bot'));
 			setConstructor(false)
 		};
 
