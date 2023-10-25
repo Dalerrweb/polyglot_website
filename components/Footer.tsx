@@ -3,21 +3,29 @@ import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import InputMask from "react-input-mask";
 import MyComponent from "./MyReCAPTCHA";
 
 interface FooterProps {}
 
+const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
+
 const Footer: React.FC<FooterProps> = () => {
     const translation: any = useContext(TranslateContext);
-    const [phone, setPhone] = useState("");
 
-    const router = useRouter();
+    const formRef: any = useRef(null);
+    const CapchaRef: any = useRef(null);
 
-    const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
+    const [reCapchaHendel, setRecapchaHendel] = useState(true);
 
-    const SendMessage = (e: any) => {
+    const [reCapchaText, setRecapchaText] = useState(false);
+
+    const [number, setNumber] = useState('');
+
+    // const [clientInfo, setClientInfo] = useState<any>(null)
+
+    const hendelSubmit = (e: any) => {
         e.preventDefault();
 
         let info: any = {};
@@ -28,9 +36,15 @@ const Footer: React.FC<FooterProps> = () => {
             info[key] = value;
         });
 
+        if (!reCapchaHendel) {
+            SendMessage(info);
+        } else setRecapchaText(true);
+    };
+
+    const SendMessage = (info: any) => {
         let msg = `🆕 Бесплатная консультация! \n`;
         msg += `👨 Имя: ${info?.name} \n`;
-        msg += `📞 Номер телефона: ${phone} \n`;
+        msg += `📞 Номер телефона: ${number} \n`;
 
         axios
             .post(URL, {
@@ -40,13 +54,19 @@ const Footer: React.FC<FooterProps> = () => {
             })
             .then((res) => {
                 if (res.status === 200 || res.status === 201) {
-                    e.target["name"].value = "";
-                    setPhone("");
+                    formRef.current.name.value = "";
+                    CapchaRef.current.reset();
+                    setRecapchaHendel(true)
+                    setNumber('')
                 }
             })
-            .catch((err) =>console.log('error_bot'));
+            .catch((err) => console.log("error_bot"));
     };
 
+    const examination = () => {
+        setRecapchaHendel(false);
+        setRecapchaText(false);
+    };
     return (
         <footer className="relative mt-20">
             <div className="custom-container">
@@ -102,8 +122,9 @@ const Footer: React.FC<FooterProps> = () => {
                         </div>
 
                         <form
-                            onSubmit={(e) => SendMessage(e)}
+                            onSubmit={hendelSubmit}
                             className="flex flex-col gap-[24px] max-2xl:gap-3"
+                            ref={formRef}
                         >
                             <input
                                 type="text"
@@ -119,13 +140,17 @@ const Footer: React.FC<FooterProps> = () => {
                                     mask="+\9\98-(99)-999-99-99"
                                     placeholder={translation?.footer?.form?.tel}
                                     required
-                                    value={phone}
-                                    onChange={(e: any) =>
-                                        setPhone(e.target.value)
-                                    }
+                                    value={number}
+                                    onChange={(e:any)=>setNumber(e.target.value)}
                                 ></InputMask>
                             </div>
-                            <MyComponent/>
+
+                            <MyComponent
+                                examination={examination}
+                                reCapchaText={reCapchaText}
+                                capchaRef={CapchaRef}
+                            />
+
                             <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
                                 {translation?.footer?.form?.consult}
                             </button>
@@ -206,15 +231,21 @@ const Footer: React.FC<FooterProps> = () => {
                             </h3>
                             <ul>
                                 <li className="max-2xl:text-[18px]">
-                                    {translation?.footer?.contact?.adres}<br/>
-                                    <a href="tel:+998905033030">+998905033030</a>
+                                    {translation?.footer?.contact?.adres}
+                                    <br />
+                                    <a href="tel:+998905033030">
+                                        +998905033030
+                                    </a>
                                 </li>
                                 <li>
-                                    <hr className="my-3"/>
+                                    <hr className="my-3" />
                                 </li>
                                 <li className="max-2xl:text-[18px]">
-                                    {translation?.footer?.contact?.adres2}<br/>
-                                    <a href="tel:+998904782020">+998904782020</a>
+                                    {translation?.footer?.contact?.adres2}
+                                    <br />
+                                    <a href="tel:+998904782020">
+                                        +998904782020
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -224,7 +255,9 @@ const Footer: React.FC<FooterProps> = () => {
                             </h3>
                             <div className="w-fit flex gap-5">
                                 <Link
-                                    href={"https://www.instagram.com/polyglot_language_school_/"}
+                                    href={
+                                        "https://www.instagram.com/polyglot_language_school_/"
+                                    }
                                     className="p-2 rounded-full bg-white"
                                 >
                                     <Image
@@ -235,7 +268,9 @@ const Footer: React.FC<FooterProps> = () => {
                                     />
                                 </Link>
                                 <Link
-                                    href={"https://www.facebook.com/profile.php?id=100072076986854"}
+                                    href={
+                                        "https://www.facebook.com/profile.php?id=100072076986854"
+                                    }
                                     className="p-2 rounded-full bg-white"
                                 >
                                     <Image

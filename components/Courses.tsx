@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Rodal from "rodal";
 
@@ -9,6 +9,7 @@ import InputMask from "react-input-mask";
 import "rodal/lib/rodal.css";
 import "swiper/css";
 import axios from "axios";
+import MyComponent from "./MyReCAPTCHA";
 
 interface CoursesProps {
     translation: any;
@@ -22,6 +23,13 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
     const [modalInfo, setModalInfo] = useState<any>(null);
 
     const [phone, setPhone] = useState("");
+
+    const formRef: any = useRef(null);
+    const CapchaRef: any = useRef(null);
+
+    const [reCapchaHendel, setRecapchaHendel] = useState(true);
+
+    const [reCapchaText, setRecapchaText] = useState(false);
 
     const show = () => {
         setConstructor(true);
@@ -39,7 +47,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
         swiperRef.slideNext();
     };
 
-    const SendMessage = (e: any) => {
+    const hendelSubmit = (e: any) => {
         e.preventDefault();
 
         let info: any = {};
@@ -50,6 +58,12 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
             info[key] = value;
         });
 
+        if (!reCapchaHendel) {
+            SendMessage(info);
+        } else setRecapchaText(true);
+    };
+
+    const SendMessage = (info: any) => {
         let msg = `🆕 Запись на курса! \n`;
         msg += `📕 Курс: ${modalInfo?.name1} ${modalInfo?.name2} \n`;
         msg += `👨 Имя: ${info?.name} \n`;
@@ -62,14 +76,53 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                 text: msg,
             })
             .then((res) => {
-				if (res.status === 200 || res.status === 201) {
-					e.target["name"].value = "";
+                if (res.status === 200 || res.status === 201) {
+                    formRef.current.name.value = "";
+                    CapchaRef.current.reset();
+                    setRecapchaHendel(true);
                     setPhone("");
                 }
             })
-            .catch((err) => console.log('error_bot'));
-			setConstructor(false)
-		};
+            .catch((err) => console.log("error_bot"));
+            setConstructor(false);
+    };
+
+    const examination = () => {
+        setRecapchaHendel(false);
+        setRecapchaText(false);
+    };
+
+    // const SendMessage = (e: any) => {
+    //     e.preventDefault();
+
+    //     let info: any = {};
+
+    //     const formData = new FormData(e.target);
+
+    //     formData.forEach((value, key) => {
+    //         info[key] = value;
+    //     });
+
+    //     let msg = `🆕 Запись на курса! \n`;
+    //     msg += `📕 Курс: ${modalInfo?.name1} ${modalInfo?.name2} \n`;
+    //     msg += `👨 Имя: ${info?.name} \n`;
+    //     msg += `📞 Номер телефона: ${info?.phone} \n`;
+
+    //     axios
+    //         .post(URL, {
+    //             chat_id: process.env.NEXT_PUBLIC_CHAT_ID,
+    //             parse_mode: "html",
+    //             text: msg,
+    //         })
+    //         .then((res) => {
+    // 			if (res.status === 200 || res.status === 201) {
+    // 				e.target["name"].value = "";
+    //                 setPhone("");
+    //             }
+    //         })
+    //         .catch((err) => console.log('error_bot'));
+    // 		setConstructor(false)
+    // 	};
 
     return (
         <div className="custom-container" id="courses">
@@ -160,8 +213,9 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                 </div>
                 <div className="">
                     <form
-                        onSubmit={(e) => SendMessage(e)}
+                        onSubmit={hendelSubmit}
                         className="flex flex-col gap-2"
+                        ref={formRef}
                     >
                         <input
                             type="text"
@@ -174,15 +228,18 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                             <InputMask
                                 className="w-full py-[16px] max-2xl:py-1 px-6 max-2xl:px-4  max-xl:py-[8px] max-xl:px-3"
                                 mask="+\9\98-(99)-999-99-99"
-								name="phone"
+                                name="phone"
                                 placeholder={translation?.inputNumber}
                                 required
                                 value={phone}
-                                onChange={(e: any) =>
-                                    setPhone(e.target.value)
-                                }
+                                onChange={(e: any) => setPhone(e.target.value)}
                             ></InputMask>
                         </div>
+                        <MyComponent
+                            examination={examination}
+                            reCapchaText={reCapchaText}
+                            capchaRef={CapchaRef}
+                        />
                         <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
                             Проконсультироваться
                         </button>
