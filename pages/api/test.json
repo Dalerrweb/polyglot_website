@@ -2,7 +2,7 @@
     "testing":[
         {
             "id":1,
-            "time":1800000,
+            "time":18000,
             "title":"Tests",
             "test":[
                 {

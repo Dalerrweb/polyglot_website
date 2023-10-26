@@ -22,6 +22,8 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
 
 let Ansvers_list: any = [];
 
+const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
+
 const TestingPage = ({ data }: any) => {
     // window.onbeforeunload = e => confirm("are you shure");
     // window.onpopstate
@@ -72,8 +74,6 @@ const TestingPage = ({ data }: any) => {
         }
     };
 
-    const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
-
     const sendData = () => {
         let k = 0;
         let msg = `🆕 Ответы тестирования! \n`;
@@ -105,6 +105,10 @@ const TestingPage = ({ data }: any) => {
             })
             .catch((err) => console.log('error_bot'));
     };
+
+    if(endTest){
+        sendData()
+    }
 
     return (
         <section className="section">
