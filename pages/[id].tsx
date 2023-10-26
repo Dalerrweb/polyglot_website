@@ -69,8 +69,8 @@ const TestingPage = ({ data }: any) => {
         }
 
 		if (testNumber + 1 === data.test.length) {
-			sendData()
             setEndTest(true);
+			sendData()
         }
     };
 
@@ -233,6 +233,7 @@ const TestingPage = ({ data }: any) => {
                                             {nextButton ? (
                                                 <button
                                                     type="submit"
+                                                    name="submit"
                                                     className="font-semibold flex items-center justify-between gap-5 max-sm:gap-2 small_text_size bg-white py-3 px-7 max-3xl:py-2 max-3xl:px-4 max-xl:py-2 max-xl:px-3 max-md:px-2 max-[380px]:w-1/2 rounded-xl"
                                                 >
                                                     {
