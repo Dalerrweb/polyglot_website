@@ -2,10 +2,11 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 interface TimerProps {
    time: number;
-   setEndTest: Dispatch<SetStateAction<boolean>>;
+   sendData:Function,
+   setEndTest:Dispatch<SetStateAction<boolean>>
 }
 
-const Timer: React.FC<TimerProps> = ({ time, setEndTest }) => {
+const Timer: React.FC<TimerProps> = ({ time, sendData, setEndTest }) => {
    const timer = Date.now() + time;
    const [hours, setHours] = useState(0);
    const [minutes, setMinutes] = useState(0);
@@ -13,6 +14,7 @@ const Timer: React.FC<TimerProps> = ({ time, setEndTest }) => {
 
    useEffect(() => {
       if (hours == -1) {
+         sendData();
          setEndTest(true);
       }
    }, [hours]);
@@ -54,6 +56,7 @@ const Timer: React.FC<TimerProps> = ({ time, setEndTest }) => {
                   Math.floor((Date.now() / (1000 * 60 * 60)) % 24) <
                0
             ) {
+               sendData();
                setEndTest(true);
             }
          }
