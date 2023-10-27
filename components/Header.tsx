@@ -255,6 +255,7 @@ const Header: React.FC<HeaderProps> = () => {
                <div className="mt-7">
                   <Link
                      href={"#form"}
+                     onClick={() => setHide(false)}
                      className="text-[18px] px-3 py-2 rounded-md bg-blue text-white"
                   >
                      {translation?.header?.application}
