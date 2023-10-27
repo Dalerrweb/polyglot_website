@@ -209,10 +209,14 @@ h1 {
 
 /* ***************************************************** */
 
-.elipsis{
+.elipsis {
    text-overflow: ellipsis;
    overflow: hidden;
    display: -webkit-box;
    -webkit-line-clamp: 5 !important;
    -webkit-box-orient: vertical;
+}
+
+.swiper-slide {
+   height: auto !important;
 }

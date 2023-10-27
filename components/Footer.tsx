@@ -85,11 +85,11 @@ const Footer: React.FC<FooterProps> = () => {
                   <h2 className="max-md:block hidden text-[36px] max-[410px]:text-[32px] font-semibold mb-3 max-sm:mb-0 text-blue">
                      {translation?.footer?.title}
                   </h2>
-                  <h2 className="text-[48px] max-2xl:text-[36px] max-sm:text-[28px] max-[430px]:text-[24px] leading-[54.5px] max-2xl:leading-[32px] font-medium mb-10 max-2xl:mb-8 max-sm:mb-2">
-                     {translation?.footer?.text1}{" "}
+                  <h2 className="text-[48px] max-2xl:text-[36px] max-xl:text-[32px] max-sm:text-[28px] max-[430px]:text-[24px] leading-[54.5px] max-2xl:leading-[32px] font-medium mb-10 max-2xl:mb-8 max-sm:mb-2">
+                     {translation?.footer?.text1}
                      <span className="truncate relative z-10 text-[48px] max-2xl:text-[36px] max-sm:text-[28px] max-[430px]:text-[24px] leading-[54.5px] max-2xl:leading-[32px] font-medium px-1 rounded-tr-[10%]">
                         <svg
-                           className="max-2xl:w-[235px] max-2xl:h-[43px] max-sm:w-[187px] max-sm:h-[35px] max-[430px]:w-[160px] max-[430px]:top-0 absolute top-[2px] left-0 z-[-1]"
+                           className="absolute top-[2px] left-0 w-full h-full z-[-1]"
                            xmlns="http://www.w3.org/2000/svg"
                            width="310"
                            height="60"
@@ -106,7 +106,7 @@ const Footer: React.FC<FooterProps> = () => {
                   </h2>
                </div>
 
-               <div className="max-xl:hidden w-60 max-2xl:w-40 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
+               <div className="max-xl:hidden w-60 max-2xl:w-32 absolute z-[-1] top-1/2 left-1/2 max-xl:left-[45%] -translate-x-1/2 -translate-y-1/2 max-3xl:-translate-x-[100%]">
                   <Image
                      src={"/images/parrot.png"}
                      width={1000}
@@ -115,7 +115,7 @@ const Footer: React.FC<FooterProps> = () => {
                   />
                </div>
 
-               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[360px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-xl:py-4 max-xl:px-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] lg:absolute lg:top-1/2 lg:right-[3%] lg:-translate-x-[3%] lg:-translate-y-[68%] shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
+               <div className="max-lg:max-w-none max-w-[545px] max-2xl:max-w-[500px] max-xl:max-w-[360px] w-full px-10 py-7 max-2xl:px-8 max-2xl:py-5 max-xl:py-4 max-xl:px-5 max-md:py-[29px] max-sm:py-[18px] max-md:px-[20px] lg:absolute lg:top-1/2 lg:right-[3%] lg:-translate-x-[3%] 3xl:-translate-y-[75%] max-3xl:-translate-y-[70%] max-2xl:-translate-y-[80%] max-lg:-translate-y-0 shadow-[0px_3px_15px_#21209c33] rounded-[20px] max-md:rounded-[12px] bg-white">
                   <div className="mb-1">
                      <h3 className="text-[32px] max-xl:text-[24px] max-sm:text-[20px] max-[420px]:text-sm max-md:mb-2 font-semibold text-blue">
                         {translation?.footer?.form?.title}
@@ -280,7 +280,7 @@ const Footer: React.FC<FooterProps> = () => {
                </div>
             </div>
          </div>
-         <div className="min-h-[555px] max-2xl:min-h-[400px] max-xl:min-h-[500px] max-lg:min-h-[700px] max-sm:min-h-[1000px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-xl:rounded-t-[70px] max-md:rounded-t-[50px] bg-blue"></div>
+         <div className="min-h-[700px] max-2xl:min-h-[500px] max-xl:min-h-[700px] max-lg:min-h-[900px] max-sm:min-h-[1200px] absolute left-0 bottom-0 z-[-1] w-full rounded-t-[120px] max-2xl:rounded-t-[100px] max-xl:rounded-t-[70px] max-md:rounded-t-[50px] bg-blue"></div>
       </footer>
    );
 };
