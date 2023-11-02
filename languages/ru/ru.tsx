@@ -8,7 +8,7 @@ const ru = {
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",
-        text2: "Изучите всё, что не смогли изучить раньше!",
+        text2: "Языковая школа премиум-класса",
         text3: "Освойте иностранные языки на уровне носителя!",
     },
     entry: {
@@ -195,7 +195,7 @@ const ru = {
                 id: 2,
                 img: "teacher-2",
                 name: "Mr. Shahrukh",
-                job_title: "Инструктор английского языка",
+                job_title: "IELTS инструктор",
                 local: "",
             },
             {
@@ -275,7 +275,7 @@ const ru = {
                 modal: {
                     text: "Меня зовут Нодирабегим.",
                     text2: "",
-                    text3: "Можете обращаться -Мисс Нодирабегим.",
+                    text3: "Можете обращаться Мисс Нодирабегим",
                     title:"Образование, степень учености",
                     info:"Samarkand state institution of foreign languages ",
                     info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
@@ -290,9 +290,9 @@ const ru = {
                 job_title: "Преподаватель немецкого языка",
                 local: "",
                 modal: {
-                    text: "To'liq ismim Hilola Rasulova",
+                    text: "Меня зовут Хилола Расулова",
                     text2: "",
-                    text3: "Menga Miss Hilola deb murojat etishiz mumkin",
+                    text3: "Можете обращаться Мисс Хилола",
                     title:"Bachelor's degree",
                     info:"Государственная премия имени «Зульфия»(2019) Победитель олимпиады по немецкому языку(2018), проводимой Гёте Институтом во Фрайбурге, Федеративная республика Германия  Обладатель стипендии «Erasmus+» и обучалась 2 семестра в университете Международных языков и перевода в Мюнхене, Германия,2021-2022 Активно участвовала в конкурсах и международных конференциях, проводимых Посольством Германии в Узбекистане и Гёте- институтом.",
                     info1:"",
@@ -349,6 +349,23 @@ const ru = {
                     info1:"",
                     title2:"Favourite activities:",
                     info2:"Working out, Spending quality time with friends and Mountains"
+                }
+            },
+            {
+                id: 13,
+                img: "teacher-13",
+                name: "Ms. Tesni",
+                job_title: "Преподаватель английского языка",
+                local: "",
+                modal: {
+                    text: "Меня зовут Tesni Beautyman",
+                    text2: "Мои друзья зовут меня Tesni",
+                    text3: "Можете обращаться Мисс Tesni",
+                    title:"MY MASTER'S DEGREE",
+                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1:"",
+                    title2:"HOBBIES AND INTERESTS",
+                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             }
         ],

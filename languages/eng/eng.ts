@@ -8,7 +8,7 @@ const eng = {
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",
-        text2: "Learn everything you couldn't learn before!",
+        text2: "Premium language school",
         text3: "Master foreign languages at a native level!"
     },
     entry: {
@@ -193,7 +193,7 @@ const eng = {
                 id: 2,
                 img: "teacher-2",
                 name: "Mr. Shahrukh",
-                job_title: "English Language Instructor",
+                job_title: "IELTS Instructor",
                 local: ""
             },
             {
@@ -347,6 +347,23 @@ const eng = {
                     info1:"",
                     title2:"Favourite activities:",
                     info2:"Working out, Spending quality time with friends and Mountains"
+                }
+            },
+            {
+                id: 13,
+                img: "teacher-13",
+                name: "Ms. Tesni",
+                job_title: "English Language Teacher",
+                local: "",
+                modal: {
+                    text: "My full name is Tesni Beautyman ",
+                    text2: "My friends call me Tesni",
+                    text3: "You can call me Miss Tesni",
+                    title:"MY MASTER'S DEGREE",
+                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1:"",
+                    title2:"HOBBIES AND INTERESTS",
+                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             }
         ]

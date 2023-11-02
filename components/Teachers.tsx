@@ -158,7 +158,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
                                     <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-12 max-xl:-translate-y-10 max-sm:-translate-y-8">
                                         <Image
-                                            className={`bg-cover ${item.id == 10 || item.id == 12 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
+                                            className={`bg-cover ${item.id == 10 || item.id == 12 || item.id == 13 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
                                             src={`/images/teachers/${item.img}.webp`}
                                             width={1000}
                                             height={1000}
@@ -229,7 +229,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
 
                         <div className="relative w-full p-5 pl-10  max-3xl:pl-5 max-lg:bg-blue max-lg:rounded-none">
                             <p className="text-white text-5xl max-3xl:text-4xl max-2xl:text-3xl max-xl:text-xl max-sm:text-base mb-4 max-3xl:mb-2 font-semibold">
-                                {modalInfo?.name}
+                                {modalInfo?.id == 2 ? modalInfo?.job_title : modalInfo?.name}
                             </p>
                             <p className="text-white text-2xl font-medium max-2xl:text-xl max-xl:text-lg max-sm:text-base w-[500px] max-3xl:w-[450px] max-xl:w-[250px] mb-1">
                                 {modalInfo?.modal?.text}

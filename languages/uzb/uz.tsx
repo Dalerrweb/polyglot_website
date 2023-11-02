@@ -8,7 +8,7 @@ const uz = {
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",
-        text2: "Ilgari o'rgana olmagan hamma narsani o'rganing!",
+        text2: "Premium til maktabi",
         text3: "Chet tillarini ona tili darajasida o'zlashtiring!",
     },
     entry: {
@@ -194,7 +194,7 @@ const uz = {
                 id:2,
                 img:"teacher-2",
                 name:"Mr. Shahrukh",
-                job_title:"Ingliz tili instruktori",
+                job_title:"IELTS instruktori",
                 local:""
             },
             {
@@ -210,7 +210,7 @@ const uz = {
                     title:"MY ACADEMIC BACKGROUND",
                     info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
                     info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"MY HOBBIES AND INTERESTS",
+                    title2:"MY HOBBIES AND INTRESTS",
                     info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
                 }
             },
@@ -227,7 +227,7 @@ const uz = {
                     title:"MY ACADEMIC BACKGROUND",
                     info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
                     info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
-                    title2:"MY HOBBIES AND INTERESTS",
+                    title2:"MY HOBBIES AND INTRESTS",
                     info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
                 }
             },
@@ -244,7 +244,7 @@ const uz = {
                     title:"MY ACADEMIC BACKGROUND",
                     info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
                     info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
-                    title2:"MY HOBBIES AND INTERESTS ",
+                    title2:"MY HOBBIES AND INTRESTS ",
                     info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
                 }
             },
@@ -278,7 +278,7 @@ const uz = {
                     title:"Bachelor's degree",
                     info:"Samarkand state institution of foreign languages ",
                     info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
-                    title2:"Hobbies and interests",
+                    title2:"Hobbies and INTRESTS",
                     info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
                 }
             },
@@ -342,12 +342,29 @@ const uz = {
                 modal: {
                     text: "Mening ismim Feruza",
                     text2: "",
-                    text3: "Menga Ms. Feruza deb murojat etishiz mumkin",
+                    text3: "Menga Ms.Feruza deb murojat etishiz mumkin",
                     title:"MY ACADEMIC BACKGROUND",
                     info:"Bachelor's Degree at Uzbek State World Languages University. CELTA International world-recognized certificate.",
                     info1:"",
                     title2:"Favourite activities:",
                     info2:"Working out, Spending quality time with friends and Mountains"
+                }
+            },
+            {
+                id: 13,
+                img: "teacher-13",
+                name: "Ms. Tesni",
+                job_title: "Ingliz tili o'qituvchisi",
+                local: "",
+                modal: {
+                    text: "Mening ismim Tesni Beautyman ",
+                    text2: "Do'stlarim meni Tesni deyishadi",
+                    text3: "Menga Miss Tesni deb murojat etishiz mumkin",
+                    title:"MY MASTER'S DEGREE",
+                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1:"",
+                    title2:"HOBBIES AND INTERESTS",
+                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             }
         ]
