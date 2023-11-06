@@ -174,61 +174,22 @@ const uz = {
         name: "Ms. Zuxra",
         job_title: "Ingliz tili o'qituvchisi",
         teacher: [
+            
             {
-                id:1,
-                img:"teacher-1",
-                name:"Ms. Mekhruza",
-                job_title:"Ingliz tili o'qituvchisi",
-                local:"",
+                id: 13,
+                img: "teacher-13",
+                name: "Ms. Tesni",
+                job_title: "Ingliz tili o'qituvchisi",
+                local: "",
                 modal: {
-                    text: "To'liq ismim Vafoqulova Mehruza",
-                    text2: "",
-                    text3: "Meni Mehruza xonim deb atashingiz mumkin",
-                    title:"Mening akademik ma'lumotim",
-                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
-                    title2:"FACTS ABOUT ME",
-                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
-                }
-            },
-            {
-                id:2,
-                img:"teacher-2",
-                name:"Mr. Shahrukh",
-                job_title:"IELTS instruktori",
-                local:""
-            },
-            {
-                id:3,
-                img:"teacher-3",
-                name:"Ms. Anna",
-                job_title:"Ingliz tili o'qituvchisi",
-                local:"",
-                modal: {
-                    text: "My name is Anna",
-                    text2: "",
-                    text3: "You can call me  Ms. Ann",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
-                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"MY HOBBIES AND INTRESTS",
-                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
-                }
-            },
-            {
-                id:4,
-                img:"teacher-4",
-                name:"Ms. Maftuna",
-                job_title:"Ingliz tili o'qituvchisi",
-                local:"",
-                modal: {
-                    text: "To'liq ismim Boboyorova Maftuna",
-                    text2: "Do'stlarim meni Maftuna deyishadi",
-                    text3: "Meni Maftuna xonim deb atashingiz mumkin",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
-                    info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
-                    title2:"MY HOBBIES AND INTRESTS",
-                    info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
+                    text: "Mening ismim Tesni Beautyman ",
+                    text2: "Do'stlarim meni Tesni deyishadi",
+                    text3: "Menga Miss Tesni deb murojat etishiz mumkin",
+                    title:"MY MASTER'S DEGREE",
+                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1:"",
+                    title2:"HOBBIES AND INTERESTS",
+                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             },
             {
@@ -249,6 +210,97 @@ const uz = {
                 }
             },
             {
+                id:2,
+                img:"teacher-2",
+                name:"Mr. Shahrukh",
+                job_title:"IELTS instruktori",
+                local:""
+            },
+            {
+                id: 10,
+                img: "teacher-10",
+                name: "Ms. Zuhra",
+                job_title: "Ingliz tili o'qituvchisi",
+                local: "",
+                modal: {
+                    text: "To'liq ismim Nuritdinova Zuhra",
+                    text2: "",
+                    text3: "Menga Ms. Zuhra deb murojat etishiz mumkin",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
+                    info1:"My hobbies: Walking, swimming, reading and watching YouTube",
+                    title2:"Honors and Achievements",
+                    info2:"Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
+                }
+            },
+            {
+                id:4,
+                img:"teacher-4",
+                name:"Ms. Maftuna",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"",
+                modal: {
+                    text: "To'liq ismim Boboyorova Maftuna",
+                    text2: "Do'stlarim meni Maftuna deyishadi",
+                    text3: "Meni Maftuna xonim deb atashingiz mumkin",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
+                    info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
+                    title2:"MY HOBBIES AND INTRESTS",
+                    info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
+                }
+            },
+            {
+                id:1,
+                img:"teacher-1",
+                name:"Ms. Mekhruza",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"",
+                modal: {
+                    text: "To'liq ismim Vafoqulova Mehruza",
+                    text2: "",
+                    text3: "Meni Mehruza xonim deb atashingiz mumkin",
+                    title:"Mening akademik ma'lumotim",
+                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2:"FACTS ABOUT ME",
+                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
+                }
+            },
+            {
+                id: 6,
+                img: "teacher-6",
+                name: "Ms. PETRA",
+                job_title: "Ingliz tili o'qituvchisi ",
+                local: "",
+                modal: {
+                    text: "To'liq ismim Petra Rampersad",
+                    text2: "",
+                    text3: "Siz meni Ms. Petra deb atashingiz mumkin",
+                    title:"University of Essex Pass Skills",
+                    info:"1)Excellent spoken and written communication skills; 2)Effective listening skills; 3)Creative skills and ideas for planning practical and intresting; 4)Excellent planning and organisation skills; 5)A friendly and conﬁdent attitude.",
+                    info1:"",
+                    title2:"Canterbury English",
+                    info2:"● Teaching English classes to kids, companies and adults in small groups as well as individual classes;  ● Teaching a range of English classes from beginner to advanced, as well as business English;  ● Following up with students providing feedback and motivation."
+                }
+            },
+            {
+                id:3,
+                img:"teacher-3",
+                name:"Ms. Anna",
+                job_title:"Ingliz tili o'qituvchisi",
+                local:"",
+                modal: {
+                    text: "My name is Anna",
+                    text2: "",
+                    text3: "You can call me  Ms. Ann",
+                    title:"MY ACADEMIC BACKGROUND",
+                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2:"MY HOBBIES AND INTRESTS",
+                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
+                }
+            },
+            {
                 id:7,
                 img:"teacher-7",
                 name:"Ms. Mohinur",
@@ -261,7 +313,7 @@ const uz = {
                     title:"MY ACADEMIC BACKGROUND",
                     info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
                     info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
-                    title2:"INTERSTING FACTS ABOUT ME",
+                    title2:"INTERESTING FACTS ABOUT ME",
                     info2:"My favorite genre of books to read is mystery and thriller books"
                 }
             },
@@ -300,23 +352,6 @@ const uz = {
                 }
             },
             {
-                id: 10,
-                img: "teacher-10",
-                name: "Ms. Zuhra",
-                job_title: "Ingliz tili o'qituvchisi",
-                local: "",
-                modal: {
-                    text: "To'liq ismim Nuritdinova Zuhra",
-                    text2: "",
-                    text3: "Menga Ms. Zuhra deb murojat etishiz mumkin",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
-                    info1:"My hobbies: Walking, swimming, reading and watching YouTube",
-                    title2:"Honors and Achievements",
-                    info2:"Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
-                }
-            },
-            {
                 id: 11,
                 img: "teacher-11",
                 name: "Ms. Muhabbat",
@@ -350,23 +385,6 @@ const uz = {
                     info2:"Working out, Spending quality time with friends and Mountains"
                 }
             },
-            {
-                id: 13,
-                img: "teacher-13",
-                name: "Ms. Tesni",
-                job_title: "Ingliz tili o'qituvchisi",
-                local: "",
-                modal: {
-                    text: "Mening ismim Tesni Beautyman ",
-                    text2: "Do'stlarim meni Tesni deyishadi",
-                    text3: "Menga Miss Tesni deb murojat etishiz mumkin",
-                    title:"MY MASTER'S DEGREE",
-                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
-                    info1:"",
-                    title2:"HOBBIES AND INTERESTS",
-                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
-                }
-            }
         ]
     },
     map: {
