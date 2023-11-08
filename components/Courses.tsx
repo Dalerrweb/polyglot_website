@@ -84,7 +84,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                 }
             })
             .catch((err) => console.log("error_bot"));
-            setConstructor(false);
+        setConstructor(false);
     };
 
     const examination = () => {
@@ -241,7 +241,7 @@ const Courses: React.FC<CoursesProps> = ({ translation }) => {
                             capchaRef={CapchaRef}
                         />
                         <button className="max-xl:text-[16px] font-medium py-[12px] rounded-md bg-blue text-white">
-                            Проконсультироваться
+                            {translation?.consultButtonText}
                         </button>
                     </form>
                 </div>
