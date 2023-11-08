@@ -395,6 +395,10 @@ const eng = {
         gagarina: "Gagarina 86",
         ibnsino: "Ibn Sino 8"
     },
+    fileDoc:{
+        text:"PUBLIC OFFER FOR THE PROVISION OF SERVICES",
+        buttonText:"File"
+    },
     footer: {
         title: "Submit an application",
         text1: "If you have any additional questions, our administrators are always happy",

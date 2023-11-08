@@ -397,6 +397,10 @@ const uz = {
         gagarina:"Gagarina 86",
         ibnsino:"Ibn Sino 8"
     },
+    fileDoc:{
+        text:"XIZMATLARNI TAQDIM ETISH BO'YICHA OMMAVIY TAKLIF",
+        buttonText:"Fayl"
+    },
     footer:{
         title:"Ariza berish",
         text1:"Agar sizda qo'shimcha savollar bo'lsa, bizning ma'murlarimiz har doim sizga yordam berishdan ",
