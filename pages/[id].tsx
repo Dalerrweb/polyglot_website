@@ -9,6 +9,7 @@ import { useRouter } from "next/router";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
+    
     let data = await res.json();
 
     return {
@@ -44,7 +45,7 @@ const TestingPage = ({ data }: any) => {
     useEffect(() => {
         if (hasCookie("infoStudent")) {
             const getINfoStudent: any = getCookie("infoStudent");
-            setInfoStudent(JSON.parse(getINfoStudent));
+            setInfoStudent(JSON.parse(getINfoStudent));            
         } else {
             router.push("/");
         }
@@ -81,6 +82,7 @@ const TestingPage = ({ data }: any) => {
         msg += `Уровень: ${data?.title} \n`;
         msg += `👨 Имя: ${infoStudent?.name} \n`;
         msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
+        msg += `🏫 Находятся в центре: ${infoStudent["locateInSchoolNow"] !== undefined ? 'Да': 'Нет'} \n`;
         msg += `Количество тестов: ${data?.test?.length}  \n`;
         msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
 

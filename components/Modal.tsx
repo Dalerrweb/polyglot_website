@@ -105,6 +105,10 @@ function Modal() {
                                 value={phone}
                                 onChange={(e: any) => setPhone(e.target.value)}
                             ></InputMask>
+                            <label className="flex items-center gap-2 w-[70%]">
+                                <input type="checkbox" name="locateInSchoolNow"/>
+                                <p className="text-white text-sm text-start">Я нахожусь в центре на данный момент</p>
+                            </label>
                             <button
                                 type="submit"
                                 className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
