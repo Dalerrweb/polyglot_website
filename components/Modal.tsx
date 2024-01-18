@@ -107,7 +107,7 @@ function Modal() {
                             ></InputMask>
                             <label className="flex items-center gap-2 w-[70%]">
                                 <input type="checkbox" name="locateInSchoolNow"/>
-                                <p className="text-white text-sm text-start">Я нахожусь в центре на данный момент</p>
+                                <p className="text-white text-sm text-start max-sm:text-xs">Я нахожусь в центре на данный момент</p>
                             </label>
                             <button
                                 type="submit"
