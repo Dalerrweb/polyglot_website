@@ -73,6 +73,7 @@ const TestingPage = ({ data }: any) => {
             setEndTest(true);
 			sendData()
             return
+            
         }
     };
 
