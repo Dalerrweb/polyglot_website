@@ -91,11 +91,11 @@ function Modal() {
                                 placeholder={
                                     translation?.modalTestStart?.inputName
                                 }
-                                className="w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                                className="w-[70%] max-sm:w-[90%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                             />
                             <InputMask
                                 className={
-                                    "w-[70%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                                    "w-[70%]  max-sm:w-[90%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
                                 }
                                 mask="+\9\98-(99)-999-99-99"
                                 placeholder={
@@ -105,7 +105,7 @@ function Modal() {
                                 value={phone}
                                 onChange={(e: any) => setPhone(e.target.value)}
                             ></InputMask>
-                            <label className="flex items-center gap-2 w-[70%] justify-between">
+                            <label className="flex max-lg:flex-col max-lg:items-start items-center gap-2 w-[70%] max-sm:w-[90%] justify-between">
                                 <p className="text-white text-lg text-start max-sm:text-xs">
                                     Выберите филиал:
                                 </p>
@@ -117,7 +117,7 @@ function Modal() {
                                 </select>
                             </label>
 
-                            <label className="flex items-center gap-2 w-[70%]">
+                            <label className="flex items-center gap-2 w-[70%] max-sm:w-[90%]">
                                 <input
                                     type="checkbox"
                                     name="locateInSchoolNow"
