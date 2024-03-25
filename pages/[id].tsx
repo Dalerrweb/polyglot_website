@@ -83,6 +83,7 @@ const TestingPage = ({ data }: any) => {
         msg += `Уровень: ${data?.title} \n`;
         msg += `👨 Имя: ${infoStudent?.name} \n`;
         msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
+        msg += `Центр: ${infoStudent?.select} \n`;
         msg += `🏫 Находятся в центре: ${infoStudent["locateInSchoolNow"] !== undefined ? 'Да': 'Нет'} \n`;
         msg += `Количество тестов: ${data?.test?.length}  \n`;
         msg += `Уcпел на: ${Ansvers_list?.length}  \n`;

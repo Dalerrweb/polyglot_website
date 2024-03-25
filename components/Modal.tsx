@@ -105,9 +105,26 @@ function Modal() {
                                 value={phone}
                                 onChange={(e: any) => setPhone(e.target.value)}
                             ></InputMask>
+                            <label className="flex items-center gap-2 w-[70%] justify-between">
+                                <p className="text-white text-lg text-start max-sm:text-xs">
+                                    Выберите филиал:
+                                </p>
+                                <select required title="select" name="select" className="rounded-md px-6 py-1">
+                                    <option value="Гагарина" selected>Гагарина</option>
+                                    <option value="Гелион">Гелион</option>
+                                    <option value="Вокзал">Вокзал</option>
+                                    <option value="Конигиль">Конигиль</option>
+                                </select>
+                            </label>
+
                             <label className="flex items-center gap-2 w-[70%]">
-                                <input type="checkbox" name="locateInSchoolNow"/>
-                                <p className="text-white text-sm text-start max-sm:text-xs">Я нахожусь в центре на данный момент</p>
+                                <input
+                                    type="checkbox"
+                                    name="locateInSchoolNow"
+                                />
+                                <p className="text-white text-sm text-start max-sm:text-xs">
+                                    Я нахожусь в центре на данный момент
+                                </p>
                             </label>
                             <button
                                 type="submit"
