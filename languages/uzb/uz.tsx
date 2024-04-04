@@ -369,23 +369,6 @@ const uz = {
                     info2:"Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
                 }
             },
-            {
-                id: 12,
-                img: "teacher-12",
-                name: "Ms. Feruza",
-                job_title: "Ingliz tili o'qituvchisi",
-                local: "",
-                modal: {
-                    text: "Mening ismim Feruza",
-                    text2: "",
-                    text3: "Menga Ms.Feruza deb murojat etishiz mumkin",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Bachelor's Degree at Uzbek State World Languages University. CELTA International world-recognized certificate.",
-                    info1:"",
-                    title2:"Favourite activities:",
-                    info2:"Working out, Spending quality time with friends and Mountains"
-                }
-            },
         ]
     },
     map: {
