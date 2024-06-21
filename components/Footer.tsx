@@ -7,7 +7,7 @@ import { useContext, useRef, useState } from "react";
 import InputMask from "react-input-mask";
 import MyComponent from "./MyReCAPTCHA";
 
-interface FooterProps {}
+interface FooterProps { }
 
 const URL = `https://api.telegram.org/bot${process.env.NEXT_PUBLIC_TOKEN}/sendMessage`;
 
@@ -241,6 +241,11 @@ const Footer: React.FC<FooterProps> = () => {
                            {translation?.footer?.contact?.adres2}
                            <br />
                            <a href="tel:+998904782020">+998904782020</a>
+                        </li>
+                        <li className="max-2xl:text-[18px]">
+                           {translation?.footer?.contact?.adres3}
+                           <br />
+                           <a href="tel:+998905033030">+998905033030</a>
                         </li>
                      </ul>
                   </div>

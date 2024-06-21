@@ -52,39 +52,15 @@ li {
 /*           TESTING_PAGE          */
 
 .section {
-   @apply w-full 
-   h-screen 
-   bg-white
-   flex
-   flex-col
-   justify-center
-   items-center  
-   z-[100];
+   @apply w-full h-screen bg-white flex flex-col justify-center items-center z-[100];
 }
 
 .orange_div {
-   @apply w-full
-   h-[50vh]
-   bg-orange
-   relative;
+   @apply w-full h-[50vh] bg-orange relative;
 }
 
 .blue_div {
-   @apply bg-blue
-   w-[80%]
-   max-lg:w-[85%]
-   max-sm:w-[90%]
-   rounded-3xl
-   p-7
-   max-2xl:p-6
-   max-xl:p-5
-   max-lg:p-3
-   max-sm:p-2
-   absolute
-   top-1/2
-   left-1/2
-   -translate-y-1/2
-   -translate-x-1/2;
+   @apply bg-blue w-[80%] max-lg:w-[85%] max-sm:w-[90%] rounded-3xl p-7 max-2xl:p-6 max-xl:p-5 max-lg:p-3 max-sm:p-2 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2;
 }
 
 .text_size {
@@ -151,6 +127,7 @@ h1 {
    0% {
       transform: translateX(0%);
    }
+
    100% {
       transform: translateX(-50%);
    }
@@ -160,6 +137,7 @@ h1 {
    0% {
       transform: translateX(0%);
    }
+
    100% {
       transform: translateX(-50%);
    }
@@ -169,6 +147,7 @@ h1 {
    0% {
       transform: translateY(0%);
    }
+
    100% {
       transform: translateY(-50%);
    }

@@ -22,7 +22,7 @@ const ru = {
         title: "Программа курсов",
         input: "Фамилия Имя",
         inputNumber: "Контактный телефон",
-        consultButtonText:"Проконсультироваться",
+        consultButtonText: "Проконсультироваться",
         courses: [
             {
                 name1: "English",
@@ -136,18 +136,18 @@ const ru = {
         text2: "По окончанию курсов наши специалисты готовы помочь и проконсультировать в выборе ВУЗа для поступления и трудоустройстве.",
         texts: [
             { id: 1, text01: "Бесплатныe индивидуальныe занятия" },
-            { id: 2, text01: "Бесплатные учебные материалы: Work и Student books",},
+            { id: 2, text01: "Бесплатные учебные материалы: Work и Student books", },
             { id: 3, text01: "Пробныe MOCK экзамены" },
             { id: 4, text01: "Помощь при поступлении" },
             { id: 5, text01: "Сo-working spaces" },
             { id: 6, text01: "Официальный приём IELTS экзамена" },
-            { id: 7,text01: "Бесплатное консультирование с консалтинговой компанией по вопросам поступления в Зарубежные Университеты"},
+            { id: 7, text01: "Бесплатное консультирование с консалтинговой компанией по вопросам поступления в Зарубежные Университеты" },
         ],
     },
     about: {
         title: "Одна из ведущих школ по изучению иностранных языков в Самарканде",
-        text2: "Языковая школа премиум класса Polyglot Language school была основана в городе Самарканде, в 2021 году. И на данный момент , уже имеет два филиала. Они расположены по адресу ,Гагарина 86 и Ибн Сино 8. Основателями школы являются Шохрух Кудратов и Олимжон Кудратов.",
-        text3: "Удобная локация главного центра и филиала. Уже более 3 000 выпускников успешно закончили обучение курсов английского, немецкого и русского языков, поступили и выиграли гранты на обучение в Зарубежных Университетах",
+        text2: "Языковая школа премиум класса Polyglot Language school была основана в городе Самарканде, в 2021 году. И на данный момент , уже имеет три филиала. Они расположены по адресу: Гагарина 86, Ибн Сино 8 и Беруний 10. Основателями школы являются Шохрух Кудратов и Олимжон Кудратов.",
+        text3: "Удобная локация главного центра. Уже более 3 000 выпускников успешно закончили обучение курсов английского, немецкого и русского языков, поступили и выиграли гранты на обучение в Зарубежных Университетах",
     },
     info: {
         title1: "Инновационная методика обучения",
@@ -186,11 +186,11 @@ const ru = {
                     text: "Меня зовут Tesni Beautyman",
                     text2: "Мои друзья зовут меня Tesni",
                     text3: "Можете обращаться Мисс Tesni",
-                    title:"MY MASTER'S DEGREE",
-                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
-                    info1:"",
-                    title2:"HOBBIES AND INTERESTS",
-                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
+                    title: "MY MASTER'S DEGREE",
+                    info: "University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1: "",
+                    title2: "HOBBIES AND INTERESTS",
+                    info2: "Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             },
             {
@@ -203,11 +203,11 @@ const ru = {
                     text: "Меня зовут Siyavush Yildizoglu.",
                     text2: "Мои друзья зовут меня Сиявуш.",
                     text3: "Можете обращаться - Мистер Сиявуш.",
-                    title:"Образование, степень учености",
-                    info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
-                    info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
-                    title2:"MY HOBBIES AND INTERESTS ",
-                    info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
+                    title: "Образование, степень учености",
+                    info: "2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
+                    info1: "Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
+                    title2: "MY HOBBIES AND INTERESTS ",
+                    info2: "Singing and Dancing, Meeting new people, Reeading and Walking alone"
                 }
             },
             {
@@ -227,11 +227,11 @@ const ru = {
                     text: "Меня зовут Нуритдинова Зухра",
                     text2: "",
                     text3: "Можете обращаться Мисс Зухра",
-                    title:"Образование, степень учености",
-                    info:"Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
-                    info1:"My hobbies: Walking, swimming, reading and watching YouTube",
-                    title2:"Honors and Achievements",
-                    info2:"Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
+                    title: "Образование, степень учености",
+                    info: "Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
+                    info1: "My hobbies: Walking, swimming, reading and watching YouTube",
+                    title2: "Honors and Achievements",
+                    info2: "Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
                 }
             },
             {
@@ -244,11 +244,11 @@ const ru = {
                     text: "Меня зовут Бобоёрова Мафтуна.",
                     text2: "Мои друзья зовут меня Мафтуна",
                     text3: "Можете обращаться -Мисс Мафтуна.",
-                    title:"Образование, степень учености",
-                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
-                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
-                    title2:"INTERESTING FACTS ABOUT ME",
-                    info2:"My favorite genre of books to read is mystery and thriller books"
+                    title: "Образование, степень учености",
+                    info: "BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1: "CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2: "INTERESTING FACTS ABOUT ME",
+                    info2: "My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
@@ -261,10 +261,10 @@ const ru = {
                     text: "Меня зовут Вафокулова Мехруза.",
                     text2: "",
                     text3: "Можете обращаться- Мисс Мехруза.",
-                    title:"Образование, степень учености",
-                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
-                    title2:"FACTS ABOUT ME",
-                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
+                    title: "Образование, степень учености",
+                    info: "Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2: "FACTS ABOUT ME",
+                    info2: "MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
                 }
             },
             {
@@ -277,11 +277,11 @@ const ru = {
                     text: "Меня зовут Петра Рамперсад",
                     text2: "",
                     text3: "Можете обращаться -Мисс Петра",
-                    title:"University of Essex Pass Skills",
-                    info:"1)Excellent spoken and written communication skills; 2)Effective listening skills; 3)Creative skills and ideas for planning practical and intresting; 4)Excellent planning and organisation skills; 5)A friendly and conﬁdent attitude.",
-                    info1:"",
-                    title2:"Canterbury English",
-                    info2:"● Teaching English classes to kids, companies and adults in small groups as well as individual classes;  ● Teaching a range of English classes from beginner to advanced, as well as business English;  ● Following up with students providing feedback and motivation."
+                    title: "University of Essex Pass Skills",
+                    info: "1)Excellent spoken and written communication skills; 2)Effective listening skills; 3)Creative skills and ideas for planning practical and intresting; 4)Excellent planning and organisation skills; 5)A friendly and conﬁdent attitude.",
+                    info1: "",
+                    title2: "Canterbury English",
+                    info2: "● Teaching English classes to kids, companies and adults in small groups as well as individual classes;  ● Teaching a range of English classes from beginner to advanced, as well as business English;  ● Following up with students providing feedback and motivation."
                 }
             },
             {
@@ -294,11 +294,11 @@ const ru = {
                     text: "My name is Anna",
                     text2: "",
                     text3: "You can call me  Ms. Ann",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
-                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"MY HOBBIES AND INTERESTS",
-                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1: "For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2: "MY HOBBIES AND INTERESTS",
+                    info2: "I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
                 }
             },
             {
@@ -311,11 +311,11 @@ const ru = {
                     text: "Меня зовут Пулатова Мохинур",
                     text2: "",
                     text3: "Можете обращаться Мисс Мохинур",
-                    title:"Образование, степень учености",
-                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
-                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
-                    title2:"INTERESTING FACTS ABOUT ME",
-                    info2:"My favorite genre of books to read is mystery and thriller books"
+                    title: "Образование, степень учености",
+                    info: "BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1: "CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2: "INTERESTING FACTS ABOUT ME",
+                    info2: "My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
@@ -328,11 +328,11 @@ const ru = {
                     text: "Меня зовут Нодирабегим.",
                     text2: "",
                     text3: "Можете обращаться Мисс Нодирабегим",
-                    title:"Образование, степень учености",
-                    info:"Samarkand state institution of foreign languages ",
-                    info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
-                    title2:"Hobbies and interests",
-                    info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
+                    title: "Образование, степень учености",
+                    info: "Samarkand state institution of foreign languages ",
+                    info1: "IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
+                    title2: "Hobbies and interests",
+                    info2: "READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
                 }
             },
             {
@@ -345,11 +345,11 @@ const ru = {
                     text: "Меня зовут Хилола Расулова",
                     text2: "",
                     text3: "Можете обращаться Мисс Хилола",
-                    title:"Bachelor's degree",
-                    info:"Государственная премия имени «Зульфия»(2019) Победитель олимпиады по немецкому языку(2018), проводимой Гёте Институтом во Фрайбурге, Федеративная республика Германия  Обладатель стипендии «Erasmus+» и обучалась 2 семестра в университете Международных языков и перевода в Мюнхене, Германия,2021-2022 Активно участвовала в конкурсах и международных конференциях, проводимых Посольством Германии в Узбекистане и Гёте- институтом.",
-                    info1:"",
-                    title2:"",
-                    info2:"Принимала активное участие в конкурсах, международных конференциях, проводимых посольством Германии в Узбекистане и Институтом Гете.Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
+                    title: "Bachelor's degree",
+                    info: "Государственная премия имени «Зульфия»(2019) Победитель олимпиады по немецкому языку(2018), проводимой Гёте Институтом во Фрайбурге, Федеративная республика Германия  Обладатель стипендии «Erasmus+» и обучалась 2 семестра в университете Международных языков и перевода в Мюнхене, Германия,2021-2022 Активно участвовала в конкурсах и международных конференциях, проводимых Посольством Германии в Узбекистане и Гёте- институтом.",
+                    info1: "",
+                    title2: "",
+                    info2: "Принимала активное участие в конкурсах, международных конференциях, проводимых посольством Германии в Узбекистане и Институтом Гете.Germaniyaning O'zbekistondagi elchixonasi hamda  Gyote instituti tomonidan o'tkazilgan tanlovlarda, xalqaro konferensiyalarda faol ishtirok etgan."
                 }
             },
             {
@@ -362,14 +362,14 @@ const ru = {
                     text: "Меня зовут Султонова Мухаббат",
                     text2: "",
                     text3: "Можете обращаться Мисс Мухаббат",
-                    title:"Образование, степень учености",
-                    info:"Bachelor of English language faculty,2023 Group leader for 4 years in English faculty II Owner the medal of nomination `For educational` service Member of guide interpretaters in SamSIFL SamSU's 1-Academic Lyceum High School Diploma, Class of 2015-2018 Group leader for 3 years in English Languages class Samarkand Middle Educational School number 33 and 22 Training in Arm wrestling for 2 years in school gym Gained several nominations Certificate for excellent study at School CEFR B1 2018-B2 2019 MULTILEVEL SCORE B2 2023",
-                    info1:"",
-                    title2:"Work experience",
-                    info2:"Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
+                    title: "Образование, степень учености",
+                    info: "Bachelor of English language faculty,2023 Group leader for 4 years in English faculty II Owner the medal of nomination `For educational` service Member of guide interpretaters in SamSIFL SamSU's 1-Academic Lyceum High School Diploma, Class of 2015-2018 Group leader for 3 years in English Languages class Samarkand Middle Educational School number 33 and 22 Training in Arm wrestling for 2 years in school gym Gained several nominations Certificate for excellent study at School CEFR B1 2018-B2 2019 MULTILEVEL SCORE B2 2023",
+                    info1: "",
+                    title2: "Work experience",
+                    info2: "Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
                 }
             },
-            
+
         ],
     },
     map: {
@@ -380,10 +380,11 @@ const ru = {
         telText: "Телефон для справок",
         gagarina: "Гагарина 86",
         ibnsino: "Ибн сино 8",
+        beruniy: "Беруний 10"
     },
-    fileDoc:{
-        text:"ПУБЛИЧНАЯ ОФЕРТА НА ПРЕДОСТАВЛЕНИЕ УСЛУГ",
-        buttonText:"Файл"
+    fileDoc: {
+        text: "ПУБЛИЧНАЯ ОФЕРТА НА ПРЕДОСТАВЛЕНИЕ УСЛУГ",
+        buttonText: "Файл"
     },
     footer: {
         title: "Подать заявку",
@@ -414,6 +415,7 @@ const ru = {
             title: "Контакты и локации",
             adres: "Главный центр: ул.Гагарина 86,",
             adres2: "Филиал: ул.Дагбитская 8 (ориентир Hilton Garden Inn),",
+            adres3: "Филиал: ул. Беруний 10 (Вокзал)"
         },
         social: "Социальные сети",
     },

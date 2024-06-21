@@ -119,6 +119,9 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                             <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[24px] leading-[50px] font-medium text-white">
                                 +998 90 503 30 30 ({translation?.ibnsino})
                             </p>
+                            <p className="text-[36px] max-2xl:text-[28px] max-xl:text-[24px] leading-[50px] font-medium text-white">
+                                +998 90 503 30 30 ({translation?.beruniy})
+                            </p>
                         </div>
                     </div>
 
@@ -126,17 +129,15 @@ const Map: React.FC<MapProps> = ({ translation }) => {
                         {map ? (
                             <iframe
                                 className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px]`}
-                                src={`https://yandex.uz/map-widget/v1/?ll=${
-                                    branches ? mainY : branchY
-                                }`}
+                                src={`https://yandex.uz/map-widget/v1/?ll=${branches ? mainY : branchY
+                                    }`}
                                 loading="lazy"
                             ></iframe>
                         ) : (
                             <iframe
                                 className={`w-full h-full max-lg:min-h-[400px] max-sm:min-h-[300px]`}
-                                src={`https://www.google.com/maps/embed?pb=${
-                                    !branches ? branchG : mainG
-                                }`}
+                                src={`https://www.google.com/maps/embed?pb=${!branches ? branchG : mainG
+                                    }`}
                                 loading="lazy"
                             ></iframe>
                         )}

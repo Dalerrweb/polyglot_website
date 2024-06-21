@@ -22,7 +22,7 @@ const eng = {
         title: "Course Program",
         input: "Last and First name",
         inputNumber: "Contact number",
-        consultButtonText:"Get a consultation",
+        consultButtonText: "Get a consultation",
         courses: [
             {
                 name1: "English",
@@ -184,11 +184,11 @@ const eng = {
                     text: "My full name is Tesni Beautyman ",
                     text2: "My friends call me Tesni",
                     text3: "You can call me Miss Tesni",
-                    title:"MY MASTER'S DEGREE",
-                    info:"University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
-                    info1:"",
-                    title2:"HOBBIES AND INTERESTS",
-                    info2:"Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
+                    title: "MY MASTER'S DEGREE",
+                    info: "University of Oxford Certificates: Central Eurasian Studies Summer Institute 2020 & 2021, OPI (Tajik & Uzbek), 'Русский Язык' (КРАО) 'История и культура России' (РХГА)",
+                    info1: "",
+                    title2: "HOBBIES AND INTERESTS",
+                    info2: "Learning language, Reading, Singing, Travelling, Writing, Piano, Watching films"
                 }
             },
             {
@@ -201,11 +201,11 @@ const eng = {
                     text: "My full name is Siyavush Yildizoglu",
                     text2: "My friends call me Siyavush",
                     text3: "You can call me Mr. Siyavush",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
-                    info1:"Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
-                    title2:"MY HOBBIES AND INTERESTS ",
-                    info2:"Singing and Dancing, Meeting new people, Reeading and Walking alone"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "2 years of European Education in College of Hotel Business ERASMUS and ERASMUS+ programs' winner Exchange student in London School of Commerce, UK ",
+                    info1: "Samarkand State Institute of Foreign Languages: 1.5 year of academic studies Academic gap yea",
+                    title2: "MY HOBBIES AND INTERESTS ",
+                    info2: "Singing and Dancing, Meeting new people, Reeading and Walking alone"
                 }
             },
             {
@@ -225,11 +225,11 @@ const eng = {
                     text: "My full name is Nuritdinova Zuhra",
                     text2: "",
                     text3: "You can call me Ms. Zuhra",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
-                    info1:"My hobbies: Walking, swimming, reading and watching YouTube",
-                    title2:"Honors and Achievements",
-                    info2:"Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "Linguistic School 17, Tashkent 2nd Lyceum under World Languages University Tashkent MDIST Australian SCU",
+                    info1: "My hobbies: Walking, swimming, reading and watching YouTube",
+                    title2: "Honors and Achievements",
+                    info2: "Yakkasaroy District Olympiad, 2009-1st place Tashkent City Olympiad,2010-1st place Uzbekistan Republic Olympiad,2010-essay 1-st place Train the Trainer Passport -Dubai,2018 Dubai Way Certificate of Completion-Dubai College of Tourism, 2018 TEFL (Teaching English as a Foreign Language) certificate, 2021"
                 }
             },
             {
@@ -242,11 +242,11 @@ const eng = {
                     text: "My full name is Boboyorova Maftuna",
                     text2: "My friends call me Maftuna ",
                     text3: "You can call me Ms. Maftuna",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
-                    info1:"IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
-                    title2:"MY HOBBIES AND INTERESTS",
-                    info2:"Singing and Dancing. Meeting New People. Reading and walking alone"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "Bachelor's of Arts in English Phylology, Master of Art in English language and Literature, Multilevel C1 Level Holder",
+                    info1: "IELTS 7.5 Holder Certificates for scientific publication Certificate of attendance in Teaching Excellence Fellowship",
+                    title2: "MY HOBBIES AND INTERESTS",
+                    info2: "Singing and Dancing. Meeting New People. Reading and walking alone"
                 }
             },
             {
@@ -259,10 +259,10 @@ const eng = {
                     text: "My full name is Vafokulova Mekhruza",
                     text2: "",
                     text3: "You can call me Ms.Mekhruza",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
-                    title2:"FACTS ABOUT ME",
-                    info2:"MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "Lecturer at SRIUT PHD-WESTMINSTER INTERNATIONL UNIVERSITY. TASHKENT.UZBEKISTAN MASTER'S DEGREE-SEJONG UNIVERSITY, SEOUL,SOUTH KOREA",
+                    title2: "FACTS ABOUT ME",
+                    info2: "MGF PHILOSOPHY IN LIFE- LIFE IS TOO SHORT TO WASTE hate procrastination love chocolates married, two sons hobby-collect books, TRAVELLING SAY NO TO BRIBARY TAJIKISTAN RUSSIA TURKEY"
                 }
             },
             {
@@ -275,11 +275,11 @@ const eng = {
                     text: "My full name is Petra Rampersad",
                     text2: "",
                     text3: "You can call me Ms. Petra",
-                    title:"University of Essex Pass Skills",
-                    info:"1)Excellent spoken and written communication skills; 2)Effective listening skills; 3)Creative skills and ideas for planning practical and intresting; 4)Excellent planning and organisation skills; 5)A friendly and conﬁdent attitude.",
-                    info1:"",
-                    title2:"Canterbury English",
-                    info2:"● Teaching English classes to kids, companies and adults in small groups as well as individual classes;  ● Teaching a range of English classes from beginner to advanced, as well as business English;  ● Following up with students providing feedback and motivation."
+                    title: "University of Essex Pass Skills",
+                    info: "1)Excellent spoken and written communication skills; 2)Effective listening skills; 3)Creative skills and ideas for planning practical and intresting; 4)Excellent planning and organisation skills; 5)A friendly and conﬁdent attitude.",
+                    info1: "",
+                    title2: "Canterbury English",
+                    info2: "● Teaching English classes to kids, companies and adults in small groups as well as individual classes;  ● Teaching a range of English classes from beginner to advanced, as well as business English;  ● Following up with students providing feedback and motivation."
                 }
             },
             {
@@ -292,11 +292,11 @@ const eng = {
                     text: "My name is Anna",
                     text2: "",
                     text3: "You can call me  Ms. Ann",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
-                    info1:"For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
-                    title2:"MY HOBBIES AND INTERESTS",
-                    info2:"I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "I finished school, which is specialised on foreign languages. I have graduated from Moscow International University passed IELTS",
+                    info1: "For the first time at the age of 18: Listening 8.0, Reading 6.5, Writing 6.0, Speaking 6.5",
+                    title2: "MY HOBBIES AND INTERESTS",
+                    info2: "I adore dancing and singing; Also I like reading books and listening to music ; I am really sociable and friendly person;"
                 }
             },
             {
@@ -309,11 +309,11 @@ const eng = {
                     text: "My full name is Pulatova Mohinur ",
                     text2: "",
                     text3: "You can call me Ms. Mohinur ",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
-                    info1:"CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
-                    title2:"INTERESTING FACTS ABOUT ME",
-                    info2:"My favorite genre of books to read is mystery and thriller books"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "BACHELOR'S DEGREE- SAMARKAND STATE INSTITUTE OF FOREIGN LANGUAGES",
+                    info1: "CERTIFICATIONS: Teaching course - Adult Education Centre, Cambridge CELTA Course Online",
+                    title2: "INTERESTING FACTS ABOUT ME",
+                    info2: "My favorite genre of books to read is mystery and thriller books"
                 }
             },
             {
@@ -326,11 +326,11 @@ const eng = {
                     text: "My full name is Nodirabegim ",
                     text2: "",
                     text3: "You can call me Ms. Nodirabegim",
-                    title:"Bachelor's degree",
-                    info:"Samarkand state institution of foreign languages ",
-                    info1:"IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
-                    title2:"Hobbies and interests",
-                    info2:"READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
+                    title: "Bachelor's degree",
+                    info: "Samarkand state institution of foreign languages ",
+                    info1: "IELTS 7.5, Listening 8.0, Reading 7.5, Wiriting 6.5, Speaking 7.5",
+                    title2: "Hobbies and interests",
+                    info2: "READING BOOKS, TAKING PICTURES and PLAYING INDOOR GAMES"
                 }
             },
             {
@@ -343,11 +343,11 @@ const eng = {
                     text: "My full name is Hilola Rasulova",
                     text2: "",
                     text3: "You can call me Miss Hilola",
-                    title:"Bachelor's degree",
-                    info:"Staatspreisträgerin namens Zulfiya (2019) Gewinnerin der Deutschen Spracholympiade (2018), veranstaltet vom Goethe-Institut in Freiburg, Bundesrepublik Deutschland. Gewinnerin des Erasmus+-Stipendiums und hat  2 Semester lang an der Hochschule für Internationale Sprachen und Dolmetschen in München(SDI München) Deutschland, 2021-2022 Sie nahm aktiv an Wettbewerben und internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts teil.",
-                    info1:"",
-                    title2:"",
-                    info2:"Er war aktiv an Wettbewerben, internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts beteiligt."
+                    title: "Bachelor's degree",
+                    info: "Staatspreisträgerin namens Zulfiya (2019) Gewinnerin der Deutschen Spracholympiade (2018), veranstaltet vom Goethe-Institut in Freiburg, Bundesrepublik Deutschland. Gewinnerin des Erasmus+-Stipendiums und hat  2 Semester lang an der Hochschule für Internationale Sprachen und Dolmetschen in München(SDI München) Deutschland, 2021-2022 Sie nahm aktiv an Wettbewerben und internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts teil.",
+                    info1: "",
+                    title2: "",
+                    info2: "Er war aktiv an Wettbewerben, internationalen Konferenzen der Deutschen Botschaft in Usbekistan und des Goethe-Instituts beteiligt."
                 }
             },
             {
@@ -360,11 +360,11 @@ const eng = {
                     text: "My full name is Sultonova Muhabbat",
                     text2: "",
                     text3: "You can call me Ms. Muhabbat",
-                    title:"MY ACADEMIC BACKGROUND",
-                    info:"Bachelor of English language faculty,2023 Group leader for 4 years in English faculty II Owner the medal of nomination `For educational` service Member of guide interpretaters in SamSIFL SamSU's 1-Academic Lyceum High School Diploma, Class of 2015-2018 Group leader for 3 years in English Languages class Samarkand Middle Educational School number 33 and 22 Training in Arm wrestling for 2 years in school gym Gained several nominations Certificate for excellent study at School CEFR B1 2018-B2 2019 MULTILEVEL SCORE B2 2023",
-                    info1:"",
-                    title2:"Work experience",
-                    info2:"Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
+                    title: "MY ACADEMIC BACKGROUND",
+                    info: "Bachelor of English language faculty,2023 Group leader for 4 years in English faculty II Owner the medal of nomination `For educational` service Member of guide interpretaters in SamSIFL SamSU's 1-Academic Lyceum High School Diploma, Class of 2015-2018 Group leader for 3 years in English Languages class Samarkand Middle Educational School number 33 and 22 Training in Arm wrestling for 2 years in school gym Gained several nominations Certificate for excellent study at School CEFR B1 2018-B2 2019 MULTILEVEL SCORE B2 2023",
+                    info1: "",
+                    title2: "Work experience",
+                    info2: "Teaching children English as a second language Be Forward Study Centre (2018-2019) Teacher of English from elementary levels up to intermediate More than 10 graduated students Niners Academy English School (2019-2021) Teacher of English language from A0 up to B2 Leader of Speaking Club in the Centre Assistant of IELTS teacher Writing works analyst"
                 }
             },
         ]
@@ -376,11 +376,12 @@ const eng = {
         text3: "Branch",
         telText: "Phone number for inquiries",
         gagarina: "Gagarina 86",
-        ibnsino: "Ibn Sino 8"
+        ibnsino: "Ibn Sino 8",
+        beruniy: "Beruniy 10"
     },
-    fileDoc:{
-        text:"PUBLIC OFFER FOR THE PROVISION OF SERVICES",
-        buttonText:"File"
+    fileDoc: {
+        text: "PUBLIC OFFER FOR THE PROVISION OF SERVICES",
+        buttonText: "File"
     },
     footer: {
         title: "Submit an application",
@@ -411,6 +412,7 @@ const eng = {
             title: "Contact",
             adres: "Main center: 86 Gagarina Street,",
             adres2: "Branch: 8 Dagbitskaya St. (Hilton Garden Inn landmark),",
+            adres3: "Branch: st. Beruniy 10 (Station)"
         },
         social: "Social Media",
     },

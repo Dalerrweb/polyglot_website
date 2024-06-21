@@ -14,6 +14,7 @@ import { useContext } from "react";
 import TranslateContext from "@/context/useTranslate";
 import { AiOutlineLink } from "react-icons/ai";
 import Link from "next/link";
+import FastMarquee from "@/components/FastMarquee";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -90,7 +91,7 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col py-20 max-2xl:py-10 gap-10 max-xl:gap-3 bg-blue">
+                {/* <div className="w-full flex flex-col py-20 max-2xl:py-10 gap-10 max-xl:gap-3 bg-blue">
                     <div className="marquee-infinite">
                         <div className="gap-10 max-2xl:gap-3">
                             <p className="gap-10 max-2xl:gap-3">
@@ -219,8 +220,9 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
+            <FastMarquee />
             <section>
                 <Info translation={translation?.info} />
             </section>
