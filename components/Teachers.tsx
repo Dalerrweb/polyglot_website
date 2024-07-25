@@ -22,16 +22,15 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
     };
 
     useEffect(() => {
-        const body:any = document.querySelector("body")
-        
-        if(modalHandel){
+        const body: any = document.querySelector("body")
+
+        if (modalHandel) {
             body.style.overflow = "hidden"
-        }else{
-            body.style.overflow = "scroll"
+        } else {
+            body.style.overflow = "auto"
         }
-        
+
     }, [modalHandel])
-    
 
     return (
         <div className="custom-container">
@@ -158,7 +157,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 <div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
                                     <div className="h-[707px] max-3xl:h-[550px] max-xl:h-full -translate-y-12 max-xl:-translate-y-10 max-sm:-translate-y-8">
                                         <Image
-                                            className={`bg-cover ${item.id == 10 || item.id == 12 || item.id == 13 || item.id == 6 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]': null}`}
+                                            className={`bg-cover ${item.id == 10 || item.id == 12 || item.id == 13 || item.id == 6 ? 'translate-y-[10%] max-sm:translate-y-[15%] max-sm:w-[97%]' : null}`}
                                             src={`/images/teachers/${item.img}.webp`}
                                             width={1000}
                                             height={1000}
@@ -215,7 +214,7 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
                                 alt=""
                                 width={600}
                                 height={600}
-                                className={`w-full max-lg:w-[400px] max-lg:m-auto ${modalInfo?.id == 10 ? 'max-[1470px]:translate-y-10 max-xl:translate-y-0' :'translate-y-10 max-3xl:-translate-y-10 max-2xl:translate-y-2 max-[1350px]:translate-y-6 max-xl:-translate-y-5 max-lg:-translate-y-24 max-md:-translate-y-14 max-sm:-translate-y-16'}`}
+                                className={`w-full max-lg:w-[400px] max-lg:m-auto ${modalInfo?.id == 10 ? 'max-[1470px]:translate-y-10 max-xl:translate-y-0' : 'translate-y-10 max-3xl:-translate-y-10 max-2xl:translate-y-2 max-[1350px]:translate-y-6 max-xl:-translate-y-5 max-lg:-translate-y-24 max-md:-translate-y-14 max-sm:-translate-y-16'}`}
                             />
                             <div className="w-full absolute bottom-0 left-0 p-5  rounded-[20px] max-lg:rounded-b-none bg-blue">
                                 <p className="text-[36px] max-lg:mb-5 max-3xl:text-[36px] max-2xl:text-[28px] max-lg:text-[32px] max-md:text-[28px] max-sm:text-[24px] leading-[40.5px] max-lg:leading-[30px]  max-sm:leading-[18.431px] font-bold text-white">
