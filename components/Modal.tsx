@@ -23,7 +23,7 @@ function Modal() {
             const getInfoStudent: any = getCookie("infoStudent");
             setInfoStudent(JSON.parse(getInfoStudent));
         }
-    }, []);
+    }, [secondModal]);
 
     const ModalSubmit = (e: any) => {
         e.preventDefault();

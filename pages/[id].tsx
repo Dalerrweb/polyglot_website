@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
     let res = await fetch(`${process.env.NEXT_PUBLIC_URL}`);
-    
+
     let data = await res.json();
 
     return {
@@ -45,18 +45,18 @@ const TestingPage = ({ data }: any) => {
     useEffect(() => {
         if (hasCookie("infoStudent")) {
             const getINfoStudent: any = getCookie("infoStudent");
-            setInfoStudent(JSON.parse(getINfoStudent));            
+            setInfoStudent(JSON.parse(getINfoStudent));
         } else {
             router.push("/");
         }
-    }, []);
-    
+    }, [router]);
+
     const handleSubmit = (e: any) => {
         e.preventDefault();
 
         setNextButton(false);
 
-		if (testNumber + 2 === data.test.length) {
+        if (testNumber + 2 === data.test.length) {
             setSendDataButton(true);
         }
 
@@ -69,11 +69,11 @@ const TestingPage = ({ data }: any) => {
             inputСheck.checked = false;
         }
 
-		if (testNumber + 1 === data.test.length) {
+        if (testNumber + 1 === data.test.length) {
             setEndTest(true);
-			sendData()
+            sendData()
             return
-            
+
         }
     };
 
@@ -84,7 +84,7 @@ const TestingPage = ({ data }: any) => {
         msg += `👨 Имя: ${infoStudent?.name} \n`;
         msg += `📞 Номер телефона: ${infoStudent?.number} \n`;
         msg += `Центр: ${infoStudent?.select} \n`;
-        msg += `🏫 Находятся в центре: ${infoStudent["locateInSchoolNow"] !== undefined ? 'Да': 'Нет'} \n`;
+        msg += `🏫 Находятся в центре: ${infoStudent["locateInSchoolNow"] !== undefined ? 'Да' : 'Нет'} \n`;
         msg += `Количество тестов: ${data?.test?.length}  \n`;
         msg += `Уcпел на: ${Ansvers_list?.length}  \n`;
 
@@ -134,7 +134,7 @@ const TestingPage = ({ data }: any) => {
                                         style={{
                                             width: `${Math.floor(
                                                 (100 / data.test.length) *
-                                                    (test.id - 1)
+                                                (test.id - 1)
                                             )}%`,
                                             borderRadius: "10px",
                                             transition: "1s",
@@ -281,7 +281,7 @@ const TestingPage = ({ data }: any) => {
                                 {translation?.endTest?.text}
                             </h2>
                             <button
-                                onClick={()=>router.push("/")}
+                                onClick={() => router.push("/")}
                                 title="result"
                                 className="bg-white font-semibold cursor-pointer px-5 py-2 text-center rounded-xl"
                             >

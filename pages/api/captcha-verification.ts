@@ -1,8 +1,8 @@
 import axios from "axios";
 
-export default async (req:any, res:any) => {
-    console.log(process.env.RECAPTCHA_SECRET_KEY, 'secret');
-    
+const Captcha = async (req: any, res: any) => {
+	console.log(process.env.RECAPTCHA_SECRET_KEY, 'secret');
+
 	if (req.method === "POST") {
 		const { recaptchaValue } = req.body;
 
@@ -30,3 +30,5 @@ export default async (req:any, res:any) => {
 		res.status(405).end();
 	}
 };
+
+export default Captcha

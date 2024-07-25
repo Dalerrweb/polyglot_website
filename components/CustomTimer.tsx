@@ -2,8 +2,8 @@ import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 interface TimerProps {
    time: number;
-   sendData:Function,
-   setEndTest:Dispatch<SetStateAction<boolean>>
+   sendData: Function,
+   setEndTest: Dispatch<SetStateAction<boolean>>
 }
 
 const Timer: React.FC<TimerProps> = ({ time, sendData, setEndTest }) => {
@@ -17,43 +17,43 @@ const Timer: React.FC<TimerProps> = ({ time, sendData, setEndTest }) => {
          sendData();
          setEndTest(true);
       }
-   }, [hours]);
+   }, [hours, sendData, setEndTest]);
 
    const getTime = () => {
       if (
          Math.floor((timer / 1000) % 60) -
-            Math.floor((Date.now() / 1000) % 60) <=
+         Math.floor((Date.now() / 1000) % 60) <=
          0
       ) {
          setMinutes(
             Math.floor((timer / 1000 / 60) % 60) -
-               Math.floor((Date.now() / 1000 / 60) % 60) -
-               1
+            Math.floor((Date.now() / 1000 / 60) % 60) -
+            1
          );
          setSeconds(
             59 +
-               (Math.floor((timer / 1000) % 60) -
-                  Math.floor((Date.now() / 1000) % 60))
+            (Math.floor((timer / 1000) % 60) -
+               Math.floor((Date.now() / 1000) % 60))
          );
 
          if (
             Math.floor((timer / 1000 / 60) % 60) -
-               Math.floor((Date.now() / 1000 / 60) % 60) <=
+            Math.floor((Date.now() / 1000 / 60) % 60) <=
             0
          ) {
             setHours(
                Math.floor((timer / (1000 * 60 * 60)) % 24) -
-                  Math.floor((Date.now() / (1000 * 60 * 60)) % 24) -
-                  1
+               Math.floor((Date.now() / (1000 * 60 * 60)) % 24) -
+               1
             );
             setMinutes(
                59 +
-                  (Math.floor((timer / 1000 / 60) % 60) -
-                     Math.floor((Date.now() / 1000 / 60) % 60))
+               (Math.floor((timer / 1000 / 60) % 60) -
+                  Math.floor((Date.now() / 1000 / 60) % 60))
             );
             if (
                Math.floor((timer / (1000 * 60 * 60)) % 24) -
-                  Math.floor((Date.now() / (1000 * 60 * 60)) % 24) <
+               Math.floor((Date.now() / (1000 * 60 * 60)) % 24) <
                0
             ) {
                sendData();
@@ -63,7 +63,7 @@ const Timer: React.FC<TimerProps> = ({ time, sendData, setEndTest }) => {
       } else {
          setSeconds(
             Math.floor((timer / 1000) % 60) -
-               Math.floor((Date.now() / 1000) % 60)
+            Math.floor((Date.now() / 1000) % 60)
          );
       }
    };
