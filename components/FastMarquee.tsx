@@ -20,6 +20,7 @@ const FastMarquee = () => {
                     ))
                 }
             </Marquee>
+
             <Marquee direction='right' className='bg-blue'>
                 {
                     [11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 29, 31, 33].map((i: number) => (
