@@ -17,39 +17,39 @@ export default function App({ Component, pageProps }: AppProps) {
 
     const [loading, setLoading] = useState(false);
 
-   Router.events.on("routeChangeStart", () => {
-      setLoading(true);
+    Router.events.on("routeChangeStart", () => {
+        setLoading(true);
     });
 
     Router.events.on("routeChangeComplete", () => {
-      setLoading(false);
-   });
+        setLoading(false);
+    });
 
-   const changeModal = (state: boolean) => {
-      setModalOpen(state);
-   };
+    const changeModal = (state: boolean) => {
+        setModalOpen(state);
+    };
 
-   const router = useRouter();
-   const { locale } = router;
+    const router = useRouter();
+    const { locale } = router;
 
-   const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
+    const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
 
 
-  return (
-    <>
-        <HeadMeta
-            title={"Polyglot"}
-        />
-        {
-            loading ? (<Preloader/>) :
-            (
-                <TranslateContext.Provider value={translation}>
-	                <ModalContext.Provider value={{modalOpen, changeModal, modalTestID, setModalTestID}} >
-                        <Component {...pageProps} />
-	    	        </ModalContext.Provider>
-                </TranslateContext.Provider>
-            )
-        }
-    </>   
-	)
+    return (
+        <>
+            <HeadMeta
+                title={"Polyglot"}
+            />
+            {
+                loading ? (<Preloader />) :
+                    (
+                        <TranslateContext.Provider value={translation}>
+                            <ModalContext.Provider value={{ modalOpen, changeModal, modalTestID, setModalTestID }} >
+                                <Component {...pageProps} />
+                            </ModalContext.Provider>
+                        </TranslateContext.Provider>
+                    )
+            }
+        </>
+    )
 }

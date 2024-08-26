@@ -249,7 +249,8 @@ const Footer: React.FC<FooterProps> = () => {
                         </li>
                      </ul>
                   </div>
-                  <div className="">
+                  <div className="flex flex-col justify-between items-center">
+                     <div>
                      <h3 className="text-[40px] max-2xl:text-[32px] font-semibold mb-5">
                         {translation?.footer?.social}
                      </h3>
@@ -280,6 +281,11 @@ const Footer: React.FC<FooterProps> = () => {
                               alt="facebook"
                            />
                         </Link>
+                     </div>
+                     </div>
+
+                     <div className="font-semibold text-lg">
+                        <Link href={"https://dotlabs.uz/en"} target="_blank">{translation?.footer?.by}</Link>
                      </div>
                   </div>
                </div>

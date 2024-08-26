@@ -415,9 +415,10 @@ const uz = {
             adres: "Asosiy markaz: Gagarin ko'chasi 86, +998905033030",
             adres2: "Filial: st. Dagbitskaya 8 (orentir Xilton Garden), +998904782020",
             adres3: "Filial: st. Beruniy 10 (Vogzal)"
-        }
+        },
+        social: "Ijtimoiy tarmoqlar",
+        by: "Dotlabs tomonidan yaratilgan"
     },
-    social: "Ijtimoiy tarmoqlar",
     modalTestStart: {
         title: "Formani to'ldiring!",
         button: "Boshlash",

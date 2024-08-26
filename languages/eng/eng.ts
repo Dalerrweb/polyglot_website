@@ -415,6 +415,7 @@ const eng = {
             adres3: "Branch: st. Beruniy 10 (Station)"
         },
         social: "Social Media",
+        by: "Created by Dotlabs",
     },
     modalTestStart: {
         title: "Fill out the form!",
