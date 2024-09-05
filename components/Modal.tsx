@@ -45,8 +45,8 @@ function Modal() {
     };
 
     return (
-        <div className="fixed top-0 left-0 z-[55] w-screen h-screen backdrop-blur-sm bg-black/75">
-            <div className="w-1/2 max-lg:w-[70%] max-md:w-[80%] max-sm:w-[90%] p-10 max-md:p-5 rounded-2xl fixed top-1/2 left-1/2 z-[60] -translate-x-1/2 -translate-y-1/2 bg-orange text-center">
+        <div className="fixed top-0 left-0 z-[100] w-screen h-screen backdrop-blur-sm bg-black/75">
+            <div className="w-[40%] max-lg:w-[80%] max-md:w-[80%] max-sm:w-[90%] py-10 max-md:p-5 rounded-2xl fixed top-1/2 left-1/2 z-[101] -translate-x-1/2 -translate-y-1/2 bg-[#ec8d18] text-center">
                 <IoClose
                     onClick={() => changeModal(false)}
                     size={40}
@@ -60,7 +60,7 @@ function Modal() {
                                 changeModal(false);
                             }}
                             type="submit"
-                            className="w-[70%] mb-5 small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
+                            className="w-[80%] mb-5 small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
                         >
                             Продолжить как {infoStudent?.name}
                         </button>
@@ -70,7 +70,7 @@ function Modal() {
                                 setSecondModal(hasCookie("infoStudent"));
                             }}
                             type="submit"
-                            className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
+                            className="w-[80%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
                         >
                             {translation?.modalTestStart?.changeData}
                         </button>
@@ -91,11 +91,11 @@ function Modal() {
                                 placeholder={
                                     translation?.modalTestStart?.inputName
                                 }
-                                className="w-[70%] max-sm:w-[90%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                                className="w-[80%] max-sm:w-[90%] small_text_size focus:border-blue py-2 px-3 rounded-[10px] border border-orange text-[#000] placeholder:text-[#9F9F9F]"
                             />
                             <InputMask
                                 className={
-                                    "w-[70%]  max-sm:w-[90%] small_text_size focus:border-blue px-6 max-2xl:px-[20px] py-[16px] max-3xl:py-[12px] rounded-[10px] border border-orange text-[#9F9F9F] placeholder:text-[#9F9F9F]"
+                                    "w-[80%]  max-sm:w-[90%] small_text_size focus:border-blue py-2 px-3 rounded-[10px] border border-orange text-[#000] placeholder:text-[#9F9F9F]"
                                 }
                                 mask="+\9\98-(99)-999-99-99"
                                 placeholder={
@@ -105,11 +105,11 @@ function Modal() {
                                 value={phone}
                                 onChange={(e: any) => setPhone(e.target.value)}
                             ></InputMask>
-                            <label className="flex max-lg:flex-col max-lg:items-start items-center gap-2 w-[70%] max-sm:w-[90%] justify-between">
+                            <label className="flex max-lg:flex-col max-lg:items-start items-center gap-2 w-[80%] max-sm:w-[90%] justify-between">
                                 <p className="text-white text-lg text-start max-sm:text-xs">
                                     Выберите филиал:
                                 </p>
-                                <select required title="select" name="select" className="rounded-md px-6 py-1">
+                                <select required title="select" name="select" className="rounded-md px-3 py-1">
                                     <option value="Гагарина" selected>Гагарина</option>
                                     <option value="Гелион">Гелион</option>
                                     <option value="Вокзал">Вокзал</option>
@@ -117,7 +117,7 @@ function Modal() {
                                 </select>
                             </label>
 
-                            <label className="flex items-center gap-2 w-[70%] max-sm:w-[90%]">
+                            <label className="flex items-center gap-2 w-[80%] max-sm:w-[90%]">
                                 <input
                                     type="checkbox"
                                     name="locateInSchoolNow"
@@ -128,7 +128,7 @@ function Modal() {
                             </label>
                             <button
                                 type="submit"
-                                className="w-[70%] small_text_size py-4 max-2xl:py-3 max-sm:py-2 font-medium rounded-md bg-blue text-white"
+                                className="w-[80%] small_text_size py-2 font-medium rounded-md bg-blue hover:scale-105 transition text-white"
                             >
                                 {translation?.modalTestStart?.button}
                             </button>
