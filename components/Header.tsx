@@ -11,13 +11,15 @@ import { Select } from "antd";
 import TranslateContext from "@/context/useTranslate";
 import Modal from "./Modal";
 
-interface HeaderProps {}
+interface HeaderProps { }
 
 const Header: React.FC<HeaderProps> = () => {
    const [hide, setHide] = useState<boolean>(false);
    const router = useRouter();
    const { locale } = router;
    const [localeValue, setLocaleValue] = useState<any>(locale);
+
+   console.log(locale);
 
    const { modalOpen } = useContext(ModalContext);
 
@@ -38,9 +40,8 @@ const Header: React.FC<HeaderProps> = () => {
          {modalOpen ? <Modal /> : null}
 
          <header
-            className={`w-full fixed top-0 left-0 z-[55] backdrop-blur-[100px] border-blue bg-white/60 ${
-               hide ? "border-b-8" : "border-b-4"
-            }`}
+            className={`w-full fixed top-0 left-0 z-[55] backdrop-blur-[100px] border-blue bg-white/60 ${hide ? "border-b-8" : "border-b-4"
+               }`}
          >
             <div className="custom-container flex items-center justify-between py-3">
                <div className="w-[240px] max-2xl:w-[140px] max-xl:w-[150px] max-md:w-[130px] max-sm:w-[110px]">
@@ -58,23 +59,28 @@ const Header: React.FC<HeaderProps> = () => {
                   <nav>
                      <ul className="flex gap-11 max-2xl:gap-5">
                         <li>
-                           <Link href={"#courses"} className="max-xl:text-xs">
+                           <Link href={`/#courses`} className="max-xl:text-xs">
                               {translation?.header?.courses}
                            </Link>
                         </li>
                         <li>
-                           <Link href={"#teacher"} className="max-xl:text-xs">
+                           <Link href={`/#teacher`} className="max-xl:text-xs">
                               {translation?.header?.teachers}
                            </Link>
                         </li>
                         <li>
-                           <Link href={"#tests"} className="max-xl:text-xs">
+                           <Link href={`/#tests`} className="max-xl:text-xs">
                               {translation?.header?.tests}
                            </Link>
                         </li>
                         <li>
-                           <Link href={"#about"} className="max-xl:text-xs">
+                           <Link href={`/#about`} className="max-xl:text-xs">
                               {translation?.header?.aboutSchool}
+                           </Link>
+                        </li>
+                        <li>
+                           <Link href={"/trial-lesson"} className="max-xl:text-xs">
+                              {translation?.header?.trialLesson}
                            </Link>
                         </li>
                      </ul>
@@ -166,14 +172,12 @@ const Header: React.FC<HeaderProps> = () => {
          </header>
 
          <div
-            className={`${
-               hide ? "block" : "hidden"
-            } w-screen h-full fixed top-0 left-0 z-40 backdrop-blur-[100px] bg-white/30`}
+            className={`${hide ? "block" : "hidden"
+               } w-screen h-full fixed top-0 left-0 z-40 backdrop-blur-[100px] bg-white/30`}
          ></div>
          <div
-            className={`${
-               hide ? "block" : "hidden"
-            } w-full fixed z-50 top-12 left-0  border-b-4  border-blue backdrop-blur-[100px] bg-white/60`}
+            className={`${hide ? "block" : "hidden"
+               } w-full fixed z-50 top-12 left-0  border-b-4  border-blue backdrop-blur-[100px] bg-white/60`}
          >
             <div className="custom-container py-5 flex flex-col">
                <nav className="w-full">

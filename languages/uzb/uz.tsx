@@ -4,7 +4,8 @@ const uz = {
         teachers: "O'qituvchilar",
         tests: "Mini testlar",
         aboutSchool: "Maktab haqida",
-        application: 'Ariza yuborish'
+        application: 'Ariza yuborish',
+        trialLesson: "Sinov darsi"
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",

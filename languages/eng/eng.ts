@@ -4,7 +4,8 @@ const eng = {
         teachers: "Teachers",
         tests: "Mini Tests",
         aboutSchool: "About School",
-        application: "Leave an application"
+        application: "Leave an application",
+        trialLesson: "Trial lesson"
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",

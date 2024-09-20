@@ -5,6 +5,7 @@ const ru = {
         tests: "Мини тесты",
         aboutSchool: "О школе",
         application: "Оставить заявку",
+        trialLesson: "Пробный урок"
     },
     hero: {
         text1: "When you think it's too late, the truth is, it's still early!",
