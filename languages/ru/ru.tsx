@@ -419,6 +419,7 @@ const ru = {
             adres3: "Филиал: ул. Беруний 10 (Вокзал)"
         },
         social: "Социальные сети",
+        by: "Создано Dotlabs",
     },
     modalTestStart: {
         title: "Заполните форму!",
