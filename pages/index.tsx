@@ -229,6 +229,7 @@ export default function Home() {
             <section className="overflow-hidden">
                 <Teacher translation={translation?.teacher} />
             </section>
+
             <section>
                 <Map translation={translation?.map} />
             </section>
