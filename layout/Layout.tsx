@@ -10,12 +10,9 @@ type Layout = {
 const Layout = ({ children }: Layout) => {
    return (
       <>
-         <Header />
-         <main>{children}</main>
-         <Footer />
-
-         <Script>
-            {`!function(f,b,e,v,n,t,s)
+         <Head>
+            <Script>
+               {`!function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
                n.callMethod.apply(n, arguments) : n.queue.push(arguments)};
             if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
@@ -25,10 +22,16 @@ const Layout = ({ children }: Layout) => {
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1580211606041469');
             fbq('track', 'PageView');`}
-         </Script>
-         <noscript><img height="1" width="1" style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1580211606041469&ev=PageView&noscript=1"
-         /></noscript>
+            </Script>
+            <noscript><img height="1" width="1" style={{ display: "none" }}
+               src="https://www.facebook.com/tr?id=1580211606041469&ev=PageView&noscript=1"
+            /></noscript>
+         </Head>
+
+         <Header />
+         <main>{children}</main>
+         <Footer />
+
       </>
    );
 };

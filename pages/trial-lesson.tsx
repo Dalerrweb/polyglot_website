@@ -8,7 +8,7 @@ const TrialLesson = () => {
 
     return (
         <Layout>
-            <section className='py-14'>
+            <section className='pt-10 pb-52'>
                 <Entry translation={translation?.entry} />
             </section>
         </Layout>
