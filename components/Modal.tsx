@@ -114,6 +114,8 @@ function Modal() {
                                     <option value="Гелион">Гелион</option>
                                     <option value="Вокзал">Вокзал</option>
                                     <option value="Конигиль">Конигиль</option>
+                                    <option value="Мархабо">Мархабо</option>
+                                    <option value="Садриддин айни">Садриддин айни</option>
                                 </select>
                             </label>
 
