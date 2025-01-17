@@ -40,7 +40,7 @@ const uz = {
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "599 000",
+                price2: "699 000",
             },
             {
                 name1: "GENERAL",
@@ -57,7 +57,7 @@ const uz = {
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "599 000",
+                price2: "699 000",
             },
             {
                 name1: "Intensive",
@@ -91,11 +91,11 @@ const uz = {
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "500 000",
+                price2: "600 000",
             },
             {
                 name1: "IELTS",
-                name2: "Rocket",
+                name2: "Practice",
                 info: "Darslar har kuni 1,5 soatdan o'tkaziladi. Sifatli o'qitish kafolati. Rivojlanish nazorati 3 ta sinov imtihonlari - sinov testlari bilan tekshiriladi. Kursdan keyingi kuzatuvchi profili: 2 haftalik IELTS (5.5-6.0) ta'lim tizimi. Ikki haftalik tahlil va ichki bilim (6.5) 1 oylik haqiqiy o'zgarishlarni tahlil qilish. IDP bilan hamkorlikni hisobga olgan holda, Polyglot markazida ro'yxatdan o'tish va IELTS imtihonini topshirish imkoniyati mavjud.",
                 text1: "Onlayn maslahat 24/7",
                 text2: "IELTS 8.0-8.5 darajasiga qadar ingliz tili",
@@ -108,7 +108,7 @@ const uz = {
                 cumMounth: "so'm/oy",
                 application: "Arizani qoldirish",
                 details: "Batafsil",
-                price2: "",
+                price2: "899 000",
             },
         ]
     },
