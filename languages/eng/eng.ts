@@ -40,7 +40,7 @@ const eng = {
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "599 000",
+                price2: "699 000",
 
             },
             {
@@ -58,7 +58,7 @@ const eng = {
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "599 000",
+                price2: "699 000",
             },
             {
                 name1: "Intensive",
@@ -90,11 +90,11 @@ const eng = {
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "500 000",
+                price2: "600 000",
             },
             {
                 name1: "IELTS",
-                name2: "Rocket",
+                name2: "Practice",
                 info: "Lessons are held daily for 1.5 hours. Guarantee of quality training. Progress control is checked by 3 Mock exam - trial tests. Post-Course Follower Profile: 2-week IELTS (5.5-6.0) training structure. Two-week analysis and internal knowledge (6.5) 1 month of analysis of real changes. Given the cooperation with IDP, there is the possibility of registering and passing the IELTS exam at the Polyglot center.",
                 text1: "Online consultation 24/7",
                 text2: "English up to level IELTS 8.0-8.5",
@@ -107,7 +107,7 @@ const eng = {
                 cumMounth: "sum/mon",
                 application: "Submit application",
                 details: "Details",
-                price2: "",
+                price2: "899 000",
             },
         ]
     },
