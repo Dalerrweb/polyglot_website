@@ -3,6 +3,7 @@ const uz = {
 		courses: "Kurslar",
 		teachers: "O'qituvchilar",
 		tests: "Mini testlar",
+		partners: "Bizning Hamkorlar",
 		aboutSchool: "Maktab haqida",
 		application: "Ariza yuborish",
 		trialLesson: "Sinov darsi",

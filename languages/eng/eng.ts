@@ -5,6 +5,7 @@ const eng = {
 		courses: "Courses",
 		teachers: "Teachers",
 		tests: "Mini Tests",
+		partners: "Our partners",
 		aboutSchool: "About School",
 		application: "Leave an application",
 		trialLesson: "Trial lesson",

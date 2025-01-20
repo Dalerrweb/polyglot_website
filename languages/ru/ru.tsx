@@ -3,6 +3,7 @@ const ru = {
 		courses: "Курсы",
 		teachers: "Преподаватели",
 		tests: "Мини тесты",
+		partners: "Наши партнеры",
 		aboutSchool: "О школе",
 		application: "Оставить заявку",
 		trialLesson: "Пробный урок",
