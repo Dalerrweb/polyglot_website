@@ -205,7 +205,7 @@ const uz = {
 				id: 5,
 				img: "teacher-5",
 				name: "Mr. Siyavush",
-				job_title: "Ingliz tili o'qituvchisi / IELTS instructori",
+				job_title: "Filial bosh o‘qituvchisi",
 				local: "",
 				modal: {
 					text: "To'liq ismim Siyavush Yildizo'g'li",
@@ -229,7 +229,7 @@ const uz = {
 				id: 10,
 				img: "teacher-10",
 				name: "Ms. Zuhra",
-				job_title: "Ingliz tili o'qituvchisi",
+				job_title: "Filial bosh o‘qituvchisi",
 				local: "",
 				modal: {
 					text: "To'liq ismim Nuritdinova Zuhra",
@@ -246,7 +246,7 @@ const uz = {
 				id: 4,
 				img: "teacher-4",
 				name: "Ms. Maftuna",
-				job_title: "Ingliz tili o'qituvchisi",
+				job_title: "Akademik bo‘lim boshlig‘i",
 				local: "",
 				modal: {
 					text: "To'liq ismim Boboyorova Maftuna",
@@ -263,7 +263,7 @@ const uz = {
 				id: 3,
 				img: "teacher-3",
 				name: "Ms. Anna",
-				job_title: "Ingliz tili o'qituvchisi",
+				job_title: "Akademik yordamlar bo‘limi boshlig‘i",
 				local: "",
 				modal: {
 					text: "My name is Anna",

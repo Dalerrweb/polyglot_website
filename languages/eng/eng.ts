@@ -202,7 +202,7 @@ const eng = {
 				id: 5,
 				img: "teacher-5",
 				name: "Mr. Siyavush",
-				job_title: "English Language Teacher/ IELTS instructor",
+				job_title: "Branch Head Teacher",
 				local: "",
 				modal: {
 					text: "My full name is Siyavush Yildizoglu",
@@ -226,7 +226,7 @@ const eng = {
 				id: 10,
 				img: "teacher-10",
 				name: "Ms. Zuhra",
-				job_title: "English Language Teacher",
+				job_title: "Branch Head Teacher",
 				local: "",
 				modal: {
 					text: "My full name is Nuritdinova Zuhra",
@@ -243,7 +243,7 @@ const eng = {
 				id: 4,
 				img: "teacher-4",
 				name: "Ms. Maftuna",
-				job_title: "English Language Teacher",
+				job_title: "Head of Academic Department",
 				local: "",
 				modal: {
 					text: "My full name is Boboyorova Maftuna",
@@ -260,7 +260,7 @@ const eng = {
 				id: 3,
 				img: "teacher-3",
 				name: "Ms. Anna",
-				job_title: "English Language Teacher",
+				job_title: "Head of Academic Supports",
 				local: "",
 				modal: {
 					text: "My name is Anna",

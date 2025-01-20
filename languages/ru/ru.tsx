@@ -205,7 +205,7 @@ const ru = {
 				id: 5,
 				img: "teacher-5",
 				name: "Mr. Siyavush",
-				job_title: "Преподаватель английского языка/ IELTS инструктор",
+				job_title: "Старший преподаватель филиала",
 				local: "",
 				modal: {
 					text: "Меня зовут Siyavush Yildizoglu.",
@@ -229,7 +229,7 @@ const ru = {
 				id: 10,
 				img: "teacher-10",
 				name: "Ms. Zuhra",
-				job_title: "Преподаватель английского языка",
+				job_title: "Старший преподаватель филиала",
 				local: "",
 				modal: {
 					text: "Меня зовут Нуритдинова Зухра",
@@ -246,7 +246,7 @@ const ru = {
 				id: 4,
 				img: "teacher-4",
 				name: "Ms. Maftuna",
-				job_title: "Преподаватель английского языка",
+				job_title: "Глава академического департамента",
 				local: "",
 				modal: {
 					text: "Меня зовут Бобоёрова Мафтуна.",
@@ -263,7 +263,7 @@ const ru = {
 				id: 3,
 				img: "teacher-3",
 				name: "Ms. Anna",
-				job_title: "Преподаватель английского языка",
+				job_title: "Руководитель отдела академической поддержки",
 				local: "",
 				modal: {
 					text: "My name is Anna",
