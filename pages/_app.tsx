@@ -6,50 +6,53 @@ import eng from "@/languages/eng/eng";
 import ru from "@/languages/ru/ru";
 import uz from "@/languages/uzb/uz";
 import "@/styles/globals.css";
+import "@/styles/forPartners.css";
 import type { AppProps } from "next/app";
 import { Router, useRouter } from "next/router";
 import { useState } from "react";
 
-
 export default function App({ Component, pageProps }: AppProps) {
-    const [modalOpen, setModalOpen] = useState<boolean>(false)
-    const [modalTestID, setModalTestID] = useState<number>(0)
+	const [modalOpen, setModalOpen] = useState<boolean>(false);
+	const [modalTestID, setModalTestID] = useState<number>(0);
 
-    const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(false);
 
-    Router.events.on("routeChangeStart", () => {
-        setLoading(true);
-    });
+	Router.events.on("routeChangeStart", () => {
+		setLoading(true);
+	});
 
-    Router.events.on("routeChangeComplete", () => {
-        setLoading(false);
-    });
+	Router.events.on("routeChangeComplete", () => {
+		setLoading(false);
+	});
 
-    const changeModal = (state: boolean) => {
-        setModalOpen(state);
-    };
+	const changeModal = (state: boolean) => {
+		setModalOpen(state);
+	};
 
-    const router = useRouter();
-    const { locale } = router;
+	const router = useRouter();
+	const { locale } = router;
 
-    const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
+	const translation = locale === "uz" ? uz : locale === "ru" ? ru : eng;
 
-
-    return (
-        <>
-            <HeadMeta
-                title={"Polyglot"}
-            />
-            {
-                loading ? (<Preloader />) :
-                    (
-                        <TranslateContext.Provider value={translation}>
-                            <ModalContext.Provider value={{ modalOpen, changeModal, modalTestID, setModalTestID }} >
-                                <Component {...pageProps} />
-                            </ModalContext.Provider>
-                        </TranslateContext.Provider>
-                    )
-            }
-        </>
-    )
+	return (
+		<>
+			<HeadMeta title={"Polyglot"} />
+			{loading ? (
+				<Preloader />
+			) : (
+				<TranslateContext.Provider value={translation}>
+					<ModalContext.Provider
+						value={{
+							modalOpen,
+							changeModal,
+							modalTestID,
+							setModalTestID,
+						}}
+					>
+						<Component {...pageProps} />
+					</ModalContext.Provider>
+				</TranslateContext.Provider>
+			)}
+		</>
+	);
 }

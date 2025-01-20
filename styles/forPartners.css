@@ -1,0 +1,44 @@
+:root {
+	--color-primary: #180b8a;
+	--color-secondary: #e67915;
+}
+
+body {
+	color: #333;
+	background-color: #f8f8f8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-primary);
+}
+
+.btn-primary {
+	background-color: var(--color-secondary);
+	color: white;
+}
+
+.btn-primary:hover {
+	background-color: #d16d13;
+}
+
+.btn-secondary {
+	background-color: var(--color-primary);
+	color: white;
+}
+
+.btn-secondary:hover {
+	background-color: #0f0766;
+}
+
+.gradient-bg {
+	background: linear-gradient(
+		90deg,
+		var(--color-primary),
+		var(--color-secondary)
+	);
+}

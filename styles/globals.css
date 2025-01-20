@@ -3,86 +3,86 @@
 @tailwind utilities;
 
 @font-face {
-   src: url("/fonts/SFT-Schrifted-Sans-TRIAL-Var-BF6413e215ec95b.ttf");
-   font-family: sans;
+	src: url("/fonts/SFT-Schrifted-Sans-TRIAL-Var-BF6413e215ec95b.ttf");
+	font-family: sans;
 }
 
 ::-webkit-scrollbar {
-   width: 6px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-   background: #f1f1f1;
+	background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-   background: #888;
-   border-radius: 100px;
+	background: #888;
+	border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-   background: #555;
+	background: #555;
 }
 
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-size: 20px;
-   font-family: sans;
-   font-weight: 300;
-   scroll-behavior: smooth;
-   outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: sans;
+	font-weight: 300;
+	scroll-behavior: smooth;
+	outline: none;
 }
 
 ul,
 ol,
 li {
-   list-style: none;
+	list-style: none;
 }
 
 .custom-container {
-   @apply container m-auto px-[105px] max-2xl:px-[40px] max-xl:px-[30px] max-lg:px-6 max-sm:px-4;
+	@apply container m-auto px-[105px] max-2xl:px-[40px] max-xl:px-[30px] max-lg:px-6 max-sm:px-4;
 }
 
 .flex-center {
-   @apply flex items-center justify-center;
+	@apply flex items-center justify-center;
 }
 
 /*           TESTING_PAGE          */
 
 .section {
-   @apply w-full h-screen bg-white flex flex-col justify-center items-center z-[100];
+	@apply w-full h-screen bg-white flex flex-col justify-center items-center z-[100];
 }
 
 .orange_div {
-   @apply w-full h-[50vh] bg-orange relative;
+	@apply w-full h-[50vh] bg-orange relative;
 }
 
 .blue_div {
-   @apply bg-blue w-[80%] max-lg:w-[85%] max-sm:w-[90%] rounded-3xl p-7 max-2xl:p-6 max-xl:p-5 max-lg:p-3 max-sm:p-2 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2;
+	@apply bg-blue w-[80%] max-lg:w-[85%] max-sm:w-[90%] rounded-3xl p-7 max-2xl:p-6 max-xl:p-5 max-lg:p-3 max-sm:p-2 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2;
 }
 
 .text_size {
-   @apply text-3xl max-2xl:text-xl max-xl:text-lg max-lg:text-base max-md:text-sm;
+	@apply text-3xl max-2xl:text-xl max-xl:text-lg max-lg:text-base max-md:text-sm;
 }
 
 .small_text_size {
-   @apply text-xl max-2xl:text-lg max-xl:text-base max-lg:text-sm max-md:text-xs;
+	@apply text-xl max-2xl:text-lg max-xl:text-base max-lg:text-sm max-md:text-xs;
 }
 
 /***************************************************/
 
 h1 {
-   @apply text-[100px] max-3xl:text-[72px] max-2xl:text-[60px] max-xl:text-[55px] max-lg:text-[32px] max-md:text-[55px] max-sm:text-[32px] font-semibold leading-[95px] max-3xl:leading-[80px] max-2xl:leading-[70px] max-xl:leading-[55px] max-lg:leading-[40px] max-md:leading-[55px] max-sm:leading-[40px];
+	@apply text-[100px] max-3xl:text-[72px] max-2xl:text-[60px] max-xl:text-[55px] max-lg:text-[32px] max-md:text-[55px] max-sm:text-[32px] font-semibold leading-[95px] max-3xl:leading-[80px] max-2xl:leading-[70px] max-xl:leading-[55px] max-lg:leading-[40px] max-md:leading-[55px] max-sm:leading-[40px];
 }
 
 .course {
-   background-color: blue;
+	background-color: blue;
 }
 
 .course:nth-child(odd) {
-   background-color: #ec8d18;
+	background-color: #ec8d18;
 }
 
 /* .course:nth-child(2) {
@@ -90,112 +90,112 @@ h1 {
 } */
 
 .course-btn:nth-child(1) {
-   background-color: #21209c;
+	background-color: #21209c;
 }
 
 /* =========== marquee ============= */
 
 .marquee-infinite {
-   width: 100%;
-   overflow: hidden;
-   margin: auto;
+	width: 100%;
+	overflow: hidden;
+	margin: auto;
 }
 
 .marquee-infinite div {
-   width: 200%;
-   overflow: hidden;
-   display: flex;
-   justify-content: space-around;
-   animation: marquee 15s linear infinite;
+	width: 200%;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-around;
+	animation: marquee 15s linear infinite;
 }
 
 .marquee-infinite:nth-child(2) div {
-   animation: marquee-right 15s linear infinite;
+	animation: marquee-right 15s linear infinite;
 }
 
 .marquee-infinite p {
-   width: 100%;
-   display: flex;
-   justify-content: space-around;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .marquee-infinite:hover div {
-   animation-play-state: paused;
+	animation-play-state: paused;
 }
 
 @keyframes marquee {
-   0% {
-      transform: translateX(0%);
-   }
+	0% {
+		transform: translateX(0%);
+	}
 
-   100% {
-      transform: translateX(-50%);
-   }
+	100% {
+		transform: translateX(-50%);
+	}
 }
 
 @keyframes marquee-right {
-   0% {
-      transform: translateX(0%);
-   }
+	0% {
+		transform: translateX(0%);
+	}
 
-   100% {
-      transform: translateX(-50%);
-   }
+	100% {
+		transform: translateX(-50%);
+	}
 }
 
 @keyframes marquee-top {
-   0% {
-      transform: translateY(0%);
-   }
+	0% {
+		transform: translateY(0%);
+	}
 
-   100% {
-      transform: translateY(-50%);
-   }
+	100% {
+		transform: translateY(-50%);
+	}
 }
 
 /* =========================================== */
 
 .swiper-wrapper {
-   padding: 15px 0 !important;
+	padding: 15px 0 !important;
 }
 
 .swiper-visible {
-   overflow: visible !important;
+	overflow: visible !important;
 }
 
 .ant-select-selection-item {
-   align-self: stretch !important;
-   background-color: transparent !important;
+	align-self: stretch !important;
+	background-color: transparent !important;
 }
 
 /* =================================== */
 
 .rodal-dialog {
-   max-width: 700px !important;
-   width: 100% !important;
-   height: fit-content !important;
-   padding: 30px 30px !important;
-   border-radius: 20px !important;
-   background: white !important;
-   overflow-y: auto;
+	max-width: 700px !important;
+	width: 100% !important;
+	height: fit-content !important;
+	padding: 30px 30px !important;
+	border-radius: 20px !important;
+	background: white !important;
+	overflow-y: auto;
 }
 
 .rodal-close {
-   width: 30px !important;
-   right: 30px !important;
-   top: 30px !important;
+	width: 30px !important;
+	right: 30px !important;
+	top: 30px !important;
 }
 
 /* ***************************************************** */
 
 .elipsis {
-   text-overflow: ellipsis;
-   overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 5 !important;
-   -webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 5 !important;
+	-webkit-box-orient: vertical;
 }
 
 .swiper-slide {
-   height: auto !important;
+	height: auto !important;
 }
