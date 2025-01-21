@@ -3,20 +3,6 @@
 	--color-secondary: #e67915;
 }
 
-body {
-	color: #333;
-	background-color: #f8f8f8;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--color-primary);
-}
-
 .btn-primary {
 	background-color: var(--color-secondary);
 	color: white;

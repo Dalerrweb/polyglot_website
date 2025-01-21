@@ -72,11 +72,11 @@ export default function OpportunitiesSection() {
 				)}
 			</div>
 			<div className="text-center">
-				<button className="bg-[#180B8A] hover:bg-[#0f0766] text-white text-lg px-8 py-3">
+				{/* <button className="bg-[#180B8A] hover:bg-[#0f0766] text-white text-lg px-8 py-3">
 					<Link href="/opportunities">
 						{thisPageTR.opportunities.oppoBtns}
 					</Link>
-				</button>
+				</button> */}
 			</div>
 		</section>
 	);
