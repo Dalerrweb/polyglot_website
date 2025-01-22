@@ -372,6 +372,10 @@ const uz = {
 		gagarina: "Gagarina 86",
 		ibnsino: "Ibn Sino 8",
 		beruniy: "Beruniy 10",
+		vokzal: "Vokzal",
+		ayniy: "Sadriddin Ayniy",
+		gelion: "Gelion",
+		marxabo: "Marxabo",
 	},
 	fileDoc: {
 		text: "XIZMATLARNI TAQDIM ETISH BO'YICHA OMMAVIY TAKLIF",

@@ -369,6 +369,10 @@ const eng = {
 		gagarina: "Gagarina 86",
 		ibnsino: "Ibn Sino 8",
 		beruniy: "Beruniy 10",
+		vokzal: "Vokzal",
+		ayniy: "Sadriddin Ayniy",
+		gelion: "Gelion",
+		marxabo: "Marxabo",
 	},
 	fileDoc: {
 		text: "PUBLIC OFFER FOR THE PROVISION OF SERVICES",
