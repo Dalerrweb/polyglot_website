@@ -570,7 +570,7 @@ const uz = {
 	},
 	endTest: {
 		title: "Tabriklaymiz",
-		text: "Tez orada siz bilan bog'lanamiz!",
+		text: "Natijalaringiz tayyor. Agar siz hozir markazda bo‘lmasangiz, biz sizga qo‘ng‘iroq qilamiz va ular haqida xabar beramiz.",
 		goToBack: "Bosh sahifa",
 	},
 };

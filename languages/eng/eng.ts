@@ -424,7 +424,7 @@ const eng = {
 	},
 	endTest: {
 		title: "Congratulations",
-		text: "We will contact you soon!",
+		text: "Your results are ready. We will call you and inform you about them if you are not currently at the center.",
 		goToBack: "Home page",
 	},
 	ourPartners: {
