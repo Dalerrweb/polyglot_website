@@ -154,7 +154,6 @@ const Teacher: React.FC<TeacherProps> = ({ translation }) => {
 						},
 						idx: number
 					) => {
-						console.log(`/images/teachers/${item.img}.webp`);
 						return (
 							<SwiperSlide className="" key={item.id}>
 								<div className="relative rounded-[43px] max-lg:rounded-[30px] max-md:rounded-[19.569px] hover:-translate-y-1 hover:shadow-[0_7px_20px_gray] ease-in duration-150 bg-orange min-h-[300px] max-sm:min-h-[220px]">
