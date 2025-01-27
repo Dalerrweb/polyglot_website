@@ -8,7 +8,7 @@ interface MapProps {
 }
 
 const Map: React.FC<MapProps> = ({ translation }) => {
-	const [map, setMap] = useState<boolean>(true);
+	const [map, setMap] = useState<boolean>(false);
 	const [branches, setBranches] = useState<string>("gagarina");
 	const branchesPos: any = {
 		gagarina: [
@@ -94,7 +94,7 @@ const Map: React.FC<MapProps> = ({ translation }) => {
 							</svg>
 							Google
 						</button>
-						<button
+						{/* <button
 							onClick={() => setMap(true)}
 							className="flex gap-1 items-center text-[32px] max-2xl:text-[24px] max-md:text-[18px] font-medium leading-[30px] py-3 max-2xl:py-2 max-md:py-1 px-6 max-lg:px-3 rounded-md bg-white"
 						>
@@ -104,7 +104,7 @@ const Map: React.FC<MapProps> = ({ translation }) => {
 								className="max-2xl:h-[30px] max-md:h-[20px] max-md:w-[20px]"
 							/>
 							Яндекс
-						</button>
+						</button> */}
 					</div>
 				</div>
 				<div className="flex max-lg:flex-col gap-28 max-2xl:gap-10 max-xl:gap-5 mt-12 max-lg:mt-5">
@@ -126,12 +126,12 @@ const Map: React.FC<MapProps> = ({ translation }) => {
 								>
 									{translation?.ibnsino}
 								</li>
-								<li
+								{/* <li
 									onClick={() => setBranches("beruniy")}
 									className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white"
 								>
-									beruniy
-								</li>
+									Beruniy
+								</li> */}
 								<li
 									onClick={() => setBranches("vokzal")}
 									className="text-[32px] max-2xl:text-[24px] leading-[40px] max-xl:leading-[30px] cursor-pointer text-white"
